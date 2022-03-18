@@ -1,0 +1,96 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+%% IGNORE THE NEXT 4 LINES
+%% STOP IGNORING NOW
+
+
+\documentclass[a4paper]{amsart}
+\usepackage{eurosym}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{LastRevised=Wednesday, March 16, 2022 17:23:23}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+
+\pagestyle{empty}
+\makeatletter 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+
+\input{tcilatex}
+
+\begin{document}
+\date{}
+\title{Efficient vectors for perturbed consistent matrices}
+\author{Susana Furtado}
+\address{CEAFEL and Faculdade de Economia do Porto}
+\email{sbf@fep.up.pt}
+\maketitle
+
+%Presenting author only
+
+% Affiliation of presenting author
+
+% Email address of presenting author only
+
+% The abstract  ***no more than one page***
+
+An $n\times n$ matrix $A=[a_{ij}]$ is said to be a pairwise comparison
+matrix (PC matrix) or a reciprocal matrix if it is positive and $a_{ij}=%
+\frac{1}{a_{ji}},$ for $i,j=1,\ldots ,n.$ If, in addition, $%
+a_{ij}a_{jk}=a_{ik,}$ for $i,j,k=1,\ldots ,n,$ then $A$ is said to be
+consistent or transitive.
+
+PC matrices and, in particular, consistent matrices, play an important role
+in the Analytic Hierarchy Process, a method used in Decision Making. In this
+method it may be important to approximate a PC matrix by a consistent one.
+In this context, the notion of efficient vector for a PC matrix arises.
+
+A positive vector $w=\left[ 
+\begin{array}{ccc}
+w_{1} & \cdots  & w_{n}%
+\end{array}%
+\right] ^{T}$ is said to be efficient for an $n\times n$ PC matrix $%
+A=[a_{ij}]$ if there is no other vector $v=\left[ 
+\begin{array}{ccc}
+v_{1} & \cdots  & v_{n}%
+\end{array}%
+\right] ^{T}$ such that 
+\[
+\left\vert a_{ij}-\frac{v_{i}}{v_{j}}\right\vert \leq \left\vert a_{ij}-%
+\frac{w_{i}}{w_{j}}\right\vert \text{ \qquad for all }1\leq i,j\leq n,
+\]%
+with the inequality strict for at least one pair $(i,j).$ 
+
+In this talk we describe all efficient vectors for a simple perturbed
+consistent matrix, that is, a PC matrix obtained from a consistent one by
+perturbing one entry above the main diagonal, and the corresponding
+reciprocal entry. As a consequence, we give a simple proof of the result
+obtained by K. \'{A}bele-Nagy and S. Boz\'{o}ki (2016) that states that any
+(positive) eigenvector of a simple perturbed consistent matrix associated
+with the Perron eigenvalue is efficient. Some related results for double and
+triple perturbed consistent matrices are also presented.
+
+
+%% Coauthor details here (optional - delete if not applicable)
+% and funding acknowledgment (optional - delete if not applicable)
+\emph{Based on a joint work with Henrique Cruz and Ros\'{a}rio Fernandes.}
+
+\end{document}

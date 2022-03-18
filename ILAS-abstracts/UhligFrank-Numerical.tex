@@ -1,0 +1,53 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%       
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{New Connections  between\\ Static Matrices $A$, Zhang Neural Networks,   \\ and Parameter-Varying Matrix Flows $A(t)$}
+\author{Frank Uhlig} %Presenting author only
+\address{Department of Mathematics and Statistics, \\ Auburn University, Auburn, AL 36849-5310, USA} % Affiliation of presenting author
+\email{uhligfd@auburn.edu} % Email address of presenting author only
+
+\maketitle
+
+% The abstract  ***no more than one page***
+
+{ \begin{minipage}{117mm} {\Large We study recent results that connect classical matrix theory with matrix computations in new ways.\\[1mm]  
+Field of values computations lead me to  study  parameter-varying matrix eigenvalue  problems. These concepts helped me solve a century old matrix block diagonalization problem that arose in Quantum Physics in the 1920s and was still open. \\[1mm]
+ On the way we need to understand  time-varying matrix problems theoretically and computationally when specifically  approached through Zeroing Neural Networks.  \\[1mm] 
+ Zhang Neural Networks (ZNN) are being used today in hundreds of ways in modern engineering, in robot control etc.\\[1mm]
+   But their numerical behavior  is barely understood at this time. ZNN methods pose many open problems and form a  new, non-Wilkinsonian branch of Numerical Matrix  Analysis.\\
+ In return,   ZNN methods for matrix flows $A(t)$ can help us for the first time to solve long standing intractable computational problems of fixed entry matrices $A$ such as the matrix symmetrizer problem. }\end{minipage}  
+
+\end{document}
+
+
+% Please leave the next bit alone  
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:

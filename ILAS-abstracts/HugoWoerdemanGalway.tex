@@ -1,0 +1,88 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%       
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{Completing an Operator Matrix and the Free Joint Numerical Radius}
+\author{Hugo J. Woerdeman} %Presenting author only
+\address{Drexel University} % Affiliation of presenting author
+\email{hugo@math.drexel.edu} % Email address of presenting author only
+
+\maketitle
+
+% The abstract  ***no more than one page***
+
+Ando's \cite{tA73} classical characterization of the unit ball in the numerical radius norm was generalized by Farenick, Kavruk and Paulsen \cite{dFA13} using the free joint numerical radius of a tuple of Hilbert space operators $(X_1, \ldots , X_m)$. In particular, the characterization leads to a positive definite completion problem. In this paper we study various aspects of Ando's result in this generalized setting. Among other things, this leads to the study of finding a positive definite solution $L$ to the equation 
+%
+%For a tuple of Hilbert space operators $X_1,\ldots, X_m\in B(\mathcal{H})$, its free joint numerical radius is defined as
+%\[ w(X_1,\ldots , X_m)=\sup\left\{  w\left(X_1 \otimes U_1+\cdots+X_m\otimes U_m \right) \right\},\]
+%where the supremum is taken over every Hilbert space ${\mathcal K}$, every choice of $m$ unitaries
+%$U_1, \ldots , U_m\in {\mathcal B}({\mathcal K} )$, and the tensor product is spatial. We discuss the connection with factorization in the sense of Fej\'er-Riesz. We also discuss how such quantity is related to the existence of a positive definite $L$ for which
+\[L=I+\displaystyle\sum_{j=1}^m\left[\left(L^{\frac{1}{2}}X_j^*LX_jL^{\frac{1}{2}}+\frac{1}{4}I\right)^{\frac{1}{2}}+\left(L^{\frac{1}{2}}X_jLX_j^*L^{\frac{1}{2}}+\frac{1}{4}I\right)^{\frac{1}{2}}\right],\] 
+which may be viewed as a fixed point equation.
+Once such a fixed point is identified, the desired positive definite matrix completion is easily identified. Along the way we also derive new formulas for the  joint numerical radius when the tuple consists of generalized permutations. Finally, we present some open problems.
+%% Coauthor details here (optional - delete if not applicable)
+% and funding acknowledgment (optional - delete if not applicable)
+\medskip
+
+\emph{This is joint work with Kennett L. Dela Rosa (University of the Philippines Diliman).
+Supported by Simons Foundation grant 355645 and National Science Foundation grant DMS 2000037}
+
+\begin{thebibliography}{1}
+
+\bibitem{tA73}
+T. Ando.
+\newblock Structure of operators with numerical radius one.
+\newblock \emph{{A}cta {S}ci. {M}ath. ({S}zeged)}, 34:11--15, 1973.
+
+\bibitem{dFA13}
+D. {Farenick}, A. S. {Kavruk}, and V. I. {Paulsen}.
+\newblock C$^*$-algebras with the weak expectation property and a multivariable
+  analogue of {A}ndo's theorem on the numerical radius.
+\newblock \emph{J. Operator Theory}, 70:573--590, 2013.
+
+%\bibitem{my_key_for_OT49}
+%Olga Taussky.
+%\newblock A recurring theorem on determinants.
+%\newblock {\em  Amer. Math. Monthly}  56:672–676,  (1949).
+%
+%\bibitem{another_unique_key}
+%Olga Taussky and John Todd.
+%\newblock Cholesky, Toeplitz and the triangular factorization of
+%symmetric matrices.
+%\newblock {\em  Numer. Algorithms}, 41(2):197--202, 2006.
+\end{thebibliography}
+
+
+\end{document}
+
+
+% Please leave the next bit alone  
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:
