@@ -1,0 +1,51 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%       
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{Orthogonal iterations on companion-like pencils}
+\author{Gianna M. Del Corso} %Presenting author only
+\address{University of Pisa} % Affiliation of presenting author
+\email{gianna.delcorso@unipi.it} % Email address of presenting author only
+
+\maketitle
+
+% The abstract  ***no more than one page***
+
+We present a class of fast subspace algorithms based on orthogonal iterations for structured matrices/pencils that can be expressed as small rank perturbations of unitary matrices. 
+          The  representation of the matrix   by means of a new data-sparse  factorization --named LFR factorization-- using orthogonal Hessenberg matrices is at the core of these algorithms.  The factorization can be computed at the cost of $O(n k^2)$ arithmetic operations,  where $n$ and $k$ are the sizes of the matrix  and the small rank perturbation, respectively.  At the same cost from the LFR format  we can easily  obtain  suitable QR and RQ factorizations  where  the orthogonal factor Q is a product of orthogonal Hessenberg matrices and  the upper triangular factor R is again given into the LFR format.  The orthogonal iteration reduces  to a hopping game where Givens plane rotations are moved from one side to  the other side of these  two factors.
+          The resulting  new algorithms approximate an invariant subspace of size $s$ associated with a set of $s$ leading or trailing eigenvalues using only 
+          %$O(n \max\{s,k\}k)$  
+          $O(nks)$ operations per iteration.  The number of iterations required to reach an invariant subspace depends linearly on the ratio $|\lambda_{s+1}|/|\lambda_s|$.
+         Numerical experiments confirm the effectiveness of our adaptations.
+         
+\emph{This is joint work with Roberto Bevilacqua and Luca Gemignani (University of Pisa).}
+
+
+
+
+\end{document}

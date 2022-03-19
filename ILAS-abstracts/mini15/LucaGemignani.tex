@@ -1,0 +1,61 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%       
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{Comparison Theorems for Splittings of M-matrices in block Hessenberg Form}
+\author{Luca Gemignani} %Presenting author only
+\address{University of Pisa} % Affiliation of presenting author
+\email{luca.gemignani@unipi.it} % Email address of presenting author only
+
+\maketitle
+
+% The abstract  ***no more than one page***
+
+In this  talk  we consider the solution of $M$-matrix linear systems  
+ in block Hessenberg form, and we show new comparison results among 
+ matrix splittings that hold for this special structure.
+In particular, we prove that for
+a lower-Hessenberg M-matrix $\rho(P_{GS})\geq \rho(P_S)\geq \rho(P_{AGS})$,
+ where $\rho(A)$ denotes the spectral radius of $A$ and 
+$P_{GS}, P_S, P_{AGS}$ are the iteration matrices of the Gauss--Seidel,
+staircase, and anti-Gauss--Seidel method.
+This is a result that does not seem to follow from classical
+comparison results, as these splittings are not directly comparable.
+Also,  it  fosters the  use  of stair partitionings  for solving  Hessenberg  linear systems in parallel.  
+
+
+\emph{This is joint work with Federico Poloni (Pisa).}
+ 
+\end{document}
+
+
+% Please leave the next bit alone  
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:
