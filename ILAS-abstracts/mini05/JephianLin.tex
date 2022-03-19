@@ -1,0 +1,56 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%       
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{Comparability and cocomparability bigraphs}
+\author{Jephian C.-H. Lin} %Presenting author only
+\address{National Sun Yat-sen University} % Affiliation of presenting author
+\email{jephianlin@gmail.com} % Email address of presenting author only
+
+\maketitle
+
+% The abstract  ***no more than one page***
+
+Let $\mathcal{F}$ be a family of $0,1$-matrices.  A $0,1$-matrix $M$ is symmetrically $\mathcal{F}$-free if there is a permutation matrix $P$ such that $P^\top MP$ does not contain any $S\in\mathcal{F}$ as a submatrix.  For a given graph $G$, the neighborhood matrix of $G$ is defined as $A(G)+I$, where $A(G)$ is the adjacency matrix and $I$ is the identity matrix.  Several important graph classes are known to have a characterization from the matrix point of view.  For example, let
+\[\Gamma=\begin{bmatrix}1&1\\1&0\end{bmatrix}\text{ and }\texttt{slash}=\begin{bmatrix}0&1\\1&0\end{bmatrix}.\]
+Thus, the strongly chordal graphs are the graphs whose neighborhood matrix is symmetrically $\{\Gamma\}$-free; the cocomparability graphs are the graphs whose neighborhood matrix can be permuted to avoid \texttt{slash} on the main diagonal; and the interval graphs are the graphs whose neighborhood matrix is symmetrically $\{\Gamma,\mathtt{slash}\}$-free.  Note that the set of interval graphs is the intersection of the set of strongly chordal graphs and the set of cocomparability graphs.  There are bipartite analogues for the strongly chordal graphs and the interval graphs, namely, the bipartite chordal graphs and the interval containment bigraphs.  In this talk, we introduce the cocomparability bigraphs from the matrix perspective as a bipartite analogue to the cocomparability graphs.
+
+%% Coauthor details here (optional - delete if not applicable)
+% and funding acknowledgment (optional - delete if not applicable)
+\emph{This is joint work with Pavol Hell (Simon Fraser University), Jing Huang (University of Victoria), and Ross M.~McConnell (Colorado State University).
+% Supported by the National Mathematics Foundation, Grant XYZ-123.
+}
+
+\end{document}
+
+
+% Please leave the next bit alone  
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:
