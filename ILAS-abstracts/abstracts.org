@@ -48,7 +48,7 @@ Adam Berliner <berliner@stolaf.edu>,
 "Deaett, Louis A. Prof." <louis.deaett@quinnipiac.edu>,
 Seth Meyer <seth.meyer@snc.edu>
 
-#12 
+#12 Matrix positivity: theory and applications
 Belton, Alexander <a.belton@lancaster.ac.uk>; 
 Dominique Guillot <dguillot@udel.edu>
 
@@ -56,7 +56,7 @@ Dominique Guillot <dguillot@udel.edu>
 "Cruickshank, James" <james.cruickshank@nuigalway.ie>
 
 
-#14 
+#14 History of Linear Algebra Kirk Soodhalter and Jörg Liesen.
 Kirk Soodhalter <ksoodha@maths.tcd.ie>,
 liesen@math.tu-berlin.de
 
