@@ -6,7 +6,7 @@ Minis, Organizers
 "renata@vm.uff.br" <renata@vm.uff.br>
 
 
-#2 
+#2 Spectral properties of non-negative matrices Carl
 Pietro Paparella <pietrop@uw.edu>,
 Carlos Marijuán López <cmarijuan@uva.es>
 
