@@ -1,0 +1,95 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%       
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{The resistance magnitude of a graph}
+\author{Karel Devriendt} %Presenting author only
+\address{Mathematical Institute, University of Oxford, Oxford, UK and the Alan Turing Institute, London, UK} % Affiliation of presenting author
+\email{karel.devriendt@maths.ox.ac.uk} % Email address of presenting author only
+
+\maketitle
+In \cite{leinster_magnitude}, Tom Leinster introduced the \emph{magnitude} as an invariant of enriched categories -- this is a general class of objects that includes finite metric spaces. In many cases, magnitude behaves similar to the Euler characteristic or cardinality, and in the case of metric spaces it can be thought of as the `effective number of points' at a given scale.
+\\
+Let $(X,d)$ be a finite metric space with the \emph{similarity matrix} at scale $t>0$ given by $Z_t:=(\exp(-d(i,j)t))$. If this matrix is invertible, the magnitude is defined as
+$$
+\vert Z_t\vert := \mathbf{1}^T Z_t^{-1}\mathbf{1}.
+$$
+Leinster studied the magnitude for the vertices of a graph with the shortest-path distance as a metric $(V,d)$ in \cite{leinster_graph}. If instead we consider the vertices of a graph with the \emph{effective resistance} as a metric $(V,\omega)$, then the leading term of magnitude equals
+$$
+\lim_{t\rightarrow 0} \frac{\vert Z_t\vert -1}{t} = 2\sigma^2.
+$$
+We call $\sigma^2$ the \emph{resistance magnitude} of a graph and with resistance matrix $\Omega=(\omega(i,j))$, this has the following equivalent definitions
+$$
+2\sigma^2 = \left(\mathbf{1}^T\Omega^{-1}\mathbf{1}\right)^{-1} = \max_{\mathbf{f}^T\mathbf{1}=1}\mathbf{f}^T\Omega\mathbf{f}.
+$$
+The resistance magnitude appears to be a rich graph invariant with many properties: it is related to discrete curvature (in the sense introduced in \cite{devriendt_curvature}), it has certain inclusion-exclusion and submodularity properties and it is the squared radius of the Euclidean embedding of $(V,\sqrt{\omega})$, see \cite{devriendt_resistance>distance}.
+\\
+The resistance magnitude relates to other well-known resistance-based graph invariants such as the Kirchhoff index ($R_G$) and Kemeny's constant ($K$), as
+$$
+R_G \leq \sigma^2/n^2 \text{~~and~~} K\leq \sigma^2/m
+$$
+where $n=\vert V\vert$ is the number of vertices and $m=\vert E\vert$ the number of edges (or total edge weight for weighted graphs); equality is achieved in both cases for vertex-transitive graphs.
+\\~\\
+%% Coauthor details here (optional - delete if not applicable)
+% and funding acknowledgment (optional - delete if not applicable)
+\emph{The author was supported by The Alan Turing Institute under EPSRC
+grant EP/N510129/1. This work was done in collaboration with Renaud Lambiotte.}
+
+\begin{thebibliography}{4}
+\bibitem{leinster_magnitude}
+Tom Leinster
+\newblock The magnitude of metric spaces. 
+\newblock \emph{Documenta mathematica} 18, 857--905, 2013.
+
+\bibitem{leinster_graph}
+Tom Leinster.
+\newblock The magnitude of a graph. 
+\newblock \emph{Mathematical Proceedings of the Cambridge Philosophical Society} 166(2), 247--264, 2019.
+
+\bibitem{devriendt_curvature}
+Karel Devriendt
+\newblock Discrete curvature on graphs from the effective resistance.
+\newblock \emph{arXiv:2201.06385 [math.DG]}, 2022.
+
+\bibitem{devriendt_resistance>distance}
+Karel Devriendt
+\newblock Effective resistance is more than distance: Laplacians, Simplices and the Schur complement.
+\newblock \emph{Linear Algebra and its Applications}
+639, 24--49, 2022.
+
+\end{thebibliography}
+
+
+\end{document}
+
+
+% Please leave the next bit alone  
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:
