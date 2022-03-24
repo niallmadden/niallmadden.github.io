@@ -3,7 +3,8 @@
   <head>
     <title>Niall Madden's research page</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-    <link rel="stylesheet" href="http://www.maths.nuigalway.ie/style.css" type="text/css"/>
+<!--    <link rel="stylesheet"
+    href="http://www.maths.nuigalway.ie/style.css" type="text/css"/> -->
   </head>
 
 <body>
@@ -86,9 +87,9 @@ OLD ONE ENS HERE
 </font></p>
 
 <center>
-<img src="http://www.maths.nuigalway.ie/~niall/Research/images/Anim2.png" height="200pt" />
-<img src="http://www.maths.nuigalway.ie/~niall/Research/images/2DFigure.png" height="200pt" />
-<img src="http://www.maths.nuigalway.ie/~niall/Research/images/Snake1.jpg" height="200pt" />
+<img src="images/Anim2.png" height="200pt" />
+<img src="images/2DFigure.png" height="200pt" />
+<img src="images/Snake1.jpg" height="200pt" />
 </center>
 
 <h2><a name="Pubs">Publications</a></h2>
