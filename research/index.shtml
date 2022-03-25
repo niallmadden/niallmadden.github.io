@@ -14,7 +14,7 @@
 <tr bgcolor="#930000" align="center">
 <td><a href="#Details"><font color="#ffffff" size="+1">Research Interests</font></a></td>
 <td><a href="#Pubs"><font color="#ffffff" size="+1">Publications</font></a></td>
-<td><a href="Talks.shtml"><font color="#ffffff" size="+1">Presentations</font></a></td>
+<td><a href="talks.shtml"><font color="#ffffff" size="+1">Presentations</font></a></td>
 <td><a href="#Projects"><font color="#ffffff" size="+1">Projects</font></a></td>
 </tr>
 </table> 
@@ -208,7 +208,7 @@ Niall Madden.
       problem
     </a>
   </em>.
-  In: Bock H., Phu H., Rannacher R., Schlöder
+  In: Bock H., Phu H., Rannacher R., Schl&ouml;der
   J. (eds) Modeling, Simulation and Optimization of Complex
   Processes HPSC 2015. Springer (2017). 
   <a href="GrMa15.shtml">Abstract</a></li>
@@ -712,7 +712,7 @@ Publication Date: October 2003 Guest Editors: Sharon Flynn, Ted
 Hurley, Micheal Mac an Airchinnigh, Niall Madden, Michael McGettrick,
 Michel Schellekens and Anthony Seda.</li>
 
-<li>A <a href="Talks.shtml">list of research presentations</a> that I've given at conferences,
+<li>A <a href="talks.shtml">list of research presentations</a> that I've given at conferences,
   workshops,   seminars, colloquia, etc., since 2000.</li>
 
 </ul>

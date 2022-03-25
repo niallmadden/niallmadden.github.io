@@ -1,0 +1,112 @@
+<!-- DOTS -->
+<div id="dots">
+<!-- CONTAINER -->
+<div id="container">  
+<!-- CHANGEABLE -->
+<div id="changeable"> 
+
+<!-- TOP-BAR -->     <!-- this is the gaelic, text, zoom etc. line -->
+<div id="topbar">
+<span id="topbartext">
+  <a title="Leagan Gaeilge" href="http://www.nuigalway.ie/generic/language_toggle.php?language=gaeilge"><img src="/images/language_grey.png" alt="Leagan Gaeilge" width="11" height="11" /> Leagan Gaeilge</a> &nbsp;
+  <a title="Text Version" href="http://www.nuigalway.ie/parser.php"><img src="/images/text_grey.png" alt="Text Icon" width="11" height="11" /> Text Version</a> &nbsp;
+
+<!--  <span id="changeFont">
+    <img src="/images/display_grey.png" alt="Display Icon" width="11" height="11" /> Display: Zoom
+      <span id="reduceFont">
+	<span id="reduceFontButton" class="cursorlinked" title="Zoom Out -">(-)</span>
+      </span>
+      <span id="increaseFont">
+	<span id="increaseFontButton" class="cursorlinked" title="Zoom In +">(+)</span>
+      </span>
+  </span>
+
+  <span id="changeStyle">
+    &nbsp; View ( <span id="cssColour" class="cursorlinked" title="Normal View"> Normal</span> <span id="cssHiContrast" class="cursorlinked" title="High Contrast View"> High contrast</span> )
+  </span>
+-->
+</span> <!-- id="topbartext" -->
+
+<span id="topbartextright">
+   <a accesskey="p" title="Printer Friendly [access key 'p']" href="http://www.nuigalway.ie/includes/skins/2005/php/printerfriendly.php" target="_blank"><img src="/images/print_box_grey.png" alt="Printer Friendly Version" width="11" height="11" /> Printer Friendly</a>&nbsp;
+   <a accesskey="m" title="Sitemap [access key 'm']" href="http://www.nuigalway.ie/sitemap.php"><img src="/images/sitemap_box_grey.png" alt="Sitemap icon" width="11" height="11" /> Sitemap</a> 
+</span>
+</div> <!-- id="topbar" -->
+<!-- END TOP-BAR (selfcontained) --> 
+	
+
+<!-- LOGO-IMAGE -->   <!-- the logo and picture -->
+<div class="linedots"><img alt="spacer" src="/images/spacer.png" height="1" /></div> 
+
+<div id="logoimage" <!--#exec cmd="perl /var/www/html/tools/randomImage.pl" --> >
+  <a title="NUI Galway Home Page" href="http://www.nuigalway.ie/"><img alt="NUI Galway Logo" src="/images/logos/logo.png" /></a>
+</div>
+
+  <div id="browserWarning" class="errormessage"> <img src="http://www.nuigalway.ie/cms/images/caution.png" alt="Warning Icon" /> <p><strong>Warning:</strong> Your browser doesn't support all of the features in this Web site. Please view our <a title="NUI Galway Accessibility Information" href="http://www.nuigalway.ie/accessibility.php">accessibility page</a> for more details.</p></div>
+</div>
+<!-- END LOGO-IMAGE (selfcontained)-->
+  
+
+<!-- BREADCRUMB -->
+<div id="breadcrumb">
+<div id="searcharea"><img alt="You are here" class="breadcrumbimage" src="/images/breadcrumb_youarehere.png" /></div>
+<div id="breadcrumbwide"><span class="verdanabold">
+<a title="NUI Galway Home Page" href="http://www.nuigalway.ie/">Home</a> &gt; 
+<a title="Colleges &amp; Schools" href="http://www.nuigalway.ie/colleges-and-schools/">Colleges &amp; Schools</a> &gt;
+<a title="School of Mathematics, Statistics and Applied Mathematics" href="http://www.maths.nuigalway.ie">Mathematics, Statistics and Applied Mathematics</a>
+</span>
+<span class="breadcrumbimage"><img alt="Colleges/Faculties &amp; Departments" src="/images/arrows/facdept_breadcrumb.png" /></span></div></div>
+<!-- END BREADCRUMB (selfcontained) -->
+
+
+<!-- LEFTBAR-BODY-RIGHTBAR -->
+<div id="navcon">
+  
+<!-- LEFTBAR -->
+<div id="leftbar">
+  <div id="prinav">
+
+    <ul id="sidenav">
+      <li id="navhome"><a accesskey="1" tabindex="3" title="NUI Galway Home Page [access key '1']" href="http://www.nuigalway.ie/">NUI Galway Home</a></li>
+      <!---    <li id="navfacdept"><a accesskey="4" tabindex="2" title="Colleges and Schools [access key '4']" href="http://www.nuigalway.ie/faculties_departments">Colleges &amp; Schools</a></li>-->
+    <li class="LI"><a title="Layer Phenomena 2016"
+		      href="http://www.maths.nuigalway.ie/~niall/LayerPhenomena2016">Layer
+		      Phenomena 2016</a>
+
+      <ul>
+	<li><span class="youarehere"></span>
+	  <a title="Programme" href="http://www.maths.nuigalway.ie/~niall/LayerPhenomena2016/Schedule.shtml">Programme</a></li>
+	<li><span class="youarehere"></span>
+	  <a class="active" title="Registration" href="http://www.maths.nuigalway.ie//~niall/LayerPhenomena2016/Registration.shtml">Registration</a></li>
+	<li><span class="youarehere"></span>
+	  <a  title="Abstracts"
+	  href="http://www.maths.nuigalway.ie//~niall/LayerPhenomena2016/NotYet.shtml">Abstracts</a></li> 
+	<li><span class="youarehere"></span>
+	  <a  title="Participants"
+	  href="http://www.maths.nuigalway.ie//~niall/LayerPhenomena2016/NotYet.shtml">Participants</a></li> 
+      </ul>
+</li>
+      <li class="LI"><a title="School of Maths"
+		      href="http://www.maths.nuigalway.ie">School
+		      of Mathematics, Statistics and Applied Mathematics</a></li>
+
+</ul>
+</div>
+<div id="linkSearch">
+    <div id="linkSearchTitle">&nbsp;&nbsp;Search Web Site<a href="#" class="whatisthis">&nbsp;&nbsp;&nbsp;&nbsp;[?]<span><strong>WHAT IS THIS?</strong><br />Performs a not very reliable search of the Web site and displays results in a new window.</span></a></div>
+    <form id="linkSearchForm" action="http://search.nuigalway.ie/search" method="get">
+
+      <label for="quickSearchBox"><input id="quickSearchBox" type="text" name="q" /></label>
+      <label for="goButton"><input id="goButton" name="btnG" type="image" value="Go" src="http://www.nuigalway.ie/images/go_button.png" alt="Go Button" class="button" /></label>
+      <input type="hidden" name="site" value="default_collection" />
+      <input type="hidden" name="client" value="default_frontend" />
+      <input type="hidden" name="output" value="xml_no_dtd" />
+      <input type="hidden" name="proxystylesheet" value="default_frontend" />
+    </form>
+ </div>
+</div> 
+<!-- END LEFTBAR (selfcontained)-->
+
+
+<!-- BODY -->
+<div id="bodywide">
