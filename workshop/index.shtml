@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <!-- ENTER  PAGE TITLE  HERE -->
+    <title>MACSI 1-Day Graduate Course</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link rel="stylesheet" href="http://www.maths.nuigalway.ie/style.css" type="text/css"/>
+  </head>
+
+<body>
+    <!--#set var="incl" value="/includes" -->
+    <!--#include virtual="$incl/header.shtml" -->
+
+<center>
+<h2>MACSI One Day Graduate Courses</h1>
+<h1>Numerical Solution to Differential Equations using Matlab</h1>
+<h2>NUI Galway</h2>
+<h3>3rd of April 2007.</h3>
+</center>
+
+<hr>
+<b>NOTE:</b> Registration has now finished.
+
+
+
+<hr>
+
+<h2>Overview</h2>
+
+<p>
+The workshop is intended for graduate students who would like to learn
+	how to compute solutions to differential equations using  Matlab. 
+In particular, how to 
+<ul>
+<li> Discretize linear ODEs by finite difference methods;
+<li> Implement these methods efficiently in Matlab, including the 
+ the construction and solution of sparse linear systems;
+<li> Verify that the code is correct and analyse it for bottle-necks and 
+redundancies;
+<li> Extend  methods to nonlinear equations and PDEs.
+</ul>
+
+
+<br>
+ 
+<h2>Details</h2>
+<ul>
+<li> <b>Date:</b> 11am - 4pm, 03/04/07
+<li> <b>Registration fee:</b> <b>&euro;25</b> (<b>&euro;15</b> for NUI Galway
+		  students</b>), payable on arrival. This covers
+		  registration on NUI Galway computers,  tea, coffee and lunch.
+<li> <b>Organisers:</b> Niall Madden, Meghan Stephens, Martin Meere.
+
+
+</ul>
+
+<p>To register, or for further information, send an email to  <a
+href="Niall.Madden@NUIGalway.ie">Niall Madden</a> no later than
+	    27/03/07. The course is entirely lab-based, so the number of places is strictly limited.
+
+
+When registering, please 
+<ol>
+<li> indicate  your experience of solving differential equations by finite difference methods;
+<li> level of programming experience, particularly with  Matlab;
+<li> mention  any particular aspect of the numerical solution of DEs
+		    that   you'd like to see covered.
+
+<li> if you are a student, tell us  who your PhD adviser is and the project that you 
+are working on?
+</ol>
+
+
+<p>Registered <a href="Registered.shtml">participants</a> to date.
+
+<br>
+<hr>
+<h2>Location</h2>
+
+<p>The workshop will take place on the campus of
+		  <B><FONT color="#66241C">NUI Galway</FONT></b> (See 
+[<a
+		href="http://maps.google.com/?ie=UTF8&amp;z=15&amp;ll=53.279354,-9.06209&amp;spn=0.018193,0.03871&amp;t=h&amp;om=1">Google Maps</a>] or 
+[<a
+		href="http://www.mapquest.com/maps/map.adp?address=&amp;city=Galway&amp;state=Galway&amp;zipcode=&amp;country=IE&amp;title=%3cb%3eGalway%2c%20Galway%20IE%3c%2fb%3e&amp;cid=lfmaplink2&amp;name=&amp;dtype=s">MapQuest</a>]) 
+For information on getting to NUI Galway, see <a
+			href="http://www.nuigalway.ie/about/getting_to_nuigalway.php">http://www.nuigalway.ie/about/getting_to_nuigalway.php</a>. If coming to NUI Galway by car, please note that all visitors to  must use one of limited number of Pay-And-Display places. For details, see
+<a href="http://www.nuigalway.ie/buildings/parking_visitors.html">http://www.nuigalway.ie/buildings/parking_visitors.html</a>
+
+
+<p>We will meet for tea/coffee in the <B><FONT color="#66241C"><a
+			  href="http://www.cafetogo.ie/nui-galway.htm">Friars Restaurant</a></font></b> in the new Cairnes Building of NUI Galway at 11am. See <a href="http://www.nuigalway.ie/about/maps/">campus maps</a>
+
+<p>At 11.20 we'll move to the <B><FONT color="#66241C">Friar PC suite, Room 105 of St Anthony
+		  Building</font></b>, adjacent to the Cairnes Building.
+
+<br>
+<hr>
+<h2>Programme</h2>
+<ul>
+<li>11.00: Tea/Coffee and registration in Friar's Restaurant
+<li>11.20: Introduction to finite difference methods for differential equations and Matlab.
+ Solving 2-point boundary value problems. 
+Maximum principles. Adaptive meshes. Towards PDEs.
+<li>13.30: Lunch in Friar's Restaurant.
+<li>14.30: Partial differential equations: parabolic and elliptic problems
+<li>16.00: End of instruction. Discussions.
+</ul>
+
+
+<br>
+<hr>
+<h2>Material</h2>
+<ol>
+<li><a href="01NumericalDifferentiation-2x2.pdf">Introduction to
+					finite differences</a>
+
+<li>
+<a href="02Matlab-2x2.pdf">Matlab basics for finite
+					  differences</a>.
+<ul>
+<li><a href="ScriptExample.m">ScriptExample.m</a>
+<li><a href="FiniteDifference.m">FiniteDifference.m</a>
+</ul>
+
+<li>
+<a href="03ErrorsAndRates-2x2.pdf">Errors and rates of convergence</a>.
+
+<li>
+<a href="04Verification-2x2.pdf">Verify the code and method</a>.
+<ul>
+<li><a href="Solve_BVP.m">Solve_BVP.m</a>
+<li><a href="TestError.m">TestError.m</a>
+<li><a href="TestRates.m">TestRates.m</a>
+<li><a href="TestRates2.m">TestRates2.m</a>
+<li><a href="Central_Diff_BVP.m">Central_Diff_BVP.m</a>
+<li><a href="Test_Central_Diff.m">Test_Central_Diff.m</a>
+</uL>
+
+<li>
+<a href="05Nonlinear-2x2.pdf">Nonlinear problems</a>.
+<ul>
+<li><a href="Nonlinear.m">Nonlinear.m</a>
+</ul>
+
+<li>
+<a href="06PDE-2x2.pdf">Partial differential equations</a>.
+<ul>
+<li><a href="Parabolic.m">Parabolic.m</a>
+<li><a href="Elliptic.m">Elliptic.m</a>
+<li><a href="RunElliptic.m">RunElliptic.m</a>
+</ul>
+
+<li>
+<a href="guide_to_guide.pdf">A guide to Guide</a>.
+<ul>
+<li><a href="differential_equation.asv">differential_equation.asv</a>
+<li><a href="differential_equation.fig">differential_equation.fig</a>
+<li><a href="differential_equation.m">differential_equation.m</a>
+<li><a href="fd.m">fd.m</a>
+</ul>
+</ol>
+
+<br>
+<hr>
+<h2>Links</h2>
+<ul>
+<li><a href="http://www.macsi.ul.ie/">Mathematics Applications
+		      Consortium for Science and Industry</a>
+<li>The 1st MACSI short graduate course, <a
+			href="http://www.macsi.ul.ie/course1.pdf"> 
+Introduction to Dynamical Systems</a>,
+In DIT, Jan  2007.
+
+
+	  
+    </body>
+</html>
