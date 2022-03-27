@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <!-- ENTER  PAGE TITLE  HERE -->
+    <title>Stokes Modelling Workshop 2017: Schedule</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link rel="stylesheet" href="http://www.maths.nuigalway.ie/style.css" type="text/css"/>
+  </head>
+<body>
+    <!--#set var="incl" value="/includes" -->
+   <!--#include virtual="dB6header.shtml" -->
+
+
+ <center>
+      <p>
+	<font size="+1" color="#881010"><b>4th Annual</b>
+	</font><br />
+	<font size="+3" color="#881010"><b>Stokes Modelling
+	    Workshop</b>
+	</font>
+      </p>
+      
+      
+      <p><font size="+1">NUI Galway
+	</font><br />
+	<font size="+1">6 - 9 June, 2017
+	</font>
+      </p>
+ </center>
+ 
+
+
+<h2>Schedule</h2>
+
+<table align="center" bgcolor="#F0F0FF" border="1" cellpadding="5" cellspacing="0"
+width="90%">
+<tbody>
+<tr align="center">
+<td></td>
+<td><b>Tuesday</b><br /> 6 June</td>
+<td><b>Wednesday</b><br /> 7 June</td>
+<td><b>Thursday</b><br /> 8 June</td>
+<td><b>Friday</b><br /> 9 June</td>
+</tr>
+<tr align="left">
+<td ><b>9.00</b></td>
+<td rowspan="2" bgcolor="#ffFFFF">
+  <b>Registration and Coffee</b> from
+  9.15<br/>
+  Foyer, Arts Millennium Building
+</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+
+
+
+<tr align="center">
+  <td ><b>9.30</b></td>
+</tr>
+
+<tr align="left">
+<td ><b>10.00</b></td>
+<td rowspan="4" bgcolor="#D0FFFF">
+  <b>Problem Presentations</b>
+  <ul>
+    <li>Seshu Tirupathi, IBM</li>
+    <li>Medtronic</li>
+    <li>Luca Manzari, KTH</li>
+    <li>Colm Clancy, MET Eireann</li>
+  </ul>
+  
+</td>
+<td rowspan="1" bgcolor="#D0FFFF"></td>
+<td rowspan="1" bgcolor="#E0FFE0"></td>
+<td rowspan="1" bgcolor="#FFD0FF"></td>
+<td rowspan="1" bgcolor="#FFD0FF"></td>
+</tr>
+
+
+
+
+<tr align="center">
+<td ><b>10.30</b></td>
+<td rowspan="2" bgcolor="#FFE0E0">P. Brooksbank</td>
+<td rowspan="2" bgcolor="#FFE0E0">P. Brooksbank</td>
+<td rowspan="2" bgcolor="#E0FFE0">I. Duff</td>
+<td rowspan="2" bgcolor="#D0FFFF">C.M. da Fonseca</td>
+<td rowspan="2" bgcolor="#D0FFFF">C.M. da Fonseca</td>
+</tr>
+
+<tr align="center">
+<td ><b>11.00</b></td>
+</tr>
+
+<tr align="center">
+<td ><b>11.30</b></td>
+<td colspan="6" bgcolor="#FFFFFF"><em>Tea / Coffee</em></td>
+</tr>
+<tr align="center">
+<td ><b>12.00</b></td>
+<td rowspan="2" bgcolor="#FFD0FF">C. Johnson</td>
+<td rowspan="2" bgcolor="#FFD0FF">C. Johnson</td>
+<td rowspan="2" bgcolor="#FFE0E0">P. Brooksbank</td>
+<td rowspan="2" bgcolor="#FFFFD0">R. Brualdi</td>
+<td rowspan="2" bgcolor="#FFFFD0">R. Brualdi</td>
+</tr>
+
+
+<tr align="center">
+<td ><b>12.30</b></td>
+</tr>
+
+
+<tr align="center">
+<td ><b>1.00</b></td>
+<td colspan="6" rowspan="3" bgcolor="#FFFFFF"><em>Lunch</em></td>
+</tr>
+
+<tr align="center">
+<td ><b>1.30</b></td>
+</tr>
+
+<tr align="center">
+<td ><b>2.00</b></td>
+</tr>
+
+
+<tr align="center">
+<td ><b>2.30</b></td>
+<td rowspan="1" bgcolor="#E8E8FF">R. Levene</td>
+<td rowspan="1" bgcolor="#E8E8FF">A. Bier</td>
+<td rowspan="1" bgcolor="#E8E8FF">C. Arauz</td>
+<td rowspan="1" bgcolor="#E8E8FF">J. Lee</td>
+<td rowspan="1" bgcolor="#E8E8FF">J. Cruickshank</td>
+</tr>
+
+<tr align="center">
+<td ><b>3.00</b></td>
+<td rowspan="1" bgcolor="#E8E8FF">E. Byrne</td>
+<td rowspan="1" bgcolor="#E8E8FF">J. Armario</td>
+<td rowspan="1" bgcolor="#E8E8FF">W. Holubowski</td>
+<td rowspan="1" bgcolor="#E8E8FF">M. Saha</td>
+<td rowspan="1" bgcolor="#E8E8FF">A. Rahm</td>
+</tr>
+
+<tr align="center">
+<td ><b>3.30</b></td>
+<td rowspan="1" bgcolor="#E8E8FF">J. McTigue</td>
+<td rowspan="1" bgcolor="#E8E8FF">T. Klimchuk</td>
+<td rowspan="1" bgcolor="#E8E8FF">A. Dmytryshyn</td>
+<!--<td rowspan="1" bgcolor="#E8E8FF">A. Cronin</td> -->
+<td rowspan="1" bgcolor="#E8E8FF">O. Walch</td>
+<td colspan="1" bgcolor="#FFFFFF">Close</td>
+</tr>
+
+<tr align="center">
+<td ><b>4.00</b></td>
+<td colspan="4" bgcolor="#FFFFFF"><em>Tea / Coffee</em></td>
+<td colspan="1" bgcolor="#FFFFFF"></td>
+</tr>
+<tr align="center">
+<td ><b>4.30</b></td>
+<td rowspan="1" bgcolor="#E8E8FF">L. Taslaman</td>
+<td rowspan="2" bgcolor="#FFFFD0">R. Brualdi</td>
+<td rowspan="2" bgcolor="#E0FFE0">I. Duff</td>
+<td rowspan="1" bgcolor="#E8E8FF">T. Hurley</td>
+<td rowspan="2" bgcolor="#FFFFFF"></td>
+</tr>
+
+<tr align="center">
+<td ><b>5.00</b></td>
+<td rowspan="1" bgcolor="#E8E8FF">R. Egan</td>
+<td rowspan="1" bgcolor="#E8E8FF">I. McLoughlin</td>
+</tr>
+
+<tr>
+<td colspan="7"  bgcolor="#FFFFFF">
+</td>
+</tr>
+
+
+<tr>
+<td colspan="1"  bgcolor="#FFFFFF">
+8.00
+</td>
+<td colspan="2"  bgcolor="#FFFFFF">
+</td>
+<td>Dinner (House Hotel)</td> 
+
+<td colspan="3"  bgcolor="#FFFFFF">
+</td>
+</tr>
+</tbody>
+</table>
+
+
+        <!-- END PAGE CONTENTS -->
+        <!--#include virtual="$incl/footer.shtml" -->
+    </body>
+</html>

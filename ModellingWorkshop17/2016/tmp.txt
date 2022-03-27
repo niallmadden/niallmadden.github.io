@@ -1,0 +1,11 @@
+Artur investigates how waves propagate
+		  in complex solids/fluids.
+		  His PhD in applied mathematics focused on
+		  calculating how
+		  elastic waves travel in soft solids under tension.
+		  He is currently a research associate at the
+		  University of Manchester working on wave propagation
+		  in random media. Artur is also interested in
+		  optimisation methods, supervised machine learning
+		  and working on mathematical problems arising from
+		  industry.  

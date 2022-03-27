@@ -1,0 +1,41 @@
+;; This buffer is for notes you don't want to save, and for Lisp evaluation.
+;; If you want to create a file, visit that file with C-x C-f,
+;; then enter the text in that file's own buffer.
+
+Dear Shane,
+
+Thank you for registering for the Stokes Modelling Workshop in June.
+
+I have added your name to the list of participants:
+http://www.maths.nuigalway.ie/~niall/ModellingWorkshop17/Participants.shtml
+
+You have applied for funding to support your participation. We will be
+happy to provide    
+* Shared on-campus accommodation at NUI Galway;
+* A contribution of €30 towards travel expenses within Ireland;
+* Meals and refreshments during the workshop
+
+Please confirm that this is acceptable to you.
+
+We will be in touch again regarding accommodation and other issues. In
+the mean time, if you would like any further details, just send me an
+email. 
+
+Kind regards,
+
+Niall.
+
+***********
+
+Thank you for registering for the Stokes Modelling Workshop in June.
+
+I have added your name to the list of participants:
+http://www.maths.nuigalway.ie/~niall/ModellingWorkshop17/Participants.shtml
+
+
+We will be in touch again before the Workshop. In the mean time, if you would like any further details, just send me an
+email.
+
+Kind regards,
+
+Niall.
