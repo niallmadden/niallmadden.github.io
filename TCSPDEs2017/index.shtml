@@ -1,9 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>   
 <title>Theory and Computation of SPDEs</title>
    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-    <link rel="stylesheet" href="http://www.maths.nuigalway.ie/style.css" type="text/css"/>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
@@ -24,8 +22,7 @@
     on <b><a href="https://skumarmath.wordpress.com/gian-17/singular-perturbation-problems/">
 Theory and Computation of Singularly Perturbed Differential
 Equations</a></b> taught
-    by <b><a href="http://www.maths.nuigalway.ie/~niall">Niall
-	  Madden</a></b>, at IIT (BHU), Varanasi, December 4-8, 2017.
+    by <b><a href="../">Niall Madden</a></b>, at IIT (BHU), Varanasi, December 4-8, 2017.
     </p>
 
     <p>These are <b><em>drafts</em></b> of the slides. If you see plot
@@ -49,7 +46,7 @@ Equations</a></b> taught
    <td bgcolor="#ff9933"><font color="white">Lecture&nbsp;0</font> </td>
    <td bgcolor="#ff9933"><font color="white">Outline of the workshop</font></td>
    <td>NM</td>
-   <td><a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/TCSPDEs_0_outline.pdf">Slides</a></td>
+   <td><a href="TCSPDEs_0_outline.pdf">Slides</a></td>
    <td bgcolor="#138808">
    </td>
 </tr> 
@@ -59,7 +56,7 @@ Equations</a></b> taught
    <td>Introduction to singularly perturbed problems</td>
    <td>NM</td>
    <td>
-     <a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/TCSPDEs_1_IntroToSPDEs_ho.pdf">Slides</a>
+     <a href="TCSPDEs_1_IntroToSPDEs_ho.pdf">Slides</a>
    </td>
    <td>
    </td>
@@ -70,7 +67,7 @@ Equations</a></b> taught
    <td> Numerical methods and uniform convergence.</td>
    <td>NM</td>
    <td>
-     <a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/TCSPDEs_2_UniConv_ho.pdf">Slides</a>
+     <a href="TCSPDEs_2_UniConv_ho.pdf">Slides</a>
    </td>
    <td>
    </td>
@@ -80,7 +77,7 @@ Equations</a></b> taught
    <td></td>
    <td>Prelude to Lab 1</td>
    <td>NM</td>
-   <td><a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/MATLAB_primer.pdf">MATLAB   primer</a></td>
+   <td><a href="MATLAB_primer.pdf">MATLAB   primer</a></td>
    <td>
    </td>
  </tr>
@@ -89,9 +86,9 @@ Equations</a></b> taught
    <td>FDMs on Uniform Meshes</td>
    <td>NM</td>
    <td>
-     <a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/TCSPDEs_Lab1.pdf">Handout</a>
+     <a href="TCSPDEs_Lab1.pdf">Handout</a>
    </td>
-   <td>Files: <a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/lab1/FiniteDifference.m">FiniteDifference.m</a>
+   <td>Files: <a href="lab1/FiniteDifference.m">FiniteDifference.m</a>
    </td>
  </tr>
 
@@ -100,7 +97,7 @@ Equations</a></b> taught
    <td>Finite difference methods and their numerical analysis.</td>
    <td>NM</td>
    <td>
-     <a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/TCSPDEs_3_FDM_Analysis.pdf">Slides</a>
+     <a href="TCSPDEs_3_FDM_Analysis.pdf">Slides</a>
    </td>
    <td>
    </td>
@@ -110,7 +107,7 @@ Equations</a></b> taught
    <td>Lecture 4</td>
    <td>Coupled systems</td>
    <td>NM</td>
-   <td><a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/TCSPDEs_4_Systems_ho.pdf">Slides</a></td>
+   <td><a href="TCSPDEs_4_Systems_ho.pdf">Slides</a></td>
    <td>
    </td>
  </tr>
@@ -121,10 +118,10 @@ Equations</a></b> taught
    <td>Fitted mesh methods for ODEs</td>
    <td>NM</td>
    <td>
-     <a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/TCSPDEs_Lab2_ODEs.pdf">Handout</a>
+     <a href="TCSPDEs_Lab2_ODEs.pdf">Handout</a>
    </td>
    <td>Files: 
-     <a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/lab2/Solve_1DRD.m">Solve_1DRD.m</a>, 
+     <a href="lab2/Solve_1DRD.m">Solve_1DRD.m</a>, 
      <a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/lab2/Make_1D_Fitted_Mesh.m">Make_1D_Fitted_Mesh.m</a>, 
      <a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/lab2/Test_1DRD.m">Test_1DRD.m</a>,
      <a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/lab2/u_true.m">u_true.m</a>.
