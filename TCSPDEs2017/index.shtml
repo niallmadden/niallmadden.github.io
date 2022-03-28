@@ -122,9 +122,9 @@ Equations</a></b> taught
    </td>
    <td>Files: 
      <a href="lab2/Solve_1DRD.m">Solve_1DRD.m</a>, 
-     <a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/lab2/Make_1D_Fitted_Mesh.m">Make_1D_Fitted_Mesh.m</a>, 
-     <a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/lab2/Test_1DRD.m">Test_1DRD.m</a>,
-     <a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/lab2/u_true.m">u_true.m</a>.
+     <a href="lab2/Make_1D_Fitted_Mesh.m">Make_1D_Fitted_Mesh.m</a>, 
+     <a href="lab2/Test_1DRD.m">Test_1DRD.m</a>,
+     <a href="lab2/u_true.m">u_true.m</a>.
   </td>
 </tr>
 
@@ -177,7 +177,7 @@ Equations</a></b> taught
    <td>Singularly perturbed elliptic PDEs</td>
    <td>NM</td>
    <td>
-     <a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/TCSPDEs_8_PDEs_ho.pdf">Slides</a>
+     <a href="TCSPDEs_8_PDEs_ho.pdf">Slides</a>
    </td>
    <td></td>
  </tr>
@@ -187,8 +187,8 @@ Equations</a></b> taught
    <td>Finite Element Methods in two and three dimensions</td>
    <td>NM</td>
    <td>
-     <a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/TCSPDEs_9_FEM.pdf">Slides</a>
-     <a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/TCSPDEs_9_FEM_ho.pdf">Handout</a>
+     <a href="TCSPDEs_9_FEM.pdf">Slides</a>
+     <a href="TCSPDEs_9_FEM_ho.pdf">Handout</a>
    </td>
    <td></td>
  </tr>
@@ -198,7 +198,7 @@ Equations</a></b> taught
    <td>Singularly perturbed PDEs</td>
    <td>NM</td>
    <td>
-     <a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/TCSPDEs_Lab4_PDEs.pdf">Handout</a>
+     <a href="TCSPDEs_Lab4_PDEs.pdf">Handout</a>
    </td>
    <td>Files:
      <a href="http://www.maths.nuigalway.ie/~niall/TCSPDEs2017/lab4/Solve_2DRD.m">Solve_2DRD.m</a>,
