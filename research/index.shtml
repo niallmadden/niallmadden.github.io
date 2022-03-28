@@ -614,15 +614,15 @@ Aug 2012.
 
   
 <li>R. Bruce Kellogg, N. Madden, and Martin Stynes, <em>On the numerical
-		    solution of a system of <em>M</em>
-		    reaction-diffusion equations  two
-			    dimensions</em>,  In: I. Farago,
-		  P. Vabishchevich, L. Vulkov (eds.), <a href="http://www.ru.acad.bg/fdm06/">Finite Difference Methods: Theory and Applications</a>. Pro. IVth  Int.. Conf. FDM: T&amp;A (Lozenetz, Bulgaria, 26-29 August 2006),  Rousse 2007, 252-257.</li>
+    solution of a system of <em>M</em>
+    reaction-diffusion equations  two
+    dimensions</em>,  In: I. Farago,
+  P. Vabishchevich, L. Vulkov (eds.), <a href="http://www.ru.acad.bg/fdm06/">Finite Difference Methods: Theory and Applications</a>. Pro. IVth  Int. Conf. FDM: T&amp;A (Lozenetz, Bulgaria, 26-29 August 2006),  Rousse 2007, 252-257.</li>
 
 
 <li><a href="http://www.staff.ul.ie/natalia">N. Kopteva</a>, N. Madden
   and
-<a href="http://euclid.ucc.ie/pages/staff/stynes/mstynes.htm">M. Stynes</a>,
+M. Stynes,
 <i>On equidistribution for reaction-diffusion problems, in Numerical
 Methods for Problems with Layer Phenomena</i> (A. R. Ansari, A. F. Hegarty
 &amp; G. I. Shishkin, eds.), Proceedings of the 3rd Annual Workshop,
@@ -630,8 +630,8 @@ Department of Mathematics &amp; Statistics, University of Limerick,
 Ireland, February 2004, 46-51.</li>
 
 <li>N. Madden, 
-<a href="http://euclid.ucc.ie/pages/staff/stynes/mstynes.htm">M. Stynes</a>, and
-<a href="http://appliedmaths.ucc.ie/staff/thomasg/index.html">G.P. Thomas</a>,
+M. Stynes, and
+G.P. Thomas,
 <i><a
 href="http://aran.library.nuigalway.ie/xmlui/bitstream/handle/10379/2689/BAIL04_MST_Aran.pdf">On the application of robust numerical methods to a complete-flow 
 wave-current model</a></i>,
@@ -644,7 +644,7 @@ and from <a href="http://rian.ie/en/item/view/53302.html">RIAN.ie</a>.
 </li>
 
 
-<li><a href="http://www.math.tu-dresden.de/~torsten/">T. Lin&szlig;</a>and
+<li>T. Lin&szlig; and
   N. Madden, 
   <i>Uniform convergence of a finite difference scheme for a system of coupled
   reaction-diffusion equations</i>.
