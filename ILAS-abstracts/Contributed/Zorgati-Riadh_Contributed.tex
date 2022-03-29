@@ -1,0 +1,59 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%       
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{Projections, $L_p$ Norms and Stochastic Matrices for Ill-Conditioned Linear Systems of Equations}
+\author{Riadh ZORGATI} %Presenting author only
+\address{EDF Lab Paris Saclay} % Affiliation of presenting author
+\email{riadh.zorgati@edf.fr} % Email address of presenting author only
+
+\maketitle
+
+% The abstract  ***no more than one page***
+
+In quite diverse application areas, we aim at finding a vector $x$, solution of a system of linear equations $Ax=b$, where $b$ is a given vector and $A$ is a given very ill-conditioned $m \times n$ matrix, making the resolution difficult. This issue appears, for example, in physics when discretizing a Fredholm integral equation of the first kind and in mathematical optimization when solving linear programs with interior point algorithms. One solving approach is to consider the system $RAx = Rb$, $Rb \in Im(RA)$, $Ker(RA)=Ker(A)$, where the preconditioning $n \times m$ matrix $R$ is a gain matrix i.e. $\rho(I-RA\mid_{Im(I-RA)}) < 1$, with $\rho$ the spectral radius of a matrix and $I$ the identity matrix. Then, for any gain matrix $R$, the Richardson's iterative scheme $x^{k+1}=x^{k}+R(b-Ax), \; k=1, 2, ... $ can be implemented to calculate a solution of the system. For any nonzero row matrix $A$, we can choose for $R$ one of the two projective gain matrices: i) the Kaczmarz matrix $K = [K_1 ... K_n]$, with $K_i = \frac{1}{\|a_i\|^2_2}\prod_{j=1}^{i-1} (I -\frac{1}{\|a_j\|^2_2}a_j^*a_j)a_i^*$, where $^{*}$ is the transposed conjugate and the product is considered to be $I$ whenever $i<2$ and $a_i$ is the $i$th row-vector of $A$; ii) the Cimmino matrix $C = \frac{2}{m}A^\ast D$, where $D$ is a diagonal matrix with $D_{ii}=1/\left\| {a_i} \right\|_2^{2}$. In addition, we propose the following approach for dealing with such an issue. ~\\
+Firstly, using the $L_1$ norm, we construct an approximation $R$ of a generalized inverse of a nonnegative matrix $A$ such that the preconditioned matrix $RA$ is stochastic ($RAe=e$, $e$ the all-one vector). This property allows us to retrieve, in an original way, the Schultz-Hotelling-Bodewig's (SHB) algorithm (of order $q=2$) of iterative refinement of the approximate inverse of a matrix: $R^0\mbox{ = }R\mbox{ }, \; R^{k+1}=R^k\left({2I-AR^k} \right), \; k = 1,2,...$. This basic approach is then extended to hermitian, semi-definite positive matrices and finally generalized to any complex rectangular matrices. The proposed preconditionning gain matrix $R$, has the general form $R=\alpha N_{p}^{\nu}A^{*}M_{p}^{\mu}$, where $N_{p}$, $M_{p}$ are diagonal matrices involving a $L_p$ norm related to $A^{*}$ and $A$ respectively and $\alpha, \nu, \mu$ are scalars (the Cimmino's matrix corresponds to the choice of the Euclidian norm in an asymmetrical structure : $\nu=0; \; \mu=2$ with $\alpha=\frac{2}{m}$). The proposed gain matrix with the norm $L_1$ and $\alpha=1, \nu=\mu=1$, always satisfies the convergence condition $\rho(I-RA\mid_{Im(I-RA)}) < 1$. Secondly, we propose a generalized iterative SHB scheme of any order $q \geq 2$, allowing to calculate, from any gain matrix $R$, successive approximations of the (generalized) inverse, denoted  $A^-$, of $A \in \mathbb{C}^{m \times n}_{\neq 0}$, or $A \in \mathbb{C}^{m \times m}_{+}$, of rank $m$, based on the following theorem: $\lim \limits_{q\rightarrow\infty} R\sum_{j=1}^{q}\frac{q!}{j!(q-j)!}(-AR)^{j-1} = A^-$. By achieving $q$ cycles of projections in Kaczmarz's and Cimmino's methods, this scheme accelerates convergence of row-action and Richardson schemes. The higher the order, the faster the convergence. But the gain in speed of convergence must be weighed against the very high cost for computing SHB matrices of order $q$ and a compromise must be achieved. Regarding numerical results obtained on some pathological well-known test-cases (Hilbert, Nakasaka, …), some of the proposed algorithms are empirically shown to be very efficient on ill-conditioned problems and robust to error propagation.
+
+%$\lim \limits_{p\rightarrow\infty} R\sum_{j=1}^{p}(-1)^{j-1}C_{p}^j(AR)^{j-1} = A^-$, where $C_{p}^j = \frac{p!}{j!(p-j)!}$.
+
+%$\lim \limits_{p\rightarrow\infty} R\sum_{j=1}^{p}(-1)^{j-1}\left(\begin{array}{c}
+%p \\ 
+%j
+%\end{array}\right)(AR)^{j-1} = A^-$, where $\left( \begin{array}{c}
+%p \\ 
+%j
+%\end{array} \right)  = \frac{p!}{j!(p-j)!}$.
+ 
+\end{document}
+
+
+% Please leave the next bit alone  
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:
