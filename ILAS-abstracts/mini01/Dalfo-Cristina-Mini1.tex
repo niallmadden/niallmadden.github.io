@@ -1,0 +1,72 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%       
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{On the Laplacian spectra of token graphs}
+\author{Cristina Dalf\'o} %Presenting author only
+\address{Universitat de Lleida} % Affiliation of presenting author
+\email{cristina.dalfo@udl.cat} % Email address of presenting author only
+
+\maketitle
+
+% The abstract  ***no more than one page***
+
+The $k$-token graph $F_k(G)$ of a graph $G$ is the
+graph whose vertices are the $k$-subsets of vertices from $G$, two of which being adjacent whenever their symmetric difference is a pair of adjacent vertices in $G$. In this talk, we give a relationship between the Laplacian  spectra of any two token graphs of a given graph.
+In particular, we show that, for any integers $h$ and $k$ such that $1\le h\le k\le \frac{n}{2}$, the Laplacian spectrum of $F_h(G)$ is contained in the Laplacian spectrum of $F_k(G)$. Besides, we obtain a relationship between the spectra of the $k$-token graph of $G$ and the $k$-token graph of its complement $\overline{G}$. This generalizes a well-known property for Laplacian eigenvalues of graphs to token graphs.
+
+%% Coauthor details here (optional - delete if not applicable)
+% and funding acknowledgment (optional - delete if not applicable)
+\emph{This is joint work with Frank Duque (University of Antioquia), Ruy Fabila-Monroy (Cinvestav), Prof. Miquel Àngel Fiol (UPC), Clemens Huemer (UPC), Ana Laura Trujillo-Negrete (Cinvestav), Francisco J. Zaragoza Mart\'inez (UAM).}
+
+\begin{thebibliography}{1}
+\bibitem{my_key_for_OT49}
+		K. Audenaert, C. Godsil, G. Royle, T. Rudolph.
+\newblock Symmetric squares of graphs.
+\newblock \emph{J. Combin. Theory B} 97:74--90, 2007.
+
+\bibitem{cflr17}
+W. Carballosa, R. Fabila-Monroy, J. Lea\~nos, L. M. Rivera. 
+\newblock Regularity and planarity of token graphs.
+\newblock \emph{Discuss. Math. Graph Theory} 37(3):573--586, 2017.
+
+\bibitem{ffhhuw12}
+R. Fabila-Monroy, D. Flores-Pe\~{n}aloza, C. Huemer, F. Hurtado, J. Urrutia, D. R. Wood.
+\newblock Token graphs.
+\newblock \emph{Graphs Combin.} 28(3):365--380, 2012.
+\end{thebibliography}
+
+
+\end{document}
+
+
+% Please leave the next bit alone  
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:
