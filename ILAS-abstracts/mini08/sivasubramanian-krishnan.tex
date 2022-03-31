@@ -1,0 +1,113 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%       
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage[mathscr]{eucal}
+
+
+\newcommand{\DD}{\mathfrak{D}}
+\newcommand{\BB}{\mathfrak{B}}
+\newcommand{\rk}{\mathrm{rank}}
+
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{The 2-Steiner distance matrix of a tree}
+\author{Krishnan Sivasubramanian} %Presenting author only
+\address{Department of Mathematics, IIT Bombay, Mumabi 400076, India} % Affiliation of presenting author
+\email{krishnan@math.iitb.ac.in} % Email address of presenting author only
+
+\maketitle
+
+% The abstract  ***no more than one page***
+
+Let $T$ be a tree with vertex set $V(T)=\{1,2,\ldots,n\}$. 
+The Steiner distance of $S\subseteq V(T)$ of vertices
+of $T$ is defined to be the number of edges in a smallest 
+connected subtree of $T$ that contains all the vertices of $S$. 
+The $k$-Steiner distance matrix $\DD_k(T)$ of $T$ is the 
+$\binom{n}{k}\times \binom{n}{k}$ matrix whose rows 
+and columns are indexed by subsets of vertices of size $k$.
+The entry in the row indexed by $P$ and column indexed 
+by $Q$ is equal to Steiner distance of $P \cup Q$. 
+When $k=1$, it is easy to see that we have
+$\DD_1(T) = D(T)$, the distance matrix of $T$ which is a 
+well studied matrix.  In this work, we consider the next 
+case, that is when $k=2$.  We show that $\rk(\DD_2(T)) = 2n -p - 1$ 
+where $p$ is the number of pendant vertices (or leaves) in $T$.
+We construct a basis $\BB$ for the row space of $\DD_2(T)$ and obtain 
+a formula for the inverse of the nonsingular square submatrix 
+$\DD=\DD_2(T)[\BB,\BB]$.  We also compute the determinant of 
+$\DD$ and show that its absolute value is independent of the 
+structure of $T$ and 
+apply it to obtain the inertia of $\DD_2(T)$.  
+\emph{This is joint work with Ali Azimi (Iran).}
+
+
+%Please, follow the instructions at \url{http://ilas2022.ie/abstracts/}
+%for submitting your abstract. Make sure you upload the \texttt{.tex}
+%file, and not any others. 
+
+%Try to keep your file as simple as possible, so that it is easily
+%rendered in various formats. Give the file a name that readily
+%identifies it with you, for example \texttt{OlgaTaussky.tex}. 
+%
+%If you wish to include citations, you can do so like this:
+%\cite{my_key_for_OT49}. Use a bibitem key that is likely be be unique to
+%you (e.g., don't use the default Math Reviews key).
+%Any uncited bibliography entries will also
+%appear. If you have none, then delete that section.
+
+%% Coauthor details here (optional - delete if not applicable)
+% and funding acknowledgment (optional - delete if not applicable)
+%\emph{This is joint work with John Todd (Caltech) and Alexander Ostrowski (Basel).
+%Supported by the National Mathematics Foundation, Grant XYZ-123.}
+
+%\begin{thebibliography}{1}
+%\bibitem{my_key_for_OT49}
+%Olga Taussky.
+%\newblock A recurring theorem on determinants.
+%\newblock {\em  Amer. Math. Monthly}  56:672–676,  (1949).
+
+%\bibitem{another_unique_key}
+%Olga Taussky and John Todd.
+%\newblock Cholesky, Toeplitz and the triangular factorization of
+%symmetric matrices.
+%\newblock {\em  Numer. Algorithms}, 41(2):197--202, 2006.
+%\end{thebibliography}
+
+
+\end{document}
+
+
+% Please leave the next bit alone  
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:
