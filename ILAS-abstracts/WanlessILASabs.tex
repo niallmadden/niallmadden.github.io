@@ -1,0 +1,45 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%       
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{Perfect 1-factorisations and Hamiltonian Latin squares}
+\author{Ian Wanless} 
+\address{Monash University} 
+\email{ian.wanless@monash.edu}
+
+\maketitle
+
+  A 1-\emph{factorisation} of a graph is a decomposition of the edges of the graph into 1-factors (perfect matchings). The 1-factorisation is \emph{perfect} if the union of any two of its 1-factors is a Hamilton cycle.  A P1F of the complete bipartite graph $K_{n,n}$ is equivalent to a \emph{row-Hamiltonian Latin square} of order $n$. These are Latin squares with no non-trivial Latin subrectangles; equivalently, the permutation which maps any row to any other row is an $n$-cycle. Each Latin square has six \emph{conjugates} obtained by uniformly permuting its (row, column, symbol) triples. Let $\nu(L)$ denote the number of conjugates of $L$ that are row-Hamiltonian. It is easy to see that $\nu(L)\in\{0,2,4,6\}$ and that $\nu=0$ can be achieved for all $n>3$. At the other extreme, $\nu=6$ is achieved by the so-called \emph{atomic} Latin squares, including the Cayley tables of cyclic groups of prime order. There is also a known infinite family with $\nu=2$. By converting our problem into linear algebra, we were able to find the first infinite family with $\nu=4$. We can build Latin squares in which \emph{every} pair of rows form a Hamilton cycle and \emph{no} pair of columns form a Hamilton cycle. As a corollary, we answer a question on quasigroup varieties posed by Falconer in 1970.
+
+%% Coauthor details here (optional - delete if not applicable)
+% and funding acknowledgment (optional - delete if not applicable)
+\emph{This is joint work with Jack Allsop (Monash)}
+
+\end{document}
+
+
+% Please leave the next bit alone  
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:

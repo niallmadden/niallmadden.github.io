@@ -1,0 +1,60 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{}
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter %
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{On the algebraic structure \\ of the copositive cone}
+\author{Roland Hildebrand} %Presenting author only
+\address{Univ. Grenoble Alpes, CNRS, Grenoble INP, LJK, 38000 Grenoble, France} % Affiliation of presenting author
+\email{roland.hildebrand@univ-grenoble-alpes.fr} % Email address of presenting author only
+
+\maketitle
+
+% The abstract  ***no more than one page***
+
+A closed convex cone can be decomposed into a disjoint union of interiors of its faces. This well-known facial decomposition yields a lot of information on the structure of the cone. However, in general there are infinitely many faces, and for some purposes this decomposition is too fine. Some cones admit a coarser, finite decomposition which unites faces which are of the same type. For example, the cone of positive semi-definite matrices of size $n$ decomposes into $n+1$ relatively open manifolds, each of which contains positive semi-definite matrices of constant rank and which are themselves unions of interiors of similar faces.
+
+We propose such a finite decomposition for the copositive cone ${\mathcal COP}^n$. The components of the decomposition are parameterized by the \emph{extended minimal zero support set}. This means that each component $S_{\mathcal E}$ is composed of copositive matrices $A$ with the same extended minimal zero support set ${\mathcal E}$. This set is a collection of pairs ${\mathcal E} = (I_{\alpha},J_{\alpha})_{\alpha = 1,\dots,|{\mathcal E}|}$, where $\alpha$ enumerates the minimal zeros $u_{\alpha}$ of $A$, $I_{\alpha}$ is the support of the minimal zero $u_{\alpha}$, and the index set $J_{\alpha} \supset I_{\alpha}$ consists of those indices $j \in \{1,\dots,n\}$ such that $(Au_{\alpha})_j = 0$.
+
+The set $S_{\mathcal E}$ lies in a real-algebraic variety $Z_{\mathcal E}$ which is given by a finite number of polynomial equalities, namely those equivalent to the rank-deficiency of the sub-matrix $A_{I_{\alpha} \times J_{\alpha}}$. Our main result states that for every $A \in {\mathcal COP}^n$ with extended minimal zero support set ${\mathcal E}$, there exists a neighbourhood $U$ of $A$ in the space of real symmetric matrices such that $U \cap Z_{\mathcal E} \subset S_{\mathcal E}$, i.e., $S_{\mathcal E}$ is open in $Z_{\mathcal E}$. Thus the polynomial equalities cited above fully determine the local structure of $S_{\mathcal E}$.
+
+\begin{thebibliography}{1}
+\bibitem{Hildebrand20a}
+Roland Hildebrand.
+\newblock On the algebraic structure of the copositive cone.
+\newblock {\em  Optim. Lett.}  14(8):2007–2019,  (2020).
+\end{thebibliography}
+
+
+\end{document}
+
+
+% Please leave the next bit alone
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:

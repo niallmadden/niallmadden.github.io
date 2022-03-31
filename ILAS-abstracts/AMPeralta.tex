@@ -1,0 +1,96 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%       
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{Distance-preserving bijections between sets of invertible elements in unital Jordan-Banach algebras}
+\author[A.M. Peralta]{Antonio M. Peralta} %Presenting author only
+\address{Instituto de Matemáticas de la Universidad de Granada (IMAG). Departamento de An{\'a}lisis Matem{\'a}tico, Facultad de	Ciencias, Universidad de Granada, 18071 Granada, Spain.}
+\email{aperalta@ugr.es} % Email address of presenting author only
+
+\maketitle
+
+% The abstract  ***no more than one page***
+
+It is known that the structure of the group, $A^{-1},$ of invertible elements of a unital Banach algebra $A$ does not determine uniquely the structure of the algebra, there are examples of non-isomorphic unital Banach 
+algebras $A$ and $B$ whose groups of invertible elements are topologically isomorphic. If we also assume a preservation of the metric structure induce by the norm on the group of invertible elements, the answer is different. O. Hatori proved in \cite{Hat09} that, for each surjective isometry $\Delta$ from an open subgroup of the group of invertible elements in an associative unital semisimple commutative Banach algebra $A$ onto an open subgroup of the group of invertible elements in an associative unital Banach algebra $B$, the mapping $\Delta(\textbf{1})^{-1} \Delta$ is an isometric group isomorphism, which extends to an isometric real-linear algebra isomorphism from $A$ onto $B$.\smallskip
+
+In this talk we shall try to understand the general form of a bijection preserving distances between the sets,  $M^{-1}$ and $N^{-1}$, of invertible elements of two unital Jordan-Banach algebras $M$ and $N,$ respectively. In this case, if  $\mathfrak{M}\subseteq M^{-1}$ and $\mathfrak{N}\subseteq N^{-1}$ are clopen subsets of $M^{-1}$ and $N^{-1}$, respectively, which are closed for powers, inverses and products of the form $U_{a} (b)$, and $\Delta : \mathfrak{M}\to \mathfrak{N}$ is a surjective isometry, then there exists a surjective real-linear isometry $T_0: M\to N$ and an element $u_0$ in the McCrimmon radical of $N$ such that $\Delta (a) = T_0(a) +u_0$ for all $a\in \mathfrak{M}$. The conclusion is even more satisfactory in the case of unital JB$^*$-algebras.\smallskip
+
+%This is a sample abstract for talks and posters
+%presented at ILAS 2022, to be held
+%in Galway (Ireland) in June 2022. 
+%
+%Please, follow the instructions at \url{http://ilas2022.ie/abstracts/}
+%for submitting your abstract. Make sure you upload the \texttt{.tex}
+%file, and not any others. 
+%
+%Try to keep your file as simple as possible, so that it is easily
+%rendered in various formats. Give the file a name that readily
+%identifies it with you, for example \texttt{OlgaTaussky.tex}. 
+%
+%If you wish to include citations, you can do so like this:
+%\cite{my_key_for_OT49}. Use a bibitem key that is likely be be unique to
+%you (e.g., don't use the default Math Reviews key).
+%Any uncited bibliography entries will also
+%appear. If you have none, then delete that section.
+%
+%%% Coauthor details here (optional - delete if not applicable)
+%% and funding acknowledgment (optional - delete if not applicable)
+%\emph{This is joint work with John Todd (Caltech) and Alexander Ostrowski (Basel).
+%Supported by the National Mathematics Foundation, Grant XYZ-123.}
+
+\begin{thebibliography}{1}
+\bibitem{Hat09} O. Hatori.  
+\newblock Isometries between groups of invertible elements in Banach algebras. 
+\newblock \emph{Studia Math.} {194}:293--304, 2009.
+
+\bibitem{Pe21} A.M. Peralta. 
+\newblock Surjective isometries between sets of invertible elements in unital Jordan-Banach algebras. 
+\newblock \emph{J. Math. Anal. Appl.} 502, no. 2, Paper No. 125284, 2021.
+
+%\bibitem{my_key_for_OT49}
+%Olga Taussky.
+%\newblock A recurring theorem on determinants.
+%\newblock {\em  Amer. Math. Monthly}  56:672–676,  (1949).
+
+%\bibitem{another_unique_key}
+%Olga Taussky and John Todd.
+%\newblock Cholesky, Toeplitz and the triangular factorization of
+%symmetric matrices.
+%\newblock {\em  Numer. Algorithms}, 41(2):197--202, 2006.
+\end{thebibliography}
+
+
+\end{document}
+
+
+% Please leave the next bit alone  
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:

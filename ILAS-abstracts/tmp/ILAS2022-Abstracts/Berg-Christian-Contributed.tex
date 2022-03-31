@@ -1,0 +1,83 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%       
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{Self-adjoint operators associated with Hankel moment matrices \LaTeX\ abstract for a talk or poster at ILAS 2022}
+\author{Christian Berg} %Presenting author only
+\address{University of Copenhagen, Denmark} % Affiliation of presenting author
+\email{berg@math.ku.dk} % Email address of presenting author only
+
+\maketitle
+Let $\mathcal M^*$ denote the set of positive measures with moments of any order and infinite support on the real line $\mathbb R$. The moment sequence  of $\mu\in\mathcal M^*$ is denoted
+\begin{equation}\label{eq:mom}
+m_n=\int_{-\infty}^\infty x^n\,d\mu(x),\quad n=0,1,\ldots,
+\end{equation} 
+and we let
+\begin{equation}\label{eq:Han}
+\mathcal H=\mathcal H_\mu=\left(m_{k+l}\right)_{k,l=0}^\infty=\{m_{k+l}\}
+\end{equation}
+denote the corresponding Hankel matrix.
+
+
+ Denoting by $\mathcal F$ the set of sequences $g\in\ell^2$ with only finitely many non-zero entries, we have  a positive sesquilinear form $Q$ defined on $\mathcal F\times\mathcal F$
+\begin{equation}\label{eq:quadr}
+Q(g,h)=\sum_{k,l=0}^\infty m_{k+l}g_k\overline{h_l}, 
+\end{equation}
+called the Hankel form associated with the  sequence $(m_n)$.
+
+Widom proved in 1966 that the form $(Q,\mathcal F)$ is bounded on $\ell^2$ if and only if $m_n=O(1/n)$. In 2016 Yafaev proved that the form is closable if
+ $m_n=o(1)$ and characterized the closure of the form based on his earlier work on quasi-Carleman operators. We give a new proof of the description of the closure based entirely on moment considerations. In 2020 Berg and Szwarc pointed out that the form $(Q,\mathcal F)$ 
+is also closable if $\mu$ is indeterminate of if $\mu$ is determinate with finite index of determinacy. 
+We give  a description of the self-adjoint   operators $H=H_\mu$ (bounded or unbounded) in the Hilbert space $\ell^2$
+associated with the closed Hankel forms in the  three cases mentioned, where the form is closable. 
+
+
+
+% The abstract  ***no more than one page***
+
+
+\emph{This is joint work with Ryszard Szwarc (Wroc{\l}aw), see \cite{besz8}.}
+
+
+\begin{thebibliography}{1}
+\bibitem{besz8} Christian Berg and Ryszard Szwarc.
+\newblock Self-adjoint operators associated with Hankel moment matrices.
+\newblock {\em  ArXiv:2105.07252}.
+
+
+\end{thebibliography}
+
+
+\end{document}
+
+
+% Please leave the next bit alone  
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:

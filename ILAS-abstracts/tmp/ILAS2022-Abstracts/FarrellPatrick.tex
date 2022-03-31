@@ -1,0 +1,84 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%       
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{A scalable and robust vertex-star relaxation for high-order FEM}
+\author{Patrick E.~Farrell} %Presenting author only
+\address{University of Oxford} % Affiliation of presenting author
+\email{patrick.farrell@maths.ox.ac.uk} % Email address of presenting author only
+
+\maketitle
+
+High-order finite element methods (FEM) offer numerous advantages. They are especially attractive on modern supercomputers, due to their arithmetic intensity and rapid convergence for smooth solutions. However, all aspects of a code must change at high-order, from the choice of basis functions to matrix-free assembly strategies and on to postprocessing and visualisation. A particularly important challenge is to develop preconditioners that operate matrix-free, without ever accessing even the local tensor for a single cell.
+
+One promising strategy for preconditioners for high-order FEM is the use of $p$-multigrid.
+Pavarino proved that the two-level method with vertex patch relaxation for the high-degree problem and a
+low-order coarse space gives a solver that is robust in polynomial degree for symmetric and coercive
+problems \cite{pavarino93_farrell}.
+However, for very high polynomial degree it is
+not feasible to assemble or factorize the matrices for each vertex patch, since they are dense. 
+
+In this work we introduce a direct solver for separable vertex patch problems that scales
+to very high polynomial degree on tensor product cells. The solver
+constructs a carefully-chosen tensor product basis that diagonalizes the blocks in the
+stiffness matrix for the internal degrees of freedom of each individual
+cell. As a result, the non-zero structure of the cell matrices is that of
+the graph connecting internal degrees of freedom to their projection onto
+the facets. In the new basis, the patch problem is as sparse as a low-order
+finite difference discretization, while having a sparser Cholesky
+factorization.  We can thus afford to assemble and factorize the matrices
+for the vertex-patch problems, even for very high polynomial degree. In turn, this enables the use of
+fast $p$-multigrid solvers. In the
+non-separable case, the method can be applied as a preconditioner by
+approximating the problem with a separable surrogate.
+
+We demonstrate the approach by solving the Poisson equation 
+and a $H(\mathrm{div})$-conforming interior penalty discretization of 
+linear elasticity in two dimensions at polynomial degree $p=31$ and in three dimensions at $p = 15$.
+
+%% Coauthor details here (optional - delete if not applicable)
+% and funding acknowledgment (optional - delete if not applicable)
+\emph{This is joint work with Pablo D.~Brubeck (Oxford).
+Supported by a Mathematical Institute departmental scholarship, and the Engineering and Physical Sciences Research Council, grants EP/R029423/1 and EP/W026163/1.}
+
+\begin{thebibliography}{1}
+\bibitem{pavarino93_farrell}
+L.~F.~Pavarino.
+\newblock Additive {S}chwarz methods for the $p$-version finite element method.
+\newblock {\em Numer. Math.} 66:493–515, (1993).
+\end{thebibliography}
+
+
+\end{document}
+
+
+% Please leave the next bit alone  
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:

@@ -1,0 +1,74 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%       
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{Algebraic Connectivity and the Laplacian Spread}
+\author{Mark Kempton} %Presenting author only
+\address{Brigham Young University} % Affiliation of presenting author
+\email{mkempton@mathematics.byu.edu} % Email address of presenting author only
+
+\maketitle
+
+% The abstract  ***no more than one page***
+
+The Laplacian Spread Conjecture states that if a graph on $n$ vertices has Laplacian eigenvalues $0=\lambda_1\leq\lambda_2\leq\cdots\leq\lambda_n$ then \[\lambda_n-\lambda_2\leq n-1.\]  By a well-known relationship between the Laplacian eigenvalues of a graph and its complement, the Spread Conjecture can be seen to be equivalent to the statement \[\lambda_2(G) + \lambda_2(G^c)\geq1.\]  
+
+The second smallest eigenvalue of the Laplacian of a graph is known as its \emph{algebraic connectivity}, and is known to be closely related to how well-connected the graph is.  Thus the Spread Conjecture can be interpreted as quantifying how poorly connected both a graph and its complement can possibly be.  
+
+We will present a new conjecture on a lower bound for the algebraic connectivity using the eccentricity of vertices in the graph.  This will give a new approach to studying the Laplacian spread of a graph and lead to a strengthening of the Laplacian Spread Conjecture.
+
+%If you wish to include citations, you can do so like this:
+%\cite{my_key_for_OT49}. Use a bibitem key that is likely be be unique to you (e.g., don't use the default Math Reviews key). Any uncited bibliography entries will alsoappear. If you have none, then delete that section.
+
+%% Coauthor details here (optional - delete if not applicable)
+% and funding acknowledgment (optional - delete if not applicable)
+\emph{This is joint work with Wayne Barrett (BYU), Emily Evans (BYU), and Tracy Hall (Hall Labs, LLC). 
+}
+
+%\begin{thebibliography}{1}
+%\bibitem{my_key_for_OT49}
+%Olga Taussky.
+%\newblock A recurring theorem on determinants.
+%\newblock {\em  Amer. Math. Monthly}  56:672–676,  (1949).
+%
+%\bibitem{another_unique_key}
+%Olga Taussky and John Todd.
+%\newblock Cholesky, Toeplitz and the triangular factorization of
+%symmetric matrices.
+%\newblock {\em  Numer. Algorithms}, 41(2):197--202, 2006.
+%\end{thebibliography}
+
+
+\end{document}
+
+
+% Please leave the next bit alone  
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:

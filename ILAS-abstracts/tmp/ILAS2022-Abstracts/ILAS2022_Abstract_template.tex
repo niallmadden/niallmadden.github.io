@@ -1,0 +1,57 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%       
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{On the maximum multiplicity of the $k$th largest eigenvalue of a graph.}
+\author{Shaun Fallat} %Presenting author only
+\address{University of Regina} % Affiliation of presenting author
+\email{shaun.fallat@uregina.ca} % Email address of presenting author only
+
+
+\maketitle
+
+% The abstract  ***no more than one page***
+
+Given a graph $G$, we are interested in studying the maximum nullity over all real symmetric matrices $S(G)$ constrained by a fixed number of negative eigenvalues. For the case of trees we re-derive a formula for this maximum nullity and completely describe its behaviour as a function of the number of negative eigenvalues. We build on this analysis by presenting an analogous result for unicyclic graphs and verifying a surprising relation between this maximum nullity and a 2-player version of zero forcing for threshold graphs.
+
+
+%% Coauthor details here (optional - delete if not applicable)
+% and funding acknowledgment (optional - delete if not applicable)
+\emph{Part of this work joint with Mohammad Adm (Palestine Polytechnic) and part is joint project with the 2021 DMRG at the University of Regina.
+Research supported in part by an NSERC Discovery Research Grant, Grant No. RGPIN-2019-03934.}
+
+
+
+\end{document}
+
+
+% Please leave the next bit alone  
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:

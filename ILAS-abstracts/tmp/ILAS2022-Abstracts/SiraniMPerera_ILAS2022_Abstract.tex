@@ -1,0 +1,68 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%       
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{A Low-complexity Algorithm to Uncouple the Mutual Coupling Effect in Antenna Arrays}
+\author{Sirani M. Perera} %Presenting author only
+\address{Embry-Riddle Aeronautical University, USA} % Affiliation of presenting author
+\email{pereras2@erau.edu} % Email address of presenting author only
+
+\maketitle
+
+% The abstract  ***no more than one page***
+
+The interaction of electrical and magnetic fields between antenna array elements causes mutual coupling in multi-beam arrays. The presence of mutual coupling between array elements leads to variation in impedance, alteration in radiation patterns, changes in array characteristics, and noise coupling. 
+%The mutual coupling effect causes voltages to be induced in the terminals of the neighboring elements. 
+
+In this talk, we will utilize the structure of the mutual coupling matrix to obtain a sparse factorization followed by a low-complexity algorithm to reduce the mutual coupling effects. Next, signal flow graphs will be presented to show the connection of the algebraic operations associated with the proposed algorithm and to realize the system as an integrated circuit. Finally, the proposed fast algorithm will be exploited to digitally uncouple the mutual coupling effect in multi-beam antenna arrays. 
+
+%% Coauthor details here (optional - delete if not applicable)
+% and funding acknowledgment (optional - delete if not applicable)
+\emph{This is joint work with Arjuna Madanayake (Florida International University, USA).}
+
+%\begin{thebibliography}{1}
+%\bibitem{my_key_for_OT49}Olga Taussky.
+%\newblock A recurring theorem on determinants.
+%\newblock {\em  Amer. Math. Monthly}  56:672–676,  (1949).
+
+%\bibitem{another_unique_key}
+%Olga Taussky and John Todd.
+%\newblock Cholesky, Toeplitz and the triangular factorization of
+%symmetric matrices.
+%\newblock {\em  Numer. Algorithms}, 41(2):197--202, 2006.
+%\end{thebibliography}
+
+
+\end{document}
+
+
+% Please leave the next bit alone  
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:
