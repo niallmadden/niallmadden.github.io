@@ -1,0 +1,76 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%       
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{Eigenvalues, spanning trees, and connected parity factors in regular graphs}
+\author{Suil O} %Presenting author only
+\address{SUNY-Korea} % Affiliation of presenting author
+\email{suil.o@sunykorea.ac.kr} % Email address of presenting author only
+
+\maketitle
+
+% The abstract  ***no more than one page***
+
+In this talk, we prove a sharp upper bound for the second largest eigenvalue in an $r$-regular graph $G$ to guarantee that $G$ contains at least two disjoint spanning trees. By utilizing the result, we prove an upper bound for the second largest eigenvalue in an $r$-regular graph to guarantee the existence of a connected parity factor.
+
+%% Coauthor details here (optional - delete if not applicable)
+% and funding acknowledgment (optional - delete if not applicable)
+\emph{This is joint work with Donggyu Kim (KAIST) and Zhiwen Wang (Nankai).
+Supported by the National Research Foundation of Korea, Grant NRF-2020R1F1A1A01048226.}
+
+\begin{thebibliography}{1}
+\bibitem{KO}
+Donggyu Kim and Suil O.
+\newblock Eigenvalues and parity factors in graphs.
+\newblock {\em  Submitted}.
+
+\bibitem{KOPR}
+Sungeun Kim, Suil O, Jihwan Park, and Hyo Ree.
+\newblock An odd $[1,b]$-factor in regular graphs from eigenvalues.
+\newblock {\em  Disc. Math.}  343:111906,  (2020).
+
+\bibitem{KOW}
+Donggyu Kim, Suil O, and Zhiwen Wang.
+\newblock Eigenvalues, spanning trees, and connected parity factors in regular graphs.
+\newblock {\em  (in preparation)}.
+
+\bibitem{O}
+Suil O.
+\newblock Eigenvalues and [a,b]-factors in regular graphs.
+\newblock {\em  J. Graph Theory} (in press).
+\end{thebibliography}
+
+
+\end{document}
+
+
+% Please leave the next bit alone  
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:
