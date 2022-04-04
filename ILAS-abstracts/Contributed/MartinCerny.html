@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Černý Martin" />
+  <title>Monge-like properties in the interval setting</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="/usr/share/javascript/mathjax/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Monge-like properties in the interval setting</h1>
+<p class="author">Černý Martin</p>
+</header>
+<p>The Monge property of a real matrix <span class="math inline">\(A \in \mathbb{R}^{n \times n}\)</span> can be expressed as <span class="math display">\[a_{ij} + a_{k\ell} \leq a_{i\ell} + a_{kj}\]</span> for <span class="math inline">\(1 \leq i \leq m\)</span>, <span class="math inline">\(1 \leq j \leq n\)</span>. This simple to express property is fundamental for many efficient algorithms applied in various problems from geometry, combinatorics, optimisation or statistics <span class="citation" data-cites="survey survey2"></span>. Many modifications of the property lead to interesting classes of Monge-like matrices, to name a few, <em>Robinsonian</em>, <em>ultrametric</em>, <em>totally monotonic</em>, or <em>Monge-permutable</em> matrices.</p>
+<p>In our research, we do a systematic analysis of Monge-like properties in the interval setting. Matrix intervals allow for computations with inexact data. Rather than storing precise values (which might be impossible thanks to limitations of the measurement), we employ real intervals with a guarantee that each underlying value is in the range of its interval. Computations with matrix intervals are then carried out in a way that the exact solution of the original problem is guaranteed to be in the range of the output interval. Further, if the width of the interval is negligible, so is the error.</p>
+<p>We focus on two variants of the Monge-like properties in the interval setting, so called <em>weak</em> and <em>strong</em> properties. For the definition of both of these properties, matrix realisations of the matrix interval (real matrices with entries from the intervals) are considered. If there is at least one realisation satisfying the Monge-like property, we say the matrix interval satisfies its weak form. If all of the realisations satisfy the Monge-like property, the matrix interval satisfies its strong form.</p>
+<p>We deal with different characterisations of weak and strong Monge-like properties as well as with necessary and sufficient conditions. If the matrix interval satisfies the strong property, an interesting question to consider is if it can be recognised by checking the Monge-like property for a finite (hopefully, polynomial) number of its matrix realisations. This property of matrix intervals, referred to as the <em>interval property</em> <span class="citation" data-cites="Garloff"></span>, is also studied in our research. Finally, we investigate possible interval generalisations of known algorithm for Monge-like properties together with their complexity analysis.</p>
+<p><em>This is joint work with prof. Jürgen Garloff (Konstanz). Supported by SVV 260578/2020.</em></p>
+<p><span>1</span> Rainer E. Burkard and Bettina Klinz and Rüdiger Rudolf. Perspectives of Monge properties in optimization , 70:95–161, 1996.</p>
+<p>Swetha Sethumadhavan. A survey of Monge properties , 1198, 2009.</p>
+<p>W. S. Robinson. A Method for Chronologically Ordering Archaeological Deposits , 16(4):293–301, 1951.</p>
+<p>Martin Černý. Interval matrices with Monge properties , 65(5):619–643, 2020.</p>
+<p>Jürgen Garloff and Doaa Al-Saafin and Mohammad Adm. Further Matrix Classes Posessing Interval Property , 398, 2021.</p>
+</body>
+</html>

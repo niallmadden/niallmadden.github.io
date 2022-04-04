@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Plamen Koev" />
+  <title>Accurate Bidiagonal Decompositions of Structured Totally Nonnegative Matrices with Repeated Nodes</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="/usr/share/javascript/mathjax/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Accurate Bidiagonal Decompositions of Structured Totally Nonnegative Matrices with Repeated Nodes</h1>
+<p class="author">Plamen Koev</p>
+</header>
+<p>The decomposition of a totally nonnegative matrix (one all of whose minors are nonnegative) as a product of nonnegative bidiagonals is a powerful tool for studying the properties of these matrices <span class="citation" data-cites="fallat01"></span> as well as performing numerical computations to high relative accuracy <span class="citation" data-cites="koevSTN"></span>.</p>
+<p>The conventional bidiagonal decompositions resulting from the complete Neville elimination, when applied to totally nonnegative matrices of the Vandermonde or Cauchy type have singularities that are when some of the nodes defining those matrices coincide.</p>
+<p>For example, the bidiagonal decomposition of a <span class="math inline">\(3\times 3\)</span> Vandermonde matrix is: <span class="math display">\[\left[\begin{matrix} 
+1 &amp; x &amp; x^2 \\
+1 &amp; y &amp; y^2 \\
+1 &amp; z &amp; z^2 
+\end{matrix}\right]
+\!\!=\!\!
+\left[\begin{matrix}
+1 \\
+&amp; 1\\
+&amp; 1 &amp; 1
+\end{matrix}\right]
+\!\!\!\!
+\left[\begin{matrix}
+1 \\
+1 &amp; 1\\
+&amp; \frac{z-y}{y-x} &amp; 1
+\end{matrix}\right]
+\!\!\!\!
+\left[\begin{matrix}
+1 \\
+&amp; \!\!y-x\\
+&amp;  &amp;\!\!\!\!\! (z-x)(z-y)
+\end{matrix}\right]
+\!\!\!\!
+\left[\begin{matrix}
+1 &amp; x\\
+&amp; 1 &amp; y\\
+&amp;  &amp; 1
+\end{matrix}\right]
+\!\!\!\!
+\left[\begin{matrix}
+1   \\
+&amp; 1&amp; x\\
+&amp; &amp; 1 
+\end{matrix}\right],\]</span> which is not defined when <span class="math inline">\(x=y\)</span>.</p>
+<p>By relaxing the requirement for the bidiagonal factors to have unit diagonals (which has no detrimental effects on our ability to study or compute with these matrices), the singularity at <span class="math inline">\(x=y\)</span> can be removed: <span class="math display">\[\left[\begin{matrix} 
+1 &amp; x &amp; x^2 \\
+1 &amp; y &amp; y^2 \\
+1 &amp; z &amp; z^2 
+\end{matrix}\right]
+=
+\left[\begin{matrix}
+1 \\
+&amp; 1\\
+&amp; 1 &amp; z-y
+\end{matrix}\right]
+\!\!\!\!
+\left[\begin{matrix}
+1 \\
+1 &amp; y-x \\
+&amp; 1 &amp; z-x
+\end{matrix}\right]
+\!\!\!\!
+\left[\begin{matrix}
+1 \\
+&amp; 1 \\
+&amp;  &amp; 1
+\end{matrix}\right]
+\!\!\!\!
+\left[\begin{matrix}
+1 &amp; x\\
+&amp; 1 &amp; y\\
+&amp;  &amp; 1
+\end{matrix}\right]
+\!\!\!\!
+\left[\begin{matrix}
+1   \\
+&amp; 1&amp; x\\
+&amp; &amp; 1 
+\end{matrix}\right].\]</span></p>
+<p>In this talk we will present the technique to systematically remove the singularities in the bidiagonal decompositions of many classes of structured totally nonnegative matrices with repeated nodes, such as (rational, h-, q-Bernstein-) Vandermonde, Lupas, Cauchy, Cauchy Vandermonde matrices, among others.</p>
+<p>Practical examples of computing with these matrices will also be presented.</p>
+<p><em>This is joint work with Jorge Delgado, Ana Marco, José-Javier Martńezd, Juan Manuel Peña, Per-Olof Persson, and Steven Spasov. Supported by the SJSU Woodward Fund.</em></p>
+<p><span>1</span></p>
+<p>S. M. Fallat. Bidiagonal factorizations of totally nonnegative matrices. , 108(8):697–712, 2001.</p>
+<p>P. Koev. Accurate eigenvalues and zero <span>J</span>ordan blocks of (singular) totally nonnegative matrices. , 141:693–713, 2019.</p>
+</body>
+</html>

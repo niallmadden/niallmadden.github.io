@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Tom Asaki" />
+  <title>Null-Space Projects for Intermediate Students: Tomography, Cryptography, and More</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="/usr/share/javascript/mathjax/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Null-Space Projects for Intermediate Students: Tomography, Cryptography, and More</h1>
+<p class="author">Tom Asaki</p>
+</header>
+<p>For many students, a non-trivial nullspace is a “necessary evil” associated with a non-injective linear transformation, <span class="math inline">\(T:\mathbb{R}^n\rightarrow\mathbb{R}^m\)</span>. They understand that such transformations are not invertible, but strategies, such as least squares methods and pseudo-inversion via singular value decomposition, are designed to avoid nullspace contributions using approximate inverse transformations, <span class="math inline">\(P:\mathbb{R}^m\rightarrow\mathbb{R}^n\)</span>. And, theorems even demonstrate that these methods represent best strategies, in that, recovered domain-space vectors are optimal. That is, if <span class="math inline">\(T(x)=b\)</span> and <span class="math inline">\(\hat{x}=P(T(x))\)</span>, then <span class="math inline">\(\|\hat{x}-x\|_2\)</span> is minimized over all possible linear transformations <span class="math inline">\(P\)</span>. In this work we describe improved pseudo-inversion methods that directly incorporate nullspace vectors along with both actual and introduced prior knowledge. We provide two examples suitable for curious students who wish more than nullspace avoidance. These examples provide a springboard for additional project directions.</p>
+<p>One project concept is improved tomographic reconstructions from radiographs. The radiographic (approximate) linear transformation typically has a very large nullspace <span class="math inline">\(n\gg m\)</span>. Any pseudo-inverse transformation typically results in a reconstruction which is unacceptable without extensive post-processing. We invite the student to use reasonable prior knowledge, such as accepting values from a given set, to find null vector contributions which enhance the result. In many cases, dramatic improvement is realized, up to and including exact reconstructions.</p>
+<p>A second project concept is the sending and deciphering of encrypted messages. A message encrypted using a non-injective transformation is not simply recovered because of the loss of information. However, with the introduction of an intertwined and simultaneously encrypted passphrase, the correct nullspace contribution can be recovered. The transformation and encrypted message can be made public, while the private passphrase in known only to the sender and intended receiver.</p>
+</body>
+</html>
