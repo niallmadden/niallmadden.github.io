@@ -1,0 +1,69 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{}
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter %
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{An alternative canonical form for quaternionic H-unitary matrices.}
+\author{Dawie Janse van~Rensburg} %Presenting author only
+\address{North-West University, Potchefstroom, South Africa.} % Affiliation of presenting author
+\email{dawie.jansevanrensburg@nwu.ac.za} % Email address of presenting author only
+
+\maketitle
+
+% The abstract  ***no more than one page***
+
+The field of linear algebra over the quaternions is a research area which is still in development. In this paper we continue our research on canonical forms for a matrix pair $(A, H)$, where the matrix $A$ is $H$-unitary, $H$ is invertible and with $A$ as well as $H$ quaternionic matrices. We seek an invertible matrix $S$ such that the transformations from $(A, H)$ to 
+$(S^{-1}AS, S^*HS)$
+brings the matrix $A$ in Jordan form and simultaneously brings $H$ into a canonical form. Canonical forms for such pairs of matrices already exist in the literature, the goal of the present paper is to add one more canonical form which specifically keeps $A$ in Jordan form, in contrast to the existing canonical forms.
+
+%% Coauthor details here (optional - delete if not applicable)
+% and funding acknowledgment (optional - delete if not applicable)
+\emph{This is joint work with G.J. Groenewald (North-West University, SA), A.C.M. Ran (VU, the Netherlands).
+Supported by the DSI-NRF Centre of Excellence in Mathematical and Statistical Sciences, ref nr. 2022-012-ALG-ILAS.}
+
+%\begin{thebibliography}{1}
+%\bibitem{my_key_for_OT49}
+%Olga Taussky.
+%\newblock A recurring theorem on determinants.
+%\newblock {\em  Amer. Math. Monthly}  56:672–676,  (1949).
+
+%\bibitem{another_unique_key}
+%Olga Taussky and John Todd.
+%\newblock Cholesky, Toeplitz and the triangular factorization of
+%symmetric matrices.
+%\newblock {\em  Numer. Algorithms}, 41(2):197--202, 2006.
+%\end{thebibliography}
+
+
+\end{document}
+
+
+% Please leave the next bit alone
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:
