@@ -111,12 +111,12 @@ a {
     -webkit-transition: color .2s ease-in-out;
     -ms-transition: color .2s ease-in-out;
     transition: color .2s ease-in-out;
-    color: #43B3E0;
+    color: #223388;
     text-decoration: underline;
 }
 
 a:hover {
-    color: #43bff0 !important;
+    color: #11bff0 !important;
 }
 
 a img {
@@ -1920,17 +1920,29 @@ ul.actions li:first-child {
     text-align: left;
 }
 
+
 .box.style1 {
-    padding: 3em 2em 3.5em 2em;
+    background: #f0fff8;
     text-align: left;
 }
-
 .box.style2 {
-    background: #ffeecc;
+    background: #f0f8ff;
     text-align: left;
 }
 .box.style3 {
-    background: #eeffcc;
+    background: #f8f0ff;
+    text-align: left;
+}
+.box.style4 {
+    background: #f8fff0;
+    text-align: left;
+}
+.box.style5 {
+    background: #fff8f0;
+    text-align: left;
+}
+.box.style6 {
+    background: #fff0f8;
     text-align: left;
 }
 

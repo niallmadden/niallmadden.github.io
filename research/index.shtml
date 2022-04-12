@@ -94,21 +94,20 @@ OLD ONE ENS HERE
 
 <h2><a name="Pubs">Publications</a></h2>
 
-<h3><a name="Submitted">Submitted for publication</a></h3>
-<ol>
-  <li>
-    Scott P. MacLachlan, Niall Madden, Th&aacute;i Anh Nhan.
-    <em>A Boundary-Layer Preconditioner for Singularly Perturbed
-    Convection Diffusion</em>. Aug
-    2021. <a href="https://arxiv.org/abs/2108.13468">arxiv.org/abs/2108.13468</a> 
-  </li>
-</ol>
-  
-</hr>
+<!-- <h3><a name="Submitted">Submitted for publication</a></h3> 
+  </hr> -->
 
 
 <h3>Published Journal Articles and Refereed Conference Proceedings</h3>
-<ol start="2">
+<ol start="1">
+  <li>
+    Scott P. MacLachlan, Niall Madden, Th&aacute;i Anh Nhan.
+    <em>A Boundary-Layer Preconditioner for Singularly Perturbed
+    Convection
+      Diffusion</em>. <a href="https://arxiv.org/abs/2108.13468">arxiv.org/abs/2108.13468</a>
+    SIMAX (to appear), 2022.
+  </li>
+
   <li>
     Niall Madden
     and <a href="https://www.csrc.ac.cn/en/people/faculty/151.html">Martin
