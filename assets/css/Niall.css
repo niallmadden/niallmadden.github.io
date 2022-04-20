@@ -161,7 +161,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h2, h3, h4, h5, h6 {
-    font-weight: 700;
+    font-weight: 300;
+    opacity: 1;
 }
 
 h1 {
@@ -181,7 +182,7 @@ h2 {
 
 h3 {
     font-size: 1.5em;
-    letter-spacing: -0.015em;
+    letter-spacing: 0.01em;
 }
 
 em, i {
@@ -1950,10 +1951,6 @@ ul.actions li:first-child {
     margin-bottom: 0.5em;
 }
 
-.box.style2 h3 {
-    margin-bottom: 0.25em;
-    text-align: left;
-}
 
 .box.style2 .image {
     position: relative;
@@ -2040,7 +2037,7 @@ ul.actions li:first-child {
     text-shadow: -1px -1px 0px #181818;
 }
 
-.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
+.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
     color: #fff;
 }
 
