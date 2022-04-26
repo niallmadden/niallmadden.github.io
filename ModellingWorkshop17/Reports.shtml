@@ -1,9 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <title>Stokes Modelling Workshop 2017: Reports</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-    <link rel="stylesheet" href="http://www.maths.nuigalway.ie/style.css" type="text/css"/>
   </head>
   
   <body>
@@ -56,7 +54,7 @@
 posed by partners in MET Eireann, Medtronic and IBM Research.</p>
 
     <p>The Workshop had
-    40 <a href="http://www.maths.nuigalway.ie/~niall/ModellingWorkshop17/Participants.shtml">registered
+    40 <a href="Participants.shtml">registered
     participants</a> including graduate students (funded by MI-NET)
     and undergraduate students (funded by the Stokes Cluster).</p>
       
@@ -177,7 +175,7 @@ posed by partners in MET Eireann, Medtronic and IBM Research.</p>
     
     <h2>Photos</h2>
     <p>Here is
-      an <a href="http://www.maths.nuigalway.ie/~niall/ModellingWorkshop17/Photos/">album
+      an <a href="Photos/">album
 	of photos</a> from the workshop.
       </p>
 
