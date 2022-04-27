@@ -84,7 +84,7 @@ html {
 }
 
 body {
-    padding-top: 3.5em;
+    padding-top: 3em;
 }
 
 body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2012,7 +2012,7 @@ ul.actions li:first-child {
 .wrapper {
     background-image: url("images/bg.png");
     box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-    padding: 8em 0 8em 0;
+    padding: 2em 0 2em 0;
     text-align: center;
 }
 
@@ -2023,25 +2023,16 @@ ul.actions li:first-child {
 
 .wrapper.style2 {
     background-color: #fafafa;
-    /* text-shadow: 1px 1px 0px #fff; */
 }
 
 .wrapper.style3 {
     background-color: #f4f4f4;
-    /* text-shadow: 1px 1px 0px #fff; */
 }
 
 .wrapper.style4 {
     background-color: #303030;
     color: #111;
-    /* text-shadow: -1px -1px 0px #181818; */
 }
-
-/*
-.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
-    color: #fff;
-}
-*/
 
 .wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
     color: #fff;
@@ -2061,6 +2052,21 @@ ul.actions li:first-child {
 .wrapper.style4 form textarea:focus {
     background: #252525;
 }
+
+.wrapper.style5 {
+    padding: 2em 0 2em 0;
+    background-image: none;
+    background-color: #F6F6FF;
+    color: #201010;
+    text-align: left;
+}
+
+.wrapper.style5 h2 {
+    padding: 0 0 0 0;
+    text-align: center;
+    color: #001;
+}
+
 
 /* Nav */
 
@@ -2225,7 +2231,7 @@ body > article {
     /* Wrappers */
 
     .wrapper {
-	padding: 5em 0 5em 0;
+	padding: 3em 0 3em 0;
 	text-align: center;
     }
 
@@ -2415,7 +2421,7 @@ body > article {
     /* Wrappers */
 
     .wrapper {
-	padding: 3em 0;
+	padding: 2em 0;
 	text-align: center;
     }
 
