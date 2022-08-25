@@ -17,12 +17,20 @@ print(Input_df)
 
 geolocator = Nominatim(user_agent="my-ap")
 
+Home = geolocator.geocode("Galway, Ireland")
+
+print(f"Starting from {[Home.longitude, Home.latitude]}")
+
 Countries = Input_df['CountryName'].tolist()
 Institutes = Input_df['Institution'].tolist()
 Cities = Input_df['City'].tolist()
 
-world_map= folium.Map(tiles="cartodbpositron")
+world_map= folium.Map(tiles="cartodbpositron", location=[Home.latitude, Home.longitude])
 marker_cluster = MarkerCluster().add_to(world_map)
+popup_text = "University of Galway"
+folium.CircleMarker(location=[Home.latitude, Home.longitude],
+                    radius=10, tooltip=popup_text,popup=popup_text,
+                    color="red", fill =True).add_to(marker_cluster)
 
 for i in range(len(Cities)):
     city = Cities[i]
@@ -31,11 +39,13 @@ for i in range(len(Cities)):
     place = inst+", "+city+", "+country
     location =  geolocator.geocode(place)
     if (location == None):
+        print(f"*** Warning, could not find {place}. Trying {inst}")
         location =  geolocator.geocode(inst)
     if (location == None):
+        print(f"*** Warning, could not find {inst}. Trying {city}")
         location =  geolocator.geocode(city)
     if (location == None):
-        print(f"*** Warning, can't find {city} or {inst}")
+        print(f"*** Warning, can't find {place} or {city} or {inst}")
         break
     lat = location.latitude
     lon = location.longitude
@@ -44,4 +54,5 @@ for i in range(len(Cities)):
     popup_text = inst
     folium.CircleMarker(location = [lat,lon], radius=radius, tooltip=popup_text,popup= popup_text, fill =True).add_to(marker_cluster)
 
+world_map.fit_bounds(world_map.get_bounds(), padding=(30, 30))
 world_map.save(outfile=OUTFILE)
