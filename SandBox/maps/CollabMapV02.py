@@ -29,7 +29,7 @@ world_map= folium.Map(tiles="cartodbpositron", location=[Home.latitude, Home.lon
 marker_cluster = MarkerCluster().add_to(world_map)
 popup_text = "University of Galway"
 folium.CircleMarker(location=[Home.latitude, Home.longitude],
-                    radius=10, tooltip=popup_text,popup=popup_text,
+                    tooltip=popup_text,popup=popup_text,
                     color="red", fill =True).add_to(marker_cluster)
 
 for i in range(len(Cities)):
@@ -50,9 +50,8 @@ for i in range(len(Cities)):
     lat = location.latitude
     lon = location.longitude
     print(f'{i}: Adding {inst} at ({lat},{lon})')
-    radius=5
     popup_text = inst
-    folium.CircleMarker(location = [lat,lon], radius=radius, tooltip=popup_text,popup= popup_text, fill =True).add_to(marker_cluster)
+    folium.CircleMarker(location = [lat,lon],  tooltip=popup_text,popup= popup_text, fill =True).add_to(marker_cluster)
 
 world_map.fit_bounds(world_map.get_bounds(), padding=(30, 30))
 world_map.save(outfile=OUTFILE)
