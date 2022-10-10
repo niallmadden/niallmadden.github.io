@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CS103_Lab1</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>CS103_Lab1_solns</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14594,7 +14594,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="CS103-Lab-1:-Getting-started-with-Jupyter-and-Python">CS103 Lab 1: Getting started with Jupyter and Python<a class="anchor-link" href="#CS103-Lab-1:-Getting-started-with-Jupyter-and-Python">&#182;</a></h1><p>This is Lab 1 of CS102/CS103. Our goal is to gain some familiarity with Python, and the Jupyter Notebook interface.</p>
-<p>You can access the notebook at <a href="https://niallmadden.ie/2223-CS103/Lab1/CS103_Lab1.ipynb">https://niallmadden.ie/2223-CS103/Lab1/CS103_Lab1.ipynb</a></p>
 
 </div>
 </div>
@@ -14767,6 +14766,133 @@ In particular, do Exercise 2, which I reproduce here:</p>
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Exercise 2.1</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="n">Vol</span> <span class="o">=</span> <span class="mi">4</span><span class="o">/</span><span class="mi">3</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="p">(</span><span class="mf">5.0</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Exer 1. Ans :'</span><span class="p">,</span> <span class="n">Vol</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Ans : 523.5987755982989
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Exercise 2.2</span>
+<span class="n">CoverPrice</span> <span class="o">=</span> <span class="mf">24.95</span>
+<span class="n">DiscountedPrice</span> <span class="o">=</span> <span class="n">CoverPrice</span><span class="o">*</span><span class="mf">0.6</span>
+<span class="n">Shipping</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">59</span><span class="o">*</span><span class="mf">.75</span>
+<span class="n">Wholesale</span> <span class="o">=</span> <span class="n">DiscountedPrice</span><span class="o">*</span><span class="mi">60</span> <span class="o">+</span> <span class="n">Shipping</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Exer 2. Ans:'</span><span class="p">,</span> <span class="n">Wholesale</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Exer 2. Ans: 945.4499999999999
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Exercise 2.3</span>
+<span class="n">Easy</span> <span class="o">=</span> <span class="mi">8</span><span class="o">*</span><span class="mi">60</span> <span class="o">+</span> <span class="mi">15</span>
+<span class="n">Tempo</span> <span class="o">=</span> <span class="mi">7</span><span class="o">*</span><span class="mi">60</span> <span class="o">+</span> <span class="mi">12</span> 
+<span class="n">TotalSeconds</span>  <span class="o">=</span> <span class="n">Easy</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="n">Tempo</span><span class="o">*</span><span class="mi">3</span>
+<span class="n">HomeMinutes</span> <span class="o">=</span> <span class="n">TotalSeconds</span><span class="o">//</span><span class="mi">60</span>
+<span class="n">HomeSeconds</span> <span class="o">=</span> <span class="n">TotalSeconds</span><span class="o">%</span><span class="k">60</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Run took '</span><span class="p">,</span> <span class="n">HomeMinutes</span><span class="p">,</span> <span class="s1">' and '</span><span class="p">,</span> <span class="n">HomeSeconds</span><span class="p">,</span> <span class="s1">'seconds'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'I get home at 7:'</span><span class="p">,</span> <span class="p">(</span><span class="mi">52</span><span class="o">+</span><span class="n">HomeMinutes</span><span class="p">)</span><span class="o">%</span><span class="k">60</span>, ':', HomeSeconds)
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Run took  38  and  6 seconds
+I get home at 7: 30 : 6
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
