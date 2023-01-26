@@ -33,6 +33,7 @@ folium.CircleMarker(location=[Home.latitude, Home.longitude],
                     color="red", fill =True).add_to(marker_cluster)
 
 Done = []
+Missing = []
 for i in range(len(Institutes)):
     inst = Institutes[i]
     if (inst in Done):
@@ -53,6 +54,7 @@ for i in range(len(Institutes)):
             location =  geolocator.geocode(city)
         if (location == None):
             print(f"*** Warning, can't find {place} or {city} or {inst}")
+            Missing += [place]
             break
         lat = location.latitude
         lon = location.longitude
@@ -60,5 +62,9 @@ for i in range(len(Institutes)):
         popup_text = inst
         folium.CircleMarker(location = [lat,lon],  tooltip=popup_text,popup= popup_text, fill =True).add_to(marker_cluster)
 
+if (len(Missing)>0):
+    print(f"{len(Missing)} places not found: {Missing}");
+else:
+    print("No missing places");
 world_map.fit_bounds(world_map.get_bounds(), padding=(30, 30))
 world_map.save(outfile=OUTFILE)
