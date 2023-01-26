@@ -45,7 +45,10 @@ for i in range(len(Institutes)):
         country = Countries[i]
         print(f"inst={inst} -oOo- city={city} -oOo- country={country}")
         place = inst+", "+city+", "+country
-        location =  geolocator.geocode(place)
+        try:
+            location =  geolocator.geocode(place)
+        except:
+            location = None
         if (location == None):
             print(f"*** Warning, could not find {place}. Trying {inst}")
             location =  geolocator.geocode(inst)
