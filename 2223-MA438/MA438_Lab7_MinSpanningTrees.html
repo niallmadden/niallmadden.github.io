@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><meta name="generator" content="MATLAB 2022b"><title>Untitled</title><style type="text/css">.rtcContent { padding: 30px; } .S0 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 20px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 20px; font-weight: 700; text-align: left;  }
+.S1 { margin-bottom: 20px; padding-bottom: 4px;  }
+.S2 { margin: 0px; padding: 10px 0px 10px 5px; line-height: 21px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 14px; font-weight: 700; text-align: start;  }
+.S3 { margin: -1px 0px 0px; padding: 10px 0px 10px 7px; line-height: 21px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 14px; font-weight: 400; text-align: start;  }
+.CodeBlock { background-color: #F5F5F5; margin: 10px 0 10px 0; }
+.S4 { border-left: 1px solid rgb(191, 191, 191); border-right: 1px solid rgb(191, 191, 191); border-top: 1px solid rgb(191, 191, 191); border-bottom: 1px solid rgb(191, 191, 191); border-radius: 4px; padding: 6px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+.S5 { margin: 2px 10px 9px 4px; padding: 0px; line-height: 21px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 14px; font-weight: 400; text-align: left;  }
+.S6 { margin: 10px 0px 20px; padding-left: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 14px;  }
+.S7 { margin-left: 56px; line-height: 21px; min-height: 0px; text-align: left; white-space: pre-wrap;  }
+.S8 { border-left: 1px solid rgb(191, 191, 191); border-right: 1px solid rgb(191, 191, 191); border-top: 1px solid rgb(191, 191, 191); border-bottom: 0px none rgb(33, 33, 33); border-radius: 4px 4px 0px 0px; padding: 6px 45px 0px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+.S9 { border-left: 1px solid rgb(191, 191, 191); border-right: 1px solid rgb(191, 191, 191); border-top: 0px none rgb(33, 33, 33); border-bottom: 0px none rgb(33, 33, 33); border-radius: 0px; padding: 0px 45px 0px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+.S10 { border-left: 1px solid rgb(191, 191, 191); border-right: 1px solid rgb(191, 191, 191); border-top: 0px none rgb(33, 33, 33); border-bottom: 1px solid rgb(191, 191, 191); border-radius: 0px 0px 4px 4px; padding: 0px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+.S11 { margin: 10px 10px 9px 4px; padding: 0px; line-height: 21px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 14px; font-weight: 400; text-align: left;  }
+.S12 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 18px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 17px; font-weight: 700; text-align: left;  }</style></head><body><div class = rtcContent><h2  class = 'S0' id = 'H_62A56D73' ><span>MA438 - Lab 7: Greedy Algorithms</span></h2><div  class = 'S1'><div  class = 'S2'><span style=' font-weight: bold;'>Table of Contents</span></div><div  class = 'S3'><a href = "#H_62A56D73"><span>MA438 - Week 10 : Greedy Algorithms
+</span></a><a href = "#H_A7ED0D39"><span>1. Introduction
+</span></a><a href = "#H_E3B6C143"><span>2. Kruskal's algorithm
+</span></a><a href = "#H_A2717BFB"><span>3. Prim's Algorithm
+</span></a><span>    </span><a href = "#H_7B179953"><span>Comparing three approaches
+</span></a><a href = "#H_9A3969E9"><span>4. A Matrix-based version of Prim's
+</span></a><a href = "#H_8FFE4B79"><span>A useful function</span></a></div></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S4'><span style="white-space: pre"><span >clear;</span></span></div></div></div><h2  class = 'S0' id = 'H_A7ED0D39' ><span>1. Introduction</span></h2><div  class = 'S5'><span>First we'll make a random graph that satisfies certain properties</span></div><ul  class = 'S6'><li  class = 'S7'><span>It has a specified number of vertices and a minimum number of edges</span></li><li  class = 'S7'><span>It is connected (using a function defined at the end of the file).</span></li><li  class = 'S7'><span>It has at least one cycle. Thus is it not a tree (which would make the whole thing rather too simple).</span></li></ul><div  class = 'S5'><span>Is in Lab 5, we use the </span><span style=' font-family: monospace;'>rng()</span><span> function to ensure repeatability. You should remove that line later.</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S8'><span style="white-space: pre"><span >rng(123);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >N = 8;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >MaxWeight = 10;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >MinEdges = N*2;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >G = graph();</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >G = G.addnode(N);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">while </span><span >( (~IsConnected(G)) </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >      || (G.hascycles == false) || </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >      (G.numedges &lt; MinEdges))</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   s = randi(N);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   t = randi(N);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   w = randi(MaxWeight);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   </span><span style="color: rgb(14, 0, 255);">if </span><span >( (s ~= t) &amp;&amp; (G.findedge(s,t)==0) )</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >      G=G.addedge(s,t,w);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   </span><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >fprintf(</span><span style="color: rgb(167, 9, 245);">'G gas %d edges'</span><span >, G.numedges);</span></span></div></div><div class="inlineWrapper"><div  class = 'S10'><span style="white-space: pre"><span >figure; plot(G); title(</span><span style="color: rgb(167, 9, 245);">'A graph, G'</span><span >)</span></span></div></div></div><div  class = 'S11'><span>We want to see how to compute minimum spanning trees. MATLAB hasa function to do this, which we'll use to verify our results.</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S8'><span style="white-space: pre"><span >T = minspantree(G);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >figure; plot(T,</span><span style="color: rgb(167, 9, 245);">'EdgeLabel'</span><span >,T.Edges.Weight); </span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >title(</span><span style="color: rgb(167, 9, 245);">'The min spanning tree of G'</span><span >)</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >h = plot(G,</span><span style="color: rgb(167, 9, 245);">'Layout'</span><span >,</span><span style="color: rgb(167, 9, 245);">'force'</span><span >,</span><span style="color: rgb(167, 9, 245);">'EdgeLabel'</span><span >,G.Edges.Weight);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >highlight(h,T);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >title(</span><span style="color: rgb(167, 9, 245);">'G and a minimum spanning tree'</span><span >)</span></span></div></div><div class="inlineWrapper"><div  class = 'S10'>&nbsp;</div></div></div><h2  class = 'S0' id = 'H_E3B6C143' ><span>2. Kruskal's algorithm</span></h2><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S8'><span style="white-space: pre"><span >fprintf(</span><span style="color: rgb(167, 9, 245);">"%s\n%s\n"</span><span >, </span><span style="color: rgb(167, 9, 245);">"2. Kurstal's Algorithm"</span><span >, </span><span style="color: rgb(14, 0, 255);">...</span></span></div></div><div class="inlineWrapper"><div  class = 'S10'><span style="white-space: pre"><span >   </span><span style="color: rgb(167, 9, 245);">"----------------------"</span><span >);</span></span></div></div></div><div  class = 'S11'><span>For a weighted graph, Kurstal's algorithm starts with </span><span style="font-family: STIXGeneral, STIXGeneral-webfont, serif; font-style: italic; font-weight: 400; color: rgb(33, 33, 33);">S</span><span> as the subgraph of </span><span style="font-family: STIXGeneral, STIXGeneral-webfont, serif; font-style: italic; font-weight: 400; color: rgb(33, 33, 33);">G</span><span> that has no edges (but it does have all the same vertices).</span></div><div  class = 'S5'><span>It goes through all the edges in </span><span style="font-family: STIXGeneral, STIXGeneral-webfont, serif; font-style: italic; font-weight: 400; color: rgb(33, 33, 33);">G</span><span> in order of their weight (least first). That edge is added to </span><span style="font-family: STIXGeneral, STIXGeneral-webfont, serif; font-style: italic; font-weight: 400; color: rgb(33, 33, 33);">S</span><span> so long as it does not create a cycle. You can read more at </span><a href = "https://en.wikipedia.org/wiki/Kruskal%27s_algorithm"><span>https://en.wikipedia.org/wiki/Kruskal%27s_algorithm</span></a></div><div  class = 'S5'><span>To do this, we use that sort() returns the "key" for sorting a vector as its second return value.</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S8'><span style="white-space: pre"><span >edge_weights = G.Edges.Weight;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >[~, ordering] = sort(edge_weights); </span><span style="color: rgb(0, 128, 19);">% ordering is the key</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >S1 = graph();</span></span></div></div><div class="inlineWrapper"><div  class = 'S10'><span style="white-space: pre"><span >S1 = S1.addnode(G.numnodes)</span></span></div></div></div><div  class = 'S11'><span>We also use that, in spite of its name, G.addedge(), does not add an edge to </span><span style="font-family: STIXGeneral, STIXGeneral-webfont, serif; font-style: italic; font-weight: 400; color: rgb(33, 33, 33);">G</span><span>, but returns a new graph that is the same as </span><span style="font-family: STIXGeneral, STIXGeneral-webfont, serif; font-style: italic; font-weight: 400; color: rgb(33, 33, 33);">G</span><span>, but with the edge added. </span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S8'><span style="white-space: pre"><span >k=0;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >figure;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">for </span><span >e=ordering'</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   v = G.Edges.EndNodes(e,:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   </span><span style="color: rgb(14, 0, 255);">if </span><span >(~hascycles(S1.addedge(v(1), v(2),k)))</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >      k=k+1;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >      S1=S1.addedge(v(1),v(2), k);  </span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   </span><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   subplot(4,2,k);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   g = plot(G,</span><span style="color: rgb(167, 9, 245);">'Layout'</span><span >,</span><span style="color: rgb(167, 9, 245);">'force'</span><span >,</span><span style="color: rgb(167, 9, 245);">'EdgeLabel'</span><span >,G.Edges.Weight);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   highlight(g,S1)</span></span></div></div><div class="inlineWrapper"><div  class = 'S10'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">end</span></span></div></div></div><div  class = 'S11'><span>This implemenation is somewhat sub-optimal: we check if every edge can be added, even though, once </span><span style="font-family: STIXGeneral, STIXGeneral-webfont, serif; font-style: italic; font-weight: 400; color: rgb(33, 33, 33);">S</span><span> has </span><span texencoding="N-1" style="vertical-align:-5px"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAAAkCAYAAADIB2cfAAAAAXNSR0IArs4c6QAABEFJREFUaEPtmV1oHFUUx/9nP4LCNsGYVMjubM6t37aKH4gW+lCRihZEQcUWLcUXrYjSKlpRKj4IflQqlSAIVQQrCBbUKmhAsD5Vax8MRqwP5p7ZXVdipCIuKSy7c2RkUkrYTeLe2d08zLze+Z9z/r975t69dwnJ0zEB6liZCJHAc2iCBF4Cz4GAgzTpvASeAwEHadJ53YTHzO8Q0RYAXpTnn1qtNjY3N1drlZeZ7yeiHaq6lYj+mxxV/RLAHhE55VBrT6TMfAWAF1T1pO/7B5ZKuqLOGx4eHhwaGjoJ4NIIxi4ReXupwMaYjwDcq6p7ReS1njh3SGKMuRzAPlXdTkQpVX1WRF51hhcGYOZXiGhvBO8HEbluqcDM/C6AuxqNRqFSqZxx8NVVadQYTwMYBnANgE2Rx/jgGWO+BxDOzpoo+M0i8l07Z8z8M4BvReShrrp3D54B0AxXF8/zbsxkMidihTc2NjYyMDAwq6oPp1KpQ1Hw99qBKRQK+Ww2W2k2m/eVSqUj7v56E8EYMw5AYoXHzNuI6E1r7UXMfJyIblLVM0EQ5Eul0l+LrTHzTiI6REQjMzMzf/fGunuWbsEL16/zRWR7sVh8MJ1Ovx/Nzm4RObi4bGPMYVXNi8gt7pZ6F6Fb8CpE9KK1NvxkB4wxZQBrVfWUiFzZovN+J6ID1tr9vbPunil2eMVicX06nZ4OgmCd7/s2LNEY8xKA56Pu2ywi3yyU7nnehkwm82Oj0bi6XC5Pu1vqXYTY4THzHgCPicglCzby+Xwhm80KEaVV9cPwc14YY+bdRPSktbbYO9vxZOoGvPB04IvII+eWaIwJd9F7ANTn5+e92dnZP6Ku/FxVKyKyKx5LvYsSKzxmPg/AaSLaaa0NTwxnH2beTERfL9rWs8aY0wAesNYe7cS2MWZKVS/rRBtpwokOj1j/+4kVnjFmi6pO1uv1tdVq9c8WG8M0Ea1XVSsiF3uetymTyXxVq9UubHf2Xc5R+OOaiDoyH02kiIhZLk+r8bjh7VfVW0Xk+lbJmPlRInorKvoOABuJaKO19rZOiu+3Jm54U0EQTPq+/0wrY6Ojo7lcLvcbgEFV/RTAKIAjIvJGv0F0kj82eAtHLFW9XUQm2xXDzAeJ6AlVbRKRAthgrf2lk+L7rYkNHjOHu+VEvV4frFar8+2MhVc5qhquUxStfev6DaHT/HHCOw7ggpXsXMw8SUThOjdhrX280+L7rSsWi1el0+mfojX8ORF5eamaWl6GMvPdRPSxqk6JyLXLmTLG3AngaBAEW33f/2K591fr+Pj4+FOpVOr1qL7D1todK4Y3MjKyJpfLTRBReGLIRjNwDMAnrS4AzgmcYubpRqNxw2q++Fxi6dkHILwpOvvXQfTuZ+F1fLPZ/KBcLv+6WL+ia/jV2in9riuB5zADCbwEngMBB2nSeQk8BwIO0qTzEngOBByk/wJx3SRDaPkThgAAAABJRU5ErkJggg==" width="39.5" height="18" /></span><span> edges, we cannot add any more. An alternative way of determining if we can stop is if the graph is now connected. </span></div><h2  class = 'S0' id = 'H_A2717BFB' ><span>3. Prim's Algorithm</span></h2><div  class = 'S5'><span>This algorithm differs from Kurstal's by starting with a graph, </span><span style="font-family: STIXGeneral, STIXGeneral-webfont, serif; font-style: italic; font-weight: 400; color: rgb(33, 33, 33);">S</span><span>, that has a single vertex. It chooses the edge from </span><span style="font-family: STIXGeneral, STIXGeneral-webfont, serif; font-style: italic; font-weight: 400; color: rgb(33, 33, 33);">G</span><span> that is incident to it, and adds it (and a new vertex) to </span><span style="font-family: STIXGeneral, STIXGeneral-webfont, serif; font-style: italic; font-weight: 400; color: rgb(33, 33, 33);">S</span><span>. The edge chosens is the one of least weight. </span></div><div  class = 'S5'><span>Next it picks the edge of least weight that is incident to one of those two, but not both, and adds it to </span><span style="font-family: STIXGeneral, STIXGeneral-webfont, serif; font-style: italic; font-weight: 400; color: rgb(33, 33, 33);">S</span><span>, and so on. In this way, it builds up a tree that eventually spans </span><span style="font-family: STIXGeneral, STIXGeneral-webfont, serif; font-style: italic; font-weight: 400; color: rgb(33, 33, 33);">G</span><span>.</span></div><div  class = 'S5'><span>The implemenation here is overly complicated, I think. Feel free to skip or, better still, come up with a better version.</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S8'><span style="white-space: pre"><span >edge_weights = G.Edges.Weight;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >[~, ordering] = sort(edge_weights);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >S2 = graph();</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >S2=S2.addnode(1);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >k=0; </span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >e=ordering(1); </span><span style="color: rgb(0, 128, 19);">% pick edge with lowest weight.</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >v = G.Edges.EndNodes(e,:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >Added = [v(1), v(2)];</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >S2=S2.addedge(v(1), v(2),1);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">while </span><span >(S2.numedges &lt; (G.numnodes-1))</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   i = 2;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   EdgeAdded=false;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   </span><span style="color: rgb(14, 0, 255);">while </span><span >(~EdgeAdded)</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >      e=ordering(i); </span><span style="color: rgb(0, 128, 19);">% pick edge with lowest weight.</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >      v = G.Edges.EndNodes(e,:);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >      </span><span style="color: rgb(14, 0, 255);">if </span><span >( sum(ismember(Added, v))==1)</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >         tmp = S2.addedge(v(1), v(2),k+1);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >         </span><span style="color: rgb(14, 0, 255);">if </span><span >(~hascycles(tmp) )</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >            S2 = tmp;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >            Added = unique([Added, v]);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >            EdgeAdded = true;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">%fprintf("k=%d: Added (%d,%d). numedges = %d\n", ...</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >            </span><span style="color: rgb(0, 128, 19);">%   k, v(1), v(2), S2.numedges);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >            k=k+1;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >         </span><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >      </span><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >      i=i+1;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   </span><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >g = plot(G,</span><span style="color: rgb(167, 9, 245);">'Layout'</span><span >,</span><span style="color: rgb(167, 9, 245);">'force'</span><span >,</span><span style="color: rgb(167, 9, 245);">'EdgeLabel'</span><span >,G.Edges.Weight);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >highlight(g,S2)</span></span></div></div><div class="inlineWrapper"><div  class = 'S10'><span style="white-space: pre"><span >plot(S2,</span><span style="color: rgb(167, 9, 245);">'EdgeLabel'</span><span >,S2.Edges.Weight)</span></span></div></div></div><h3  class = 'S12' id = 'H_7B179953' ><span>Comparing three approaches</span></h3><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S8'><span style="white-space: pre"><span >figure;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >subplot(1,3,1); plot(T); title(</span><span style="color: rgb(167, 9, 245);">'MATLAB'</span><span >)</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >subplot(1,3,2); plot(S1); title(</span><span style="color: rgb(167, 9, 245);">'Kurstal'</span><span >)</span></span></div></div><div class="inlineWrapper"><div  class = 'S10'><span style="white-space: pre"><span >subplot(1,3,3); plot(S2); title(</span><span style="color: rgb(167, 9, 245);">'Prim'</span><span >)</span></span></div></div></div><h2  class = 'S0' id = 'H_9A3969E9' ><span>4. A Matrix-based version of Prim's</span></h2><div  class = 'S5'><span>This version will be discussed in class.</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S8'><span style="white-space: pre"><span >A = full(G.adjacency(</span><span style="color: rgb(167, 9, 245);">'weighted'</span><span >));</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >A(A==0)=inf; </span><span style="color: rgb(0, 128, 19);">% mask indexing!</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >B = zeros(N);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >U = 1;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >V = setdiff(1:N, U);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >k = 0;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">while</span><span >(k &lt; (N-1))</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   min_e = inf;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   </span><span style="color: rgb(14, 0, 255);">for </span><span >i = U</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >      </span><span style="color: rgb(14, 0, 255);">for </span><span >j = V </span><span style="color: rgb(0, 128, 19);">% should be able to remove this for-loop.</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >         </span><span style="color: rgb(14, 0, 255);">if </span><span >(A(i,j) &lt; min_e ) </span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >            min_e = A(i,j);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >            I = i; J = j;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >         </span><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >      </span><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   </span><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   B(I,J)=A(I,J);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   U = union(U,J);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   V = setdiff(V,J);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >   k=k+1;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">end</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >B=B+B';</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >S3 = graph(B);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >figure;</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >subplot(1,2,1); plot(S3,</span><span style="color: rgb(167, 9, 245);">'EdgeLabel'</span><span >,S3.Edges.Weight)</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >subplot(1,2,2);</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >g = plot(G,</span><span style="color: rgb(167, 9, 245);">'Layout'</span><span >,</span><span style="color: rgb(167, 9, 245);">'force'</span><span >,</span><span style="color: rgb(167, 9, 245);">'EdgeLabel'</span><span >,G.Edges.Weight);</span></span></div></div><div class="inlineWrapper"><div  class = 'S10'><span style="white-space: pre"><span >highlight(g,S3)</span></span></div></div></div><div  class = 'S11'><span></span></div><h2  class = 'S0' id = 'H_8FFE4B79' ><span>A useful function</span></h2><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S8'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">function </span><span >a = IsConnected(G)</span></span></div></div><div class="inlineWrapper"><div  class = 'S9'><span style="white-space: pre"><span >  a = (max(G.distances, [], </span><span style="color: rgb(167, 9, 245);">'all'</span><span >)~=inf);</span></span></div></div><div class="inlineWrapper"><div  class = 'S10'><span style="white-space: pre"><span style="color: rgb(14, 0, 255);">end</span></span></div></div></div>
+<br>
+<!-- 
+##### SOURCE BEGIN #####
+%% MA438 - Lab 7: Greedy Algorithms
+
+clear;
+%% 1. Introduction
+% First we'll make a random graph that satisfies certain properties
+%% 
+% * It has a specified number of vertices and a minimum number of edges
+% * It is connected (using a function defined at the end of the file).
+% * It has at least one cycle. Thus is it not a tree (which would make the whole 
+% thing rather too simple).
+%% 
+% Is in Lab 5, we use the |rng()| function to ensure repeatability. You should 
+% remove that line later.
+
+rng(123);
+N = 8;
+MaxWeight = 10;
+MinEdges = N*2;
+G = graph();
+G = G.addnode(N);
+while ( (~IsConnected(G)) ...
+      || (G.hascycles == false) || ...
+      (G.numedges < MinEdges))
+   s = randi(N);
+   t = randi(N);
+   w = randi(MaxWeight);
+   if ( (s ~= t) && (G.findedge(s,t)==0) )
+      G=G.addedge(s,t,w);
+   end
+end
+fprintf('G gas %d edges', G.numedges);
+figure; plot(G); title('A graph, G')
+%% 
+% We want to see how to compute minimum spanning trees. MATLAB hasa function 
+% to do this, which we'll use to verify our results.
+
+T = minspantree(G);
+figure; plot(T,'EdgeLabel',T.Edges.Weight); 
+title('The min spanning tree of G')
+h = plot(G,'Layout','force','EdgeLabel',G.Edges.Weight);
+highlight(h,T);
+title('G and a minimum spanning tree')
+
+%% 2. Kruskal's algorithm
+
+fprintf("%s\n%s\n", "2. Kurstal's Algorithm", ...
+   "REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH");
+%% 
+% For a weighted graph, Kurstal's algorithm starts with $S$ as the subgraph 
+% of $G$ that has no edges (but it does have all the same vertices).
+% 
+% It goes through all the edges in $G$ in order of their weight (least first). 
+% That edge is added to $S$ so long as it does not create a cycle. You can read 
+% more at <https://en.wikipedia.org/wiki/Kruskal%27s_algorithm https://en.wikipedia.org/wiki/Kruskal%27s_algorithm>
+% 
+% To do this, we use that sort() returns the "key" for sorting a vector as its 
+% second return value.
+
+edge_weights = G.Edges.Weight;
+[~, ordering] = sort(edge_weights); % ordering is the key
+S1 = graph();
+S1 = S1.addnode(G.numnodes)
+%% 
+% We also use that, in spite of its name, G.addedge(), does not add an edge 
+% to $G$, but returns a new graph that is the same as $G$, but with the edge added. 
+
+k=0;
+figure;
+for e=ordering'
+   v = G.Edges.EndNodes(e,:);
+   if (~hascycles(S1.addedge(v(1), v(2),k)))
+      k=k+1;
+      S1=S1.addedge(v(1),v(2), k);  
+   end
+   subplot(4,2,k);
+   g = plot(G,'Layout','force','EdgeLabel',G.Edges.Weight);
+   highlight(g,S1)
+end
+%% 
+% This implemenation is somewhat sub-optimal: we check if every edge can be 
+% added, even though, once $S$ has $N-1$ edges, we cannot add any more. An alternative 
+% way of determining if we can stop is if the graph is now connected. 
+%% 3. Prim's Algorithm
+% This algorithm differs from Kurstal's by starting with a graph, $S$, that 
+% has a single vertex. It chooses the edge from $G$ that is incident to it, and 
+% adds it (and a new vertex) to $S$. The edge chosens is the one of least weight. 
+% 
+% Next it picks the edge of least weight that is incident to one of those two, 
+% but not both, and adds it to $S$, and so on. In this way, it builds up a tree 
+% that eventually spans $G$.
+% 
+% The implemenation here is overly complicated, I think. Feel free to skip or, 
+% better still, come up with a better version.
+
+edge_weights = G.Edges.Weight;
+[~, ordering] = sort(edge_weights);
+S2 = graph();
+S2=S2.addnode(1);
+k=0; 
+e=ordering(1); % pick edge with lowest weight.
+v = G.Edges.EndNodes(e,:);
+Added = [v(1), v(2)];
+S2=S2.addedge(v(1), v(2),1);
+
+while (S2.numedges < (G.numnodes-1))
+   i = 2;
+   EdgeAdded=false;
+   while (~EdgeAdded)
+      e=ordering(i); % pick edge with lowest weight.
+      v = G.Edges.EndNodes(e,:);
+      if ( sum(ismember(Added, v))==1)
+         tmp = S2.addedge(v(1), v(2),k+1);
+         if (~hascycles(tmp) )
+            S2 = tmp;
+            Added = unique([Added, v]);
+            EdgeAdded = true;
+            %fprintf("k=%d: Added (%d,%d). numedges = %d\n", ...
+            %   k, v(1), v(2), S2.numedges);
+            k=k+1;
+         end
+      end
+      i=i+1;
+   end
+end
+g = plot(G,'Layout','force','EdgeLabel',G.Edges.Weight);
+highlight(g,S2)
+plot(S2,'EdgeLabel',S2.Edges.Weight)
+% Comparing three approaches
+
+figure;
+subplot(1,3,1); plot(T); title('MATLAB')
+subplot(1,3,2); plot(S1); title('Kurstal')
+subplot(1,3,3); plot(S2); title('Prim')
+%% 4. A Matrix-based version of Prim's
+% This version will be discussed in class.
+
+A = full(G.adjacency('weighted'));
+A(A==0)=inf; % mask indexing!
+B = zeros(N);
+U = 1;
+V = setdiff(1:N, U);
+k = 0;
+while(k < (N-1))
+   min_e = inf;
+   for i = U
+      for j = V % should be able to remove this for-loop.
+         if (A(i,j) < min_e ) 
+            min_e = A(i,j);
+            I = i; J = j;
+         end
+      end
+   end
+   B(I,J)=A(I,J);
+   U = union(U,J);
+   V = setdiff(V,J);
+   k=k+1;
+end
+B=B+B';
+S3 = graph(B);
+figure;
+subplot(1,2,1); plot(S3,'EdgeLabel',S3.Edges.Weight)
+subplot(1,2,2);
+g = plot(G,'Layout','force','EdgeLabel',G.Edges.Weight);
+highlight(g,S3)
+%% 
+% 
+%% A useful function
+
+function a = IsConnected(G)
+  a = (max(G.distances, [], 'all')~=inf);
+end
+##### SOURCE END #####
+-->
+</div></body></html>
