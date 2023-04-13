@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta name="Author" content="Made by 'tree'">
+ <meta name="GENERATOR" content="$Version: $ tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro $">
+ <title>Directory Tree</title>
+ <style type="text/css">
+  <!-- 
+  BODY { font-family : ariel, monospace, sans-serif; }
+  P { font-weight: normal; font-family : ariel, monospace, sans-serif; color: black; background-color: transparent;}
+  B { font-weight: normal; color: black; background-color: transparent;}
+  A:visited { font-weight : normal; text-decoration : none; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  A:link    { font-weight : normal; text-decoration : none; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  A:hover   { color : #000000; font-weight : normal; text-decoration : underline; background-color : yellow; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  A:active  { color : #000000; font-weight: normal; background-color : transparent; margin : 0px 0px 0px 0px; padding : 0px 0px 0px 0px; display: inline; }
+  .VERSION { font-size: small; font-family : arial, sans-serif; }
+  .NORM  { color: black;  background-color: transparent;}
+  .FIFO  { color: purple; background-color: transparent;}
+  .CHAR  { color: yellow; background-color: transparent;}
+  .DIR   { color: blue;   background-color: transparent;}
+  .BLOCK { color: yellow; background-color: transparent;}
+  .LINK  { color: aqua;   background-color: transparent;}
+  .SOCK  { color: fuchsia;background-color: transparent;}
+  .EXEC  { color: green;  background-color: transparent;}
+  -->
+ </style>
+</head>
+<body>
+	<h1>Directory Tree</h1><p>
+	<a href="https://www.niallmadden.ie/2223-MA313/">https://www.niallmadden.ie/2223-MA313/</a><br>
+	├── <a href="https://www.niallmadden.ie/2223-MA313//22_23_Communication_Skills.pdf">22_23_Communication_Skills.pdf</a><br>
+	├── <a href="https://www.niallmadden.ie/2223-MA313//2223-MA313-Assignment-4.pdf">2223-MA313-Assignment-4.pdf</a><br>
+	├── <a href="https://www.niallmadden.ie/2223-MA313//2223-MA313-Assignment-4-solutions.pdf">2223-MA313-Assignment-4-solutions.pdf</a><br>
+	├── <a href="https://www.niallmadden.ie/2223-MA313//2223-MA313-Assignment-4v2.pdf">2223-MA313-Assignment-4v2.pdf</a><br>
+	├── <a href="https://www.niallmadden.ie/2223-MA313//2223-MA313-TutorialSheet.pdf">2223-MA313-TutorialSheet.pdf</a><br>
+	├── <a href="https://www.niallmadden.ie/2223-MA313//index.shtml">index.shtml</a><br>
+	├── <a href="https://www.niallmadden.ie/2223-MA313//W01/">W01</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W01/MA313-Week01-1.pdf">MA313-Week01-1.pdf</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W01/MA313-Week01-2.pdf">MA313-Week01-2.pdf</a><br>
+	│   └── <a href="https://www.niallmadden.ie/2223-MA313//W01/MA313-Week01.pdf">MA313-Week01.pdf</a><br>
+	├── <a href="https://www.niallmadden.ie/2223-MA313//W02/">W02</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W02/MA313-Week02-1.pdf">MA313-Week02-1.pdf</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W02/MA313-Week02-2.pdf">MA313-Week02-2.pdf</a><br>
+	│   └── <a href="https://www.niallmadden.ie/2223-MA313//W02/MA313-Week02.pdf">MA313-Week02.pdf</a><br>
+	├── <a href="https://www.niallmadden.ie/2223-MA313//W03/">W03</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W03/MA313-Week03-1.pdf">MA313-Week03-1.pdf</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W03/MA313-Week03-2.pdf">MA313-Week03-2.pdf</a><br>
+	│   └── <a href="https://www.niallmadden.ie/2223-MA313//W03/MA313-Week03.pdf">MA313-Week03.pdf</a><br>
+	├── <a href="https://www.niallmadden.ie/2223-MA313//W04/">W04</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W04/MA313-Week04-1.pdf">MA313-Week04-1.pdf</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W04/MA313-Week04.pdf">MA313-Week04.pdf</a><br>
+	│   └── <a href="https://www.niallmadden.ie/2223-MA313//W04/MA313-Week04.pdf.pdf">MA313-Week04.pdf.pdf</a><br>
+	├── <a href="https://www.niallmadden.ie/2223-MA313//W05/">W05</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W05/MA313-Week05.pdf">MA313-Week05.pdf</a><br>
+	│   └── <a href="https://www.niallmadden.ie/2223-MA313//W05/MA313-Week05.pdf.pdf">MA313-Week05.pdf.pdf</a><br>
+	├── <a href="https://www.niallmadden.ie/2223-MA313//W06/">W06</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W06/MA313-Week06.pdf">MA313-Week06.pdf</a><br>
+	│   └── <a href="https://www.niallmadden.ie/2223-MA313//W06/MA313-Week06.pdf.pdf">MA313-Week06.pdf.pdf</a><br>
+	├── <a href="https://www.niallmadden.ie/2223-MA313//W07/">W07</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W07/MA313-Week07.pdf">MA313-Week07.pdf</a><br>
+	│   └── <a href="https://www.niallmadden.ie/2223-MA313//W07/MA313-Week07.pdf.pdf">MA313-Week07.pdf.pdf</a><br>
+	├── <a href="https://www.niallmadden.ie/2223-MA313//W08/">W08</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W08/MA313-Week08.pdf">MA313-Week08.pdf</a><br>
+	│   └── <a href="https://www.niallmadden.ie/2223-MA313//W08/MA313-Week08.pdf.pdf">MA313-Week08.pdf.pdf</a><br>
+	├── <a href="https://www.niallmadden.ie/2223-MA313//W09/">W09</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W09/MA313-Week09-1.pdf">MA313-Week09-1.pdf</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W09/MA313-Week09.pdf">MA313-Week09.pdf</a><br>
+	│   └── <a href="https://www.niallmadden.ie/2223-MA313//W09/MA313-Week09.pdf.pdf">MA313-Week09.pdf.pdf</a><br>
+	├── <a href="https://www.niallmadden.ie/2223-MA313//W10/">W10</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W10/MA313-Week10-1.pdf">MA313-Week10-1.pdf</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W10/MA313-Week10-2.pdf">MA313-Week10-2.pdf</a><br>
+	│   └── <a href="https://www.niallmadden.ie/2223-MA313//W10/MA313-Week10.pdf">MA313-Week10.pdf</a><br>
+	├── <a href="https://www.niallmadden.ie/2223-MA313//W11/">W11</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W11/MA313-W11-LeaseSquaresInR.slides.html">MA313-W11-LeaseSquaresInR.slides.html</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W11/MA313-Week11-1.pdf">MA313-Week11-1.pdf</a><br>
+	│   ├── <a href="https://www.niallmadden.ie/2223-MA313//W11/MA313-Week11-2.pdf">MA313-Week11-2.pdf</a><br>
+	│   └── <a href="https://www.niallmadden.ie/2223-MA313//W11/MA313-Week11.pdf">MA313-Week11.pdf</a><br>
+	└── <a href="https://www.niallmadden.ie/2223-MA313//W12/">W12</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href="https://www.niallmadden.ie/2223-MA313//W12/MA313-Sample.pdf">MA313-Sample.pdf</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href="https://www.niallmadden.ie/2223-MA313//W12/MA313-Sample.pdf.pdf">MA313-Sample.pdf.pdf</a><br>
+	&nbsp;&nbsp;&nbsp; └── <a href="https://www.niallmadden.ie/2223-MA313//W12/MA313-Week12.pdf">MA313-Week12.pdf</a><br>
+	<br><br>
+	</p>
+	<p>
+
+12 directories, 39 files
+	<br><br>
+	</p>
+	<hr>
+	<p class="VERSION">
+		 tree v1.8.0 © 1996 - 2018 by Steve Baker and Thomas Moore <br>
+		 HTML output hacked and copyleft © 1998 by Francesc Rocher <br>
+		 JSON output hacked and copyleft © 2014 by Florian Sesser <br>
+		 Charsets / OS/2 support © 2001 by Kyosuke Tokoro
+	</p>
+</body>
+</html>
