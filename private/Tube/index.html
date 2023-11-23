@@ -1,10 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<title>Examples from simmulation of acvection-diffusion</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
 <html>
   <body>
 
         <h1>Visualisation of time-dep solution.</h1>
-    <h2>22 Nov 2023</h2>
+	<h2>22 Nov 2023</h2>
+	<p>Here we show the solution to
+	  \[
+	  u_t - \alpha \Delta u + b_1 u_x + b_2(t)u_y =0,
+	  \]
+	  where $(x,y,t) \in (x_0,x_1)\times(y_0,y_1)\times(t_0,T]$,
+	  and the boundary conditions and initial condition are given. For the
+	  specific example shown where we've taken
+	  \[
+	  \alpha=5 \times 10^{-3}, b_1 \equiv 2, b_2(t)=\sin(2\pi t).
+	  \]
+	  The domain is $(x,y,t) \in
+	  (x_0,x_1)\times(y_0,y_1)\times(t_0,T] = (-0.2, 4) \times
+	  (0,1) \times (0,2]$. The boundary conditions are
+	  \[
+	  u(x_0,y)=u(x_1,y)=u(x,y_0)=u(x,y_1)=0,\]
+	  and the initial condition is
+	  \[
+	  u(x,y,t_0) = \begin{cases}
+	  1 & x^2+(y-0.2)^2 \leq (0.1)^2\\
+			       0 & \text{ otherwise}.
+			       \end{cases}
+	  \]
+	  The PDE is solved using a $P_2$ Galerkin FEM with the
+	  implicit midpoint method in time. The implementation is in
+	  Firedrake (with irksome for time integration). It is notable
+	  that there is an initial oscillation in the solution. This
+	  is due to the jump discontinuity in the initial condition.
+			       
+	  </p>
     <center>
-        <img src="slug01.gif" alt="gif of slug" /> 
+        <img src="slugs.gif" alt="gif of slug" /> 
     </center>
 
     
