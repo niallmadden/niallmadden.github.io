@@ -10,7 +10,6 @@
 </script>
 </head>
 
-<html>
   <body>
     <h1>Visualisation of a problem with two exponential layers</h1>
     <h2>22 Nov 2023</h2>
@@ -27,6 +26,15 @@
       var datadir_old = "https://raw.githubusercontent.com/mbarzegary/datasets-and-scenes/main/";
       var datadir ="https://www.niallmadden.ie/private/glance/"
       var file = "cd_exp.vtkjs";
+      document.write("<iframe src='" + app + "?name=" + file + "&url=" +datadir + file + "' id='iframe' width='1100' height='900'></iframe>");
+    </script>
+
+
+    <script>
+      var app = "https://kitware.github.io/paraview-glance/app";
+      var datadir_old = "https://raw.githubusercontent.com/mbarzegary/datasets-and-scenes/main/";
+      var datadir ="https://www.niallmadden.ie/private/glance/"
+      var file = "cd_char.vtkjs";
       document.write("<iframe src='" + app + "?name=" + file + "&url=" +datadir + file + "' id='iframe' width='1100' height='900'></iframe>");
     </script>
   </body>
