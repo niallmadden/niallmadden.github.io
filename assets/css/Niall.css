@@ -2067,6 +2067,13 @@ ul.actions li:first-child {
     color: #001;
 }
 
+.wrapper.style6 {
+    padding: 2em 0 2em 0;
+    background-image: none;
+    background-color: #FFF0F0;
+    color: #201010;
+    text-align: left;
+}
 
 /* Nav */
 
