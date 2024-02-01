@@ -20,7 +20,7 @@ int main(void )
   std::cin >> N; // Lazy! Should do input checking.
 
   double h=(b-a)/double(N);
-  double Int_f_TR = (h/2.0)*f(0.0);
+  double Int_f_TR = (h/2.0)*f(a);
   for (int i=1; i<N; i++)
     Int_f_TR += h*f(a+i*h);
   Int_f_TR += (h/2.0)*f(b);

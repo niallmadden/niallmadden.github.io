@@ -27,7 +27,7 @@ double TrapRule(double Fn(double), double a,
 		double b, int N)
 {
   double h=(b-a)/double(N);
-  double QFn = (h/2.0)*Fn(0.0);
+  double QFn = (h/2.0)*Fn(a);
   for (int i=1; i<N; i++)
     QFn += h*Fn(a+i*h);
   QFn += (h/2.0)*Fn(b);
