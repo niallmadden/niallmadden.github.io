@@ -1,9 +1,8 @@
-// CS319 -- Scientific Computing
 // A very basic implementation of a bisection algorithm.
+// For Lab 3 of CS319 -- Scientific Computing
 // This is loosely based on Shapira "Solving PDEs in C++", Section 1.20
 // Author: Niall Madden
-// Date: March 2021
-// For more, see:  See http://www.maths.nuigalway.ie/~niall/CS319/lab2/
+// For more, see: https://www.niallmadden.ie/2324-CS319/#lab3
 
 #include <iostream>
 #include <iomanip>
