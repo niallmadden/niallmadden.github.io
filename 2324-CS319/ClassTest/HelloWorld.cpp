@@ -1,5 +1,7 @@
-/* 
-This is a place-hold document.
-The real version will  be available here at
-16:00, 7 Feb 2024.
-*/
+#include <iostream>
+
+int main(void)  
+{
+  std::cout << "Hello, world!" << std::endl;
+  return(0); 
+}
