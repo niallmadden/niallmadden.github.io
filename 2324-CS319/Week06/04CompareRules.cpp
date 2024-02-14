@@ -35,11 +35,11 @@ int main(void )
   double error1 = fabs(ans_true - Est1);
   double error2 = fabs(ans_true - Est2);
 
-  std::cout << " N=" << N;
-  std::cout << std::scientific;
+  std::cout << " N=" << N << std::scientific;
   std::cout << " | Trap Error=" << error1;
   std::cout << " | Simp Error=" << error2;
   std::cout << std::endl;
+  delete [] x; delete [] y;
   return(0);
 }
 
