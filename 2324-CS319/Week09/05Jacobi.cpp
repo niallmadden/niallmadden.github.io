@@ -1,6 +1,6 @@
-// File:     03Jacobi.cpp (Jacobi's method for solving systems)
-// Author:   Niall Madden (NUI Galway) Niall.Madden@NUIGalway.ie
-// Date:     Week 7 of 1920-CS319
+// File:     05Jacobi.cpp (Jacobi's method for solving systems)
+// Author:   Niall Madden 
+// Date:     Week 09 of 2324-CS319
 // What:     Solving a linear system of equations with Jacobi's method
 // See also: Vector.h, Matrix.h, Vector.cpp, and Matrix.cpp 
 #include <iostream>

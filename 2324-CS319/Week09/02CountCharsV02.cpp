@@ -1,8 +1,8 @@
 // File:   02CountCharsV02.cpp
 // Data:   March 2024
 // Version 02 of our programme that reads the contents of the file
-// CPlusPlusTerms.txt   
-// and reports the number of characters and lines.
+// CPlusPlusTerms.txt and reports the number of characters and lines.
+// This one also outputs the running directory
 // For more information: 
 //    see http://www.maths.nuigalway.ie/~niall/CS319/Week05
 
@@ -11,8 +11,12 @@
 #include <cstdlib>
 #include <string>
 
-int main(void )
+int main(int argc, char * argv[])
 {
+  std::cout << "Note: this program is running as " << argv[0];
+  std::cout << "\nMake sure you download the input file to the same folder";
+  std::cout << std::endl;
+  
   std::ifstream InFile;
   std::string InFileName;
   char c;
