@@ -4,7 +4,8 @@
 //            but without any classes, objects, or operator overloading.
 
 #include <iostream>
-#include <stdlib.h>
+#include <stdlib.h
+#include <cmath>
 
 void print_vec(double *v, unsigned N);
 
