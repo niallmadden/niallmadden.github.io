@@ -4,7 +4,6 @@
 //            but without any classes, objects, or operator overloading.
 
 #include <iostream>
-#include <stdlib.h
 #include <cmath>
 
 void print_vec(double *v, unsigned N);
@@ -50,7 +49,7 @@ int main(void )
       for (unsigned j=0; j<N; j++)
 	if (j != i)
 	  xk1[i] -= A[i][j]*xk[j];
-      x[i] /= A[i][i];
+      xk1[i] /= A[i][i];
     }
     
     for (unsigned i=0; i<N; i++)
