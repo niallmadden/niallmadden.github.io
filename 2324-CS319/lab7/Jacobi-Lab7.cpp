@@ -49,7 +49,7 @@ int main(void )
       for (unsigned j=0; j<N; j++)
 	if (j != i)
 	  xk1[i] -= A[i][j]*xk[j];
-      xk1[i] /= A[i][i];
+      xk1[i] /= A[i][i]; // Note: typo fixed 7th March
     }
     
     for (unsigned i=0; i<N; i++)
