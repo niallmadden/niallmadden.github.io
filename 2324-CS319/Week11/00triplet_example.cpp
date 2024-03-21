@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <chrono>
-#
+
 #include "Vector10.h"
 #include "Matrix11.h"
 #include "Triplet.h"
@@ -24,7 +24,7 @@ void Banner(void);
 
 int main(void )
 {
-  unsigned int N=250, Max_Its=100;
+  unsigned int N=100, Max_Its=200;
   double TOL=1e-8;
   Banner();
 
