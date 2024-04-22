@@ -21,24 +21,24 @@
       Boundary conditions: \( u(\cdot,\cdot,t)|_{\partial
       \Omega}=0 \),  and initial condition us \( u(x,y,0)\equiv 0\). 
       For the specific example shown where we've
-      $\epsilon=10^{-2}$. 
-      The PDE is solved using a $P_2$ Galerkin FEM, and integrated in
+      \( \epsilon=10^{-2} \). 
+      The PDE is solved using a \( P_2 \) Galerkin FEM, and integrated in
       time using 
       Backward Euler. The implementation is in
       Firedrake (with irksome for time integration).
     </p>
 
     For this specific example, we use $r \equiv 1$, and
-    \[
+    $$
     u(x,y,t) = -\big((t + 1)e^{-t} - 1\big)
     (h_1(x) - 1 - e^{-1/\varepsilon})
     (h_1(y) - 1 - e^{-1/\varepsilon})
-    \]
+    $$
     where
-    \[
+    \(
     h_1(x) = \frac{e^{-x/\varepsilon} + e^{-(1.0 -
     x)/\varepsilon}}{1 + e^{-1/\varepsilon}}.
-    \]
+    \)
     <center>
       <video width="800" controls loop autoplay>
 	<source src="u2D.ogv" type="video/ogg">
