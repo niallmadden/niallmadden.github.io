@@ -1,0 +1,73 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"  xml:lang="en-ie"  xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        
+            
+
+            
+                
+            
+
+            
+                <link href="http://localhost:1313/LayerPhenomena2025/categories/" rel="self" type="text/html"/>
+            
+        
+            
+
+            
+
+            
+                <link href="http://localhost:1313/LayerPhenomena2025/categories/rss.xml" rel="alternate" type="application/rss+xml"/>
+            
+        
+
+        
+
+        
+
+        <description>Recent content</description>
+
+        
+            <language>en-ie</language>
+        
+
+        
+
+        <link>http://localhost:1313/LayerPhenomena2025/categories/</link>
+
+        
+
+        <title>Categories · 21th Workshop on Numerical Methods for Problems with Layer Phenomena</title>
+
+        
+
+        
+    </channel>
+</rss>

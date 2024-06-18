@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Layer Phenomena 2025</title>
-    <link>http://localhost:1313/LayerPhenomena2025/</link>
-    <description>Recent content on Layer Phenomena 2025</description>
+    <title>21th Workshop on Numerical Methods for Problems with Layer Phenomena on Layer Phenomena 2025</title>
+    <link>https://www.niallmadden.ie/LayerPhenomena2025/</link>
+    <description>Recent content in 21th Workshop on Numerical Methods for Problems with Layer Phenomena on Layer Phenomena 2025</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 17 Jun 2024 23:44:35 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/LayerPhenomena2025/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-ie</language>
+    <atom:link href="https://www.niallmadden.ie/LayerPhenomena2025/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Layer Phenomena 2025</title>
-      <link>http://localhost:1313/LayerPhenomena2025/posts/my-first-post/</link>
-      <pubDate>Mon, 17 Jun 2024 23:44:35 +0100</pubDate>
-      <guid>http://localhost:1313/LayerPhenomena2025/posts/my-first-post/</guid>
-      <description>Introduction This is bold text, and this is emphasized text.&#xA;Visit the Hugo website!</description>
+      <title>Contact</title>
+      <link>https://www.niallmadden.ie/LayerPhenomena2025/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.niallmadden.ie/LayerPhenomena2025/contact/</guid>
+      <description>If you have any queries about the Workshop, get in touch with Niall at Niall.Madden@UniversityOfGalway.ie</description>
+    </item>
+    <item>
+      <title>Registration and Abstracts</title>
+      <link>https://www.niallmadden.ie/LayerPhenomena2025/registration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.niallmadden.ie/LayerPhenomena2025/registration/</guid>
+      <description>The Workshop is free, but registration is required.&#xA;To register your interest in participating, please complete this form, or send an email to Niall (Niall.Madden@UniversityOfGalway.ie) with your name and affiliation, and information on if you wish to give a talk.&#xA;The deadline for registration will be posted here 6 months before the workshop.&#xA;Tea and coffee will be provided during breaks. Lunch, the conference dinner, travel, accommodation, etc., are at the participants&#39; expense.</description>
     </item>
   </channel>
 </rss>
