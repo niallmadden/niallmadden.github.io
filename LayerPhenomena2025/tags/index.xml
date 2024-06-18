@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Layer Phenomena 2025</title>
-    <link>https://www.niallmadden.ie/LayerPhenomena2025/tags/</link>
+    <link>http://localhost:1313/LayerPhenomena2025/tags/</link>
     <description>Recent content in Tags on Layer Phenomena 2025</description>
     <generator>Hugo</generator>
-    <language>en-ie</language>
-    <atom:link href="https://www.niallmadden.ie/LayerPhenomena2025/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/LayerPhenomena2025/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

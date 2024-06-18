@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Layer Phenomena 2025</title>
-    <link>https://www.niallmadden.ie/LayerPhenomena2025/</link>
+    <link>http://localhost:1313/LayerPhenomena2025/</link>
     <description>Recent content on Layer Phenomena 2025</description>
     <generator>Hugo</generator>
-    <language>en-ie</language>
+    <language>en-us</language>
     <lastBuildDate>Mon, 17 Jun 2024 23:44:35 +0100</lastBuildDate>
-    <atom:link href="https://www.niallmadden.ie/LayerPhenomena2025/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/LayerPhenomena2025/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Layer Phenomena 2025</title>
-      <link>https://www.niallmadden.ie/LayerPhenomena2025/posts/my-first-post/</link>
+      <link>http://localhost:1313/LayerPhenomena2025/posts/my-first-post/</link>
       <pubDate>Mon, 17 Jun 2024 23:44:35 +0100</pubDate>
-      <guid>https://www.niallmadden.ie/LayerPhenomena2025/posts/my-first-post/</guid>
+      <guid>http://localhost:1313/LayerPhenomena2025/posts/my-first-post/</guid>
       <description>Introduction This is bold text, and this is emphasized text.&#xA;Visit the Hugo website!</description>
     </item>
   </channel>
