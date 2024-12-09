@@ -14655,7 +14655,6 @@ subject to a variety of boundary conditions. Previously, we've studied the case 
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
 <span class="k">if</span> <span class="s2">"OMP_NUM_THREADS"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">:</span>
     <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"OMP_NUM_THREADS"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"1"</span>  
-<span class="o">%</span><span class="k">matplotlib</span> inline
 </pre></div>
 
      </div>
@@ -14674,8 +14673,6 @@ subject to a variety of boundary conditions. Previously, we've studied the case 
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">firedrake</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">cm</span>
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">log</span>
 </pre></div>
 
      </div>
@@ -14773,7 +14770,7 @@ subject to a variety of boundary conditions. Previously, we've studied the case 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[&lt;firedrake.pyplot.mpl._FiredrakeFunctionPath at 0x7f0686d7ac50&gt;]</pre>
+<pre>[&lt;firedrake.pyplot.mpl._FiredrakeFunctionPath at 0x7f9e34659690&gt;]</pre>
 </div>
 
 </div>
@@ -14847,7 +14844,7 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[&lt;firedrake.pyplot.mpl._FiredrakeFunctionPath at 0x7f0686b51e10&gt;]</pre>
+<pre>[&lt;firedrake.pyplot.mpl._FiredrakeFunctionPath at 0x7f9e324c4e10&gt;]</pre>
 </div>
 
 </div>
@@ -14916,7 +14913,7 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[&lt;firedrake.pyplot.mpl._FiredrakeFunctionPath at 0x7f0686aef390&gt;]</pre>
+<pre>[&lt;firedrake.pyplot.mpl._FiredrakeFunctionPath at 0x7f9e32350610&gt;]</pre>
 </div>
 
 </div>
@@ -14957,7 +14954,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">L</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">*</span><span class="n">v</span><span class="o">*</span><span class="n">dx</span> <span class="o">-</span> <span class="n">epsilon</span><span class="o">*</span><span class="mi">5</span><span class="o">*</span><span class="n">v</span><span class="o">*</span><span class="n">ds</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -14980,13 +14977,13 @@ class="
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[&lt;firedrake.pyplot.mpl._FiredrakeFunctionPath at 0x7f06863e3810&gt;]</pre>
+<pre>[&lt;firedrake.pyplot.mpl._FiredrakeFunctionPath at 0x7f9e32487010&gt;]</pre>
 </div>
 
 </div>
@@ -15027,7 +15024,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">DuN</span> <span class="o">=</span> <span class="n">Function</span><span class="p">(</span><span class="n">V</span><span class="p">)</span>
@@ -15052,7 +15049,7 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>-4.7888826408990965
+<pre>-4.799872728144521
 </pre>
 </div>
 </div>
@@ -15078,7 +15075,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">L</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">*</span><span class="n">v</span><span class="o">*</span><span class="n">dx</span>
@@ -15112,13 +15109,13 @@ class="
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[&lt;firedrake.pyplot.mpl._FiredrakeFunctionPath at 0x7f068572e010&gt;]</pre>
+<pre>[&lt;firedrake.pyplot.mpl._FiredrakeFunctionPath at 0x7f9e31dbf010&gt;]</pre>
 </div>
 
 </div>
