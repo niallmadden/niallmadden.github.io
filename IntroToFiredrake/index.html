@@ -12,6 +12,11 @@
 	  "Introduction to Firedrake">
     <meta name="author" content="Niall Madden MA378">
     <link rel="stylesheet" href="../assets/css/Niall.css" />
+    
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
   </head>
   <body class="is-preload">
     
@@ -81,6 +86,7 @@
 		<a href="#01">01: Getting started</a>,&nbsp;
 		<a href="#02">02: Error estimation</a>,&nbsp;
 		<a href="#03">03: Boundary conditions</a>,&nbsp;
+		<a href="#03">04: Convection-diffusion</a>,&nbsp;
 	      </p>
 	    </article>
 
@@ -149,9 +155,21 @@
 	      
 	      <div id="04" class="col-6 col-6-medium col-12-small">
 		<section class="box style4">
-		  <span class="icon solid featured iconoir-sigma-brackets-square"></span>
-		  <h3>04: TBD</h3>
-		  <p>Stuff will go here</p>
+		  <span class="icon solid featured iconoir-graph-up"></span>
+		  <h3>04: Convection-diffusion problems in 1D
+		    (draft)</h3>
+		  
+ <ul>
+		    <li><b>What:</b> We  solve problems of the form
+		      \(-\varepsilon u''(x) + c(x) u'(x) = f(x)\), which
+		      is the first time we've had odd-ordered
+		      derivatives. (Later: stabilisation). 
+		    </li>
+		    <li>HTML: [<a href="04-ConvectionDiffusion.html">Convection-diffusion</a>]
+		    </li>
+		    <li>Notebook: <a href="04-ConvectionDiffusion.ipynb">04-ConvectionDiffusion.ipynb</a>
+		    </li>
+		  </ul>
 		</section>
 	      </div>
 	    </div>
