@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <!-- ENTER  PAGE TITLE  HERE -->
+    <title>Layer Phenomena 2017 - Participants</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link rel="stylesheet" href="http://www.maths.nuigalway.ie/style.css" type="text/css"/>
+  </head>
+<body>
+ <!--#set var="incl" value="/includes" -->
+   <!--#include virtual="Layer2017header.shtml" -->
+
+<p>
+<font size="+2" color="#881010">
+<b>The 14<sup>th</sup> Annual Workshop on Numerical Methods
+  for Problems with Layer Phenomena</b></font><br />
+<br />
+<font size="+1">NUI Galway</font><br />
+<font size="+1">6-7 April 2017</font>
+
+</p>
+
+<h2>Registered Participants (last updated 22/Feb/2017)</h2>
+
+<table border="0">
+  <tr>
+    <th></th>
+    <th>Name</th>
+    <th>Institution</th>
+    <th>Country</th>
+    <th align="center">Talk</th>
+  </tr>
+
+  <tr>
+    <td>1.</td>
+    <td>Abdelhamid Ainouz</td>
+    <td>Univ. Sci. Techn. H. Boumediene</td>
+    <td align="center"><img src="images/flags/dz.png" border="0"
+			    height="13" width="18" alt="DZ" /></td>
+    <td align="center">&#10004;</td>
+  </tr>
+  
+  <tr>
+    <td></td>
+    <td>Nisreen Alokbi</td>
+    <td>NUI Galway</td>
+    <td align="center"><img src="images/flags/ie.png" border="0"
+			    height="13" width="18" alt="IE" /></td>
+    <td align="center"></td>
+  </tr>
+  
+  <tr> 
+    <td></td>
+    <td>Faiza Alssaedi</td>
+    <td>NUI Galway</td>
+    <td align="center"><img src="images/flags/ie.png" border="0"
+			    height="13" width="18" alt="IE" /></td>
+    <td align="center">&#10004;</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Hiteshkumar Bansu</td>
+    <td>Sardar Vallabhbhai National Institute of Technology</td>
+    <td align="center"><img src="images/flags/in.png" border="0"
+			    height="13" width="18" alt="IN"/></td>
+    <td align="center"></td>
+  </tr>
+
+  <tr>
+    <td>5.</td>
+    <td>Simon Becher</td>
+    <td>Technische Universität Dresden</td>
+    <td align="center"><img src="images/flags/de.png" border="0"
+			    height="13" width="18" alt="DE"/></td>
+    <td align="center">&#10004;</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Philippos Constantinou</td>
+    <td>University of Cyprus</td>
+    <td align="center"><img src="images/flags/cy.png" border="0"
+			    height="13" width="18" alt="CY"/></td>
+    <td align="center">&#10004;</td>
+  </tr>
+  
+  <tr>
+    <td></td>
+    <td>Pratibhamoy Das</td>
+    <td>Indian Institute of Technology Patna</td>
+    <td align="center"><img src="images/flags/in.png" border="0"
+			    height="13" width="18" alt="IN"/></td>
+    <td align="center">&#10004;</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Sebastian Franz</td>
+    <td>Technische Universität Dresden</td>
+    <td align="center"><img src="images/flags/de.png" border="0"
+			    height="13" width="18" alt="DE"/></td>
+    <td align="center">&#10004;</td>
+  </tr>
+  
+
+  <tr>
+    <td></td>
+    <td>Jos&eacute; Luis Gracia</td>
+    <td>University of Zaragoza</td>
+    <td align="center"><img src="images/flags/es.png" border="0"
+			height="13" width="18" alt="ES"/></td>
+    <td align="center">&#10004;</td>
+  </tr>
+
+  <tr>
+    <td>10.</td>
+    <td>Paul Greaney</td><td>NUI Galway</td>
+    <td align="center"><img src="images/flags/ie.png" border="0"
+			    height="13" width="18" alt="IE"/></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Makram Hamouda</td>
+    <td>Indiana University</td>
+    <td align="center"><img src="images/flags/us.png" border="0" height="13" width="18" alt="US"/></td>
+    <td align="center">&#10004;</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Alan Hegarty</td>
+    <td>University of Limerick</td>
+    <td align="center"><img src="images/flags/ie.png" border="0" height="13" width="18" alt="IE"/></td>
+    <td align="center">&#10004;</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Ha Van Hieu</td>
+    <td>NUI Galway</td>
+    <td align="center"><img src="images/flags/ie.png" border="0" height="13" width="18" alt="IE"/></td>
+    <td align="center"></td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Sameerah Jamal</td>
+    <td>University of the Witwatersrand</td>
+    <td align="center"><img src="images/flags/za.png" border="0" height="13" width="18" alt="ZA"/></td>
+    <td align="center"></td>
+  </tr>
+
+  <tr>
+    <td>15.</td>
+    <td>Torsten Linß</td>
+    <td>FernUniversität in Hagen</td>
+    <td align="center"><img src="images/flags/de.png" border="0" height="13" width="18" alt="DE"/></td>
+    <td align="center">&#10004;</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Dmitry Lukyanenko</td>
+    <td>Lomonosov Moscow State University</td>
+    <td align="center"><img src="images/flags/ru.png" border="0" height="13" width="18" alt="RU"/></td>
+    <td align="center">&#10004;</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Niall Madden</td>
+    <td>NUI Galway</td>
+    <td align="center"><img src="images/flags/ie.png" border="0" height="13" width="18" alt="IE"/></td>
+    <td></td>
+  </tr>
+
+<!--  
+  <tr>
+    <td></td>
+    <td>Kawa Manmi</td>
+    <td>Salahaddin University-Erbil</td>
+    <td align="center"><img src="images/flags/ir.png" border="0" height="13" width="18" alt="IR"/></td>
+    <td></td>
+  </tr>
+  -->
+
+  <tr>
+    <td></td>
+    <td>Faik Mayah</td>
+    <td>NUI Galway</td>
+    <td align="center"><img src="images/flags/ie.png" border="0" height="13" width="18" alt="IE"/></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>John Miller</td>
+    <td>Trinity College Dublin</td>
+    <td align="center"><img src="images/flags/ie.png" border="0" height="13" width="18" alt="IE"/></td>
+    <td align="center">&#10004;</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Seyedsaeed Mirazimi</td>
+    <td>Simon Fraser University</td>
+    <td align="center"><img src="images/flags/ca.png" border="0" height="13" width="18" alt="CA"/></td>
+    <td align="center"></td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Tesfaslasie Msgina</td>
+    <td>Mekelle University</td>
+    <td align="center"><img src="images/flags/et.png" border="0" height="13" width="18" alt="ET"/></td>
+    <td align="center"></td>
+  </tr>
+
+  <tr>
+    <td>20.</td>
+    <td>Nikolay Nefedov</td>
+    <td>Lomonosov Moscow State University</td>
+    <td align="center"><img src="images/flags/ru.png" border="0" height="13" width="18" alt="RU"/></td>
+    <td align="center">&#10004;</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Eugene O'Riordan</td>
+    <td>Dublin City University</td>
+    <td align="center"><img src="images/flags/ie.png" border="0" height="13" width="18" alt="IE"/></td>
+    <td align="center">&#10004;</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Maria Pickett</td>
+    <td>University of Portsmouth</td>
+    <td align="center"><img src="images/flags/uk.png" border="0" height="13" width="18" alt="UK"/></td>
+    <td align="center">&#10004;</td>
+  </tr>
+
+    <tr>
+    <td></td>
+    <td>Stephen Russell</td>
+    <td>Beijing Computational Science Research Center</td>
+    <td align="center"><img src="images/flags/cn.png" border="0" height="13" width="18" alt="CN"/></td>
+    <td align="center">&#10004;</td>
+  </tr>
+
+
+  <tr>
+    <td></td>
+    <td>Qays Shakir</td>
+    <td>NUI Galway</td>
+    <td align="center"><img src="images/flags/ie.png" border="0" height="13" width="18" alt="IE"/></td>
+    <td align="center"></td>
+  </tr>
+
+  <tr>
+    <td>25.</td>
+    <td>Martin Stynes</td>
+    <td>Beijing Computational Science Research Center</td>
+    <td align="center"><img src="images/flags/cn.png" border="0" height="13" width="18" alt="CN"/></td>
+    <td align="center">&#10004;</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Catherine Timoney</td>
+    <td>University of Limerick</td>
+    <td align="center"><img src="images/flags/ie.png" border="0" height="13" width="18" alt="IE"/></td>
+    <td align="center">&#10004;</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Vladimir Volkov</td>
+    <td>Moscow State University</td>
+    <td align="center"><img src="images/flags/ru.png" border="0" height="13" width="18" alt="RU"/></td>
+    <td align="center">&#10004;</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Chad Westphal</td>
+    <td>Wabash College</td>
+    <td align="center"><img src="images/flags/us.png" border="0" height="13" width="18" alt="US"/></td>
+    <td align="center">&#10004;</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Christos Xenophtonos</td>
+    <td>University of Cyprus</td>
+    <td align="center"><img src="images/flags/cy.png" border="0" height="13" width="18" alt="CY"></td>
+    <td align="center">&#10004;</td>
+    </tr>
+
+
+</table>
+
+
+        <!-- END PAGE CONTENTS -->
+        <!--#include virtual="$incl/footer.shtml" -->
+    </body>
+</html>

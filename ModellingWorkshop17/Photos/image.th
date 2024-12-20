@@ -1,0 +1,140 @@
+#c// ####################################################################
+#c// Image Theme created by DaveSource.com
+#c// ####################################################################
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+    'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title> 
+      Image: <:=Name(This_Image) :>
+    </title>
+    <: Meta() :>
+  </head>
+    <body bgcolor='black' text='white' link='#D4D4D4'
+    vlink='#D4D4D4' alink='#D4D4D4'>
+
+
+#c// #########################
+#c// Each image is a table in order to achieve a border
+#c// #########################
+
+
+#c// #########################
+#c// The image and caption
+#c// #########################
+<table cellspacing='10' width='100%'>
+  <tr>
+
+  <td align='center' valign='top'>
+
+  <table cellspacing='0' cellpadding='6' bgcolor='gray'>
+  <tr>
+  <td>
+
+  <:=Get(This_Image,'href','image'):>
+  <:=Image(This_Image,'full'):></a>
+
+  </td>
+  </tr>
+  </table>
+
+
+
+  <br />
+  <font size='+1'><i>
+    <:=Caption(This_Image) :>
+  </i></font>
+
+  <br /><br />
+  <:=Get(This_Image,'href','image'):>
+  <:=Name(This_Image):>
+  </a>
+
+
+#c// #########################
+#c// Prev/next thumbnails
+#c// #########################
+    <td align='left' valign='top'>
+
+
+<: if (my $Prev = Prev(This_Image, $opt->{image_loop})) { _:>
+
+      <:=Get($Prev,'href','image_page'):>previous</a><br />
+
+
+  <table cellspacing='0' cellpadding='3' bgcolor='gray'>
+  <tr>
+  <td>
+
+
+
+      <:=Get($Prev,'href','image_page'):>
+      <:=Image($Prev,'thumb'):></a>
+      
+
+  </td>
+  </tr>
+  </table>
+
+      <:=Get($Prev,'href','image_page'):>
+      <:=Name($Prev):></a>
+<: } _:>
+
+
+<: if (my $Next = Next(This_Image, $opt->{image_loop})) { _:>
+      <br /><br />
+      <:=Get($Next,'href','image_page'):>next</a><br />
+      
+      
+  <table cellspacing='0' cellpadding='3' bgcolor='gray'>
+  <tr>
+  <td>
+
+
+      <:=Get($Next,'href','image_page'):>
+      <:=Image($Next,'thumb'):></a>
+      
+
+  </td>
+  </tr>
+  </table>
+
+      
+      <:=Get($Next,'href','image_page'):>
+      <:=Name($Next):></a>
+<: } _:>
+
+	<br /><br /><br />
+    	<a href=<:=Back():>>Back to the album</a>
+
+
+    </td>
+  </tr>
+</table>
+
+
+#c// #########################
+#c// Header/parents
+#c// #########################
+  <hr />
+  <table width='95%'>
+    <tr>
+      <td align='left'>
+        <:= Parent_Albums(':') :>
+      </td>
+    </tr>
+  </table>
+
+
+
+
+#c// #########################
+#c// Footer
+#c// #########################
+<hr />
+    <font size='-1'>
+      <: Credit() :>
+      on <:=scalar localtime:>
+    </font>
+  </body>
+</html>

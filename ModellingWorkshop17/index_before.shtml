@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <!-- ENTER  PAGE TITLE  HERE -->
+    <title>Stokes Modelling Workshop 2016 - NUI Galway</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link rel="stylesheet" href="http://www.maths.nuigalway.ie/style.css" type="text/css"/>
+  </head>
+
+<body>
+
+    <!--#set var="incl" value="/includes" -->
+    <!--#include virtual="$incl/header.shtml" -->
+
+    <!-- ENTER PAGE CONTENTS BELOW HERE -->
+
+<center>
+<p>
+<font size="+1" color="#881010"><b>Third Annual</b></font><br>
+<font size="+3" color="#881010"><b>Stokes Modelling Workshop</b></font><br>
+<font size="+1" color="#881010"><b>For Undergraduate Students</b></font></p>
+
+
+<p><font size="+1">NUI Galway</font><br />
+<font size="+1">June 13th-16th, 2016</font><br />
+<b><font size="+1" color="#881010">Deadline for Applications: 3 June 2016</font></b>
+<p>Contact: <a href="mailto:paul.greaney@nuigalway.ie">paul.greaney@nuigalway.ie</a>.</p>
+
+
+</p>
+</center>
+
+
+<div align="center">
+<a href="http://www.maths.nuigalway.ie/stokes" target="_blank"><img height=75px src="Stokes.png"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.maths.nuigalway.ie/SIAM-Galway" target="_blank"><img width=190px src="SIAM.png"></a>
+</div>
+<div align="justify">
+<p><b><font color="red">UPDATE 13/06/2016:</font></b> Files for the Matlab and Maple sessions are available <a href="./files" target='_blank'>here</a>.</p>
+<p><b><font color="blue">UPDATE 09/06/2016:</font></b> The information/schedule/problems for the workshop are now available <a href="Stokes2016Booklet.pdf" target='_blank'>here</a>.</p>
+<p>The School of Mathematics, Statistics and Applied Mathematics at NUI Galway is hosting a four day undergraduate modelling workshop from June 13th to 16th. The format will be loosely based on the <a href="http://www.comap.com/undergraduate/contests/"  target='_blank'>Mathematical Contest in Modelling</a>, with training and small group study sessions provided by lecturers and postgraduate students of the School of Mathematics.</p>
+
+Registration is free, and some financial support may be  available to cover accommodation and living expenses.
+
+<!--<p>The School of Mathematics, Statistics and Applied Mathematics at NUI Galway is hosting a four day undergraduate Modelling Workshop this summer. This workshop is aimed at students with a scientific or engineering background, who will take part in the team-based modelling of real-world problems. The format will be loosely based on the <a href="http://www.comap.com/undergraduate/contests/"  target='_blank'>Mathematical Contest in Modelling</a>, with training and small-group study sessions provided by lecturers and postgraduate students of the School of Maths. </p>-->
+
+<p>The workshop is primarily aimed at students in their penultimate year of study, but applications are welcome from all interested undergraduates. Interested students are invited to fill out the application form below as soon as possible, and no later than <b>Friday June 3rd</b>. <!--The <a href="stokes_announcement.pdf" target='_blank'>announcement</a> of the workshop is also available in PDF format.--></p>
+
+<p>General queries relating to the workshop should be directed to <a href="mailto:paul.greaney@nuigalway.ie">paul.greaney@nuigalway.ie</a>. </p>
+
+<p>The <a target="_blank" href="http://www.maths.nuigalway.ie/~greaney/smw16/poster.pdf">poster</a> announcing the workshop is also available, as are the webpages of the <a href="http://www.maths.nuigalway.ie/smw14/" target="_blank">2014</a> and <a href="http://www.maths.nuigalway.ie/ModellingWorkshop15/" target="_blank">2015</a> workshops.
+</div>
+<p><h2>Planned Activities</h2></p>
+<p>
+<ul>
+<li>Crash training in numerical methods</li>
+<li>Team work on a modelling problem</li>
+<li>Presentation of results</li>
+<li>Short talks on applied maths topics by lecturers</li>
+<li>Research, from postgraduate students' point of view</li>
+</ul>
+</p>
+
+<p><h2>Problems & Presentations</h2></p>
+<p>The problem statements are available <a href="/ModellingWorkshop16/Stokes2016Booklet.pdf" target="_blank">here</a>. The results from each group are outlined in their slides given below.</p>
+
+<p> <a href="/ModellingWorkshop16/presentations/InfectiousDiseaseSpread.pdf" target='_blank'>Problem 1: Spread of Infectious Diseases in Human Populations</a>. <br> <b>Group members:</b> Padraic Flood, Aoife Hill, Damian O'Connor, Bram Siebert, Andrew Whelan.</p>
+<p> <a href="/ModellingWorkshop16/presentations/SpringsAndStrings.pdf" target='_blank'>Problem 2: Playing with Elasticity</a>. <br><b>Group members:</b> David Colson, Se&aacuten Hehir, R&oacuteis&iacuten Hill, Brian Regan.</p>
+<p> <a href="/ModellingWorkshop16/presentations/Wildfire.pdf" target='_blank'>Problem 3: Modelling Fort McMurray</a>. <br><b>Group members:</b> Jack Hampson, Jack Roche, Jack McCarthy, Shishir Suresh, Szymon Urbas.</p>
+<p> <a href="/ModellingWorkshop16/presentations/WhosTheBas.pdf" target='_blank'>Problem 4: Who's the Bas?</a> <br> <b>Group members:</b> John Cormican, John McFadden, Claire Moran, Szymon Urbas.</p>
+
+<p><h2>LAST YEAR: WHAT THE STUDENTS THOUGHT</h2></p>
+
+<div align="justify">
+<p>
+"A great chance to meet students from other courses and other colleges. It was interesting to see their approaches to the problem and to learn from them. It was also great to chat to the mentor as he taught us a lot."
+</p>
+<p>
+</p>"Interesting and relevant range of projects available, with variety of skills/abilities catered for."
+<p>"It offered an opportunity to study problems in a relatively independent environment."</p>
+<p>"The free lunch and coffee were really appreciated! The best part was the opportunity to do the problems our own way with programming etc, playing to our own skill set."</p>
+</div>
+
+<p><h2>Organising Committee</h2></p>
+<p>Michel Destrade, Paul Greaney, Niall Madden, Robert Mangan, Petri Piiroinen, Eoghan Staunton, Michael Welby</p>
+
+<!---<p><h2>Application Form</h2></p>
+<p>
+<iframe src="https://docs.google.com/forms/d/1F_cDoNqvNez8toPgS7K7MJxy6HkY0t0Yh5ZrG2ZnoYo/viewform?embedded=true" width="760" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+</p>-->
+
+
+
+
+        <!-- END PAGE CONTENTS -->
+        <!--#include virtual="$incl/footer.shtml" -->
+    </body>
+</html>

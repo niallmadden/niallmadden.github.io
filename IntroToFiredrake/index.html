@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Introduction to Firedrake</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,
+				   initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Niall Madden,  University of
+    Galway; Firedrake"/>
+    <meta name="keywords"
+	  content=
+	  "Introduction to Firedrake">
+    <meta name="author" content="Niall Madden MA378">
+    <link rel="stylesheet" href="../assets/css/Niall.css" />
+    
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+  </head>
+  <body class="is-preload">
+    
+    <nav id="nav">
+      <ul class="container">
+	<li><a href="#about">About this page</a></li>
+	<li><a href="#notebooks">Jupyter Notebooks</a></li>
+	<li><a href="../index.html">About Niall</a></li>
+      </ul>
+    </nav>
+    
+    <article id="about" class="wrapper style5">
+      <div class="container">
+	<h1>Introduction to Firedrake</h1>
+	<h2>Notebooks and scripts to help getting started with Firedrake</h2>
+	
+	<p>This is a selection of Jupyter Notebooks and (later) Python
+	  scripts that demonstrate some capabilities of
+	  <a href="http://firedrakeproject.org/">Firedrake</a>, the finite
+	    element system 
+	    for solving partial differential equations (PDEs) using
+	  finite element methods (FEMs).
+	  </p>
+	    
+	<p>These notebooks and scripts were developed by
+	  <a href="https://www.niallmadden.ie/">Niall Madden</a> for
+	  members of his team. If they are useful to you, great! If
+	  you spot any
+	  bugs, <a href="https://www.niallmadden.ie/#contact">let
+	    Niall know</a>
+	</p>  
+
+	<article class="box style1">	
+	  <p><b>Philosophy:</b> Jupyter is an amazing system! And
+	    the <a href="https://www.firedrakeproject.org/documentation.html">Introductory
+	      tutorials</a> are a great place to start,
+	    especially if you are already very familiar with
+	    PDEs, and with FEMs. The goal of these notebooks
+	    is to be even more introductory, so that that are
+	    accessible to (say) undergraduates
+		    who are just learning about differential
+	    equations, and about FEMs. Knowledge of Python is
+	    assumed.
+	  </p>
+	</article>
+	
+	<article id="getting_started" class="box style2">	
+	  <p><b>Getting started:</b> The easiest way to start
+	    programming with Firedrake is to use Google
+	    <a href="https://colab.google/">collab</a>.
+	    Follow the instructions
+	    at <a href="https://fem-on-colab.github.io/packages.html">FEM
+	      on Colab</a>
+	  </p>
+	</article>
+	
+	
+	<article id="notebooks" class="wrapper style4">
+	  <div class="container">
+	    <header>
+	      <h1>Notebooks</h1>
+	    </header>
+	    
+	    <article class="box style5">	
+	      <p align="center">
+		Links to:
+		<a href="#01">01: Getting started</a>,&nbsp;
+		<a href="#02">02: Error estimation</a>,&nbsp;
+		<a href="#03">03: Boundary conditions</a>,&nbsp;
+		<a href="#03">04: Convection-diffusion</a>,&nbsp;
+		<a href="#05">05: Time-dependent I</a>,&nbsp;
+	      </p>
+	    </article>
+
+	    <div class="row">
+	      <div id="01" class="col-6 col-6-medium col-12-small">
+		<section class="box style1">
+		  <span class="icon solid featured iconoir-system-restart"></span>
+		  <!--<span class="icon solid featured fa-handshake"></span>-->
+		  <h3>01: Getting Started</h3>
+		  <ul>
+		    <li><b>What:</b> We'll solve solve a simple linear
+		      ODE, with a known solution. We'll plot both
+		      solutions, and estimate the error.
+		    </li>
+		    <li>HTML: 
+		      [<a href="01-Firedrake-GettingStarted.html">Getting
+			Started</a>]
+		    </li>
+		    <li>Notebook: <a href="01-Firedrake-GettingStarted.ipynb">01-Firedrake-GettingStarted.ipynb</a>
+		    </li>
+		  </ul>
+		</section>
+	      </div>
+	      
+	      <div id="02" class="col-6 col-6-medium col-12-small">
+		<section class="box style2">
+		  <span class="icon solid featured iconoir-bubble-xmark"></span>
+		  <!--<span class="icon solid featured fa-laptop"></span>-->
+		  <h3>02: Error estimation</h3>
+		  <ul>
+		    <li><b>What:</b> Usually, we can't estimate the error
+		  in our FEM solution by comparing with the true
+		  solution. So instead we can compare against a
+		      benchmark solution.</li>
+		    <li>HTML:
+		      [<a href="02-Firedrake-ErrorEstimation.html">Error
+			estimation</a>]
+		    </li>
+		    <li>Notebook:
+		      [<a href="02-Firedrake-ErrorEstimation.ipynb">02-Firedrake-ErrorEstimation.ipynb</a>]
+		    </li>
+		  </ul>
+		</section>
+	      </div>
+	    </div>
+	    
+	    <div class="row">
+	      <div id="03" class="col-6 col-6-medium col-12-small">
+		<section class="box style3">
+		  <!--<span class="icon solid featured
+		  iconoir-cube"></span> -->
+		  <span class="icon solid featured iconoir-code-brackets-square"></span>
+		  <h3>03: Boundary conditions in 1D</h3>
+		  <ul>
+		    <li><b>What:</b> We  solve problems with a variety
+		      of boundary conditions.
+		    </li>
+		    <li>HTML: [<a href="03-Firedrake-BoundaryConditions.html">Boundary
+			Conditions</a>]
+		    </li>
+		    <li>Notebook: <a href="03-Firedrake-BoundaryConditions.ipynb">03-Firedrake-BoundaryConditions.ipynb</a>
+		    </li>
+		  </ul>
+		</section>
+	      </div>
+	      
+	      <div id="04" class="col-6 col-6-medium col-12-small">
+		<section class="box style4">
+		  <span class="icon solid featured iconoir-graph-up"></span>
+		  <h3>04: Convection-diffusion problems in 1D</h3>
+		  <ul>
+		    <li><b>What:</b> We  solve problems of the form
+		      \(-\varepsilon u''(x) + c(x) u'(x) = f(x)\), which
+		      is the first time we've an odd-ordered
+		      derivative. We also show how to implement a very
+		      basic artificial diffusion stabilisation scheme.
+		    </li>
+		    <li>HTML: [<a href="04-ConvectionDiffusion.html">Convection-diffusion</a>]
+		    </li>
+		    <li>Notebook: <a href="04-ConvectionDiffusion.ipynb">04-ConvectionDiffusion.ipynb</a>
+		    </li>
+		  </ul>
+		</section>
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div id="05" class="col-6 col-6-medium col-12-small">
+		<section class="box style3">
+		  <span class="icon solid featured iconoir-clock"></span>
+		  <h3>05: Time-dependent Problems I</h3>
+		  <ul>
+		    <li><b>What:</b> We solve the Heat Equation, using the
+		    Explicit Euler, Implicit Euler, and Crank-Nicolson methods.
+		    </li>
+		    <li>HTML:
+			[<a href="05-TimeDependent-I.html">Time-dependent
+			problems: Part 1</a>]
+		    </li>
+		    <li>Notebook: <a href="05-TimeDependent-I.ipynb">05-TimeDependent-I.ipynb</a>
+		    </li>
+		  </ul>
+		</section>
+	      </div>
+	      
+	      <div id="06" class="col-6 col-6-medium col-12-small">
+		<section class="box style4">
+		  <span class="icon solid featured
+			       iconoir-clock-solid"></span>
+		  <h3>05: Time-dependent Problems II</h3>
+		  <ul>
+		    <li><b>What:</b> We solve the Heat Equation using
+		    Irksome (not yet done).
+		    </li>
+		  </ul>
+		  
+		</section>
+	      </div>
+	    </div>
+
+	  </div>
+	</article>
+      </div>
+    </article>
+  </body>
+</html>
+
+

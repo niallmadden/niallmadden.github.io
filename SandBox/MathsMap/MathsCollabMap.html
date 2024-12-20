@@ -1,0 +1,2641 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_48d61b71b3235fc34ac5f8cefe755edb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_48d61b71b3235fc34ac5f8cefe755edb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_48d61b71b3235fc34ac5f8cefe755edb = L.map(
+                "map_48d61b71b3235fc34ac5f8cefe755edb",
+                {
+                    center: [53.2744122, -9.0490601],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e71b468d4c856b9e20cd139aeb82db1c = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_e71b468d4c856b9e20cd139aeb82db1c.addTo(map_48d61b71b3235fc34ac5f8cefe755edb);
+        
+    
+            var marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var circle_marker_2a19fcfa6000e397edb482abfb3cdf6b = L.circleMarker(
+                [53.2744122, -9.0490601],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_ae2b04d25bee662f0ef335dcaf9c96a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2437654623eef26fb268277aafa3d3c1 = $(`<div id="html_2437654623eef26fb268277aafa3d3c1" style="width: 100.0%; height: 100.0%;">University of Galway</div>`)[0];
+                popup_ae2b04d25bee662f0ef335dcaf9c96a3.setContent(html_2437654623eef26fb268277aafa3d3c1);
+            
+        
+
+        circle_marker_2a19fcfa6000e397edb482abfb3cdf6b.bindPopup(popup_ae2b04d25bee662f0ef335dcaf9c96a3)
+        ;
+
+        
+    
+    
+            circle_marker_2a19fcfa6000e397edb482abfb3cdf6b.bindTooltip(
+                `<div>
+                     University of Galway
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3fec53ff3cbdd1a1a1cb1a5f5271b1b3 = L.circleMarker(
+                [51.4891343, -3.1822051],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_053efb6dd11d41057c443fbc94d2348e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1d0a580b6a74ca9353b7893785ad6fb = $(`<div id="html_d1d0a580b6a74ca9353b7893785ad6fb" style="width: 100.0%; height: 100.0%;">Cardiff University</div>`)[0];
+                popup_053efb6dd11d41057c443fbc94d2348e.setContent(html_d1d0a580b6a74ca9353b7893785ad6fb);
+            
+        
+
+        circle_marker_3fec53ff3cbdd1a1a1cb1a5f5271b1b3.bindPopup(popup_053efb6dd11d41057c443fbc94d2348e)
+        ;
+
+        
+    
+    
+            circle_marker_3fec53ff3cbdd1a1a1cb1a5f5271b1b3.bindTooltip(
+                `<div>
+                     Cardiff University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0ee7420d387f429bd49ae33c2c1798f1 = L.circleMarker(
+                [38.801565049999994, -77.07040331905415],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_6297fa6b38933ae2e9199f0d9993b66d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96e10b30b4fbbf8d6d1ed135fe89f981 = $(`<div id="html_96e10b30b4fbbf8d6d1ed135fe89f981" style="width: 100.0%; height: 100.0%;">National Science Foundation</div>`)[0];
+                popup_6297fa6b38933ae2e9199f0d9993b66d.setContent(html_96e10b30b4fbbf8d6d1ed135fe89f981);
+            
+        
+
+        circle_marker_0ee7420d387f429bd49ae33c2c1798f1.bindPopup(popup_6297fa6b38933ae2e9199f0d9993b66d)
+        ;
+
+        
+    
+    
+            circle_marker_0ee7420d387f429bd49ae33c2c1798f1.bindTooltip(
+                `<div>
+                     National Science Foundation
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_60b9eaa109bf6a49c65c47775d2f9883 = L.circleMarker(
+                [41.942673049999996, -87.69205508219278],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_1c3a8e95af489479f9149cf9f1ebefc0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74bc4ad76fb7de74ecca64b000420583 = $(`<div id="html_74bc4ad76fb7de74ecca64b000420583" style="width: 100.0%; height: 100.0%;">DePaul University</div>`)[0];
+                popup_1c3a8e95af489479f9149cf9f1ebefc0.setContent(html_74bc4ad76fb7de74ecca64b000420583);
+            
+        
+
+        circle_marker_60b9eaa109bf6a49c65c47775d2f9883.bindPopup(popup_1c3a8e95af489479f9149cf9f1ebefc0)
+        ;
+
+        
+    
+    
+            circle_marker_60b9eaa109bf6a49c65c47775d2f9883.bindTooltip(
+                `<div>
+                     DePaul University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_652320b361062a4e5ccc7be96b7b1312 = L.circleMarker(
+                [44.04441965, -123.07176029673084],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_f1bcf7fa218f34ae38d952d4a00e4b8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d2175638cf4fd61eb8665fb6327c93c = $(`<div id="html_9d2175638cf4fd61eb8665fb6327c93c" style="width: 100.0%; height: 100.0%;">University of Oregon</div>`)[0];
+                popup_f1bcf7fa218f34ae38d952d4a00e4b8d.setContent(html_9d2175638cf4fd61eb8665fb6327c93c);
+            
+        
+
+        circle_marker_652320b361062a4e5ccc7be96b7b1312.bindPopup(popup_f1bcf7fa218f34ae38d952d4a00e4b8d)
+        ;
+
+        
+    
+    
+            circle_marker_652320b361062a4e5ccc7be96b7b1312.bindTooltip(
+                `<div>
+                     University of Oregon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_77c2b9d1edad11c2c91e6cd8f4d79058 = L.circleMarker(
+                [29.6328837, -82.34901302237435],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_b6d832f868a4f4b0bd0927a6c5c8adf0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fc7acbb998a19ce165eecbe038eda05 = $(`<div id="html_0fc7acbb998a19ce165eecbe038eda05" style="width: 100.0%; height: 100.0%;">University of Florida</div>`)[0];
+                popup_b6d832f868a4f4b0bd0927a6c5c8adf0.setContent(html_0fc7acbb998a19ce165eecbe038eda05);
+            
+        
+
+        circle_marker_77c2b9d1edad11c2c91e6cd8f4d79058.bindPopup(popup_b6d832f868a4f4b0bd0927a6c5c8adf0)
+        ;
+
+        
+    
+    
+            circle_marker_77c2b9d1edad11c2c91e6cd8f4d79058.bindTooltip(
+                `<div>
+                     University of Florida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7f592ec0b9f6b33f90deebb1f1552a42 = L.circleMarker(
+                [40.570656650000004, -105.08539947634978],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_e2f0962c5c21901b5899e31ff3bc1003 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3abe2f8daa062724a76c2ab322d0ba48 = $(`<div id="html_3abe2f8daa062724a76c2ab322d0ba48" style="width: 100.0%; height: 100.0%;">Colorado State University</div>`)[0];
+                popup_e2f0962c5c21901b5899e31ff3bc1003.setContent(html_3abe2f8daa062724a76c2ab322d0ba48);
+            
+        
+
+        circle_marker_7f592ec0b9f6b33f90deebb1f1552a42.bindPopup(popup_e2f0962c5c21901b5899e31ff3bc1003)
+        ;
+
+        
+    
+    
+            circle_marker_7f592ec0b9f6b33f90deebb1f1552a42.bindTooltip(
+                `<div>
+                     Colorado State University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_765669a00d0e4e00111c5aae220e9084 = L.circleMarker(
+                [33.8830939, -117.88521521398181],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_d330cd56ad702c003ce40f49dec4c735 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4007c6b6396ed65cb3775f08c532ddb3 = $(`<div id="html_4007c6b6396ed65cb3775f08c532ddb3" style="width: 100.0%; height: 100.0%;">California State University, Fullerton</div>`)[0];
+                popup_d330cd56ad702c003ce40f49dec4c735.setContent(html_4007c6b6396ed65cb3775f08c532ddb3);
+            
+        
+
+        circle_marker_765669a00d0e4e00111c5aae220e9084.bindPopup(popup_d330cd56ad702c003ce40f49dec4c735)
+        ;
+
+        
+    
+    
+            circle_marker_765669a00d0e4e00111c5aae220e9084.bindTooltip(
+                `<div>
+                     California State University, Fullerton
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ce0aee55185d22cc77e7938f4394c612 = L.circleMarker(
+                [41.144232450000004, -81.33983207322399],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_65624390d633c3b67b841e64fb1c8ece = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32f08b0d34b9b572b8f5cf24eee598d9 = $(`<div id="html_32f08b0d34b9b572b8f5cf24eee598d9" style="width: 100.0%; height: 100.0%;">Kent State University</div>`)[0];
+                popup_65624390d633c3b67b841e64fb1c8ece.setContent(html_32f08b0d34b9b572b8f5cf24eee598d9);
+            
+        
+
+        circle_marker_ce0aee55185d22cc77e7938f4394c612.bindPopup(popup_65624390d633c3b67b841e64fb1c8ece)
+        ;
+
+        
+    
+    
+            circle_marker_ce0aee55185d22cc77e7938f4394c612.bindTooltip(
+                `<div>
+                     Kent State University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fd4f5e4ac298e2f784cb80529b0711b7 = L.circleMarker(
+                [40.9515356, -76.8879603368278],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_b85db6da1b543f17c02e16999f2fd100 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6a31f354c4d47ba933185a0df044d8c = $(`<div id="html_f6a31f354c4d47ba933185a0df044d8c" style="width: 100.0%; height: 100.0%;">Bucknell University</div>`)[0];
+                popup_b85db6da1b543f17c02e16999f2fd100.setContent(html_f6a31f354c4d47ba933185a0df044d8c);
+            
+        
+
+        circle_marker_fd4f5e4ac298e2f784cb80529b0711b7.bindPopup(popup_b85db6da1b543f17c02e16999f2fd100)
+        ;
+
+        
+    
+    
+            circle_marker_fd4f5e4ac298e2f784cb80529b0711b7.bindTooltip(
+                `<div>
+                     Bucknell University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_66471fe71e874e34f24167ebb9ed7483 = L.circleMarker(
+                [43.03888115, -87.93158327046632],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_b2625a96fb63ff3ccc0448c60074c132 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b25b3c64bae01c5ab0e346737595e2d = $(`<div id="html_2b25b3c64bae01c5ab0e346737595e2d" style="width: 100.0%; height: 100.0%;">Marquette University</div>`)[0];
+                popup_b2625a96fb63ff3ccc0448c60074c132.setContent(html_2b25b3c64bae01c5ab0e346737595e2d);
+            
+        
+
+        circle_marker_66471fe71e874e34f24167ebb9ed7483.bindPopup(popup_b2625a96fb63ff3ccc0448c60074c132)
+        ;
+
+        
+    
+    
+            circle_marker_66471fe71e874e34f24167ebb9ed7483.bindTooltip(
+                `<div>
+                     Marquette University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_67dbebd99254c076a1785d29eefdec38 = L.circleMarker(
+                [41.704567749999995, -86.23822026017265],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_3c08b912bf8b374eaacf5a0e1c4f267b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb7a6645caecf4573a8e8777faf1874c = $(`<div id="html_cb7a6645caecf4573a8e8777faf1874c" style="width: 100.0%; height: 100.0%;">University of Notre Dame</div>`)[0];
+                popup_3c08b912bf8b374eaacf5a0e1c4f267b.setContent(html_cb7a6645caecf4573a8e8777faf1874c);
+            
+        
+
+        circle_marker_67dbebd99254c076a1785d29eefdec38.bindPopup(popup_3c08b912bf8b374eaacf5a0e1c4f267b)
+        ;
+
+        
+    
+    
+            circle_marker_67dbebd99254c076a1785d29eefdec38.bindTooltip(
+                `<div>
+                     University of Notre Dame
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ab5984466ed0caade0d9bf3bd7a7b610 = L.circleMarker(
+                [32.23563985, -110.9517440773026],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_ae9919ef9a33da8d7ec3e787681d821a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f656d1b0cfc89e0329bca8b222896c18 = $(`<div id="html_f656d1b0cfc89e0329bca8b222896c18" style="width: 100.0%; height: 100.0%;">University of Arizona</div>`)[0];
+                popup_ae9919ef9a33da8d7ec3e787681d821a.setContent(html_f656d1b0cfc89e0329bca8b222896c18);
+            
+        
+
+        circle_marker_ab5984466ed0caade0d9bf3bd7a7b610.bindPopup(popup_ae9919ef9a33da8d7ec3e787681d821a)
+        ;
+
+        
+    
+    
+            circle_marker_ab5984466ed0caade0d9bf3bd7a7b610.bindTooltip(
+                `<div>
+                     University of Arizona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c6cca4763c0f31117f0c688bc94e237f = L.circleMarker(
+                [37.87695875, -122.24563027311041],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_6a8c7a3156a7bb98127d15047760d78d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b538ca2f2dd3e9379a5dd0654408306 = $(`<div id="html_0b538ca2f2dd3e9379a5dd0654408306" style="width: 100.0%; height: 100.0%;">Lawrence Berkeley National Laboratory</div>`)[0];
+                popup_6a8c7a3156a7bb98127d15047760d78d.setContent(html_0b538ca2f2dd3e9379a5dd0654408306);
+            
+        
+
+        circle_marker_c6cca4763c0f31117f0c688bc94e237f.bindPopup(popup_6a8c7a3156a7bb98127d15047760d78d)
+        ;
+
+        
+    
+    
+            circle_marker_c6cca4763c0f31117f0c688bc94e237f.bindTooltip(
+                `<div>
+                     Lawrence Berkeley National Laboratory
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6e8f71f8eadb2dd9dddd8149a78e65e4 = L.circleMarker(
+                [42.4184296, -71.1061639],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_49c19a591746ad61974c1acd86664738 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe5dde6df68706ab0b4c6f573e9dd127 = $(`<div id="html_fe5dde6df68706ab0b4c6f573e9dd127" style="width: 100.0%; height: 100.0%;">Tufts Univerity</div>`)[0];
+                popup_49c19a591746ad61974c1acd86664738.setContent(html_fe5dde6df68706ab0b4c6f573e9dd127);
+            
+        
+
+        circle_marker_6e8f71f8eadb2dd9dddd8149a78e65e4.bindPopup(popup_49c19a591746ad61974c1acd86664738)
+        ;
+
+        
+    
+    
+            circle_marker_6e8f71f8eadb2dd9dddd8149a78e65e4.bindTooltip(
+                `<div>
+                     Tufts Univerity
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cc8a75239e5d0e41214b0f99ec5b9244 = L.circleMarker(
+                [37.3486243, -121.93654400537929],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_b9e09430670bd9bed2e6c5d4b827a0b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b4befb79d9921233047794443c0c683 = $(`<div id="html_1b4befb79d9921233047794443c0c683" style="width: 100.0%; height: 100.0%;">Santa Clara University</div>`)[0];
+                popup_b9e09430670bd9bed2e6c5d4b827a0b3.setContent(html_1b4befb79d9921233047794443c0c683);
+            
+        
+
+        circle_marker_cc8a75239e5d0e41214b0f99ec5b9244.bindPopup(popup_b9e09430670bd9bed2e6c5d4b827a0b3)
+        ;
+
+        
+    
+    
+            circle_marker_cc8a75239e5d0e41214b0f99ec5b9244.bindTooltip(
+                `<div>
+                     Santa Clara University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8eac35a7740fa281fc1aa3d2d9f36ceb = L.circleMarker(
+                [51.50076785, -2.5503106339491204],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_c7ea0e81bcd8bfd35f7b1a4f0c284344 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f214aeaae7d82d8b7d4b695984072b38 = $(`<div id="html_f214aeaae7d82d8b7d4b695984072b38" style="width: 100.0%; height: 100.0%;">Bristol University</div>`)[0];
+                popup_c7ea0e81bcd8bfd35f7b1a4f0c284344.setContent(html_f214aeaae7d82d8b7d4b695984072b38);
+            
+        
+
+        circle_marker_8eac35a7740fa281fc1aa3d2d9f36ceb.bindPopup(popup_c7ea0e81bcd8bfd35f7b1a4f0c284344)
+        ;
+
+        
+    
+    
+            circle_marker_8eac35a7740fa281fc1aa3d2d9f36ceb.bindTooltip(
+                `<div>
+                     Bristol University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_502ff18584ed286971852584ece7246a = L.circleMarker(
+                [52.210945550000005, 0.09200497637871279],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_dc4c8836cbac10fa2dae9fceb877f0e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5528fb236efe31387be699edf82db2b1 = $(`<div id="html_5528fb236efe31387be699edf82db2b1" style="width: 100.0%; height: 100.0%;">University of Cambridge</div>`)[0];
+                popup_dc4c8836cbac10fa2dae9fceb877f0e3.setContent(html_5528fb236efe31387be699edf82db2b1);
+            
+        
+
+        circle_marker_502ff18584ed286971852584ece7246a.bindPopup(popup_dc4c8836cbac10fa2dae9fceb877f0e3)
+        ;
+
+        
+    
+    
+            circle_marker_502ff18584ed286971852584ece7246a.bindTooltip(
+                `<div>
+                     University of Cambridge
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3b95270b94e2cec6ed5678031128d38a = L.circleMarker(
+                [53.6428959, -1.7781768079827107],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_e7b6aa336cfe30443e68545418c8d509 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e779130fe46935e7de6773265badda97 = $(`<div id="html_e779130fe46935e7de6773265badda97" style="width: 100.0%; height: 100.0%;">University of Huddersfield</div>`)[0];
+                popup_e7b6aa336cfe30443e68545418c8d509.setContent(html_e779130fe46935e7de6773265badda97);
+            
+        
+
+        circle_marker_3b95270b94e2cec6ed5678031128d38a.bindPopup(popup_e7b6aa336cfe30443e68545418c8d509)
+        ;
+
+        
+    
+    
+            circle_marker_3b95270b94e2cec6ed5678031128d38a.bindTooltip(
+                `<div>
+                     University of Huddersfield
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_db8dadd7b3c564e324e0cfea988ce336 = L.circleMarker(
+                [54.00975365, -2.7875727317728654],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_eccc72275b7d95befa77511a53e31985 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e3b85fe1e211e656bd9d3ecbb835da5 = $(`<div id="html_0e3b85fe1e211e656bd9d3ecbb835da5" style="width: 100.0%; height: 100.0%;">Lancaster University</div>`)[0];
+                popup_eccc72275b7d95befa77511a53e31985.setContent(html_0e3b85fe1e211e656bd9d3ecbb835da5);
+            
+        
+
+        circle_marker_db8dadd7b3c564e324e0cfea988ce336.bindPopup(popup_eccc72275b7d95befa77511a53e31985)
+        ;
+
+        
+    
+    
+            circle_marker_db8dadd7b3c564e324e0cfea988ce336.bindTooltip(
+                `<div>
+                     Lancaster University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_03430bad4413c5fb83de5feefce56451 = L.circleMarker(
+                [51.52492685, -0.03924405317429028],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_b6440946107aaca894bd2248d985dc78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2eb5110abfbb128a836084ef1a38ab8c = $(`<div id="html_2eb5110abfbb128a836084ef1a38ab8c" style="width: 100.0%; height: 100.0%;">Queen Mary University of London</div>`)[0];
+                popup_b6440946107aaca894bd2248d985dc78.setContent(html_2eb5110abfbb128a836084ef1a38ab8c);
+            
+        
+
+        circle_marker_03430bad4413c5fb83de5feefce56451.bindPopup(popup_b6440946107aaca894bd2248d985dc78)
+        ;
+
+        
+    
+    
+            circle_marker_03430bad4413c5fb83de5feefce56451.bindTooltip(
+                `<div>
+                     Queen Mary University of London
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f52fb8af40be53d0ecdf297879ebeaad = L.circleMarker(
+                [51.75870755, -1.2556684826092037],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_6fed562747e82763ab16541d8b8aded6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2583c392233a4f2b15674916f292c51 = $(`<div id="html_a2583c392233a4f2b15674916f292c51" style="width: 100.0%; height: 100.0%;">University of Oxford</div>`)[0];
+                popup_6fed562747e82763ab16541d8b8aded6.setContent(html_a2583c392233a4f2b15674916f292c51);
+            
+        
+
+        circle_marker_f52fb8af40be53d0ecdf297879ebeaad.bindPopup(popup_6fed562747e82763ab16541d8b8aded6)
+        ;
+
+        
+    
+    
+            circle_marker_f52fb8af40be53d0ecdf297879ebeaad.bindTooltip(
+                `<div>
+                     University of Oxford
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e53241514e97876a0200d809b275851b = L.circleMarker(
+                [25.1045014, 55.16710211457801],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_a9837bc95c328f7d55819ce638e0dfeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7b5bbbcdd36de814c1d431e237b171a = $(`<div id="html_f7b5bbbcdd36de814c1d431e237b171a" style="width: 100.0%; height: 100.0%;">Zayed University</div>`)[0];
+                popup_a9837bc95c328f7d55819ce638e0dfeb.setContent(html_f7b5bbbcdd36de814c1d431e237b171a);
+            
+        
+
+        circle_marker_e53241514e97876a0200d809b275851b.bindPopup(popup_a9837bc95c328f7d55819ce638e0dfeb)
+        ;
+
+        
+    
+    
+            circle_marker_e53241514e97876a0200d809b275851b.bindTooltip(
+                `<div>
+                     Zayed University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ad05c2634918aed0ae5d2b1ea54ee150 = L.circleMarker(
+                [52.4522956, -1.9312856726008194],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_9bf798fbbbe7f056a44a8ea0ab5e7028 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7639fdd7da45c790d04492750ce1d46 = $(`<div id="html_e7639fdd7da45c790d04492750ce1d46" style="width: 100.0%; height: 100.0%;">University of Birmingham</div>`)[0];
+                popup_9bf798fbbbe7f056a44a8ea0ab5e7028.setContent(html_e7639fdd7da45c790d04492750ce1d46);
+            
+        
+
+        circle_marker_ad05c2634918aed0ae5d2b1ea54ee150.bindPopup(popup_9bf798fbbbe7f056a44a8ea0ab5e7028)
+        ;
+
+        
+    
+    
+            circle_marker_ad05c2634918aed0ae5d2b1ea54ee150.bindTooltip(
+                `<div>
+                     University of Birmingham
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bc247c3060e290765cffbc1fdb1eb8e1 = L.circleMarker(
+                [53.2263804, -0.5461286000000007],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_cfb0caa58cb6d2524d261639d5182e31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fb7dbd4a70f78339fc3a76c74d91728 = $(`<div id="html_9fb7dbd4a70f78339fc3a76c74d91728" style="width: 100.0%; height: 100.0%;">University of Lincoln</div>`)[0];
+                popup_cfb0caa58cb6d2524d261639d5182e31.setContent(html_9fb7dbd4a70f78339fc3a76c74d91728);
+            
+        
+
+        circle_marker_bc247c3060e290765cffbc1fdb1eb8e1.bindPopup(popup_cfb0caa58cb6d2524d261639d5182e31)
+        ;
+
+        
+    
+    
+            circle_marker_bc247c3060e290765cffbc1fdb1eb8e1.bindTooltip(
+                `<div>
+                     University of Lincoln
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e248c577f4d366ea9f25a7066b3ae914 = L.circleMarker(
+                [56.3398198, -2.8117937053149826],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_b803904e9c4efb9551ef5bc0d4b42614 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7b67aa6cbed1f87884a753afee6a6dc = $(`<div id="html_a7b67aa6cbed1f87884a753afee6a6dc" style="width: 100.0%; height: 100.0%;">University of St Andrews</div>`)[0];
+                popup_b803904e9c4efb9551ef5bc0d4b42614.setContent(html_a7b67aa6cbed1f87884a753afee6a6dc);
+            
+        
+
+        circle_marker_e248c577f4d366ea9f25a7066b3ae914.bindPopup(popup_b803904e9c4efb9551ef5bc0d4b42614)
+        ;
+
+        
+    
+    
+            circle_marker_e248c577f4d366ea9f25a7066b3ae914.bindTooltip(
+                `<div>
+                     University of St Andrews
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fedd07b88b32bfc1fac76fb4bcf8086e = L.circleMarker(
+                [52.5908309, -2.12755877919463],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_68ff4317fe12a525a1b1ae7c45a37e3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fde5259ec8a4cd19b8469b02fec5687 = $(`<div id="html_4fde5259ec8a4cd19b8469b02fec5687" style="width: 100.0%; height: 100.0%;">University of Wolverhampton</div>`)[0];
+                popup_68ff4317fe12a525a1b1ae7c45a37e3c.setContent(html_4fde5259ec8a4cd19b8469b02fec5687);
+            
+        
+
+        circle_marker_fedd07b88b32bfc1fac76fb4bcf8086e.bindPopup(popup_68ff4317fe12a525a1b1ae7c45a37e3c)
+        ;
+
+        
+    
+    
+            circle_marker_fedd07b88b32bfc1fac76fb4bcf8086e.bindTooltip(
+                `<div>
+                     University of Wolverhampton
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_75d6badb172ffcf8daed303282ce8345 = L.circleMarker(
+                [41.43185535, 33.766082630681105],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_154208aba4b07419feeaeb3057fc333c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c5ce478c88321b7e7c955e7f1ff9e2b = $(`<div id="html_1c5ce478c88321b7e7c955e7f1ff9e2b" style="width: 100.0%; height: 100.0%;">Kastamonu University</div>`)[0];
+                popup_154208aba4b07419feeaeb3057fc333c.setContent(html_1c5ce478c88321b7e7c955e7f1ff9e2b);
+            
+        
+
+        circle_marker_75d6badb172ffcf8daed303282ce8345.bindPopup(popup_154208aba4b07419feeaeb3057fc333c)
+        ;
+
+        
+    
+    
+            circle_marker_75d6badb172ffcf8daed303282ce8345.bindTooltip(
+                `<div>
+                     Kastamonu University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_312ede95b26a74b94eabf96ed2f0103b = L.circleMarker(
+                [37.380731749999995, -5.990264998425345],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_01da9df5f2077f49c5d1535f81203353 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0bfd15580cf5382da8b6207356221603 = $(`<div id="html_0bfd15580cf5382da8b6207356221603" style="width: 100.0%; height: 100.0%;">Universidad de Sevilla</div>`)[0];
+                popup_01da9df5f2077f49c5d1535f81203353.setContent(html_0bfd15580cf5382da8b6207356221603);
+            
+        
+
+        circle_marker_312ede95b26a74b94eabf96ed2f0103b.bindPopup(popup_01da9df5f2077f49c5d1535f81203353)
+        ;
+
+        
+    
+    
+            circle_marker_312ede95b26a74b94eabf96ed2f0103b.bindTooltip(
+                `<div>
+                     Universidad de Sevilla
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_725d3c681030309c571c05a6182fb0e4 = L.circleMarker(
+                [41.1172364, 1.2546057],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_3bc79d5549a62f6d74242a23aea30b63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3264c3b6f4c87bef6dcf76be24c199fc = $(`<div id="html_3264c3b6f4c87bef6dcf76be24c199fc" style="width: 100.0%; height: 100.0%;">Universidad Rovira i Verguli</div>`)[0];
+                popup_3bc79d5549a62f6d74242a23aea30b63.setContent(html_3264c3b6f4c87bef6dcf76be24c199fc);
+            
+        
+
+        circle_marker_725d3c681030309c571c05a6182fb0e4.bindPopup(popup_3bc79d5549a62f6d74242a23aea30b63)
+        ;
+
+        
+    
+    
+            circle_marker_725d3c681030309c571c05a6182fb0e4.bindTooltip(
+                `<div>
+                     Universidad Rovira i Verguli
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b650fa0f56e1c5700d17c81835f02f5a = L.circleMarker(
+                [41.6521342, -0.8809428],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_54f78bb6b8a0cba111a755f85681c128 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8663e4360f24e95b4928711354b93c6 = $(`<div id="html_b8663e4360f24e95b4928711354b93c6" style="width: 100.0%; height: 100.0%;">University of Zaragoza</div>`)[0];
+                popup_54f78bb6b8a0cba111a755f85681c128.setContent(html_b8663e4360f24e95b4928711354b93c6);
+            
+        
+
+        circle_marker_b650fa0f56e1c5700d17c81835f02f5a.bindPopup(popup_54f78bb6b8a0cba111a755f85681c128)
+        ;
+
+        
+    
+    
+            circle_marker_b650fa0f56e1c5700d17c81835f02f5a.bindTooltip(
+                `<div>
+                     University of Zaragoza
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ccb622cf7fd5963f20a7be2470df245e = L.circleMarker(
+                [37.3751446, 126.63239372033405],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_447c27603f5fadcc722f8dec64eb157a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53834eed71073e8863bb1194d4f0d25f = $(`<div id="html_53834eed71073e8863bb1194d4f0d25f" style="width: 100.0%; height: 100.0%;">Incheon National University</div>`)[0];
+                popup_447c27603f5fadcc722f8dec64eb157a.setContent(html_53834eed71073e8863bb1194d4f0d25f);
+            
+        
+
+        circle_marker_ccb622cf7fd5963f20a7be2470df245e.bindPopup(popup_447c27603f5fadcc722f8dec64eb157a)
+        ;
+
+        
+    
+    
+            circle_marker_ccb622cf7fd5963f20a7be2470df245e.bindTooltip(
+                `<div>
+                     Incheon National University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7c7b335ca492086588b295e24e8e01aa = L.circleMarker(
+                [54.396404950000004, 18.57400997579134],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_f95e45e1a542e26aba7c61aacedddd17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb3eb148cd8790760069a975afc237df = $(`<div id="html_eb3eb148cd8790760069a975afc237df" style="width: 100.0%; height: 100.0%;">University of Gdansk</div>`)[0];
+                popup_f95e45e1a542e26aba7c61aacedddd17.setContent(html_eb3eb148cd8790760069a975afc237df);
+            
+        
+
+        circle_marker_7c7b335ca492086588b295e24e8e01aa.bindPopup(popup_f95e45e1a542e26aba7c61aacedddd17)
+        ;
+
+        
+    
+    
+            circle_marker_7c7b335ca492086588b295e24e8e01aa.bindTooltip(
+                `<div>
+                     University of Gdansk
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_736ae210cbe6b029064a493ccf4b241e = L.circleMarker(
+                [50.30113145, 18.662347227971978],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_b6cb2af557bf64ec00eeae2645d90d8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1379f278e19c62df2e0cdd63517be38 = $(`<div id="html_c1379f278e19c62df2e0cdd63517be38" style="width: 100.0%; height: 100.0%;">IITIS, Polish Academy of Sciences</div>`)[0];
+                popup_b6cb2af557bf64ec00eeae2645d90d8f.setContent(html_c1379f278e19c62df2e0cdd63517be38);
+            
+        
+
+        circle_marker_736ae210cbe6b029064a493ccf4b241e.bindPopup(popup_b6cb2af557bf64ec00eeae2645d90d8f)
+        ;
+
+        
+    
+    
+            circle_marker_736ae210cbe6b029064a493ccf4b241e.bindTooltip(
+                `<div>
+                     IITIS, Polish Academy of Sciences
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b377c32a9dd4c32d00aea99289595770 = L.circleMarker(
+                [51.7728245, 19.478485931307937],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_cabf299c1c4ba69192508def2db77725 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a60c69fee2a2e40ad099a4262cb680e = $(`<div id="html_6a60c69fee2a2e40ad099a4262cb680e" style="width: 100.0%; height: 100.0%;">Lodz University of Technology</div>`)[0];
+                popup_cabf299c1c4ba69192508def2db77725.setContent(html_6a60c69fee2a2e40ad099a4262cb680e);
+            
+        
+
+        circle_marker_b377c32a9dd4c32d00aea99289595770.bindPopup(popup_cabf299c1c4ba69192508def2db77725)
+        ;
+
+        
+    
+    
+            circle_marker_b377c32a9dd4c32d00aea99289595770.bindTooltip(
+                `<div>
+                     Lodz University of Technology
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f4989f2d3ca7982c931b9ae19d72cea1 = L.circleMarker(
+                [53.0145361, 18.596583144651557],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_d9a8e9c99f6a2fc5359a16a0efc2014b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90991036b0f70abef5ddda97d33c931c = $(`<div id="html_90991036b0f70abef5ddda97d33c931c" style="width: 100.0%; height: 100.0%;">Nicolaus Copernicus University in Torun</div>`)[0];
+                popup_d9a8e9c99f6a2fc5359a16a0efc2014b.setContent(html_90991036b0f70abef5ddda97d33c931c);
+            
+        
+
+        circle_marker_f4989f2d3ca7982c931b9ae19d72cea1.bindPopup(popup_d9a8e9c99f6a2fc5359a16a0efc2014b)
+        ;
+
+        
+    
+    
+            circle_marker_f4989f2d3ca7982c931b9ae19d72cea1.bindTooltip(
+                `<div>
+                     Nicolaus Copernicus University in Torun
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c20f2d48abb89cbbdda028c8e1110222 = L.circleMarker(
+                [-36.8660955, 174.77373309361866],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_4448f02a6e2ee9b2e68a5ec580c56725 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_482e83be8d72c1a07f4accfe30c420c5 = $(`<div id="html_482e83be8d72c1a07f4accfe30c420c5" style="width: 100.0%; height: 100.0%;">University of Auckland</div>`)[0];
+                popup_4448f02a6e2ee9b2e68a5ec580c56725.setContent(html_482e83be8d72c1a07f4accfe30c420c5);
+            
+        
+
+        circle_marker_c20f2d48abb89cbbdda028c8e1110222.bindPopup(popup_4448f02a6e2ee9b2e68a5ec580c56725)
+        ;
+
+        
+    
+    
+            circle_marker_c20f2d48abb89cbbdda028c8e1110222.bindTooltip(
+                `<div>
+                     University of Auckland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_38c18ae59a4afa2f259b540bfb624972 = L.circleMarker(
+                [54.58414875, -5.933721043274003],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_cd3616d284781e502d0a20040ddc1c8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11f757a762f19c7300dd9dc548f555fd = $(`<div id="html_11f757a762f19c7300dd9dc548f555fd" style="width: 100.0%; height: 100.0%;">Queen's University Belfast</div>`)[0];
+                popup_cd3616d284781e502d0a20040ddc1c8f.setContent(html_11f757a762f19c7300dd9dc548f555fd);
+            
+        
+
+        circle_marker_38c18ae59a4afa2f259b540bfb624972.bindPopup(popup_cd3616d284781e502d0a20040ddc1c8f)
+        ;
+
+        
+    
+    
+            circle_marker_38c18ae59a4afa2f259b540bfb624972.bindTooltip(
+                `<div>
+                     Queen's University Belfast
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_466df46d07720c6ef8847e3462ef6ebf = L.circleMarker(
+                [35.71171565, 139.76374569517452],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_9c1bd63b28d42a7d5bd347c305b588d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac9dd8fc34c08fa63b09b8cb8eb9a7ea = $(`<div id="html_ac9dd8fc34c08fa63b09b8cb8eb9a7ea" style="width: 100.0%; height: 100.0%;">University of Tokyo</div>`)[0];
+                popup_9c1bd63b28d42a7d5bd347c305b588d7.setContent(html_ac9dd8fc34c08fa63b09b8cb8eb9a7ea);
+            
+        
+
+        circle_marker_466df46d07720c6ef8847e3462ef6ebf.bindPopup(popup_9c1bd63b28d42a7d5bd347c305b588d7)
+        ;
+
+        
+    
+    
+            circle_marker_466df46d07720c6ef8847e3462ef6ebf.bindTooltip(
+                `<div>
+                     University of Tokyo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d6feede919d06f91bb4e3a96dbc566fa = L.circleMarker(
+                [43.480120400000004, 13.218790609151764],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_a5e4349e76e10dfa19e756e3d235ffe2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_199e075c54ecbdd1284fa773c59b4398 = $(`<div id="html_199e075c54ecbdd1284fa773c59b4398" style="width: 100.0%; height: 100.0%;">Politecnico di Ancona</div>`)[0];
+                popup_a5e4349e76e10dfa19e756e3d235ffe2.setContent(html_199e075c54ecbdd1284fa773c59b4398);
+            
+        
+
+        circle_marker_d6feede919d06f91bb4e3a96dbc566fa.bindPopup(popup_a5e4349e76e10dfa19e756e3d235ffe2)
+        ;
+
+        
+    
+    
+            circle_marker_d6feede919d06f91bb4e3a96dbc566fa.bindTooltip(
+                `<div>
+                     Politecnico di Ancona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cacedb7d7e65b5229ba645dd5f28b90e = L.circleMarker(
+                [44.3529465, 11.7112491],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_a672cbd76d1f5ad16877a08f6cada2e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_876931018b7987a255685a4902c95af0 = $(`<div id="html_876931018b7987a255685a4902c95af0" style="width: 100.0%; height: 100.0%;">Università di Bologna</div>`)[0];
+                popup_a672cbd76d1f5ad16877a08f6cada2e1.setContent(html_876931018b7987a255685a4902c95af0);
+            
+        
+
+        circle_marker_cacedb7d7e65b5229ba645dd5f28b90e.bindPopup(popup_a672cbd76d1f5ad16877a08f6cada2e1)
+        ;
+
+        
+    
+    
+            circle_marker_cacedb7d7e65b5229ba645dd5f28b90e.bindTooltip(
+                `<div>
+                     Università di Bologna
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_707e539db34ffd7b31ada4c0c878cf36 = L.circleMarker(
+                [45.479028799999995, 9.23221040387672],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_c188e6e70a9926433d2ed4c7a730d08f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65ca0c80b7b608adf968ac8849dfdc18 = $(`<div id="html_65ca0c80b7b608adf968ac8849dfdc18" style="width: 100.0%; height: 100.0%;">Politecnico di Milano</div>`)[0];
+                popup_c188e6e70a9926433d2ed4c7a730d08f.setContent(html_65ca0c80b7b608adf968ac8849dfdc18);
+            
+        
+
+        circle_marker_707e539db34ffd7b31ada4c0c878cf36.bindPopup(popup_c188e6e70a9926433d2ed4c7a730d08f)
+        ;
+
+        
+    
+    
+            circle_marker_707e539db34ffd7b31ada4c0c878cf36.bindTooltip(
+                `<div>
+                     Politecnico di Milano
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b646692b248f803f7da6559c6aca9a8d = L.circleMarker(
+                [41.8527838, 12.624297976776507],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_498de1aeb61e199dd0ad3465ba85be4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15c5c45fc55dbcea8424c93f32122ff6 = $(`<div id="html_15c5c45fc55dbcea8424c93f32122ff6" style="width: 100.0%; height: 100.0%;">Università di Roma Tor Vergata</div>`)[0];
+                popup_498de1aeb61e199dd0ad3465ba85be4a.setContent(html_15c5c45fc55dbcea8424c93f32122ff6);
+            
+        
+
+        circle_marker_b646692b248f803f7da6559c6aca9a8d.bindPopup(popup_498de1aeb61e199dd0ad3465ba85be4a)
+        ;
+
+        
+    
+    
+            circle_marker_b646692b248f803f7da6559c6aca9a8d.bindTooltip(
+                `<div>
+                     Università di Roma Tor Vergata
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e1c2b9d02dd94073f77ff2e7c555b719 = L.circleMarker(
+                [46.0661497, 11.11662318758863],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_5fc14ea6924b635872a8f43b5e5c796e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a79eb7939207508850416a95ffad357 = $(`<div id="html_6a79eb7939207508850416a95ffad357" style="width: 100.0%; height: 100.0%;">University of Trento</div>`)[0];
+                popup_5fc14ea6924b635872a8f43b5e5c796e.setContent(html_6a79eb7939207508850416a95ffad357);
+            
+        
+
+        circle_marker_e1c2b9d02dd94073f77ff2e7c555b719.bindPopup(popup_5fc14ea6924b635872a8f43b5e5c796e)
+        ;
+
+        
+    
+    
+            circle_marker_e1c2b9d02dd94073f77ff2e7c555b719.bindTooltip(
+                `<div>
+                     University of Trento
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_44eb206ac495dc9bdb7f7fd762eadafc = L.circleMarker(
+                [32.065608, 34.843957],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_ecac133bc3c36f188b1a3b21c3877205 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b60e7a63292068bc36745841ccc2482c = $(`<div id="html_b60e7a63292068bc36745841ccc2482c" style="width: 100.0%; height: 100.0%;">Bar-Ilan University</div>`)[0];
+                popup_ecac133bc3c36f188b1a3b21c3877205.setContent(html_b60e7a63292068bc36745841ccc2482c);
+            
+        
+
+        circle_marker_44eb206ac495dc9bdb7f7fd762eadafc.bindPopup(popup_ecac133bc3c36f188b1a3b21c3877205)
+        ;
+
+        
+    
+    
+            circle_marker_44eb206ac495dc9bdb7f7fd762eadafc.bindTooltip(
+                `<div>
+                     Bar-Ilan University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_835d6ca8fe7166d649b9a2da1d120875 = L.circleMarker(
+                [32.7609456, 35.02043482821519],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_dd51a4bd929fc8cba32049d25577ce21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6e35f3c31cf6ee076d4fb16eba7e8aa = $(`<div id="html_d6e35f3c31cf6ee076d4fb16eba7e8aa" style="width: 100.0%; height: 100.0%;">University of Haifa</div>`)[0];
+                popup_dd51a4bd929fc8cba32049d25577ce21.setContent(html_d6e35f3c31cf6ee076d4fb16eba7e8aa);
+            
+        
+
+        circle_marker_835d6ca8fe7166d649b9a2da1d120875.bindPopup(popup_dd51a4bd929fc8cba32049d25577ce21)
+        ;
+
+        
+    
+    
+            circle_marker_835d6ca8fe7166d649b9a2da1d120875.bindTooltip(
+                `<div>
+                     University of Haifa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0f3b08d3dc9a4952e1f1d708938a0625 = L.circleMarker(
+                [51.8947384, -8.4903073],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_d01ac78a186cd1792f7a4dfe7dbc5fea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b4e48798eb9c42d17f8e3eb443730f1 = $(`<div id="html_8b4e48798eb9c42d17f8e3eb443730f1" style="width: 100.0%; height: 100.0%;">University College Cork</div>`)[0];
+                popup_d01ac78a186cd1792f7a4dfe7dbc5fea.setContent(html_8b4e48798eb9c42d17f8e3eb443730f1);
+            
+        
+
+        circle_marker_0f3b08d3dc9a4952e1f1d708938a0625.bindPopup(popup_d01ac78a186cd1792f7a4dfe7dbc5fea)
+        ;
+
+        
+    
+    
+            circle_marker_0f3b08d3dc9a4952e1f1d708938a0625.bindTooltip(
+                `<div>
+                     University College Cork
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d883e644471d1608f23e17c9676e071f = L.circleMarker(
+                [53.34366745, -6.254444724511822],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_4f39d4095b5b0332984ee252093f9d40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c751fe528b4cb76a38720d2904ffa632 = $(`<div id="html_c751fe528b4cb76a38720d2904ffa632" style="width: 100.0%; height: 100.0%;">University College Dublin</div>`)[0];
+                popup_4f39d4095b5b0332984ee252093f9d40.setContent(html_c751fe528b4cb76a38720d2904ffa632);
+            
+        
+
+        circle_marker_d883e644471d1608f23e17c9676e071f.bindPopup(popup_4f39d4095b5b0332984ee252093f9d40)
+        ;
+
+        
+    
+    
+            circle_marker_d883e644471d1608f23e17c9676e071f.bindTooltip(
+                `<div>
+                     University College Dublin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cb603190d63c974285bc777846c9bd77 = L.circleMarker(
+                [53.386489499999996, -6.25926073106762],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_b3fedaaff52440662e531298b0eb3e9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfbd2aa240df62b03565cdf5deaee31c = $(`<div id="html_bfbd2aa240df62b03565cdf5deaee31c" style="width: 100.0%; height: 100.0%;">Dublin City University</div>`)[0];
+                popup_b3fedaaff52440662e531298b0eb3e9f.setContent(html_bfbd2aa240df62b03565cdf5deaee31c);
+            
+        
+
+        circle_marker_cb603190d63c974285bc777846c9bd77.bindPopup(popup_b3fedaaff52440662e531298b0eb3e9f)
+        ;
+
+        
+    
+    
+            circle_marker_cb603190d63c974285bc777846c9bd77.bindTooltip(
+                `<div>
+                     Dublin City University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_42e82fb82b72720f36eef4a475667bba = L.circleMarker(
+                [53.3493795, -6.2605593],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_478f1952b48a6772930fab7e06aa9b15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24a334701cd21e8a8484e067513611a1 = $(`<div id="html_24a334701cd21e8a8484e067513611a1" style="width: 100.0%; height: 100.0%;">Technical University of Dublin</div>`)[0];
+                popup_478f1952b48a6772930fab7e06aa9b15.setContent(html_24a334701cd21e8a8484e067513611a1);
+            
+        
+
+        circle_marker_42e82fb82b72720f36eef4a475667bba.bindPopup(popup_478f1952b48a6772930fab7e06aa9b15)
+        ;
+
+        
+    
+    
+            circle_marker_42e82fb82b72720f36eef4a475667bba.bindTooltip(
+                `<div>
+                     Technical University of Dublin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bc9c44ccc687e5cc30747e8c13a4e433 = L.circleMarker(
+                [53.34366745, -6.254444724511822],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_c32e50eea1164ebe351a6119e474bbcf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d43c9b6de804788acc999d14e3b1f2f0 = $(`<div id="html_d43c9b6de804788acc999d14e3b1f2f0" style="width: 100.0%; height: 100.0%;">Trinity College Dublin</div>`)[0];
+                popup_c32e50eea1164ebe351a6119e474bbcf.setContent(html_d43c9b6de804788acc999d14e3b1f2f0);
+            
+        
+
+        circle_marker_bc9c44ccc687e5cc30747e8c13a4e433.bindPopup(popup_c32e50eea1164ebe351a6119e474bbcf)
+        ;
+
+        
+    
+    
+            circle_marker_bc9c44ccc687e5cc30747e8c13a4e433.bindTooltip(
+                `<div>
+                     Trinity College Dublin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_37abed79a8be1af140bf52d3a9ab8499 = L.circleMarker(
+                [53.3846374, -6.6030523143067],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_7ccd9a619e11fbd696d4364be2fd025d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e78be29488a8cfffdcbb6cddb5080c7b = $(`<div id="html_e78be29488a8cfffdcbb6cddb5080c7b" style="width: 100.0%; height: 100.0%;">Maynooth University</div>`)[0];
+                popup_7ccd9a619e11fbd696d4364be2fd025d.setContent(html_e78be29488a8cfffdcbb6cddb5080c7b);
+            
+        
+
+        circle_marker_37abed79a8be1af140bf52d3a9ab8499.bindPopup(popup_7ccd9a619e11fbd696d4364be2fd025d)
+        ;
+
+        
+    
+    
+            circle_marker_37abed79a8be1af140bf52d3a9ab8499.bindTooltip(
+                `<div>
+                     Maynooth University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1783544a843c94ba89691e4939870181 = L.circleMarker(
+                [52.67325805, -8.569809653548548],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_08026cd225d452ce6dc97f93fd5b3fdd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_761d3c103f6c6ec311bd3b8af06186e2 = $(`<div id="html_761d3c103f6c6ec311bd3b8af06186e2" style="width: 100.0%; height: 100.0%;">University of Limerick</div>`)[0];
+                popup_08026cd225d452ce6dc97f93fd5b3fdd.setContent(html_761d3c103f6c6ec311bd3b8af06186e2);
+            
+        
+
+        circle_marker_1783544a843c94ba89691e4939870181.bindPopup(popup_08026cd225d452ce6dc97f93fd5b3fdd)
+        ;
+
+        
+    
+    
+            circle_marker_1783544a843c94ba89691e4939870181.bindTooltip(
+                `<div>
+                     University of Limerick
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_38e595c42f56d402b17876ddda82b892 = L.circleMarker(
+                [52.67712845, -7.8060947003656285],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_8b3e39068af89e8d19e0103ad0324bcf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c0d907c5883b20047c8b20047eaae7c = $(`<div id="html_3c0d907c5883b20047c8b20047eaae7c" style="width: 100.0%; height: 100.0%;">Mary Immaculate College</div>`)[0];
+                popup_8b3e39068af89e8d19e0103ad0324bcf.setContent(html_3c0d907c5883b20047c8b20047eaae7c);
+            
+        
+
+        circle_marker_38e595c42f56d402b17876ddda82b892.bindPopup(popup_8b3e39068af89e8d19e0103ad0324bcf)
+        ;
+
+        
+    
+    
+            circle_marker_38e595c42f56d402b17876ddda82b892.bindTooltip(
+                `<div>
+                     Mary Immaculate College
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cafb9c3fdc3bd626d24bb696ec21458a = L.circleMarker(
+                [33.2625589, 44.48944186657991],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_2a64c056960a667628d52a4ef315e8ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55bf09a065ba4ac59ae4f13d04b7fda5 = $(`<div id="html_55bf09a065ba4ac59ae4f13d04b7fda5" style="width: 100.0%; height: 100.0%;">Middle Technical University Baghdad</div>`)[0];
+                popup_2a64c056960a667628d52a4ef315e8ae.setContent(html_55bf09a065ba4ac59ae4f13d04b7fda5);
+            
+        
+
+        circle_marker_cafb9c3fdc3bd626d24bb696ec21458a.bindPopup(popup_2a64c056960a667628d52a4ef315e8ae)
+        ;
+
+        
+    
+    
+            circle_marker_cafb9c3fdc3bd626d24bb696ec21458a.bindTooltip(
+                `<div>
+                     Middle Technical University Baghdad
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_adf9dd544e42153519f6940a3ec76a57 = L.circleMarker(
+                [12.9940844, 80.2470141],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_690c567bc5ca6128d521a087bccc1d6d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f36339444f6bd561331107dd3bc2b2f2 = $(`<div id="html_f36339444f6bd561331107dd3bc2b2f2" style="width: 100.0%; height: 100.0%;">Institute of Mathematical Sciences Chennai</div>`)[0];
+                popup_690c567bc5ca6128d521a087bccc1d6d.setContent(html_f36339444f6bd561331107dd3bc2b2f2);
+            
+        
+
+        circle_marker_adf9dd544e42153519f6940a3ec76a57.bindPopup(popup_690c567bc5ca6128d521a087bccc1d6d)
+        ;
+
+        
+    
+    
+            circle_marker_adf9dd544e42153519f6940a3ec76a57.bindTooltip(
+                `<div>
+                     Institute of Mathematical Sciences Chennai
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1d1766c54a260a5529e981d5a8537e6e = L.circleMarker(
+                [26.3215381, 89.4695667],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_bf42c6d2404927cfb79db27a634ec07b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51a71d26ddd7774b4a9ac28dabb4b5aa = $(`<div id="html_51a71d26ddd7774b4a9ac28dabb4b5aa" style="width: 100.0%; height: 100.0%;">Cooch Behar Panchanan Barma University</div>`)[0];
+                popup_bf42c6d2404927cfb79db27a634ec07b.setContent(html_51a71d26ddd7774b4a9ac28dabb4b5aa);
+            
+        
+
+        circle_marker_1d1766c54a260a5529e981d5a8537e6e.bindPopup(popup_bf42c6d2404927cfb79db27a634ec07b)
+        ;
+
+        
+    
+    
+            circle_marker_1d1766c54a260a5529e981d5a8537e6e.bindTooltip(
+                `<div>
+                     Cooch Behar Panchanan Barma University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_62a87110c26c0c32f55ce3e351ae8be9 = L.circleMarker(
+                [30.3983396, 78.0753455],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_050b6035036f6e142ec1df4aa243aaab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a0414362c2de4724d50c52155b90630 = $(`<div id="html_2a0414362c2de4724d50c52155b90630" style="width: 100.0%; height: 100.0%;">DIT University</div>`)[0];
+                popup_050b6035036f6e142ec1df4aa243aaab.setContent(html_2a0414362c2de4724d50c52155b90630);
+            
+        
+
+        circle_marker_62a87110c26c0c32f55ce3e351ae8be9.bindPopup(popup_050b6035036f6e142ec1df4aa243aaab)
+        ;
+
+        
+    
+    
+            circle_marker_62a87110c26c0c32f55ce3e351ae8be9.bindTooltip(
+                `<div>
+                     DIT University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a25b5503104bba45b4db06f13f8608dd = L.circleMarker(
+                [26.5092172, 80.2483253],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_e44110fe6147efc8c09e29489fa41992 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2fff79e2b789de4bba9687dd929973eb = $(`<div id="html_2fff79e2b789de4bba9687dd929973eb" style="width: 100.0%; height: 100.0%;">IIT Kanpur</div>`)[0];
+                popup_e44110fe6147efc8c09e29489fa41992.setContent(html_2fff79e2b789de4bba9687dd929973eb);
+            
+        
+
+        circle_marker_a25b5503104bba45b4db06f13f8608dd.bindPopup(popup_e44110fe6147efc8c09e29489fa41992)
+        ;
+
+        
+    
+    
+            circle_marker_a25b5503104bba45b4db06f13f8608dd.bindTooltip(
+                `<div>
+                     IIT Kanpur
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f4433043f5bfb7751c6e96baba831efa = L.circleMarker(
+                [10.804973, 78.6870296],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_18103c9b117ad1dcb009221724090dd6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d95a123f0185c3b5e6ba68ba73c77874 = $(`<div id="html_d95a123f0185c3b5e6ba68ba73c77874" style="width: 100.0%; height: 100.0%;">IIT Trichy</div>`)[0];
+                popup_18103c9b117ad1dcb009221724090dd6.setContent(html_d95a123f0185c3b5e6ba68ba73c77874);
+            
+        
+
+        circle_marker_f4433043f5bfb7751c6e96baba831efa.bindPopup(popup_18103c9b117ad1dcb009221724090dd6)
+        ;
+
+        
+    
+    
+            circle_marker_f4433043f5bfb7751c6e96baba831efa.bindTooltip(
+                `<div>
+                     IIT Trichy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0e1164f495e10c88d86e63e4270e00b4 = L.circleMarker(
+                [47.4934799, 19.061899330588723],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_d11d3eb26549f306f2d2dfc96f0b9490 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf8c757f6dae04703dfcf38a6c77f38b = $(`<div id="html_bf8c757f6dae04703dfcf38a6c77f38b" style="width: 100.0%; height: 100.0%;">ELTE Eotvos Lorand University</div>`)[0];
+                popup_d11d3eb26549f306f2d2dfc96f0b9490.setContent(html_bf8c757f6dae04703dfcf38a6c77f38b);
+            
+        
+
+        circle_marker_0e1164f495e10c88d86e63e4270e00b4.bindPopup(popup_d11d3eb26549f306f2d2dfc96f0b9490)
+        ;
+
+        
+    
+    
+            circle_marker_0e1164f495e10c88d86e63e4270e00b4.bindTooltip(
+                `<div>
+                     ELTE Eotvos Lorand University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6917243c72120283c7ea33506fe932a1 = L.circleMarker(
+                [50.7791645, 6.068920971222876],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_530d9020115b782cb655a6b54598608a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8afdc610f79573faa0151a5084e7796a = $(`<div id="html_8afdc610f79573faa0151a5084e7796a" style="width: 100.0%; height: 100.0%;">RWTH Aachen</div>`)[0];
+                popup_530d9020115b782cb655a6b54598608a.setContent(html_8afdc610f79573faa0151a5084e7796a);
+            
+        
+
+        circle_marker_6917243c72120283c7ea33506fe932a1.bindPopup(popup_530d9020115b782cb655a6b54598608a)
+        ;
+
+        
+    
+    
+            circle_marker_6917243c72120283c7ea33506fe932a1.bindTooltip(
+                `<div>
+                     RWTH Aachen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_68907869bbfa7d04d3258d39b4aa5536 = L.circleMarker(
+                [52.0365422, 8.490177589517387],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_8f8523cb245b7c58f9ab0662a2320545 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22467a6e102f7ee1b32ecd6ae1ddef24 = $(`<div id="html_22467a6e102f7ee1b32ecd6ae1ddef24" style="width: 100.0%; height: 100.0%;">Bielefeld University</div>`)[0];
+                popup_8f8523cb245b7c58f9ab0662a2320545.setContent(html_22467a6e102f7ee1b32ecd6ae1ddef24);
+            
+        
+
+        circle_marker_68907869bbfa7d04d3258d39b4aa5536.bindPopup(popup_8f8523cb245b7c58f9ab0662a2320545)
+        ;
+
+        
+    
+    
+            circle_marker_68907869bbfa7d04d3258d39b4aa5536.bindTooltip(
+                `<div>
+                     Bielefeld University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c8aa7a71ecf420e3d65dba58080858cb = L.circleMarker(
+                [51.444157649999994, 7.260965412383296],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_c83ccda4243f875929471cf827df6830 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd4b4ee25c2120f9b5cc39710d240f20 = $(`<div id="html_cd4b4ee25c2120f9b5cc39710d240f20" style="width: 100.0%; height: 100.0%;">Ruhr-Universität Bochum</div>`)[0];
+                popup_c83ccda4243f875929471cf827df6830.setContent(html_cd4b4ee25c2120f9b5cc39710d240f20);
+            
+        
+
+        circle_marker_c8aa7a71ecf420e3d65dba58080858cb.bindPopup(popup_c83ccda4243f875929471cf827df6830)
+        ;
+
+        
+    
+    
+            circle_marker_c8aa7a71ecf420e3d65dba58080858cb.bindTooltip(
+                `<div>
+                     Ruhr-Universität Bochum
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_178ad15b5ab000d64c48553b927005cb = L.circleMarker(
+                [51.029867, 13.7303171],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_39dd03d8211abde95c45e24762764185 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_544e030e1d9d4aa4c656d96d5e4715a8 = $(`<div id="html_544e030e1d9d4aa4c656d96d5e4715a8" style="width: 100.0%; height: 100.0%;">TU Dresden</div>`)[0];
+                popup_39dd03d8211abde95c45e24762764185.setContent(html_544e030e1d9d4aa4c656d96d5e4715a8);
+            
+        
+
+        circle_marker_178ad15b5ab000d64c48553b927005cb.bindPopup(popup_39dd03d8211abde95c45e24762764185)
+        ;
+
+        
+    
+    
+            circle_marker_178ad15b5ab000d64c48553b927005cb.bindTooltip(
+                `<div>
+                     TU Dresden
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9acf5ce8c668798457db03415781b719 = L.circleMarker(
+                [51.3771294, 7.495154028855863],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_a315014dd73b2822393758fcc03b533d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f393e96f486e03716a01522bf7735e3a = $(`<div id="html_f393e96f486e03716a01522bf7735e3a" style="width: 100.0%; height: 100.0%;">FernUniversitat in Hagen</div>`)[0];
+                popup_a315014dd73b2822393758fcc03b533d.setContent(html_f393e96f486e03716a01522bf7735e3a);
+            
+        
+
+        circle_marker_9acf5ce8c668798457db03415781b719.bindPopup(popup_a315014dd73b2822393758fcc03b533d)
+        ;
+
+        
+    
+    
+            circle_marker_9acf5ce8c668798457db03415781b719.bindTooltip(
+                `<div>
+                     FernUniversitat in Hagen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_71504ddba386f939c1e24f6442ddc008 = L.circleMarker(
+                [48.7453828, 9.103267538773398],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_d8efcac5be6ccc548b0a49eba48b23cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52fa3b4c3cf0a0c3e5af248740b99497 = $(`<div id="html_52fa3b4c3cf0a0c3e5af248740b99497" style="width: 100.0%; height: 100.0%;">Universität Stuttgart</div>`)[0];
+                popup_d8efcac5be6ccc548b0a49eba48b23cb.setContent(html_52fa3b4c3cf0a0c3e5af248740b99497);
+            
+        
+
+        circle_marker_71504ddba386f939c1e24f6442ddc008.bindPopup(popup_d8efcac5be6ccc548b0a49eba48b23cb)
+        ;
+
+        
+    
+    
+            circle_marker_71504ddba386f939c1e24f6442ddc008.bindTooltip(
+                `<div>
+                     Universität Stuttgart
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a20f7162aad3b37e0ed42f4ba568ec56 = L.circleMarker(
+                [49.87419545, 2.268363015144649],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_79f25736f00e3e0cc71362c06d0e1fff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7513e9e801e517255bd811d1c54d8c7c = $(`<div id="html_7513e9e801e517255bd811d1c54d8c7c" style="width: 100.0%; height: 100.0%;">Université de Picardie Jules Verne</div>`)[0];
+                popup_79f25736f00e3e0cc71362c06d0e1fff.setContent(html_7513e9e801e517255bd811d1c54d8c7c);
+            
+        
+
+        circle_marker_a20f7162aad3b37e0ed42f4ba568ec56.bindPopup(popup_79f25736f00e3e0cc71362c06d0e1fff)
+        ;
+
+        
+    
+    
+            circle_marker_a20f7162aad3b37e0ed42f4ba568ec56.bindTooltip(
+                `<div>
+                     Université de Picardie Jules Verne
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d620e022c5d5c2d646dade5401caf227 = L.circleMarker(
+                [45.19156085, 5.76726385662386],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_8801890badad7f6c989fece0f3c1f6b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44fba4d5ec4df6c89b493a1a21c60735 = $(`<div id="html_44fba4d5ec4df6c89b493a1a21c60735" style="width: 100.0%; height: 100.0%;">Universite Grenoble Alpes</div>`)[0];
+                popup_8801890badad7f6c989fece0f3c1f6b9.setContent(html_44fba4d5ec4df6c89b493a1a21c60735);
+            
+        
+
+        circle_marker_d620e022c5d5c2d646dade5401caf227.bindPopup(popup_8801890badad7f6c989fece0f3c1f6b9)
+        ;
+
+        
+    
+    
+            circle_marker_d620e022c5d5c2d646dade5401caf227.bindTooltip(
+                `<div>
+                     Universite Grenoble Alpes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_746ac5663c0b5cbe11f7ffa58ea4d7ed = L.circleMarker(
+                [60.4517531, 22.2670522],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_06d4013a642a7fc1857203be03d62673 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d6a27d5780fa8ddbf43da0cfb1d0f2c = $(`<div id="html_7d6a27d5780fa8ddbf43da0cfb1d0f2c" style="width: 100.0%; height: 100.0%;">Abo Adakemi</div>`)[0];
+                popup_06d4013a642a7fc1857203be03d62673.setContent(html_7d6a27d5780fa8ddbf43da0cfb1d0f2c);
+            
+        
+
+        circle_marker_746ac5663c0b5cbe11f7ffa58ea4d7ed.bindPopup(popup_06d4013a642a7fc1857203be03d62673)
+        ;
+
+        
+    
+    
+            circle_marker_746ac5663c0b5cbe11f7ffa58ea4d7ed.bindTooltip(
+                `<div>
+                     Abo Adakemi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9cbfdfa2fe2910fc248673d5900b0daf = L.circleMarker(
+                [35.15988245, 33.37769506250004],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_08637008fda605e72cd981c6962e76ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3620ad5f91550d3cac60a6fcac085f0a = $(`<div id="html_3620ad5f91550d3cac60a6fcac085f0a" style="width: 100.0%; height: 100.0%;">University of Cyprus</div>`)[0];
+                popup_08637008fda605e72cd981c6962e76ca.setContent(html_3620ad5f91550d3cac60a6fcac085f0a);
+            
+        
+
+        circle_marker_9cbfdfa2fe2910fc248673d5900b0daf.bindPopup(popup_08637008fda605e72cd981c6962e76ca)
+        ;
+
+        
+    
+    
+            circle_marker_9cbfdfa2fe2910fc248673d5900b0daf.bindTooltip(
+                `<div>
+                     University of Cyprus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b302635ec1d07189cc3b8e56e6649689 = L.circleMarker(
+                [39.90933665, 116.32971461228999],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_f3bc8cbfc2a9029b30353e0274607878 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74f51e3373b66399f78554aae64a684e = $(`<div id="html_74f51e3373b66399f78554aae64a684e" style="width: 100.0%; height: 100.0%;">Chinese Academy of Sciences</div>`)[0];
+                popup_f3bc8cbfc2a9029b30353e0274607878.setContent(html_74f51e3373b66399f78554aae64a684e);
+            
+        
+
+        circle_marker_b302635ec1d07189cc3b8e56e6649689.bindPopup(popup_f3bc8cbfc2a9029b30353e0274607878)
+        ;
+
+        
+    
+    
+            circle_marker_b302635ec1d07189cc3b8e56e6649689.bindTooltip(
+                `<div>
+                     Chinese Academy of Sciences
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e84911afb9ed92a565bb51c9e71e5ed6 = L.circleMarker(
+                [40.0459225, 116.2780923],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_cd364fa7c3553eb35cfc0567f5315d21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4da3f4e23c41e78c918f8d9b7353f4c6 = $(`<div id="html_4da3f4e23c41e78c918f8d9b7353f4c6" style="width: 100.0%; height: 100.0%;">Computational Science Research Center</div>`)[0];
+                popup_cd364fa7c3553eb35cfc0567f5315d21.setContent(html_4da3f4e23c41e78c918f8d9b7353f4c6);
+            
+        
+
+        circle_marker_e84911afb9ed92a565bb51c9e71e5ed6.bindPopup(popup_cd364fa7c3553eb35cfc0567f5315d21)
+        ;
+
+        
+    
+    
+            circle_marker_e84911afb9ed92a565bb51c9e71e5ed6.bindTooltip(
+                `<div>
+                     Computational Science Research Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ad11499d022fc46ec7055ffb0f8f01cd = L.circleMarker(
+                [32.03741895, 118.81535367339066],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_9b3051dc8d64fd5772ee423b333d78eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2c27939ebfecfde7756d55c7850e733 = $(`<div id="html_d2c27939ebfecfde7756d55c7850e733" style="width: 100.0%; height: 100.0%;">Nanjing University of Aeronautics and Astronautics</div>`)[0];
+                popup_9b3051dc8d64fd5772ee423b333d78eb.setContent(html_d2c27939ebfecfde7756d55c7850e733);
+            
+        
+
+        circle_marker_ad11499d022fc46ec7055ffb0f8f01cd.bindPopup(popup_9b3051dc8d64fd5772ee423b333d78eb)
+        ;
+
+        
+    
+    
+            circle_marker_ad11499d022fc46ec7055ffb0f8f01cd.bindTooltip(
+                `<div>
+                     Nanjing University of Aeronautics and Astronautics
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fa233948aa36d13cbe2acd320d3b840e = L.circleMarker(
+                [-39.8153748, -73.2474278],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_dcd642e60061541106acb36eea795e22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_741a643c67b8319010af779e59b43487 = $(`<div id="html_741a643c67b8319010af779e59b43487" style="width: 100.0%; height: 100.0%;">Universidad Austral de Chile</div>`)[0];
+                popup_dcd642e60061541106acb36eea795e22.setContent(html_741a643c67b8319010af779e59b43487);
+            
+        
+
+        circle_marker_fa233948aa36d13cbe2acd320d3b840e.bindPopup(popup_dcd642e60061541106acb36eea795e22)
+        ;
+
+        
+    
+    
+            circle_marker_fa233948aa36d13cbe2acd320d3b840e.bindTooltip(
+                `<div>
+                     Universidad Austral de Chile
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_78fa8f941320ca527157497bf622e188 = L.circleMarker(
+                [45.945530250000004, -66.64018313486694],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_b1f7b8302cbf7882e55c38379e7c5655 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f58db9d7e69d2d75f0bfeedf351ed89 = $(`<div id="html_7f58db9d7e69d2d75f0bfeedf351ed89" style="width: 100.0%; height: 100.0%;">University of New Brunswick</div>`)[0];
+                popup_b1f7b8302cbf7882e55c38379e7c5655.setContent(html_7f58db9d7e69d2d75f0bfeedf351ed89);
+            
+        
+
+        circle_marker_78fa8f941320ca527157497bf622e188.bindPopup(popup_b1f7b8302cbf7882e55c38379e7c5655)
+        ;
+
+        
+    
+    
+            circle_marker_78fa8f941320ca527157497bf622e188.bindTooltip(
+                `<div>
+                     University of New Brunswick
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_51eeb891b23bbc3379664aaf91125805 = L.circleMarker(
+                [45.513225250000005, -73.56141109213168],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_7699b1d046e68c9974729f14d83dfc64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e964c996741f30ecc76fa7dab44c80ee = $(`<div id="html_e964c996741f30ecc76fa7dab44c80ee" style="width: 100.0%; height: 100.0%;">Université du Quebec à Montreal</div>`)[0];
+                popup_7699b1d046e68c9974729f14d83dfc64.setContent(html_e964c996741f30ecc76fa7dab44c80ee);
+            
+        
+
+        circle_marker_51eeb891b23bbc3379664aaf91125805.bindPopup(popup_7699b1d046e68c9974729f14d83dfc64)
+        ;
+
+        
+    
+    
+            circle_marker_51eeb891b23bbc3379664aaf91125805.bindTooltip(
+                `<div>
+                     Université du Quebec à Montreal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e19b2764aa37104b70e561c3e1ec8907 = L.circleMarker(
+                [50.4152275, -104.58899996239825],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_5ad45250536a0bca391b88a66d1be574 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf78c9a2691e40cc6c44b1f211e1be6e = $(`<div id="html_cf78c9a2691e40cc6c44b1f211e1be6e" style="width: 100.0%; height: 100.0%;">University of Regina</div>`)[0];
+                popup_5ad45250536a0bca391b88a66d1be574.setContent(html_cf78c9a2691e40cc6c44b1f211e1be6e);
+            
+        
+
+        circle_marker_e19b2764aa37104b70e561c3e1ec8907.bindPopup(popup_5ad45250536a0bca391b88a66d1be574)
+        ;
+
+        
+    
+    
+            circle_marker_e19b2764aa37104b70e561c3e1ec8907.bindTooltip(
+                `<div>
+                     University of Regina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f192d94f96ba148cb9f6e71b7cefad82 = L.circleMarker(
+                [47.5732831, -52.7351911],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_0659ea919ff1b2bc736a801a9ade9554 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8dccd8f61c076d40da3309ba99fe8aad = $(`<div id="html_8dccd8f61c076d40da3309ba99fe8aad" style="width: 100.0%; height: 100.0%;">Memorial University of Newfoundland</div>`)[0];
+                popup_0659ea919ff1b2bc736a801a9ade9554.setContent(html_8dccd8f61c076d40da3309ba99fe8aad);
+            
+        
+
+        circle_marker_f192d94f96ba148cb9f6e71b7cefad82.bindPopup(popup_0659ea919ff1b2bc736a801a9ade9554)
+        ;
+
+        
+    
+    
+            circle_marker_f192d94f96ba148cb9f6e71b7cefad82.bindTooltip(
+                `<div>
+                     Memorial University of Newfoundland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6af2599330b421f59d1bf66da2d647f8 = L.circleMarker(
+                [-22.8533498, -43.233170287422354],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_3c9366dcf3a4d978a03a38669df32327 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7d9ff5f9232043c0ba3c0557bc40ad6 = $(`<div id="html_a7d9ff5f9232043c0ba3c0557bc40ad6" style="width: 100.0%; height: 100.0%;">Universidade Federal do Rio de Janeiro</div>`)[0];
+                popup_3c9366dcf3a4d978a03a38669df32327.setContent(html_a7d9ff5f9232043c0ba3c0557bc40ad6);
+            
+        
+
+        circle_marker_6af2599330b421f59d1bf66da2d647f8.bindPopup(popup_3c9366dcf3a4d978a03a38669df32327)
+        ;
+
+        
+    
+    
+            circle_marker_6af2599330b421f59d1bf66da2d647f8.bindTooltip(
+                `<div>
+                     Universidade Federal do Rio de Janeiro
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d6910a8b1c34a573fbdbebc874b659d4 = L.circleMarker(
+                [50.8777532, 4.6933785646511135],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_e86d00e7e0908efd99b985b5384457ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3c62e6a4172d66a0dfbba8012a315fc = $(`<div id="html_c3c62e6a4172d66a0dfbba8012a315fc" style="width: 100.0%; height: 100.0%;">KU Leuven</div>`)[0];
+                popup_e86d00e7e0908efd99b985b5384457ee.setContent(html_c3c62e6a4172d66a0dfbba8012a315fc);
+            
+        
+
+        circle_marker_d6910a8b1c34a573fbdbebc874b659d4.bindPopup(popup_e86d00e7e0908efd99b985b5384457ee)
+        ;
+
+        
+    
+    
+            circle_marker_d6910a8b1c34a573fbdbebc874b659d4.bindTooltip(
+                `<div>
+                     KU Leuven
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5b5d7289c2d79223b7ae5d425b3b2560 = L.circleMarker(
+                [48.19853965, 16.369861676286614],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_81ca4e4496be2d1eb124daebd82e7b7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d2cfa8f190dac5f29211c8c459eb9eb = $(`<div id="html_3d2cfa8f190dac5f29211c8c459eb9eb" style="width: 100.0%; height: 100.0%;">TU Wien</div>`)[0];
+                popup_81ca4e4496be2d1eb124daebd82e7b7d.setContent(html_3d2cfa8f190dac5f29211c8c459eb9eb);
+            
+        
+
+        circle_marker_5b5d7289c2d79223b7ae5d425b3b2560.bindPopup(popup_81ca4e4496be2d1eb124daebd82e7b7d)
+        ;
+
+        
+    
+    
+            circle_marker_5b5d7289c2d79223b7ae5d425b3b2560.bindTooltip(
+                `<div>
+                     TU Wien
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e1096b64dc3044b8ac37a552cc7f1a6a = L.circleMarker(
+                [-35.2975906, 149.1012676],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_f4557bbbcc3d72195919c85a1ff53c45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbd97cd9868f86d4748a944de7c8aa0d = $(`<div id="html_fbd97cd9868f86d4748a944de7c8aa0d" style="width: 100.0%; height: 100.0%;">Mathematical Sciences Insitute ANU</div>`)[0];
+                popup_f4557bbbcc3d72195919c85a1ff53c45.setContent(html_fbd97cd9868f86d4748a944de7c8aa0d);
+            
+        
+
+        circle_marker_e1096b64dc3044b8ac37a552cc7f1a6a.bindPopup(popup_f4557bbbcc3d72195919c85a1ff53c45)
+        ;
+
+        
+    
+    
+            circle_marker_e1096b64dc3044b8ac37a552cc7f1a6a.bindTooltip(
+                `<div>
+                     Mathematical Sciences Insitute ANU
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cbaee73d93d86de55b4eed2df6438f5d = L.circleMarker(
+                [-37.8774234, 145.04496691740303],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_d600941fdfa13baa404904bc9cdd6528 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01d0ceb1ae6b923c0e6696cb3996bedc = $(`<div id="html_01d0ceb1ae6b923c0e6696cb3996bedc" style="width: 100.0%; height: 100.0%;">Monash University</div>`)[0];
+                popup_d600941fdfa13baa404904bc9cdd6528.setContent(html_01d0ceb1ae6b923c0e6696cb3996bedc);
+            
+        
+
+        circle_marker_cbaee73d93d86de55b4eed2df6438f5d.bindPopup(popup_d600941fdfa13baa404904bc9cdd6528)
+        ;
+
+        
+    
+    
+            circle_marker_cbaee73d93d86de55b4eed2df6438f5d.bindTooltip(
+                `<div>
+                     Monash University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_330666273ac3ccc169266cf7ad49826f = L.circleMarker(
+                [-34.6037181, -58.38153],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_3ba97d54b8f6f55fa6b9b72dfc113174 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40bf3b1d3143cfc184e7528e87e62525 = $(`<div id="html_40bf3b1d3143cfc184e7528e87e62525" style="width: 100.0%; height: 100.0%;">Universidad Torcuato di Tella</div>`)[0];
+                popup_3ba97d54b8f6f55fa6b9b72dfc113174.setContent(html_40bf3b1d3143cfc184e7528e87e62525);
+            
+        
+
+        circle_marker_330666273ac3ccc169266cf7ad49826f.bindPopup(popup_3ba97d54b8f6f55fa6b9b72dfc113174)
+        ;
+
+        
+    
+    
+            circle_marker_330666273ac3ccc169266cf7ad49826f.bindTooltip(
+                `<div>
+                     Universidad Torcuato di Tella
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3ef7453509234ca10107b3da52f5d7c8 = L.circleMarker(
+                [60.1860789, 24.828102074406736],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_a9f23096d5e90547b4241ca09440ee7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c06a26954f4b4fc1b07f11d8af2b4134 = $(`<div id="html_c06a26954f4b4fc1b07f11d8af2b4134" style="width: 100.0%; height: 100.0%;">Aalto University</div>`)[0];
+                popup_a9f23096d5e90547b4241ca09440ee7c.setContent(html_c06a26954f4b4fc1b07f11d8af2b4134);
+            
+        
+
+        circle_marker_3ef7453509234ca10107b3da52f5d7c8.bindPopup(popup_a9f23096d5e90547b4241ca09440ee7c)
+        ;
+
+        
+    
+    
+            circle_marker_3ef7453509234ca10107b3da52f5d7c8.bindTooltip(
+                `<div>
+                     Aalto University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_997c8d1aa26a9ca1026b873862d1482a = L.circleMarker(
+                [59.841953700000005, 17.634420389231323],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_955840a7052dfd3e35eb445ebd243184 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d58b8a7f389471cbcd52a422aac242bc = $(`<div id="html_d58b8a7f389471cbcd52a422aac242bc" style="width: 100.0%; height: 100.0%;">Uppsala University</div>`)[0];
+                popup_955840a7052dfd3e35eb445ebd243184.setContent(html_d58b8a7f389471cbcd52a422aac242bc);
+            
+        
+
+        circle_marker_997c8d1aa26a9ca1026b873862d1482a.bindPopup(popup_955840a7052dfd3e35eb445ebd243184)
+        ;
+
+        
+    
+    
+            circle_marker_997c8d1aa26a9ca1026b873862d1482a.bindTooltip(
+                `<div>
+                     Uppsala University
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fecb28c7bf671650738483faa3fc32d4 = L.circleMarker(
+                [10.85279065, 106.77255839168646],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f);
+        
+    
+        var popup_181fbb4f5df1ce88c3ffa7572cd05b14 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20c8c0cea3d7397d621b854801368aab = $(`<div id="html_20c8c0cea3d7397d621b854801368aab" style="width: 100.0%; height: 100.0%;">Ho Chi Minh City University of Education</div>`)[0];
+                popup_181fbb4f5df1ce88c3ffa7572cd05b14.setContent(html_20c8c0cea3d7397d621b854801368aab);
+            
+        
+
+        circle_marker_fecb28c7bf671650738483faa3fc32d4.bindPopup(popup_181fbb4f5df1ce88c3ffa7572cd05b14)
+        ;
+
+        
+    
+    
+            circle_marker_fecb28c7bf671650738483faa3fc32d4.bindTooltip(
+                `<div>
+                     Ho Chi Minh City University of Education
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_db3fdec54d0cb94454ccfa9aafb2a81f.addTo(map_48d61b71b3235fc34ac5f8cefe755edb);
+        
+    
+            map_48d61b71b3235fc34ac5f8cefe755edb.fitBounds(
+                [[-39.8153748, -123.07176029673084], [60.4517531, 174.77373309361866]],
+                {"padding": [30, 30]}
+            );
+        
+</script>
+</html>

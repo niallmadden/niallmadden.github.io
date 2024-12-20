@@ -1,0 +1,30 @@
+#rubber MA385
+pdflatex MA385
+pdflatex MA385
+
+#dvips -Ppdf -ta4 -p 1 -l  1 MA385 -o contents.ps; ps2pdf -sPAPERSIZE=a4 contents.ps
+#pdfjam MA385.pdf 1-1  -o  contents.pdf
+pdftk MA385.pdf cat 1 output contents.pdf
+
+#pdftk MA385.pdf cat 2-7 output Section00.pdf
+
+#pdftk MA385.pdf cat 8-19 output Section01.pdf
+#pdftk MA385.pdf cat 17-18 output Lab01.pdf
+
+#pdftk MA385.pdf cat 20-37 output Section02.pdf
+#pdftk MA385.pdf cat 34-35 output Lab02.pdf
+#pdftk MA385.pdf cat 36-37 output Lab03.pdf
+
+pdftk MA385.pdf cat 38-51 output Section03.pdf
+#pdftk MA385.pdf cat 48 output Lab04.pdf
+#pdftk MA385.pdf cat 53-54 output PS3.pdf
+
+
+
+
+#rm tmp.ps body.tmp head.tmp
+#rm Lecture*.ps
+#rm MA385.ps
+mv -v *pdf ../web/
+
+#rcp -r /home/niall/teach/MA385/web/* larmor.nuigalway.ie:/home/niall/teach/MA385/web 

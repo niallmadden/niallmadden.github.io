@@ -1,0 +1,123 @@
+% Exercises-1-HW
+% 1920-MA385 Homework assignment 1
+% Author: Niall Madden  Niall.Madden@NUIGalway.ie
+\documentclass[a4paper, notitlepage,12pt]{report}
+
+\usepackage{amsmath,amsthm, amssymb}
+%\usepackage{xr}
+%\externaldocument{1-NonlinearEquatons}
+
+\usepackage{fancyhdr}
+\usepackage[body={17.5cm,25.2cm},centering,  nofoot]{geometry}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\usepackage{eulervm}
+
+\renewcommand{\familydefault}{\sfdefault} 
+
+
+\newcommand {\Rsym}{{ \mathbb{R}^{n \times n}_\mathrm{sym}}}
+
+\newtheorem{exercise}{Exercise}[chapter]
+
+\linespread{1.2}
+
+\newcounter{tmp}
+\newcommand{\saveexer}{\setcounter{tmp}{\theexercise}}
+\newcommand{\loadexer}{\setcounter{exercise}{\thetmp}}
+
+\author{Niall Madden}
+\title{1920-MA385 -- Numerical Analysis I (``NA1'')}
+
+\newcommand{\ChapterTitle}{ ~ }
+\newcommand{\SectionTitle}{ ~ }
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markright{%Lecture \thesection\
+    \boldmath\textbf{\SectionTitle}\unboldmath}}
+\renewcommand{\subsectionmark}[1]{%
+\markright{%Lecture \thesection\ 
+\boldmath\textbf{\SectionTitle}\unboldmath}}
+
+\fancyhf{}   
+\fancyhead[C]{\textbf{\thepage}}      %
+\fancyhead[R]{}
+\fancyhead[L]{\S 1920--MA385 Chapter 0 and 1: Exercises}
+\renewcommand{\headrulewidth}{1pt}      %Underlines the header. (Set to 0pt if not required).
+
+\begin{document}
+
+\renewcommand{\ChapterTitle}{Solving nonlinear equations}
+\setcounter{chapter}{0}
+%\twocolumn[
+\begin{center}
+{\Large Chapter 0 (Taylor's Theorem) and Chapter 1 (\ChapterTitle)}
+
+\emph{\large Please submit carefully written solutions to the
+  following exercises: \\
+  Exercises
+  \ref{exer:Taylor sin}
+  \ref{exer:derive Newton},
+  \ref{exer:newton converge},
+  \ref{exer:Newton error formula},
+  and
+  \ref{exer:g contracts?}.
+}
+
+\end{center}
+
+
+\setcounter{chapter}{0}
+\setcounter{exercise}{1}
+% \input{Exercises-0-1}
+\begin{exercise}[$\star$  Homework problem]
+  \label{exer:Taylor sin}
+  Write out the Taylor polynomial at  $x$, about $a=0$, of degree 5 for
+  $f(x)=\sin(x)$. How does its derivative compare to the corresponding
+  Taylor polynomial for $f(x)=\cos(x)$?
+\end{exercise}
+
+\setcounter{chapter}{1}
+\setcounter{exercise}{0}
+\setcounter{exercise}{7}
+\begin{exercise}[$\star$ Homework problem] 
+  \label{exer:derive Newton} 
+Write down the equation of the line that is tangential to the
+  function $f$ at the point $x_k$. Give an expression for its
+  zero. Hence show how to derive Newton's method.
+\end{exercise}
+
+\setcounter{exercise}{9}
+\begin{exercise}[$\star$ Homework problem]
+  \label{exer:newton converge}
+  \begin{enumerate}[(i)]
+  \item Let $q$ be your student ID number.
+    Find $k$ and $m$ where $k-2$ is the remainder on dividing $q$ by 4,
+    and $m-2$ is the remainder on dividing $q$ by 6.
+    
+  \item Show how Newton's method can be applied to estimate the
+    postive real number $\displaystyle \sqrt[k]{m}$.
+    That is, state the nonlinear equation you would solve, and give
+    the formula for Newton's method, simplified as much as  possible.
+    
+\item Do three iterations by hand of Newton's Method for this problem.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}[$\star$  Homework problem] 
+  \label{exer:Newton error formula}
+  Suppose we want to apply Newton's method to solving $f(x)=0$ where $f$
+  is such that  ${|f''(x)|\leq 10}$ and $|f'(x)| \geq 2$ for all
+  $x$.
+  How close must $x_0$ be to $\tau$ for the method to converge?
+\end{exercise}
+
+\setcounter{exercise}{14}
+\begin{exercise}[$\star$ Homework problem] 
+\label{exer:g contracts?}
+ Show that $g(x) = \ln(2x +1)$ is a contraction on $[1,2]$. Give
+an estimate for $L$. (Hint: Use the Mean Value Theorem).
+\end{exercise}
+
+\end{document}
+
+\end{document}
