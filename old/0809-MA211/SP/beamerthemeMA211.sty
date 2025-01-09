@@ -1,0 +1,82 @@
+\usetheme{Rochester}
+
+\RequirePackage{pgf}
+
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\setbeamercovered{transparent}
+
+\beamer@headheight=0.13\paperwidth
+
+\definecolor{Mylightgray}{rgb}{.96,.96,.96}
+\definecolor{maroon}{rgb}{0.7, 0.07, 0.07}
+\definecolor{Steel}{rgb}{.2, .2, .7}
+
+
+\setbeamercolor*{Title bar}{fg=Steel}
+\setbeamercolor*{Location bar}{fg=Steel,bg=Mylightgray}
+\setbeamercolor*{frametitle}{parent=Title bar}
+\setbeamercolor*{block title}{bg=Steel,fg=white}
+\setbeamercolor*{block body}{bg=Mylightgray,fg=Steel}
+
+\setbeamercolor*{block exercise title}{bg=maroon,fg=white}
+\setbeamercolor*{block body exercise}{bg=maroon,fg=white}
+
+\setbeamercolor{eg}{fg=black,bg=yellow}
+\newcommand{\beg}{\begin{beamercolorbox}{eg}}
+\newcommand{\eeg}{\end{beamercolorbox}}
+
+\setbeamercolor{exer}{fg=black,bg=yellow}
+\newcommand{\bexer}{\begin{beamercolorbox}{eg}}
+\newcommand{\eexer}{\end{beamercolorbox}}
+
+
+\setbeamercolor*{normal text}{bg=white,fg=black}
+%\setbeamercolor*{section in head/foot}{bg=oxygenblue,fg=white}
+
+\usecolortheme[named=Steel]{structure}
+
+\setbeamerfont{section in head/foot}{size=\tiny,series=\normalfont}
+\setbeamerfont{frametitle}{size=\Large}
+\setbeamerfont{framesubtitle}{size=\large}
+\setbeamerfont{block title}{size=\large, series=\bfseries }
+\setbeamerfont{title}{size=\Large, series=\bfseries }
+\setbeamerfont{subtitle}{size=\large, series=\bfseries }
+
+%\setbeamertemplate{headline}
+\setbeamertemplate{frametitle}
+{
+  \vskip-\baselineskip
+  \vskip-0.2cm
+  \hskip0.7cm\usebeamerfont*{frametitle}\insertframetitle
+  \vskip-0.10em
+  \hskip0.7cm\usebeamerfont*{framesubtitle}\insertframesubtitle
+}
+
+\setbeamertemplate{headline}
+{
+  \linethickness{0.25pt}
+  \framelatex{
+  \begin{beamercolorbox}[leftskip=1cm,rightskip=1cm,wd=\paperwidth,ht=0.5\beamer@headheight,sep=0.1cm]{Title bar}
+    \usebeamerfont*{frametitle}%
+    \insertsection
+    \hfill
+    \usebeamerfont*{framesubtitle}%
+    \insertsubsection 
+  \end{beamercolorbox}}
+
+}
+
+\setbeamertemplate{footline}
+{
+  \linethickness{0.25pt}
+  \framelatex{
+  \begin{beamercolorbox}[leftskip=.3cm,wd=\paperwidth,ht=0.3\beamer@headheight,sep=0.1cm]{Location bar}
+    \usebeamerfont{section in head/foot}%
+    MA211~|~\insertshorttitle
+    \hfill
+    \insertframenumber/\inserttotalframenumber
+  \end{beamercolorbox}}
+}
+

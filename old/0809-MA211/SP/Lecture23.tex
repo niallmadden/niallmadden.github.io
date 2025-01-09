@@ -1,0 +1,350 @@
+% MA211 - Lecture 23 (THE END!)
+\documentclass[pdftex, xcolor=pdftex, dvipsnames,handout]{beamer}
+
+\usetheme{MA211}
+\usepackage{thumbpdf}
+\usepackage{wasysym}
+%\usepackage{ucs}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{verbatim}
+
+\usepackage{eurosym}
+\usepackage{euler}
+
+\include{MA211stuff}
+\def\disfrac{\displaystyle\frac}
+\newcommand{\TakeNotes}{\includegraphics[width=2cm]{TakeNote}}
+
+\def\eps{\varepsilon}
+\newcommand {\del}[2]{ {\frac{\partial #1}{\partial #2}}}
+\newcommand {\x}[1]{x^{[#1]}}
+\newcommand {\delx}{ {\frac{\partial}{\partial x}}}
+\newcommand {\delt}{ {\frac{\partial}{\partial t}}}
+\newcommand {\dely}{ {\frac{\partial}{\partial y}}}
+\newcommand {\ith}{{(i)}}
+\renewcommand {\vec}[1]{ {\boldsymbol{#1}}}
+\newcommand {\Oh} {\mathcal O}
+\newcommand {\Err} {\mathcal E}
+%\newcommand {\th} {\mathrm{th}}
+\DeclareMathOperator{\fl}{fl}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\Cond}{Cond} 
+\DeclareMathOperator{\cond}{cond}
+\DeclareMathOperator{\diag}{diag} 
+\DeclareMathOperator{\sym}{sym} 
+\DeclareMathOperator{\Trace}{Trace}
+
+\DeclareMathOperator{\E}{e}
+
+\newcommand {\Rsym}{{ \mathbb{R}^{n \times n}_\mathrm{sym}}}
+
+\newcommand {\st} {\mathrm{st}}
+\newcommand {\nd} {\mathrm{nd}}
+
+
+\parskip .25cm
+
+
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[section]
+\newtheorem{method}{Method}[section]
+
+\newcommand{\Header}[1]{\begin{center}{\Large \Bf{#1}}\end{center}}
+
+\subtitle{MA211}
+\title{Lecture 23:\\ Integrating factors and course review}
+
+\author{Dr Niall Madden}
+
+\date{\Large Monday $24^\mathrm{th}$ Nov 2008}
+
+
+\begin{document}
+
+\setcounter{framenumber}{-1}
+\frame{
+
+\begin{columns}[c]
+\column{0.45\textwidth}
+\centering
+\includegraphics[width=4cm]{images/EndIsNear}
+
+
+\column{0.55\textwidth}
+\begin{block}{}
+\begin{center}
+\begin{large}
+ \insertsubtitle
+\end{large}
+
+\vspace{.1cm}
+
+\begin{Large}
+\textbf{\inserttitle}
+\end{Large}
+
+
+\vspace{.3cm}
+
+{\insertdate}
+
+\end{center}
+\end{block}
+
+\end{columns}
+
+}
+
+%\frame{
+%  \frametitle{Topics of the day...}
+
+%\begin{columns}[c]
+%\column{0.5\textwidth}
+% \tableofcontents
+%\column{0.5\textwidth}
+%See also Sections 9.3 and 9.5 of Stewart.
+
+%\end{columns}
+%}
+
+
+
+\section{Integrating Factors}
+
+\frame{
+
+\Header{Summary of Technique of Integrating Factors}
+
+Given a problem of the form:
+\[
+\frac{dy}{dx} + P(x)y = Q(x).
+\]
+\begin{enumerate}
+\item Let  \eqd{v  = e^{\int P(x) dx}}.
+\item Solve \eqd{(vy)' = v Q(x)} by integrating:
+\[
+vy = \int v Q(x) dx.
+\]
+not forgetting the constant of integration.
+
+\item Divide by \eq{v} to get the solution:
+\[
+y = \frac{\int v Q(x) dx}{v}.
+\]
+\end{enumerate}
+}
+
+\subsection{Examples}
+\frame{
+
+\begin{example}
+Solve the equation 
+\[
+x \disfrac{dy}{dx}+ y = \sin(x)
+\]
+subject to the initial condition $y(\pi /2) = 1$.
+\end{example}
+
+%\n\und{Solution}: $\disfrac{dy}{d\theta}+\disfrac{1}{\theta}y =
+%\disfrac{1}{\theta}\sin\theta$. \\
+%Integrating factor $v = e^{\int\frac{1}{\theta}\,d\theta} =
+%e^{\ln\theta}=\theta$. 
+%Then 
+%\begin{eqnarray*}
+%\theta\frac{dy}{d\theta} + y =\sin\theta & \Longrightarrow &
+%\frac{d}{d\theta}(\theta y) = \sin\theta \\
+%& \Longrightarrow & \theta y = -\cos\theta + C \\
+%& \Longrightarrow & y(\theta) = \frac{-\cos\theta+C}{\theta} \\
+%\end{eqnarray*}
+%Now $y(\pi /2) = 1\Longrightarrow \disfrac{-0+C}{\pi
+%/2}=1\Longrightarrow C=2/\pi$. Thus 
+%$$
+%y(\theta ) = -\frac{\cos\theta }{\theta}+\frac{\pi}{2\theta}.
+%$$
+
+\vspace{4cm}
+
+}
+
+\frame{
+
+\begin{example}
+Solve the equation 
+$$
+x\frac{dy}{dx}-y = x^3,\ \ y(1)=1.
+$$
+\end{example}
+%\n\und{Solution}: $\disfrac{dy}{dx}+\left(-\disfrac{1}{x}\right)y =
+%x^2$. \\
+%Integrating factor $v(x) = e^{\int -1/x\,dx} = e^{-\ln x} =
+%\disfrac{1}{x}$.
+%Then 
+%\begin{eqnarray*}
+%\frac{1}{x}\frac{dy}{dx}-\frac{1}{x^2}y = x^2 & \Longrightarrow & 
+%\frac{d}{dx}\left(\frac{y}{x}\right) = x^2 \\
+%& \Longrightarrow & 
+%\frac{y}{x} = \frac{x^3}{3}+C \\
+%& \Longrightarrow & 
+%y = \frac{x^4}{3}+Cx. 
+%\end{eqnarray*}
+%Now $y(1)=1\Longrightarrow \disfrac{1}{3}+C = 1,\ C =
+%\disfrac{2}{3}$. \\
+%Solution $y = \disfrac{x^4}{3}+\disfrac{2x}{3}$. 
+
+\vspace{4cm}
+}
+
+
+
+\frame{
+\begin{example}[Q3(c), Semester 1, '06/'07]
+\[ e^x\frac{dy}{dx} + 2e^x y = 1.\]
+\end{example}
+
+\vspace{5cm}
+}
+
+
+\frame{
+\begin{example}
+Solve the following differential equation:
+\[ 
+\frac{dy}{dx} + \cos(x) y = 2xe^{-\sin(x)}.
+\]
+\end{example}
+
+\vspace{5cm}
+}
+
+
+\frame{
+\begin{exercise}
+Solve the following differential equations:
+\begin{enumerate}[(i)]
+\item \eqd{y' + \frac{y}{x} = x^2 - \frac{1}{x}, \qquad y(1)=1/4.}
+\item \eqd{y' + 2y = e^{-x}.}
+\item \eqd{y' = x^2 + x^2y}
+\item \eqd{y' + 3xy =x}
+\item \eqd{y' = \sin(x)y = 3\sin(2x)}
+\item \eqd{xy' + y = 2x \sin(x)}
+\item \eqd{2xyy' =x^2 +3y^2}
+\item \eqd{y' + \frac{y}{\tan(x)} = 3x+1}
+
+\end{enumerate}
+See also: Problem Set 5.
+\end{exercise}
+}
+
+\section{Course Review}
+
+\frame{
+Over the past 12 weeks or so, we have covered the following topics
+
+
+\begin{center}
+\Bf{\Large Part 1: Functions, derivatives and integrals}
+\end{center}
+
+\begin{itemize}
+\item Functions, including the ideas domain, codomain and range,
+  one-to-one and onto, and the   inverse of a function. Even and off
+  functions.
+
+\item Limits, e.g., squeeze theorem, and l'Hopital's rule,
+
+\item Derivatives, including differentiating the product and ratio of
+  twp functions. The chain rule. Derivatives of trigonometric and
+  inverse trig functions,
+
+\item Antiderivatives and integrals; logs and exponentials. 
+
+\item Euler's formula, and Hyperbolic functions.
+
+\end{itemize}
+}
+
+
+\frame{
+\begin{center}
+\Bf{\Large Part 2: 2nd order differential equations with constant coefficients}
+\end{center}
+
+\begin{itemize}
+\item Solving problems of the form \eqd{ay'' + by' + cy = 0},
+ where
+\[
+D := b^2 - 4ac 
+\begin{cases}
+> 0\\
+=0 \\
+< 0
+\end{cases}
+\hspace{5cm}
+\]
+\item Initial and boundary value problems,
+\item Problems where the right-hand side is a \Emph{polynomial},
+  \Emph{exponential} or \Emph{trig function}, or the sum or product of
+  these.
+\item  \Bf{Power series solutions}.
+\end{itemize}
+
+
+}
+
+\frame{
+\begin{center}
+\Bf{\Large Part 3: Integrals}
+\end{center}
+
+\begin{itemize}
+\item Evaluating indefinite and definite integrals.
+
+\item Fundamental theorem of calculus
+
+
+\item Techniques of integration: Substitutions, \Emph{Integration by
+    parts}, Reduction formulae; partial fractions.
+
+\item Improper integrals: type 1 and 2, including proving that 
+\begin{itemize}
+\item \eqd{\int_1^\infty \frac{1}{x^p} dx \begin{cases}
+\text{ diverges} & \text{ for } p\leq 1\\
+\text{ converges} & \text{ for } p>1
+\end{cases}
+}
+\item \eqd{\int_0^1 \frac{1}{x^p} dx \begin{cases}
+\text{ converges} & \text{ for } p<1\\
+\text{ diverges} & \text{ for } p\geq 1
+\end{cases}
+}
+
+\item The comparison test.
+\end{itemize}
+
+\end{itemize}
+}
+
+
+\frame{
+\begin{center}
+\Bf{\Large Part 4: First Order Differential Equations}
+\end{center}
+
+\begin{itemize}
+\item Separable, 
+
+\item Homogeneous, 
+
+\item Linear ($\rightarrow$ Integrating factors)
+
+\end{itemize}
+}
+
+
+
+
+
+\end{document}
+
+

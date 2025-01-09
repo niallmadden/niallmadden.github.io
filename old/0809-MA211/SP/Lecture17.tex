@@ -1,0 +1,371 @@
+% MA211 - Lecture 17
+\documentclass[pdftex, xcolor=pdftex, dvipsnames,handout]{beamer}
+
+\usetheme{MA211}
+\usepackage{thumbpdf}
+\usepackage{wasysym}
+%\usepackage{ucs}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{verbatim}
+
+\usepackage{eurosym}
+\usepackage{euler}
+
+\include{MA211stuff}
+
+\newcommand{\TakeNotes}{\includegraphics[width=2cm]{TakeNote}}
+
+\def\eps{\varepsilon}
+\newcommand {\del}[2]{ {\frac{\partial #1}{\partial #2}}}
+\newcommand {\x}[1]{x^{[#1]}}
+\newcommand {\delx}{ {\frac{\partial}{\partial x}}}
+\newcommand {\delt}{ {\frac{\partial}{\partial t}}}
+\newcommand {\dely}{ {\frac{\partial}{\partial y}}}
+\newcommand {\ith}{{(i)}}
+\renewcommand {\vec}[1]{ {\boldsymbol{#1}}}
+\newcommand {\Oh} {\mathcal O}
+\newcommand {\Err} {\mathcal E}
+%\newcommand {\th} {\mathrm{th}}
+\DeclareMathOperator{\fl}{fl}
+
+\newcommand {\Rsym}{{ \mathbb{R}^{n \times n}_\mathrm{sym}}}
+
+\newcommand {\st} {\mathrm{st}}
+\newcommand {\nd} {\mathrm{nd}}
+
+
+\parskip .25cm
+
+
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[section]
+\newtheorem{method}{Method}[section]
+
+\newcommand{\Header}[1]{\begin{center}{\Large \Bf{#1}}\end{center}}
+
+\subtitle{MA211}
+\title{Lecture 17:\\ Techniques of Integration}
+
+\author{Dr Niall Madden}
+
+\date{\Large Wed $5^\mathrm{th}$ Nov 2008}
+
+
+\begin{document}
+
+\setcounter{framenumber}{-1}
+\frame{
+
+\begin{columns}[c]
+\column{0.45\textwidth}
+\centering
+\includegraphics[width=4cm]{images/violin}
+
+
+\column{0.55\textwidth}
+\begin{block}{}
+\begin{center}
+\begin{large}
+ \insertsubtitle
+\end{large}
+
+\vspace{.1cm}
+
+\begin{Large}
+\textbf{\inserttitle}
+\end{Large}
+
+
+\vspace{.3cm}
+
+{\insertdate}
+
+\end{center}
+\end{block}
+\end{columns}
+
+}
+
+
+
+\frame{
+  \frametitle{Today...}
+
+%\begin{columns}[c]
+%\column{0.5\textwidth}
+ \tableofcontents
+%\column{0.5\textwidth}
+
+
+Section 5.5 of Stewart has more examples.
+
+%\end{columns}
+}
+
+
+
+\frame{
+  \frametitle{But first...}
+
+
+\begin{alertblock}{}
+
+\begin{center}
+{\Large Grouped Student Evaluation
+\pause
+
+~
+
+
+of Teaching.}
+\end{center}
+
+\end{alertblock}
+
+}
+\frame{
+  \frametitle{But first...}
+\begin{alertblock}{}
+
+\begin{center}
+{\Large \Bf{REMINDER}\\
+ Homework exercises from Problem Set 3 are due on
+  Friday.
+}
+\end{center}
+\end{alertblock}
+
+Solutions must be carefully written and, if on more than one page,
+stapled together. 
+
+
+}
+
+
+\section{Integration}
+\frame{
+
+In this section of the course, we are trying to solve problems of the
+form
+\begin{block}{}
+Given a function \eq{f:\R \rightarrow \R}, find a function \eq{g} such
+that \eq{g'(x) = f(x)}. That is, \alert{find the antiderivative of
+  \eq{f}}.
+
+\end{block}
+
+Usually we will write it as \Emph{find the integral of \eq{f}}, i.e., 
+\[
+\text{ Evaluate } ~~ \I = \int f(x) dx.
+\]
+
+
+}
+
+
+\subsection{The Mathematical Tables}
+
+\frame{
+
+For many fundamental functions we can simply lookup their 
+antiderivatives  pages  41 and 42 of the Mathematical Tables.
+
+
+}
+
+\frame{
+\includegraphics[width=10cm]{images/p41a}
+}
+
+\frame{
+
+~
+
+
+\includegraphics[width=10cm]{images/p41b}
+}
+
+\frame{
+~
+
+\includegraphics[width=10cm]{images/p42a}
+}
+
+
+\frame{
+
+\begin{example}
+Evaluate the following integral:
+\eqd{ \int \tan^2 (x) dx.}
+\end{example}
+\vspace{4.5cm}
+}
+
+
+
+\frame{
+
+In most cases, we can't just look-up the answer in a table.
+We may have to simplify the express, e.g., using Partial Fractions, or
+(more often) using a \Bf{Substitution}.
+
+}
+
+\section{Method of Substitution}
+
+\frame{
+
+\rblock
+The method of substitution comes from the \Emph{Chain Rule of
+  differentiation} and is summarised as
+
+\begin{block}{Substitution}
+Let \eq{u=g(x)}. The \eq{du = g'(x) dx}. So
+\[
+\int f'( g(x))g'(x) dx = \int f'(u)du = f(u) + C = f(g(x)) + C.
+\]\end{block}
+
+}
+
+\subsection{Examples}
+
+
+\frame{
+\begin{example}
+Evaluate the indefinite integrals\\
+\[ 
+(i) ~~ \alert{\mathcal{I}} = \int \sqrt{x+3}  dx. \pause
+\qquad 
+(ii) ~~ \alert{\I}= \int \frac{1}{\sqrt{x+3}}  dx.
+\]
+\end{example}
+
+\vspace{5cm}
+
+}
+
+
+\frame{
+\begin{example}
+Evaluate the indefinite integral \quad \eqd{\alert{\I} = \int \frac{x}{x^2 +1} dx.}
+\end{example}
+
+\vspace{5cm}
+
+}
+
+
+\frame{
+\begin{example}[Using Trigonometric Identities]
+Evaluate the following integral:
+\quad \eqd{ \alert{\I} = \int  \sec^4 (x) dx.}
+\end{example}
+
+\alert{Hint:} \eq{sec^2(x) = 1 + tan^2(x)}.
+
+\vspace{4.5cm}
+}
+
+
+
+
+
+
+\frame{
+\begin{example}
+Evaluate the indefinite integral \eqd{ \I = \int \frac{\sin(3 \ln x)}{x} dx.}
+\end{example}
+
+\vspace{5cm}
+
+}
+
+\frame{
+\begin{exercise}[17.1]
+Evaluate the following integrals:
+\begin{enumerate}[(i)]
+
+\item \eqd{\int \frac{1+x}{\sqrt{1+x}} dx}.
+\hspace{1.65cm}
+(ii)~ \eqd{ \int  e^{(2x-2)} dx.}
+
+\item[(iii)] \eqd{ \int  \frac{\sin(1/x)}{x^{2}} dx.}
+\hspace{1.5cm}
+(iv)~ \eqd{ \int e^{\sin(x)}\cos(x) dx}
+
+\end{enumerate}
+\end{exercise}
+
+~
+
+
+\begin{exercise}[17.2]
+Use a suitable substitution to show that 
+\[ \int \frac{1}{\tan(x)} dx = \ln |\sin(x)|.\]
+\end{exercise}
+\pause
+\Emph{Hint:}
+
+}
+
+
+
+\subsection{Definite Integrals}
+\frame{
+
+\begin{block}{}
+If \eq{g(a)=A} and \eq{f(b)=B} then 
+\[
+\int_a^b f\big( g(x) \big)g'(x) dx = \int_A^B f(u) du.
+\]
+\end{block}
+\pause
+
+\begin{example}
+Evaluate 
+\[ 
+\int_0^8 \frac{ \cos\big(\sqrt{x+1}\big)}{\sqrt{x+1}} dx
+\]
+\end{example}
+\vspace{2cm}
+}
+
+
+\frame{
+\begin{exercise}[17.3]
+Evaluate the following integrals:
+\begin{enumerate}[(i)]
+\item \eqd{ \int_0^4 \frac{x^3}{\sqrt{x^2 +1}} dx. }
+
+\item \eqd{ \int_1^{\sqrt{e}}  \frac{ \sin\big(\pi \ln(x)\big)}{x} dx. } 
+
+\item \eqd{\int_e^{e^2} \frac{1}{x \ln(x)} dx}.
+
+\end{enumerate}
+\end{exercise}
+
+}
+
+
+\subsection{Some more exercises}
+\frame{
+
+\begin{exercise}[17.4]
+Evaluate the following integrals:
+\begin{enumerate}[(i)]
+\item  \eqd{\int x e^{x^2} dx}.
+\item \eqd{\int \frac{\cos(x)}{4 + \sin^2(x)} dx.}
+
+\item \eqd{\int e^{2x} \sin(e^{2x}) dx}
+
+\item  \eqd{\int \frac{\ln(x)}{x} dx}
+
+\item \eqd{ \int \frac{e^x+1}{e^x-1} dx}.
+
+\end{enumerate}
+\end{exercise}
+}
+
+
+\end{document}
