@@ -7,6 +7,56 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="shortcut icon" type="image/x-icon"
           href="https://www.niallmadden.ie/LayerPhenomena2025/favicon.ico" />
+
+
+    <!-- Load KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+
+  <!-- The loading of KaTeX is deferred to speed up page rendering -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+<script>
+  const macros = {
+          "\\eqref": "\\href{###1}{(\\text{#1})}",
+          "\\ref": "\\href{###1}{\\text{#1}}",
+          "\\label": "\\htmlId{#1}{}",
+          "\\F": "\\mathbb{F}",
+          "\\Q": "\\mathbb{Q}",
+          "\\GL": "\\mathrm{GL}",
+  };
+  document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        // auto-render specific keys, e.g.:
+        delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+        ],
+        trust: (context) => ['\\htmlId', '\\href'].includes(context.command),
+        macros,
+        // rendering keys, e.g.:
+        throwOnError : false
+      });
+  });
+</script>
+<script>
+window.WebFontConfig = {
+  custom: {
+    families: ['KaTeX_AMS', 'KaTeX_Caligraphic:n4,n7', 'KaTeX_Fraktur:n4,n7',
+      'KaTeX_Main:n4,n7,i4,i7', 'KaTeX_Math:i4,i7', 'KaTeX_Script',
+      'KaTeX_SansSerif:n4,n7,i4', 'KaTeX_Size1', 'KaTeX_Size2', 'KaTeX_Size3',
+      'KaTeX_Size4', 'KaTeX_Typewriter'],
+  },
+};
+</script>
+
+
+
   </head>
   <body class="is-preload">
     
@@ -26,53 +76,35 @@
 	  <!-- Section -->
 	  <section>
 	    <header class="major">
-	      <h1>Registration and Abstracts</h1>
+	      <h1>Participants</h1>
 	    </header>
 	    
 	    <div class="major">
 	      
 	      <article>
-		<h2>Registration</h2>
-		<p>
-		  <ul>
-		    <li>The Workshop is free, but registration is
-		      required.</li>
-		    <li>
-		      Please register
-		      by <a href="https://forms.gle/LtuvwaufiLDvxGTP9">filling
-		      out this form</a>, or by sending an an email to
-		      Niall (<a
-			       href="mailto:Niall.Madden@UniversityOfGalway.ie">Niall.Madden@UniversityOfGalway.ie</a>)
-      with your name and affiliation, stating if you would like to
-		      give a talk, and whether you agree to having
-		      your name and affiliation include in the list if
-		   of participants on the website.
-		    </li>
-		    
-		    <li>Tea and coffee will be provided during
-		    breaks. Lunch, the conference dinner, travel,
-		      accommodation, etc., are at the participants'
-		      expense.
-		    </li>
-
-		    <li>
-		      The deadline for registration will be posted
-		      here 6 months before the workshop.
-		    </li>
-		  </ul>
+		<p><b>Important:</b> If you are not listed here then
+		  we have no received your registration details. You
+		  should contact <a href="mailto:Niall.Madden@UniversityOfGalway.ie">
+		    Niall</a> as soon as possible.
 		</p>
-	      </article>
-
-	      <article>
-		<h2>Abstract Submission</h2>
-	      <p>More information will be posted here later.</p>
+		<ul>
+		  <li>
+		    <a href="https://www.niallmadden.ie/">Niall
+		      Madden</a>, Galway.
+		  </li>
+		  <li>
+		    <a href="https://www.universityofgalway.ie/science-engineering/school-of-maths/staff-profiles/academic/nandapoddar/">Nanda
+		      Poddar</a>, Galway.
+		  </li>
+		</ul>		
 	      </article>
 
 	    </div>
 	  </section>
 	</div>
       </div>
-      <!-- START Sidebar -->
+
+<!-- START SIDEBAR -->
 <div id="sidebar">
   <div class="inner">
     
@@ -82,7 +114,16 @@
 	<h2>Menu</h2>
       </header>
       <ul>
-	<li><a href="index.html">Homepage</a></li>
+	<li><a href="index.html">Layer Phenomena 2025: home</a></li>
+	<li>
+	  <span class="opener">Register</span>
+	  <ul>
+	    <li><a href="registration.html">Register your participation</a></li>
+	    <li><a href="registration.html#abstracts">Abstract submission</a></li>
+	  </ul>
+	</li>
+	<li><a href="programme.html">Programme</a></li>
+	<li><a href="participants.html">Participants</a></li>
 	<li>
 	  <span class="opener">Location</span>
 	  <ul>
@@ -91,9 +132,8 @@
 	    <li><a href="location.html#stay">Where to stay</a></li>
 	  </ul>
 	</li>
-	<li><a href="registration.html">Registration</a></li>
 	<li><a href="previous.html">Previous Workshops</a></li>
-	<li><a href="#org">Organisers</a></li>
+	<li><a href="index.html#org">Organisers</a></li>
       </ul>
     </nav>
     
@@ -108,12 +148,12 @@
 	<li class="icon solid
 		   fa-envelope"><a href="mailto:Niall.Madden@UniversityOfGalway.ie">
 	    Niall.Madden@UniversityOfGalway.ie</a></li>
-	<li class="icon solid fa-phone">(353) 91-493803</li>
 	<li class="icon solid fa-link"><a href="https://www.niallmadden.ie/">niallmadden.ie</a></li>
 	<li class="icon solid fa-home">School of Mathematical and Statistical Sciences<br />
 	  University of Galway<br/>
 	  Galway, Ireland. H91 TK33
 	</li>
+	<li class="icon solid fa-phone">(353) 91-493803</li>
       </ul>
     </section>
     
@@ -128,7 +168,8 @@
     
   </div>
 </div>
-<!-- END Sidebar -->
+<!-- END SIDEBAR -->
+
 
     </div>
     <!-- Scripts -->

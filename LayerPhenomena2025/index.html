@@ -4,9 +4,60 @@
     <title>Layer Phenomena 2025</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="The homepage for 2025 Layer
+    Phenomena Workshop">
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="shortcut icon" type="image/x-icon"
           href="https://www.niallmadden.ie/LayerPhenomena2025/favicon.ico" />
+
+    <!-- Load KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+
+  <!-- The loading of KaTeX is deferred to speed up page rendering -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+
+  <!-- To automatically render math in text elements, include the auto-render extension: -->
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+<script>
+  const macros = {
+          "\\eqref": "\\href{###1}{(\\text{#1})}",
+          "\\ref": "\\href{###1}{\\text{#1}}",
+          "\\label": "\\htmlId{#1}{}",
+          "\\F": "\\mathbb{F}",
+          "\\Q": "\\mathbb{Q}",
+          "\\GL": "\\mathrm{GL}",
+  };
+  document.addEventListener("DOMContentLoaded", function() {
+      renderMathInElement(document.body, {
+        // auto-render specific keys, e.g.:
+        delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+        ],
+        trust: (context) => ['\\htmlId', '\\href'].includes(context.command),
+        macros,
+        // rendering keys, e.g.:
+        throwOnError : false
+      });
+  });
+</script>
+<script>
+window.WebFontConfig = {
+  custom: {
+    families: ['KaTeX_AMS', 'KaTeX_Caligraphic:n4,n7', 'KaTeX_Fraktur:n4,n7',
+      'KaTeX_Main:n4,n7,i4,i7', 'KaTeX_Math:i4,i7', 'KaTeX_Script',
+      'KaTeX_SansSerif:n4,n7,i4', 'KaTeX_Size1', 'KaTeX_Size2', 'KaTeX_Size3',
+      'KaTeX_Size4', 'KaTeX_Typewriter'],
+  },
+};
+</script>
+
+
+
   </head>
   <body class="is-preload">
     
@@ -62,9 +113,16 @@ The main focus is on the design, analysis and application of numerical
 			 24 April</b>, and finishes by lunchtime on <b>Friday,
 		       25 April</b>
 		   </li>
-		   <li>All talks are contributed, and speakers will have
+		   <li><a href="registration.html">Register your
+			 participation</a> by <b>Friday, 28 March</b>. 
+		   </li>
+		   <li>All participants are welcome to contribute a
+		   talk. Speakers will have
 		   approximately 25 minutes each (depending on the
-		     number of talks).
+		     number of talks). <a href="registration.html#abstracts">Submit
+			 your abstract</a> by Friday, 28 March. 
+		   </li>
+		     
 		   </li>
 		 </ul>		     
 	       </article>
@@ -138,7 +196,16 @@ The main focus is on the design, analysis and application of numerical
 	<h2>Menu</h2>
       </header>
       <ul>
-	<li><a href="index.html">Homepage</a></li>
+	<li><a href="index.html">Layer Phenomena 2025: home</a></li>
+	<li>
+	  <span class="opener">Register</span>
+	  <ul>
+	    <li><a href="registration.html">Register your participation</a></li>
+	    <li><a href="registration.html#abstracts">Abstract submission</a></li>
+	  </ul>
+	</li>
+	<li><a href="programme.html">Programme</a></li>
+	<li><a href="participants.html">Participants</a></li>
 	<li>
 	  <span class="opener">Location</span>
 	  <ul>
@@ -147,7 +214,6 @@ The main focus is on the design, analysis and application of numerical
 	    <li><a href="location.html#stay">Where to stay</a></li>
 	  </ul>
 	</li>
-	<li><a href="registration.html">Registration and Abstracts</a></li>
 	<li><a href="previous.html">Previous Workshops</a></li>
 	<li><a href="index.html#org">Organisers</a></li>
       </ul>
@@ -185,6 +251,7 @@ The main focus is on the design, analysis and application of numerical
   </div>
 </div>
 <!-- END SIDEBAR -->
+
 
 
     </div>
