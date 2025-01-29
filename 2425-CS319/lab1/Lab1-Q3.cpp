@@ -1,6 +1,6 @@
 /* FILE  : Lab1-Q3.cpp   
    Author: Niall Madden
-   Date  : Week 3, Semester 2, 2023/2024
+   Date  : Week 3, Semester 2, 2024/2025
    For   : CS319, Lab 1
    What  :  Find the largest integer correctly representable, 
             and time how long it takes.
@@ -13,7 +13,7 @@ int main(void)
 {
    std::cout << std::endl <<
      "---------------------------------\n" << 
-     "| CS319  Lab 1, Q3(a),  Jan 2024 |\n" <<
+     "| CS319  Lab 1, Q3(a),  Jan 2025 |\n" <<
      "---------------------------------\n";
    clock_t start;
    float diff, diff_seconds;
