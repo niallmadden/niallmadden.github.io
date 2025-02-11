@@ -1,4 +1,4 @@
-None<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head><meta charset="utf-8"/>
@@ -7508,22 +7508,6 @@ a.anchor-link {
   }
 </style>
 <!-- End of mermaid configuration --></head>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet"/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js" type="text/javascript"></script>
-<link href="https://min.gitcdn.xyz/cdn/ipython-contrib/jupyter_contrib_nbextensions/master/src/jupyter_contrib_nbextensions/nbextensions/toc2/main.css" rel="stylesheet" type="text/css"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-<script src="https://min.gitcdn.xyz/cdn/ipython-contrib/jupyter_contrib_nbextensions/master/src/jupyter_contrib_nbextensions/nbextensions/toc2/toc2.js"></script>
-<script>
-$( document ).ready(function(){
-
-            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": true, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": true, "toc_position": {}, "toc_section_display": true, "toc_window_display": false};
-            cfg.navigate_menu=false;
-            // fire the main function with these parameters
-            require(['nbextensions/toc2/toc2'], function (toc2) {
-                toc2.table_of_contents(cfg);
-            });
-    });
-</script>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e4dd8d87">
@@ -7577,7 +7561,7 @@ class-mates if you wish. Please note:</p>
 Jupyter notebook). However:</p>
 <ul>
 <li>Any file you submit must include your name and ID number.</li>
-<li>All files must be in PDF format.</li>
+<li>All files must be in PDF format. To convert your notebook to <code>pdf</code> the easiest method maybe to first export as 'html', then open that in a browser, and then print to pdf.</li>
 </ul>
 </div>
 </div>
@@ -7630,7 +7614,7 @@ Jupyter notebook). However:</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Q1:-Bipartite-Graphs">Q1: Bipartite Graphs<a class="anchor-link" href="#Q1:-Bipartite-Graphs">¶</a></h2><h3 id="Define-and-draw-the-following-graph">Define and draw the following graph<a class="anchor-link" href="#Define-and-draw-the-following-graph">¶</a></h3><p>Let $G_1$ be the graph on the nodes $\{1, 2, 3, 4, 5, 6\}$ with edges $1-2$, $1-3$, $2-4$, $3-4$, $3-6$, $4-5$, $4-6$.<br/>
+<h2 id="Q1:-Bipartite-Graphs">Q1: Bipartite Graphs<a class="anchor-link" href="#Q1:-Bipartite-Graphs">¶</a></h2><h3 id="Define-and-draw-the-following-graph">Define and draw the following graph<a class="anchor-link" href="#Define-and-draw-the-following-graph">¶</a></h3><p>Let $G_1$ be the graph on the nodes $\{0, 1, 2, 3, 4, 5, 6\}$ with edges $0-1$, $1-2$, $1-4$, $1-6$, $2-3$, $3-4$, $4-5$, $5-6$.<br/>
 Define this graph in <code>networkx</code> and draw it.</p>
 </div>
 </div>
