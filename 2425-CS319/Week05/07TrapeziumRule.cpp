@@ -1,5 +1,5 @@
-// 03TrapeziumRule.cpp
-// Compare with 05QuadratureV04.cpp from Week 4
+// 07TrapeziumRule.cpp
+// Compare with 06QuadratureV04.cpp from Week 4
 // Week 05: CS319 - Scientific Computing
 #include <iostream>
 #include <cmath>  // For exp()
