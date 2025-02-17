@@ -1,0 +1,244 @@
+\documentclass[a4paper, 10pt]{article}
+ 
+\usepackage[body={18.5cm,26cm},centering, nohead, nofoot]{geometry}
+
+\usepackage{amsmath,amsthm, amssymb}
+\usepackage{graphics, graphicx, pictex}
+
+%\input{../Lectures/CS319stuff.tex}
+
+\newcommand {\eq}[1]{$\DBlue{#1}$}
+\newcommand {\eqd}[1]{$\displaystyle \DBlue{#1}$}
+
+
+\usepackage{enumerate}
+\usepackage{hyperref}
+
+\usepackage{inconsolata}
+
+\usepackage{listings}
+\lstset{language=C++}
+\usepackage{xcolor}
+\definecolor{BG}{rgb}{.95,.95,1}
+\definecolor{darkblue}{rgb}{0.0, 0.0, .78}
+\newcommand{\DBlue}[1]{\textcolor{darkblue}{#1}}
+\newcommand{\code}[1]{{\textcolor{blue}{\texttt{\textbf{#1}}}}}
+
+\newcommand{\icode}[1]{{\textcolor{blue}{\texttt{\textbf{\emph{#1}}}}}}
+\newcommand{\rcode}[1]{{\textcolor{red}{\texttt{\textbf{#1}}}}}
+\newcommand{\lcode}[1]{\code{\large #1}}
+
+
+\newcommand{\cnset}[1]{\lstset{language=C++,
+    showstringspaces=false, 
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{blue}\footnotesize,
+    commentstyle=\color{black!60}\rmfamily\scriptsize,
+    frame=single,
+    backgroundcolor=\color{BG},
+    texcl=true,
+    linewidth=#1\textwidth,
+    numbers=left,
+    numberstyle=\footnotesize,  stepnumber=2,
+    numbersep=5pt,
+    numberblanklines=false}%
+}
+
+%\newcommand {\newsec}{%
+%\begin{center}
+%  \rule[3pt]{3cm}{0.5pt} O \rule[3pt]{3cm}{0.5pt} 
+%\end{center}%
+%}
+\newcommand {\newsec}{\dotfill}
+
+
+\renewcommand {\sectionautorefname}{Section}
+\newcommand {\propositionautorefname}{Proposition}
+\newcommand {\propautorefname}{Proposition}
+\renewcommand {\subsectionautorefname}{Section}
+\newcommand {\lemmaautorefname}{Lemma}
+
+%% Fancy block/box stuff
+\usepackage{fancybox}
+\newenvironment{Obox}%
+{\begin{Sbox}\begin{minipage}{0.9\textwidth}\begin{center}\begin{minipage}}%
+{\end{minipage}\end{center}\end{minipage}\end{Sbox}\Ovalbox{\TheSbox}}
+
+
+
+
+\linespread{1.1}
+
+
+%% START::  Stuff for displaying answers (or not)
+\usepackage[skins]{tcolorbox}
+\newtcbox{\myans}{enhanced,nobeforeafter,tcbox raise base,boxrule=0.4pt,top=0mm,bottom=0mm,
+  right=0mm,left=4mm,arc=1pt,boxsep=2pt,before upper={\vphantom{dlg}},
+  colframe=green!50!black,coltext=green!25!black,colback=green!10!white,
+  overlay={\begin{tcbclipinterior}\fill[green!75!blue!50!white] (frame.south west)
+    rectangle node[text=black,font=\sffamily\bfseries\tiny,rotate=90]
+    {ANS} ([xshift=4mm]frame.north west);%
+  \end{tcbclipinterior}}}
+
+\newenvironment{AnswerBlock}
+{\begin{tcolorbox}[colback=yellow!15]\textbf{Answer: }}{\end{tcolorbox}}
+
+\newif\ifAnswer
+\def\Ans#1{\ifAnswer \myans{#1} \else \relax \fi}
+\def\AnsText#1{\ifAnswer%
+  \begin{AnswerBlock}#1
+  \end{AnswerBlock}\else\relax\fi}
+%% END::  Stuff for displaying answers (or not)
+%%% Comment this (or set to \Answerfalse) to remove answers
+%\Answertrue
+%%%%%%%%%%
+
+
+\newcommand {\mycolourbox}[2] {\tcbox[on line, top=0pt,left=0pt,right=0pt,bottom=0pt,colframe=#1!50!black,coltext=#1!25!black,colback=#1!10!white]{#2}}
+
+
+
+\author{Niall Madden}
+\title{CS319 -- Scientific Computing}
+
+
+\newcommand{\ChapterTitle}{ ~ }
+\newcommand{\SectionTitle}{ ~ }
+\pagestyle{empty}
+
+\begin{document}
+
+
+\twocolumn[
+\begin{center}
+\mycolourbox{lime}{{\Large CS319 \textbf{SAMPLE} test (Feb 2025)} \Ans{with solutions}}
+\end{center}
+]
+
+\emph{\textbf{Instructions:}}
+\begin{itemize}
+  \item This is just a \emph{sample} of the type and range of
+    questions you can expect for the class test on Friday 21 Feb.
+\item The real test will also have 4 questions and you'll be expected
+  to answer all of them.
+  
+\item The  solution of each question should be in the form of a C++
+  program. For the test, you'll upload thse  ``Assignments... Class Test''  on
+  Canvas.  You can upload a single file, or one file per question (as you
+  prefer). Each of your files should include comments with your name, ID
+  number, and email address.
+
+\item The test will be  ``open book'': you can use your lecture notes,
+    and any other resource at \\
+    \url{https://www.niallmadden.ie/2425-CS319}
+    
+  \item You may not communicate with anyone during the test, use a
+    search engine, or generative AI.
+
+    \item Solutions to this sample test will be posted on Wednesday (19 Feb)
+    
+  \end{itemize}
+
+  \dotfill
+
+  \begin{enumerate}[{Q}1]
+  \item Here is a simple ``Hello World'' C++ programme.
+\cnset{.4}
+\lstinputlisting{HelloWorld.cpp}
+
+You can also download it from \\
+  \href{https://www.niallmadden.ie/2425-CS319/ClassTest/HelloWorld.cpp}
+  {\small \texttt{niallmadden.ie/2425-CS319/ClassTest/HelloWorld.cpp}}.
+
+  Compile and run this program.   Modify it so that
+  \begin{enumerate}
+    \item\label{it:string} a variable of type \code{string} is declared;
+    \item The user is prompted to enter their name;
+    \item The user's input is read and stored in the  \code{string}
+      declared in (a).
+    \item A  message is displayed using that name. For example, if the user
+      enters ``Catherine'' as their name, it should output
+      ``\code{Hello Catherine}''.
+    \end{enumerate}
+
+  \emph{The goal of Q1 is  to test if you can compile and
+    run a C++ program, define a \code{string} variable, and do basic
+    input and output. Pay special attention to ensuring that your code
+    compiles without error or warning}.
+
+    
+  \dotfill
+
+\newpage
+\item For this question, it helps to know that
+  \begin{itemize}
+  \item 
+    \code{int a[10];}\\
+    creates an array (list) of 10 integers called $a[0]$, $a[1]$, ...,
+    $a[9]$.
+  \item \code{x=rand()\%n};\\
+    sets  \code{x} to be a random int between 0
+  and $n-1$.
+\end{itemize}
+
+Write a  program that works as follows.
+\begin{enumerate}
+\item the program has a function with header\\
+  {\small \code{int CountOccurences(int list[], int len,~int~k);}}\\
+  which returns the number of times that \code{k} occurs in the array
+  \code{list[]}, which is of length \code{len}.
+\item The \code{main()} part of the program uses a \code{for} loop to
+  create an array of
+  integers of length 10, and sets the entries to be a random number
+  between 0 and 10 (inclusive).
+
+\item It then uses the \code{CountOccurences()} function to report
+  which entries in the list are unique (that is, occur exactly once).
+\end{enumerate}
+    
+
+    \emph{The goal of Q2 is to verify that you are competent writing
+      \code{for}-loops and functions.}
+\AnsText{\small 
+  \cnset{1}
+\lstinputlisting{Q2-sample.cpp}
+}
+
+\dotfill
+
+
+\item  Write a recursive function with header\\
+  \code{int MyNchooseK(int n, int k);}\\
+  that 
+  takes a two integer arguments, \code{n} and \code{k}, and
+  returns \eqd{n \choose k}, using the following algorithm.
+  \begin{itemize}
+  \item If $n<k$, or either $n$ or $k$ are negative,
+    then \eqd{ {n \choose k} =0}.
+  \item Otherwise, if \eqd{k=0} or \eqd{k=n}, then
+    \eqd{ {n \choose k} =1}.
+  \item Otherwise \eqd{{n \choose k}= {n-1 \choose k-1} + {n-1 \choose k}}
+  \end{itemize}
+        
+  In your \code{main()} function, verify that \code{MyNchooseK()}
+   works by
+  \begin{itemize}
+  \item  Prompting the user to enter values of $n$ and $k$;
+  \item reading in those values, using \code{std::cin}
+  \item Outputting \eqd{ {n \choose k}} for these values.
+  \end{itemize}
+
+  Note: for example, \eqd{ {6 \choose -1}}=0,
+  \eqd{ {6 \choose 1}}=6, and 
+  \eqd{ {6 \choose 3}}=20.
+  
+  \emph{The purpose of Q3 is to verify that you can read input,
+    write functions, and use \code{if} statements.}
+        \AnsText{\small 
+  \cnset{1}
+\lstinputlisting{Q3-sample.cpp}
+}
+
+\end{enumerate}
+
+\end{document}
