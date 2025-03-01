@@ -1,6 +1,6 @@
 /* 02MyStackConstructor.cpp
-  What: Improvement upon the initial version of the stack class. 
-        This one uses constructors (but not a destructor).
+   What: Final version of the stack class, which has 
+        two constructors, and a destructor.
 Author: Niall Madden
   When: Feb 2025
   More: https://www.niallmadden.ie/2425-CS319/#Week07
@@ -15,8 +15,9 @@ private:
   char *contents;
   int top, maxsize; 
 public:
-  MyStack (void);
+  MyStack (void);  // default constructor
   MyStack (unsigned int StackSize);
+  ~MyStack ();    // destructor
   void push(char c);
   char pop(void );
 };
@@ -34,6 +35,12 @@ MyStack::MyStack(unsigned int StackSize)
   maxsize = StackSize;
   contents = new char[StackSize];
 }
+
+MyStack::~MyStack()
+{
+  delete [] contents;
+}
+
 
 void MyStack::push(char c)
 {

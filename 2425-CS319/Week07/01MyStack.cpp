@@ -1,5 +1,5 @@
 // 01MyStack.cpp
-// What:  Our first class: an implementation of a stack. 
+// What:  Our first class: an implementation of MyStack (Version 1.0).
 // Who:   Niall Madden
 // When:  Week 7 (CS319 - Scientific Computing)
 // More:  See https://www.niallmadden.ie/2425-CS319
@@ -8,7 +8,7 @@
 
 #define MAX_STACK 10
 
-// Class 
+// Class definition of MyStack 
 class MyStack {
 private:
   char contents[MAX_STACK]; 
