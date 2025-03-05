@@ -15,7 +15,7 @@ double Trap2D(double *x1, double *x2,
 
 int main(void )
 {
-  unsigned N = pow(2,4);     // Number of points in each direction
+  unsigned N = pow(2,15);     // Number of points in each direction
   double a1=0.0, b1=1.0, a2=0.0, b2=1.0;       // limits of int
   double h1, h2;             // step-size in x1 and x2
   double *x1, *x2, **y;      // quadrature points and values
