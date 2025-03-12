@@ -1,13 +1,13 @@
 // File:     Jacobi-Lab7.cpp: Jacobi's method for solving linear systems
-// Date:     7/8 March, 2024.
+// Date:     March, 2025.
 // What:     Solving a linear system of equations with Jacobi's method,
 //            but without any classes, objects, or operator overloading.
 
 #include <iostream>
-#include <stdlib.h
+#include <stdlib.h>
 #include <cmath>
 
-void print_vec(double *v, unsigned N);
+void print_vec(double *v, unsigned int N);
 
 int main(void )
 {
@@ -25,7 +25,7 @@ int main(void )
   xk1 = new double[N];
   b = new double[N];
   A = new double * [N];
-  for(unsigned i=0; i<N; i++)
+  for(unsigned int i=0; i<N; i++)
     A[i] = new double[N];
 
   // Set up the linear system to solve, which is
@@ -42,18 +42,18 @@ int main(void )
   xk[0]=0;  xk[1]=0;  xk[2]=0;
   
   // 5 iterations of Jacobi
-  for (unsigned k=0; k<15; k++)
+  for (unsigned int k=0; k<15; k++)
   {
-    for (unsigned i=0; i<N; i++)
+    for (unsigned int i=0; i<N; i++)
     {
       xk1[i] = b[i];
-      for (unsigned j=0; j<N; j++)
+      for (unsigned int j=0; j<N; j++)
 	if (j != i)
 	  xk1[i] -= A[i][j]*xk[j];
       x[i] /= A[i][i];
     }
     
-    for (unsigned i=0; i<N; i++)
+    for (unsigned int i=0; i<N; i++)
       xk[i]=xk1[i];
   }
   
@@ -62,10 +62,10 @@ int main(void )
   return (0);
 }
 
-void print_vec(double *x, unsigned N)
+void print_vec(double *x, unsigned int N)
 {
   std::cout << "[";
-  for (unsigned i=0; i<N; i++)
+  for (unsigned int i=0; i<N; i++)
     std::cout << x[i] << ", ";
   std::cout << "]";
 }
