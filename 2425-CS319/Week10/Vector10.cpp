@@ -1,13 +1,13 @@
-// File:     Vector09.cpp
+// File:     Vector10.cpp (Version W10.1)
 // Author:   Niall Madden
-// Date:     Week 09 of 2425-CS319
+// Date:     Week 10 of 2425-CS319
 // What:     Header file for Vector class
-// See also: Vector09.h
+// See also: Vector10.h
 
 #include <iostream>
 #include <iomanip>    // New for Week 9
 #include <math.h>
-#include "Vector09.h"
+#include "Vector10.h"
 
 // default constructor
 // Note: the version from Week09, which did not use the "this" pointer
@@ -97,8 +97,8 @@ Vector Vector::operator+(Vector b)
 {
   Vector c(N); // Make c the size of a
   if (N != b.N)
-    std::cerr << "vector::+ : cant add two vectors of "
-	      << "different size!"  << std::endl;
+    std::cerr << "vector::+ : cant add two vectors of different size!"
+	      << std::endl;
   else
     for (unsigned int i=0; i<N; i++)
       c.entries[i] = entries[i] + b.entries[i];

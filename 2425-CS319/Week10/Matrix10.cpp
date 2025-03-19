@@ -1,8 +1,8 @@
-// File:     Matrix09.cpp (version: W09.1)
+// File:     Matrix10.cpp (version: 10.1)
 // Author:   Niall Madden 
-// Date:     Week 09 of 2425-CS319
+// Date:     Week 10 of 2425-CS319
 // What:     Header file for Matrix class
-// See also: Matrix09.h 
+// See also: Matrix10.h 
 
 #include <iostream>
 #include "Vector10.h"

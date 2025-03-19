@@ -1,10 +1,10 @@
-// File:     Vector09.h
+// File:     Vector10.h (Version W10.1)
 // Author:   Niall Madden 
-// Date:     Week 09 of 2425-CS319
+// Date:     Week 10 of 2425-CS319
 // What:     Header file for Vector class
-// See also: Vector09.cpp
+// See also: Vector10.cpp
 
-#include <iostream>   // New for overloading <<
+#include <iostream>   // New for overloading the stream instersion op <<
 
 // In case this header files included multiple times.
 #ifndef _VECTOR_H_INCLUDED
@@ -20,15 +20,15 @@ public:
   Vector (const Vector &v); // Arg must be passed by value. Why?
   ~Vector(void);
 
+  Vector operator+(Vector b); // add two vectors
+  Vector operator-(Vector b); // binary minus
+  Vector operator-(void);     // unary  minus
   Vector &operator=(const Vector &b); // overload assignment operator
   
   unsigned int size(void) {return N;};
   double geti (unsigned int i);
   void seti (unsigned int i, double x);
   
-  Vector operator+(Vector b);
-  Vector operator-(Vector b); // binary
-  Vector operator-(void); // unary
    
   void print(void);
   double norm(void); // Compute the 2-norm of a Vector
