@@ -8,53 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon"
           href="https://www.niallmadden.ie/LayerPhenomena2025/favicon.ico" />
 
-
-    <!-- Load KaTeX -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
-
-  <!-- The loading of KaTeX is deferred to speed up page rendering -->
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
-
-  <!-- To automatically render math in text elements, include the auto-render extension: -->
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
-
-<script>
-  const macros = {
-          "\\eqref": "\\href{###1}{(\\text{#1})}",
-          "\\ref": "\\href{###1}{\\text{#1}}",
-          "\\label": "\\htmlId{#1}{}",
-          "\\F": "\\mathbb{F}",
-          "\\Q": "\\mathbb{Q}",
-          "\\GL": "\\mathrm{GL}",
-  };
-  document.addEventListener("DOMContentLoaded", function() {
-      renderMathInElement(document.body, {
-        // auto-render specific keys, e.g.:
-        delimiters: [
-            {left: '$$', right: '$$', display: true},
-            {left: '$', right: '$', display: false},
-            {left: '\\(', right: '\\)', display: false},
-            {left: '\\[', right: '\\]', display: true}
-        ],
-        trust: (context) => ['\\htmlId', '\\href'].includes(context.command),
-        macros,
-        // rendering keys, e.g.:
-        throwOnError : false
-      });
-  });
-</script>
-<script>
-window.WebFontConfig = {
-  custom: {
-    families: ['KaTeX_AMS', 'KaTeX_Caligraphic:n4,n7', 'KaTeX_Fraktur:n4,n7',
-      'KaTeX_Main:n4,n7,i4,i7', 'KaTeX_Math:i4,i7', 'KaTeX_Script',
-      'KaTeX_SansSerif:n4,n7,i4', 'KaTeX_Size1', 'KaTeX_Size2', 'KaTeX_Size3',
-      'KaTeX_Size4', 'KaTeX_Typewriter'],
-  },
-};
-</script>
-
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
   </head>
@@ -83,51 +37,90 @@ window.WebFontConfig = {
 
 
 
-	    
+	    <!-- START AN ABSTRACT -->
 	    <div class="major">
-	      <article id="Demir">
+	      <article id="demir">
 		<h3>Medine Demir (Berlin)</h3>
 		<h4>An Evolve-Filter-Relax Regularized Reduced Order
 		  Model for Buoyancy-Driven Flows</h4>
 		<p class="ltx_p">The a priori error analysis of
-	    reduced order models (ROMs) for buoyancy-driven flows is
-	    relatively 
-	    scarce. In this study, we take a step in this direction
-	    and conduct numerical analysis of the evolve-filter-relax
-	    ROM (EFR-ROM), which uses spatial filtering to stabilize
-	    ROMs for convection-dominated flows. This study extends
-	    the EFR-ROM model of <cite class="ltx_cite
-	    ltx_citemacro_cite">[<a href="#bib.bib1" title=""
-	    class="ltx_ref">1</a>]</cite> for the Navier-Stokes
-	    equations to the Boussinesq equations with the spectral
-	    element discretization framework. Specifically, we prove
-	    stability, and an a priori error bound for the
-	    EFR-ROM. Our numerical investigation shows that the
+		  reduced order models (ROMs) for buoyancy-driven flows is
+		  relatively 
+		  scarce. In this study, we take a step in this direction
+		  and conduct numerical analysis of the evolve-filter-relax
+		  ROM (EFR-ROM), which uses spatial filtering to stabilize
+		  ROMs for convection-dominated flows. This study extends
+		  the EFR-ROM model of
+		  <cite class="ltx_cite ltx_citemacro_cite">
+		    [<a href="#bib.bib1" title="" class="ltx_ref">1</a>]</cite> for the Navier-Stokes
+		  equations to the Boussinesq equations with the spectral
+		  element discretization framework. Specifically, we prove
+		  stability, and an a priori error bound for the
+		  EFR-ROM. Our numerical investigation shows that the
 	    theoretical convergence rates are recovered
-	    numerically. In addition, we sh ow that EFR-ROM yields
-	    more accurate solutions and quantity of interest than the
+		  numerically. In addition, we sh ow that EFR-ROM yields
+		  more accurate solutions and quantity of interest than the
 		  Galerkin-ROM (G-ROM) in two test problems.
 		</p>
-	    </div>
-	    <div id="p2" class="ltx_para">
-	      <p class="ltx_p"><em class="ltx_emph ltx_font_italic">This is joint work with Ping-Hsuan Tsai (VA, USA).</em></p>
-	    </div>
-	    <section id="bib" class="ltx_bibliography">
-	      <h3>References</h3>
-	      <ul class="ltx_biblist">
+		<p><em>This is joint work with Ping-Hsuan Tsai (VA, USA).</em></p>
 		
-		<li>
-		  <span class="ltx_tag ltx_tag_bibitem">[1]</span>
-		  <span class="ltx_bibblock"> Strazzullo, M., Girfoglio, M., Ballarin, F., Iliescu, T., Rozza, G.: Consistency of the full and reduced order models for evolve-filter-relax regularization of convection-dominated, marginally-resolved flows, INT J NUMER MODEL EL, <span class="ltx_text ltx_font_bold">123</span>(14), 3148–3178 (2022)
-		    
-		  </span>
-		</li>
+		<h5>References</h5>
+		<ul class="ltx_biblist">
+		  <li>
+		    <span class="ltx_tag ltx_tag_bibitem">[1]</span>
+		    <span class="ltx_bibblock"> Strazzullo, M.,
+		      Girfoglio, M., Ballarin, F., Iliescu, T., Rozza, G.:
+		      Consistency of the full and reduced order models for
+		      evolve-filter-relax regularization of
+		      convection-dominated, marginally-resolved flows, INT
+		      J NUMER MODEL EL, <span class="ltx_text
+						     ltx_font_bold">123</span>(14), 3148–3178 (2022) 
+		    </span>
+		  </li>
+		</ul>
+	      </article>
+	    </div>
+	    <hr/>
+	    <!-- END AN ABSTRACT -->
+
+	    <!-- START AN ABSTRACT -->
+	    <div class="major">
+	      <article id="franz">
+		<h3>Sebastian Franz (Dresden)</h3>
+		<h4>
+		  On a posteriori estimation in the energy norm for
+		  convection-diffusion problems
+		</h4>
+		<p>
+		  We consider a singularly perturbed convection-diffusion problem
+\begin{align*}
+  Lu=-\varepsilon \Delta u + b\cdot\nabla u + cu = f
+\end{align*}
+in a domain \( \Omega \subset \mathbb{R}^2 \) with Dirichlet and Neumann boundary conditions. 
+A result by Verfürth showed that the classical residual and jump estimators 
+\begin{align*}
+  \eta(T) &= \sqrt{\eta_{Vol}(T)^2+\eta_{jump}(T)^2},\\
+  \eta_{Vol}(T)  &=\alpha_T\|f - Lu_h\|_{L_2(T)},\\
+  \eta_{jump}(T) &=\sqrt{\beta_T\varepsilon}\|[\!|u_h|\!]\|_{L_2(\partial T)}
+\end{align*}
+can be used as a posteriori error estimator. However, the associated norm contains a dual norm which is not computable.
+
+We present a different norm that bounds this estimator, is efficient and computable.
+A mesh adaptation algorithm using this estimator can be applied to problems with boundary
+ and interior layers to solve them and produce reliable results.
+
+		</p>
+		<p><em>This is joint work with Natalia Kopteva (Limerick).</em></p>
 		
-	      </ul>
-	    </section>
-	    </article>
+	      </article>
+	    </div>
+	    <hr/>
+	    <!-- END AN ABSTRACT -->
+
+	    
 	  </section>
 	</div>
+	
       </div>
 
 <!-- START SIDEBAR -->
