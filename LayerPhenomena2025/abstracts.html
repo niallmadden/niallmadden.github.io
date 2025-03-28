@@ -13,10 +13,8 @@
 
   </head>
   <body class="is-preload">
-    
     <!-- Wrapper -->
     <div id="wrapper">
-      
       <!-- Main -->
       <div id="main">
 	<div class="inner">
@@ -32,10 +30,7 @@
 	    <header class="major">
 	      <h1>Abstracts</h1>
 	      <p>Abstracts will be posted here as they are accepted.</p>
-	      
 	    </header>
-
-
 
 	    <!-- START AN ABSTRACT -->
 	    <div class="major">
@@ -82,7 +77,7 @@
 	    </div>
 	    <hr/>
 	    <!-- END AN ABSTRACT -->
-
+	    
 	    <!-- START AN ABSTRACT -->
 	    <div class="major">
 	      <article id="franz">
@@ -93,22 +88,21 @@
 		</h4>
 		<p>
 		  We consider a singularly perturbed convection-diffusion problem
-\begin{align*}
-  Lu=-\varepsilon \Delta u + b\cdot\nabla u + cu = f
-\end{align*}
-in a domain \( \Omega \subset \mathbb{R}^2 \) with Dirichlet and Neumann boundary conditions. 
-A result by Verfürth showed that the classical residual and jump estimators 
-\begin{align*}
-  \eta(T) &= \sqrt{\eta_{Vol}(T)^2+\eta_{jump}(T)^2},\\
+		  \begin{align*}
+		  Lu=-\varepsilon \Delta u + b\cdot\nabla u + cu = f
+		  \end{align*}
+		  in a domain \( \Omega \subset \mathbb{R}^2 \) with Dirichlet and Neumann boundary conditions. 
+		  A result by Verfürth showed that the classical residual and jump estimators 
+		  \begin{align*}
+		  \eta(T) &= \sqrt{\eta_{Vol}(T)^2+\eta_{jump}(T)^2},\\
   \eta_{Vol}(T)  &=\alpha_T\|f - Lu_h\|_{L_2(T)},\\
-  \eta_{jump}(T) &=\sqrt{\beta_T\varepsilon}\|[\!|u_h|\!]\|_{L_2(\partial T)}
-\end{align*}
-can be used as a posteriori error estimator. However, the associated norm contains a dual norm which is not computable.
-
-We present a different norm that bounds this estimator, is efficient and computable.
-A mesh adaptation algorithm using this estimator can be applied to problems with boundary
- and interior layers to solve them and produce reliable results.
-
+		  \eta_{jump}(T) &=\sqrt{\beta_T\varepsilon}\|[\!|u_h|\!]\|_{L_2(\partial T)}
+		  \end{align*}
+		  can be used as a posteriori error estimator. However, the associated norm contains a dual norm which is not computable.
+		  
+		  We present a different norm that bounds this estimator, is efficient and computable.
+		  A mesh adaptation algorithm using this estimator can be applied to problems with boundary
+		  and interior layers to solve them and produce reliable results.
 		</p>
 		<p><em>This is joint work with Natalia Kopteva (Limerick).</em></p>
 		
@@ -119,26 +113,26 @@ A mesh adaptation algorithm using this estimator can be applied to problems with
 	    
 	    <!-- START AN ABSTRACT -->
 	    <span>
-	    <div class="major">
-	      <article id="mackenzie">
-		<h3>Katherine MacKenzie (Strathclyde)</h3>
+	      <div class="major">
+		<article id="mackenzie">
+		  <h3>Katherine MacKenzie (Strathclyde)</h3>
 		<h4>The Bound Preserving Method applied to the 2D
 		  Induction Heating Problem
 		</h4>
-		<p>Induction heating is a process widely used in the
-		metallurgical manufacturing industry to heat
+		  <p>Induction heating is a process widely used in the
+		    metallurgical manufacturing industry to heat
 		conductive materials. Using an alternating current
-		with a very high frequency, a magnetic field generates
-		a current in the material, which produces heat due to
-		the Joule heating process. This current is
-		concentrated in a very thin layer near the boundary of
+		    with a very high frequency, a magnetic field generates
+		    a current in the material, which produces heat due to
+		    the Joule heating process. This current is
+		    concentrated in a very thin layer near the boundary of
 		the material, and as such there is a boundary layer in
-		the magnetic field. This creates a highly irregular
-		source term (\( f \in L^1(\Omega) \)) in the heat
-		equation, and in the time-dependent case, generates a
+		    the magnetic field. This creates a highly irregular
+		    source term (\( f \in L^1(\Omega) \)) in the heat
+		    equation, and in the time-dependent case, generates a
 		boundary layer in temperature near \( t = 0 \).</p> 
- 
-
+		  
+		  
 		<p>In this talk, I will describe the application of the Nodally Bound
 		  Preserving Method  (Barrenechea et al., 2024)
 		  to the induction heating equations. This method is
@@ -165,78 +159,124 @@ A mesh adaptation algorithm using this estimator can be applied to problems with
 		<h5>References</h5>
 		<ul>
 		  <li><a 
- id="XBarrenecheaGabrielR2024Anbf"></a><span>Barrenechea, G. R.,
- Georgoulis, E. H., Pryer, T., Veeser, A.,: A nodally bound-preserving finite element method. IMA J. Numer. Anal. 44(4) 2198&#8211;2219 (2024)</span>
+			id="XBarrenecheaGabrielR2024Anbf"></a><span>Barrenechea, G. R.,
+		      Georgoulis, E. H., Pryer, T., Veeser, A.,: A nodally bound-preserving finite element method. IMA J. Numer. Anal. 44(4) 2198&#8211;2219 (2024)</span>
 		  </li>
 		</ul>
-	      </article>
+		</article>
 	    </div>
 	    </span>
 	    <!-- end abstract -->
 	    <hr/>
-	    <!-- START AN ABSTRACT -->
+	    <!-- START pervo  ABSTRACT -->
 	    <span>
-	    <div class="major">
-	      <article id="pervolianakis">
-		<h3>
-		  Christos Pervolianakis (Jena)
-		</h3>
-		<h4>
-		  A Stabilized Scheme for an Optimal Control Problem Governed by Convection-Diffusion-Reaction Equation
-		</h4>
-		<p>
-		  It is well-known that convection-diffusion equations
-		  may exhibit layers, which can render standard finite
-		  element methods inadequate for accurately
-		  approximating the exact solution. These layers can
-		  cause issues such as spurious oscillations,
-		  violating physical properties of the solution. To
-		  address this, nonlinear discretizations have been
-		  developed that preserve the maximum principle of the
-		  solution and accurately capture the position of
-		  these layers.
-		</p>
+	      <div class="major">
+		<article id="pervolianakis">
+		  <h3>
+		    Christos Pervolianakis (Jena)
+		  </h3>
+		  <h4>
+		    A Stabilized Scheme for an Optimal Control Problem Governed by Convection-Diffusion-Reaction Equation
+		  </h4>
+		  <p>
+		    It is well-known that convection-diffusion equations
+		    may exhibit layers, which can render standard finite
+		    element methods inadequate for accurately
+		    approximating the exact solution. These layers can
+		    cause issues such as spurious oscillations,
+		    violating physical properties of the solution. To
+		    address this, nonlinear discretizations have been
+		    developed that preserve the maximum principle of the
+		    solution and accurately capture the position of
+		    these layers.
+		  </p>
 
-		<p>In this talk, we will consider an optimal control
-		problem on a bounded domain \( \Omega\subset 
-		\mathbb{R}^2 \), governed by a time--dependent
-		convection--diffusion--reaction equation with
-		pointwise control constraints. Following the
-		optimize-then-discretize approach, the resulting
-		optimality conditions yield a coupled system of two
-		time-dependent convection--diffusion--reaction
-		  equations.
-		</p>
+		  <p>In this talk, we will consider an optimal control
+		    problem on a bounded domain \( \Omega\subset 
+		    \mathbb{R}^2 \), governed by a time--dependent
+		    convection--diffusion--reaction equation with
+		    pointwise control constraints. Following the
+		    optimize-then-discretize approach, the resulting
+		    optimality conditions yield a coupled system of two
+		    time-dependent convection--diffusion--reaction
+		    equations.
+		  </p>
 
-		<p>To stabilize the fully-discrete scheme derived from
-		the optimality conditions, we employ the algebraic
-		flux correction method. Additionally, we discuss the
-		well-posedness of the resulting fully-discrete scheme
-		and present a priori and residual-type a posteriori
-		  error estimates
-		</p>
+		  <p>To stabilize the fully-discrete scheme derived from
+		    the optimality conditions, we employ the algebraic
+		    flux correction method. Additionally, we discuss the
+		    well-posedness of the resulting fully-discrete scheme
+		    and present a priori and residual-type a posteriori
+		    error estimates
+		  </p>
 
-		</p>
-		
-		<h5>References</h5>
-		<ul>
-		  <li><a 
-			id="pervolianakis2024"></a><span>
-		      C. Pervolianakis.
-		      <em>Numerical analysis of a stabilized scheme
-			for an optimal control problem governed by a
-			parabolic convection--diffusion equation</em>.  
-		      <tt>arXiv</tt> preprint, 2024.
+		  <h5>References</h5>
+		  <ul>
+		    <li><a 
+			  id="pervolianakis2024"></a><span>
+			C. Pervolianakis.
+			<em>Numerical analysis of a stabilized scheme
+			  for an optimal control problem governed by a
+			  parabolic convection--diffusion equation</em>.  
+			<tt>arXiv</tt> preprint, 2024.
 			Available: <a href="https://arxiv.org/pdf/2412.21070">arxiv.org/pdf/2412.21070</a>
-		    </span>
-		  </li>
-		</ul>
-	      </article>
-	    </div>
+		      </span>
+		    </li>
+		  </ul>
+		</article>
+	      </div>
 	    </span>
-<!-- end  Pervolianakis  abstract -->
+	    <!-- end  Pervolianakis  abstract -->
 
-<hr />
+	    <hr />
+	    <!-- START Power  ABSTRACT -->
+	    <span>
+	      <div class="major">
+		<article id="Power">
+		  <h3>
+		    Jenny Power (Bath)
+		  </h3>
+		  <h4>
+		    Adaptive Regularisation for PDE-Constrained Optimal Control
+		  </h4>
+		  <p>
+		    PDE-constrained optimal control problems require
+		    regularisation to ensure well-posedness. This
+		    typically involves a small regularisation
+		    parameter and the resulting optimal control
+		    problem is equivalent to solving a singularly
+		    perturbed PDE.  We propose an adaptive strategy
+		    for regularising PDE-constrained optimal control
+		    problems. This method leverages rigorous a
+		    posteriori error estimates to adaptively vary the
+		    regularisation parameter across the computational
+		    domain. This allows the regularisation to be
+		    varied elementwise, dynamically balancing induced
+		    regularisation and discretisation errors, offering
+		    a robust and efficient method for solving these
+		    problems. We demonstrate the efficacy of our
+		    analysis with several numerical experiments.
+		  </p>
+
+		  <h5>References</h5>
+		  <ul>
+		    <li><a 
+			  id="power"></a><span>
+			 Jenny Power and Tristan Pryer.
+			 <em>
+			   daptive Regularisation for PDE-Constrained
+			   Optimal Control.
+			 </em>
+			 arXiv preprint arXiv:2503.11386 (2025).
+		      </span>
+		    </li>
+		  </ul>
+		</article>
+	      </div>
+	    </span>
+	    <!-- end  Power  abstract -->
+	    
+	    <hr />
 	    <!-- START Marwa Zainelabdeen ABSTRACT -->
 	    <span>
 	    <div class="major">
@@ -261,26 +301,26 @@ A mesh adaptation algorithm using this estimator can be applied to problems with
 		  \).  </p>
 
 		<p>
-A finite element scheme for the momentum balance, coupled to a finite
-volume discretization for the continuity equation
-\( \nabla \cdot ( \varrho \boldsymbol u)  = 0 \), was proposed in
-<cite>[<a href="#akbas_gradient-robust_2020" >1</a>]</cite>
-for a linear equation of state
-\( (\gamma =1) \). In this talk, we present an extension of the scheme to
-the nonlinear equation of state \( (\gamma > 1) \). The scheme satisfies
+		  A finite element scheme for the momentum balance, coupled to a finite
+		  volume discretization for the continuity equation
+		  \( \nabla \cdot ( \varrho \boldsymbol u)  = 0 \), was proposed in
+		  <cite>[<a href="#akbas_gradient-robust_2020" >1</a>]</cite>
+		  for a linear equation of state
+		  \( (\gamma =1) \). In this talk, we present an extension of the scheme to
+		  the nonlinear equation of state \( (\gamma > 1) \). The scheme satisfies
 several desired structural properties, namely stability, convergence,
-the preservation of non-negativity and mass constraints for the
-density, and gradient-robustness. The latter property is related to
-the locking phenomenon observed in incompressible flow at high
-Reynolds number regimes, which carries over to the compressible
-setting. To achieve gradient-robustness, we employed the
+		  the preservation of non-negativity and mass constraints for the
+		  density, and gradient-robustness. The latter property is related to
+		  the locking phenomenon observed in incompressible flow at high
+		  Reynolds number regimes, which carries over to the compressible
+		  setting. To achieve gradient-robustness, we employed the
 reconstruction operator proposed in
-<cite>[<a href="#linke_crime2014" >2</a>]</cite>.
-The
-structural properties of the scheme were tested using various
-numerical benchmark problems.
+		  <cite>[<a href="#linke_crime2014" >2</a>]</cite>.
+		  The
+		  structural properties of the scheme were tested using various
+		  numerical benchmark problems.
 		</p>
-
+		
 		<p>
 		  This is joint work with Volker John and Christian
 		  Merdon (Berlin).
@@ -295,7 +335,7 @@ numerical benchmark problems.
 		      compressible isothermal Stokes problem
 		    </em>
 		    </span>
-	     In: Computer Methods in Applied Mechanics and Engineering \textbf{74}(367), 2024-06-20 (2020).
+	     In: Computer Methods in Applied Mechanics and Engineering <b>74</b>(367), 2024-06-20 (2020).
 	    <a href="https://doi.org/10.1016/j.cma.2020.113069">https://doi.org/10.1016/j.cma.2020.113069</a>
 </li>
 
