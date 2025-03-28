@@ -51,8 +51,8 @@
 		  ROM (EFR-ROM), which uses spatial filtering to stabilize
 		  ROMs for convection-dominated flows. This study extends
 		  the EFR-ROM model of
-		  <cite class="ltx_cite ltx_citemacro_cite">
-		    [<a href="#bib.bib1" title="" class="ltx_ref">1</a>]</cite> for the Navier-Stokes
+		  <cite>[<a href="#bib.bib1" >1</a>]</cite>
+		  for the Navier-Stokes
 		  equations to the Boussinesq equations with the spectral
 		  element discretization framework. Specifically, we prove
 		  stability, and an a priori error bound for the
@@ -67,8 +67,8 @@
 		<h5>References</h5>
 		<ul class="ltx_biblist">
 		  <li>
-		    <span class="ltx_tag ltx_tag_bibitem">[1]</span>
-		    <span class="ltx_bibblock"> Strazzullo, M.,
+		    <span  id="bib.bib1">[1]</span>
+		    <span> Strazzullo, M.,
 		      Girfoglio, M., Ballarin, F., Iliescu, T., Rozza, G.:
 		      Consistency of the full and reduced order models for
 		      evolve-filter-relax regularization of
@@ -165,8 +165,8 @@ A mesh adaptation algorithm using this estimator can be applied to problems with
 		<h5>References</h5>
 		<ul>
 		  <li><a 
- id="XBarrenecheaGabrielR2024Anbf"></a><span>Barrenechea, G. R., Georgoulis, E. H., Pryer, T., Veeser, A.,: A nodally bound-preserving
->finite element method. IMA J. Numer. Anal. 44(4) 2198&#8211;2219 (2024)</span>
+ id="XBarrenecheaGabrielR2024Anbf"></a><span>Barrenechea, G. R.,
+ Georgoulis, E. H., Pryer, T., Veeser, A.,: A nodally bound-preserving finite element method. IMA J. Numer. Anal. 44(4) 2198&#8211;2219 (2024)</span>
 		  </li>
 		</ul>
 	      </article>
@@ -229,6 +229,84 @@ A mesh adaptation algorithm using this estimator can be applied to problems with
 		      <tt>arXiv</tt> preprint, 2024.
 			Available: <a href="https://arxiv.org/pdf/2412.21070">arxiv.org/pdf/2412.21070</a>
 		    </span>
+		  </li>
+		</ul>
+	      </article>
+	    </div>
+	    </span>
+<!-- end  Pervolianakis  abstract -->
+
+<hr />
+	    <!-- START Marwa Zainelabdeen ABSTRACT -->
+	    <span>
+	    <div class="major">
+	      <article id="Zainelabdeen">
+		<h3>
+		  Marwa Zainelabdeen (WIAS, Berlin)
+		</h3>
+		<h4>
+		  Gradient-robust finite element - finite volume
+		  scheme for the compressible Stokes equations
+		</h4>
+		<p>
+		  We consider a steady compressible Stokes problem on
+		  a domain
+		  \( \Omega \subset \mathbb{R}^d \),
+		  where \( d\in \{2,3\} \), in primitive variables
+		  velocity, pressure and non-constant density \(
+		  \boldsymbol u, p, \varrho \). A
+\emph{barotropic flow} is assumed, where the pressure depends solely
+		  on the density under an exponential <em>equation of state</em>
+		  \( p = c_M \varrho ^\gamma \) for \( \gamma \geq 1
+		  \).  </p>
+
+		<p>
+A finite element scheme for the momentum balance, coupled to a finite
+volume discretization for the continuity equation
+\( \nabla \cdot ( \varrho \boldsymbol u)  = 0 \), was proposed in
+<cite>[<a href="#akbas_gradient-robust_2020" >1</a>]</cite>
+for a linear equation of state
+\( (\gamma =1) \). In this talk, we present an extension of the scheme to
+the nonlinear equation of state \( (\gamma > 1) \). The scheme satisfies
+several desired structural properties, namely stability, convergence,
+the preservation of non-negativity and mass constraints for the
+density, and gradient-robustness. The latter property is related to
+the locking phenomenon observed in incompressible flow at high
+Reynolds number regimes, which carries over to the compressible
+setting. To achieve gradient-robustness, we employed the
+reconstruction operator proposed in
+<cite>[<a href="#linke_crime2014" >2</a>]</cite>.
+The
+structural properties of the scheme were tested using various
+numerical benchmark problems.
+		</p>
+
+		<p>
+		  This is joint work with Volker John and Christian
+		  Merdon (Berlin).
+		</p>
+		
+		<h5>References</h5>
+		<ul>
+		  <li>
+		    <span  id="akbas_gradient-robust_2020">[1]</span>		    
+		      Akbas, M., Gallouët, T., Gassmann, A., Linke, A., Merdon, C.:
+		    <em>A gradient-robust well-balanced scheme for the
+		      compressible isothermal Stokes problem
+		    </em>
+		    </span>
+	     In: Computer Methods in Applied Mechanics and Engineering \textbf{74}(367), 2024-06-20 (2020).
+	    <a href="https://doi.org/10.1016/j.cma.2020.113069">https://doi.org/10.1016/j.cma.2020.113069</a>
+</li>
+
+<li>
+		    <span  id="linke_crime2014">[2]</span>		      
+		    Alexander Linke.:
+		    <em>On the role of the Helmholtz decomposition in
+		      mixed methods for incompressible flows and a new
+		      variational crime</em>.
+		    In: Computer Methods in Applied Mechanics and Engineering <b>268</b>(782–800), 0045-7825 (2014).
+			<a href="https://doi.org/10.1016/j.cma.2013.10.011">https://doi.org/10.1016/j.cma.2013.10.011</a>
 		  </li>
 		</ul>
 	      </article>
