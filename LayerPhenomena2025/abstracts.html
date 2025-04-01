@@ -124,6 +124,47 @@
 	    <!-- END AN ABSTRACT -->
 
 	    <hr style="height:2px;background-color:red" />
+
+	    
+	    <!-- START Hegarty ABSTRACT -->
+	    <div class="major">
+	      <article id="hegarty">
+		<h3>Alan F. Hegarty (University of Limerick)</h3>
+		<h4>
+		  Novel meshes for the solution of a problem with interior parabolic layers
+		</h4>
+		<p>
+		  In <span class="cite">[<a href="#XHOR22">1</a>]</span>
+		  a numerical
+		  algorithm was proposed to solve singularly perturbed convection
+		  diffusion problems on curvilinear domains. Constraints were imposed on the data so that
+		  only regular exponential boundary layers appear in the solution. A domain
+		  decomposition method was used, comprising a rectangular grid outside the boundary
+		  layer and a Shishkin mesh, aligned to the curvature of the outflow boundary, near the
+boundary layer. We now wish to examine how this algorithm can be modified to treat a
+		  problem with interior layers. Numerical results will be presented to test the convergence
+		  of the modified algorithm.
+		</p>
+		
+		<p><em>This is joint work with Eugene O'Riordan
+		    (DCU).</em>
+		</p>
+
+		<h5>References</h5>
+		<ul>
+		  <li>
+		    <span 
+		      class="cmr-8">[1]</span> Hegarty,   A.F.,
+		    O'Riordan,   E.
+		    <em>A   numerical   method   for   singularly   perturbed
+		      convection-diffusion problems posed on smooth
+		      domains.</em> J Sci Comput 92, 84 (2022).
+		  </li>
+		</ul>
+	      </article>
+	    </div>
+	    
+	    <hr style="height:2px;background-color:red" />
 		    
 	    <!-- START KELLy ABSTRACT -->
 	    <span>
@@ -259,6 +300,44 @@
 		</article>
 	    </div>
 	    </span>
+	    <!-- end MacKenzie abstract -->
+	    
+	    <hr style="height:2px;background-color:red" />
+	    
+	    <!-- START AN ABSTRACT -->
+	    <span>
+	      <div class="major">
+		<article id="Madden">
+		  <h3>
+		    Niall Madden (University of Galway)</h3>
+		  <h4>
+		    A tutorial on solving singularly perturbed problems in Firedrake
+		</h4>
+		  <p>
+		    <a href="https://firedrakeproject.org">Firedake</a> is a Python-based system for solving partial differential
+		    equations, by finite element methods. It is built on the FEniCS
+		    <em>Unified Form Language</em>, and the PETSc
+		    toolkit.
+		    </p>
+
+		  <p>
+		    In this hands-on tutorial you'll be introduced to using Firedrake for
+solving some singularly perturbed ordinary and partial differential
+equations. We've cover constructing layer-adapted meshes,
+		    discretization by high-order methods, and estimation of errors.
+		  </p>
+
+		  <p>
+No previous experience of Firedrake is required. It would be useful,
+but not essential, to have a reading knowledge of Python.
+You will require you own laptop, and should sign up to Google colab:
+<a href="https://colab.google">https://colab.google</a>. 
+		  </p>
+		  <p><em>This is a joint presentation with Sean Tobin (Galway).</em></p>
+
+		</article>
+	    </div>
+	    </span>
 	    <!-- end abstract -->
 	    
 	    
@@ -320,6 +399,101 @@
 		      </span>
 		    </li>
 		  </ul>
+		</article>
+	      </div>
+	    </span>
+	    <!-- end  Pervolianakis  abstract -->
+
+	    <hr style="height:2px;background-color:red" />
+	    
+	    
+	    <!-- START Poddar  ABSTRACT -->
+	    <span>
+	      <div class="major">
+		<article id="Poddar">
+		  <h3>
+		    Nanda Poddar (University of Galway)
+		  </h3>
+		  <h4>
+		    Interplay of Dynamic Boundary Absorption and
+		    Layer-like Phenomena in Reactive Solute Transport:
+		    A Dual Numerical Approach
+		  </h4>
+		  <p>
+		    The role of time and space-dependent boundary absorption in
+		    hydrodynamic solute dispersion
+<span class="cite">[<a 
+href="#XGupta1972">1</a>,&#x00A0;<a 
+href="#XSaha2023">2</a>,&#x00A0;<a 
+href="#XSaha2024">3</a>]</span> 		    
+remains underexplored despite its significance in environmental, biological, and industrial systems. This study investigates how dynamic boundary absorption influences solute transport under oscillatory flow conditions, where rapid spatial and temporal changes can generate steep concentration gradients near reactive boundaries. %, resembling classical layer phenomena.
+		  </p>
+		  
+<p>Through numerical simulation, a dual modeling framework is
+  developed: a deterministic advection-diffusion solver (using a
+  finite difference method) and a stochastic Brownian dynamics
+  simulation, capturing both macroscopic and particle-scale transport
+  behavior. Numerical results show that as boundary reactivity
+  increases, solute concentration near the reactive wall decreases
+  sharply, eventually reaching a steady profile for high absorption
+  values. These effects are strongly time-dependent: longer dispersion
+  times allow significantly more particles to be absorbed in the same
+  boundary condition, revealing a cumulative interaction between flow
+  unsteadiness and boundary reactions.
+</p>
+
+<p>
+  By analyzing the evolution of concentration profiles and dispersion
+  statistics under varying Péclet and Schmidt numbers, oscillation
+  frequencies, and boundary absorption strengths, this study
+  highlights how dynamic boundary interactions induce layer-like
+  features in solute distribution. The comparative strengths of the
+  deterministic and stochastic models offer a comprehensive
+  understanding of reactive solute transport in unsteady systems, with
+  implications for filtration, microfluidics, and environmental flow
+  applications. 
+</p>
+<p>
+  <em>This is joint work with Niall Madden (University of
+    Galway).</em>
+  <br/>
+  <em>
+    Supported by the Irish Research Council (now Research Ireland),
+    Grant GOIPD/2024/226.
+  </em>
+  
+  <h5>References</h5>
+  <ul>
+    <li>
+      <span 
+	class="cmr-8">[1]</span>
+      Gupta,  P.S.,  Gupta,  A.S.:  Effect  of  homogeneous  and
+	heterogeneous  reactions  on  the dispersion of a solute in
+	the laminar flow between two plates. Proc. R. Soc. Lond. A
+      59&#8211;63 (1972)
+    </li>
+    <li>
+      <span 
+	class="cmr-8">[2]</span>
+      Saha, G., Poddar, N., Dhar S., Mazumder B.S., Mondal K.K.:
+	Solute dispersion phenomena in a free and forced convective
+      flow with boundary reactions. Eur. J. Mech. B Fluids
+      100,
+      101&#8211;123 (2023)
+    </li>
+    <li>
+    <span 
+      class="cmr-8">[3]</span>
+    Saha G., Poddar N., Mondal K.K., Wang P.: Evolution of
+      concentration distribution and 
+    removal of a solute in magnetohydrodynamics channel flow: effects
+    of buoyancy-driven force
+    and induced magnetic field. Proc. R. Soc. Lond. A 
+    480, 
+    20240091 (2024)
+    </li>
+  </ul>
+
 		</article>
 	      </div>
 	    </span>
