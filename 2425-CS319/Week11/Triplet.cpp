@@ -8,15 +8,15 @@
 #include "Triplet.h"
 
 // Standard  constructor.
-Triplet::Triplet (unsigned int N, unsigned nnz_max) { 
+Triplet::Triplet (unsigned int N, unsigned int nnz_max) { 
   this->N = N;
   this->NNZ_MAX = nnz_max;
   this->NNZ = 0;
 
   X = new double [nnz_max];
-  I = new unsigned [nnz_max];
-  J = new unsigned [nnz_max];
-  for (unsigned k=0; k<nnz_max; k++)  {
+  I = new unsigned int [nnz_max];
+  J = new unsigned int [nnz_max];
+  for (unsigned int k=0; k<nnz_max; k++)  {
     I[k]=-1; 
     J[k]=-1; 
     X[k]=(double)NULL;
@@ -31,13 +31,13 @@ Triplet::Triplet (const Triplet &m)
   NNZ_MAX = m.NNZ_MAX;
 
   X = new double[NNZ_MAX];
-  I = new unsigned [NNZ_MAX];
-  J = new unsigned [NNZ_MAX];
-  for (unsigned k=0; k<NNZ; k++)
+  I = new unsigned int [NNZ_MAX];
+  J = new unsigned int [NNZ_MAX];
+  for (unsigned int k=0; k<NNZ; k++)
     I[k] = m.I[k];
-  for (unsigned k=0; k<NNZ; k++)
+  for (unsigned int k=0; k<NNZ; k++)
     J[k] = m.J[k];
-  for (unsigned k=0; k<NNZ; k++)
+  for (unsigned int k=0; k<NNZ; k++)
     X[k] = m.X[k];
 }
 
@@ -52,7 +52,7 @@ Triplet::~Triplet(void)
 // Triplet::where - locates (i,j) entry 
 // returns k if A(i,j) is stored in X[k].
 // returns -1 if A(i,j) is not stored.
-int Triplet::where(unsigned i, unsigned j)
+int Triplet::where(unsigned int i, unsigned int j)
 {
   unsigned int k=0;
   do {
@@ -64,7 +64,7 @@ int Triplet::where(unsigned i, unsigned j)
 }
 
 // Triplet::setij(i,j,x) - sets the (i,j) entry to x
-void Triplet::setij (unsigned i, unsigned j, double x)
+void Triplet::setij (unsigned int i, unsigned int j, double x)
 {
   if (i>N-1)
     std::cerr << "Triplet::setij(): i Index out of bounds." << std::endl;
@@ -88,7 +88,7 @@ void Triplet::setij (unsigned i, unsigned j, double x)
 }
 
 // Triplet::getij(i,j) - returns the (i,j) entry to x
-double Triplet::getij (unsigned i, unsigned j)
+double Triplet::getij (unsigned int i, unsigned int j)
 {
   int k=where(i,j);
   if (k == -1)
@@ -107,7 +107,7 @@ double Triplet::getij (unsigned i, unsigned j)
 
 void Triplet::print (void)
 {
-  for (unsigned k=0; k<NNZ; k++)
+  for (unsigned int k=0; k<NNZ; k++)
   {
     std::cout << "[" << std::setw(2) << I[k] << "]";
     std::cout << "[" << std::setw(2) << J[k] << "]";
@@ -131,29 +131,29 @@ Triplet &Triplet::operator=(const Triplet &B)
   delete [] J; 
 
   X = new double[B.NNZ_MAX];
-  I = new unsigned [B.NNZ_MAX];
-  J = new unsigned [B.NNZ_MAX];
+  I = new unsigned int [B.NNZ_MAX];
+  J = new unsigned int [B.NNZ_MAX];
 
-  for (unsigned k=0; k<NNZ; k++)
+  for (unsigned int k=0; k<NNZ; k++)
     I[k] = B.I[k];
-  for (unsigned k=0; k<NNZ; k++)
+  for (unsigned int k=0; k<NNZ; k++)
     J[k] = B.J[k];
-  for (unsigned k=0; k<NNZ; k++)
+  for (unsigned int k=0; k<NNZ; k++)
     X[k] = B.X[k];
 
   return(*this);      
 }
 
-Triplet full2Triplet(Matrix &F, unsigned NNZ_MAX)
+Triplet full2Triplet(Matrix &F, unsigned int NNZ_MAX)
 {
-  unsigned N = F.size();
+  unsigned int N = F.size();
 
   Triplet T(N, NNZ_MAX);
 
   double x;
   T.NNZ=0;
-  for (unsigned i=0; i<N; i++)
-    for (unsigned j=0; j<N; j++)
+  for (unsigned int i=0; i<N; i++)
+    for (unsigned int j=0; j<N; j++)
     {
       x = F.getij(i,j);
       if (x != 0)
@@ -184,7 +184,7 @@ Vector Triplet::operator*(Vector u)
     std::cerr << "Error: Triplet::operator* - dimension mismatch" 
 	      << std::endl;
   else
-    for (unsigned k=0; k<NNZ; k++)
+    for (unsigned int k=0; k<NNZ; k++)
       v.seti(I[k], v.geti(I[k]) + X[k]*u.geti(J[k]));
   return(v);
 }

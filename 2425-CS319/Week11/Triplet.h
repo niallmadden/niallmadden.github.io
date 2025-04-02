@@ -8,32 +8,32 @@
 #include "Matrix11.h"
 
 class Triplet {
-  friend Triplet full2Triplet(Matrix &F, unsigned NNZ_MAX);
+  friend Triplet full2Triplet(Matrix &F, unsigned int NNZ_MAX);
 private:
-  unsigned *I, *J;
+  unsigned int *I, *J;
   double *X;
-  unsigned N;
-  unsigned NNZ;
-  unsigned NNZ_MAX;
+  unsigned int N;
+  unsigned int NNZ;
+  unsigned int NNZ_MAX;
 
 public:
-  Triplet (unsigned N, unsigned nnz_max); // Constructor
+  Triplet (unsigned int N, unsigned int nnz_max); // Constructor
   Triplet (const Triplet &t); // Copy constructor
   ~Triplet(void);
 
   Triplet &operator=(const Triplet &B); // overload assignment 
 
-  unsigned size(void) {return (N);};
-  int where(unsigned i, unsigned j); // negative return on error
-  unsigned nnz(void) {return (NNZ);};
-  unsigned nnz_max(void) {return (NNZ_MAX);};
+  unsigned int size(void) {return (N);};
+  int where(unsigned int i, unsigned int j); // negative return on error
+  unsigned int nnz(void) {return (NNZ);};
+  unsigned int nnz_max(void) {return (NNZ_MAX);};
 
-  double getij (unsigned i, unsigned j);
-  void setij (unsigned i, unsigned j, double x);
+  double getij (unsigned int i, unsigned int j);
+  void setij (unsigned int i, unsigned int j, double x);
 
-  unsigned getI (unsigned k) { return I[k];};
-  unsigned getJ (unsigned k) { return J[k];};
-  double getX (unsigned k) { return X[k];};
+  unsigned int getI (unsigned int k) { return I[k];};
+  unsigned int getJ (unsigned int k) { return J[k];};
+  double getX (unsigned int k) { return X[k];};
 
   Vector operator*(Vector u);
   void print(void);
