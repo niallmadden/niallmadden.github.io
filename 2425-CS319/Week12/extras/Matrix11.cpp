@@ -1,8 +1,8 @@
 // File:     Matrix10.cpp (version: 10.1)
 // Author:   Niall Madden 
-// Date:     Week 10 of 2324-CS319
+// Date:     Week 10 of 2425-CS319
 // What:     Header file for Matrix class
-// See also: Matrix10.h 
+// See also: Matrix11.h 
 
 #include <iostream>
 #include "Vector10.h"
@@ -73,8 +73,7 @@ Matrix &Matrix::operator=(const Matrix &B)
 
   delete [] entries; // Just in case there was any memory
   // already allocated to this
-
-  N = B.N; // Warning: this line was missing from an earlier version
+  N = B.N; 
   entries = new double[(B.N)*(B.N)];
   for (unsigned int i=0; i<N*N; i++)
     entries[i] = B.entries[i];

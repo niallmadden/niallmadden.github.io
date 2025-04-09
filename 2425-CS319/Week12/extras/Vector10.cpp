@@ -1,6 +1,6 @@
 // File:     Vector10.cpp (Version W10.1)
 // Author:   Niall Madden
-// Date:     Week 10 of 2324-CS319
+// Date:     Week 10 of 2425-CS319
 // What:     Header file for Vector class
 // See also: Vector10.h
 

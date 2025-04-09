@@ -1,7 +1,7 @@
-// File: Matrix10.h (version: Week 10.1)
+// File: Matrix11.h (version: Week 11.1)
 //   What: Header file for matrix class, including overloading = and *
 // Author: Niall Madden
-//   Date: Week 10, 2324-CS319
+//   Date: Week 11, 2425-CS319
 // Note: Implementation for a square matrix
 
 #ifndef _MATRIX_H_INCLUDED
