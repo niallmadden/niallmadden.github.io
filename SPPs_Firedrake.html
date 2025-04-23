@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+None<!DOCTYPE html>
 
 <html lang="en">
 <head><meta charset="utf-8"/>
@@ -7508,6 +7508,22 @@ a.anchor-link {
   }
 </style>
 <!-- End of mermaid configuration --></head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js" type="text/javascript"></script>
+<link href="https://min.gitcdn.xyz/cdn/ipython-contrib/jupyter_contrib_nbextensions/master/src/jupyter_contrib_nbextensions/nbextensions/toc2/main.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<script src="https://min.gitcdn.xyz/cdn/ipython-contrib/jupyter_contrib_nbextensions/master/src/jupyter_contrib_nbextensions/nbextensions/toc2/toc2.js"></script>
+<script>
+$( document ).ready(function(){
+
+            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": true, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": true, "toc_position": {}, "toc_section_display": true, "toc_window_display": false};
+            cfg.navigate_menu=false;
+            // fire the main function with these parameters
+            require(['nbextensions/toc2/toc2'], function (toc2) {
+                toc2.table_of_contents(cfg);
+            });
+    });
+</script>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=46b14116">
@@ -7546,7 +7562,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>In this session, we introduce how to solve one-dimensional and two-dimensional singularly perturbed differential equations (SPDEs) on $(0,1)^d$, $d=1,2$ in Firedrake.</p>
-<p>For a very basic introduction to <strong>Firedrake</strong>, see <a href="https://niallmadden.ie/IntroToFiredrake">https://niallmadden.ie/IntroToFiredrake</a>
+<p>For a very basic introduction to <strong>Firedrake</strong>, see <a href="https://niallmadden.ie/IntroToFiredrake">https://niallmadden.ie/IntroToFiredrake</a>.
 For more advanced topics, see <a href="https://www.firedrakeproject.org/documentation.html">https://www.firedrakeproject.org/documentation.html</a></p>
 <p>While this session will include the very fundamentals of using Firedrake for solving PDEs, there will be an emphasis on topics particular to SPDEs:</p>
 <ul>
@@ -7569,7 +7585,7 @@ For more advanced topics, see <a href="https://www.firedrakeproject.org/document
 <p>Crucial:</p>
 <ul>
 <li>Available as a Python module;</li>
-<li>You define a mesh, or use a standard mesh generator;</li>
+<li>You can use one of the many built-in mesh generators, or define a mesh (by hand, or import from, say, gmsh);</li>
 <li>Define a elements, and a function space on that mesh;</li>
 <li><strong>Express the weak form of a PDE</strong></li>
 <li>Call a solver</li>
@@ -7693,10 +7709,10 @@ For more advanced topics, see <a href="https://www.firedrakeproject.org/document
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>The first problem we'll solve is this ODE: <em>find $u(x)$ such that</em>
 $$-\varepsilon^2 u'' + r(x)u  = f(x) \text{ on } (0,1), \qquad\text{ with } u(0)=u(1)=0.$$</p>
-<p>The weak $$\varepsilon^2 (u',v') + (ru,v) = (f,v),$$
+<p>The weak form is $$\underbrace{\varepsilon^2 (u',v') + (ru,v)}_{a(u,v)} = \underbrace{(f,v)}_{l(v)},$$
 where here $(u,v):=\int_0^1 u(x)v(x) dx$, is the usual $L^2$ inner product.</p>
 <p>The specific example we'll consider will have $r(x) \equiv 1$ and $f(x)=e^x$.</p>
-<p>We'll solve this problem using a stardard $P^1$ (continuous) Galerkin method.</p>
+<p>We'll solve this problem using a standard $P_1$ (continuous) Galerkin method.</p>
 </div>
 </div>
 </div>
@@ -7762,7 +7778,7 @@ where here $(u,v):=\int_0^1 u(x)v(x) dx$, is the usual $L^2$ inner product.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>In higher dimensions, it can be a good idea to check the mesh properties:</p>
+<p>It can be a good idea to check the mesh properties (especially in higher dimensions, or with hierarchically constructed meshes):</p>
 </div>
 </div>
 </div>
@@ -7800,7 +7816,7 @@ where here $(u,v):=\int_0^1 u(x)v(x) dx$, is the usual $L^2$ inner product.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="The-FEM-space">The FEM space<a class="anchor-link" href="#The-FEM-space">¶</a></h3><p>We define a function space on our mesh. Basic syntax is <br/>
+<h3 id="The-FEM-space">The FEM space<a class="anchor-link" href="#The-FEM-space">¶</a></h3><p>We define a function space on our mesh. The basic syntax is <br/>
 <code>V = FunctionSpace( &lt;name of mesh&gt; , &lt;element family&gt;, &lt;element degree&gt;)</code></p>
 <p>In the following example we'll use Continuous Galerkin ("CG" = "Lagrange") elements of degree 1.</p>
 </div>
@@ -7821,13 +7837,24 @@ where here $(u,v):=\int_0^1 u(x)v(x) dx$, is the usual $L^2$ inner product.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f31fc36b">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=958422ff">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>While eventually we want to solve the ODE on this space, we can also define functions on it. Here is the true solution. To do that we'll</p>
+<p>While such spaces are used, primarily, for defining trial and test functions, and functions for storing solution, they can be used to represent any function you like (via interpolation), and preform operations on them (arithmetic, differential, integral, etc).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=23ed05b5">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Here we'll define functions on the space <code>V</code> and use that to represent the true solution. To do that we'll</p>
 <ul>
 <li>extract the spatial coordinates, <code>x</code>, which has only one member: <code>x[0]</code></li>
 <li>express the solution in terms of that.</li>
@@ -7835,7 +7862,7 @@ where here $(u,v):=\int_0^1 u(x)v(x) dx$, is the usual $L^2$ inner product.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=82d91be2">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e0878b76">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7859,7 +7886,7 @@ where here $(u,v):=\int_0^1 u(x)v(x) dx$, is the usual $L^2$ inner product.</p>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>[&lt;firedrake.pyplot.mpl._FiredrakeFunctionPath at 0x7f6a00566650&gt;]</pre>
+<pre>[&lt;firedrake.pyplot.mpl._FiredrakeFunctionPath at 0x7fabf3258a90&gt;]</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -7871,28 +7898,17 @@ where here $(u,v):=\int_0^1 u(x)v(x) dx$, is the usual $L^2$ inner product.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=84c1e7d4">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5b9b3cc8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="The-Weak-Form">The Weak Form<a class="anchor-link" href="#The-Weak-Form">¶</a></h3>
+<h3 id="The-Weak-Form">The Weak Form<a class="anchor-link" href="#The-Weak-Form">¶</a></h3><p>Define trial and test functions:</p>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c2cee348">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Define trial and test functions:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=446899cc">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1eabe3b1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7908,7 +7924,7 @@ where here $(u,v):=\int_0^1 u(x)v(x) dx$, is the usual $L^2$ inner product.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=87ac3e28">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8e3e94dc">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7917,13 +7933,16 @@ where here $(u,v):=\int_0^1 u(x)v(x) dx$, is the usual $L^2$ inner product.</p>
 <p>We now define the bilinear and linear forms
 $$ a(u,v) := \varepsilon^2(u',v') + (ru,v) 
 \qquad and \quad 
-l(v) L= (f,v).
-$$
-Note that we can represent $u'(x)$ and $v'(x)$ as <code>u.dx(0)</code> and <code>v.dx(0)</code>, where here the index says we are differentiating with respect to the first (and only) dimension.</p>
+l(v) := (f,v).
+$$</p>
+<ul>
+<li>one can represent $u'(x)$ and $v'(x)$ as <code>u.dx(0)</code> and <code>v.dx(0)</code>, where here the index says we are differentiating with respect to the first (and only) dimension.</li>
+<li><code>dx</code> is also used to represents the (symbolic) integral operator.</li>
+</ul>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=761137f5">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=59d304ce">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7939,7 +7958,7 @@ Note that we can represent $u'(x)$ and $v'(x)$ as <code>u.dx(0)</code> and <code
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3667b129">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=20ffa5c9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7949,7 +7968,7 @@ Note that we can represent $u'(x)$ and $v'(x)$ as <code>u.dx(0)</code> and <code
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a0aae0e3">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ff748ab2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7998,7 +8017,7 @@ Note that we can represent $u'(x)$ and $v'(x)$ as <code>u.dx(0)</code> and <code
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;matplotlib.legend.Legend at 0x7f69fed1ce50&gt;</pre>
+<pre>&lt;matplotlib.legend.Legend at 0x7fabef523dd0&gt;</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -8097,7 +8116,7 @@ Note that we can represent $u'(x)$ and $v'(x)$ as <code>u.dx(0)</code> and <code
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;matplotlib.legend.Legend at 0x7f69fc588190&gt;</pre>
+<pre>&lt;matplotlib.legend.Legend at 0x7fabef250410&gt;</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -8195,7 +8214,7 @@ Note that we can represent $u'(x)$ and $v'(x)$ as <code>u.dx(0)</code> and <code
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;matplotlib.legend.Legend at 0x7f69fc488810&gt;</pre>
+<pre>&lt;matplotlib.legend.Legend at 0x7fabeef95590&gt;</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -8313,7 +8332,7 @@ Note that we can represent $u'(x)$ and $v'(x)$ as <code>u.dx(0)</code> and <code
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>&lt;matplotlib.legend.Legend at 0x7f69fc404050&gt;</pre>
+<pre>&lt;matplotlib.legend.Legend at 0x7fabeea9fc50&gt;</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -8538,7 +8557,7 @@ and $f(x,y)=e^{x-y}$.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a7b03ddf">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a7b03ddf">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8557,7 +8576,21 @@ and $f(x,y)=e^{x-y}$.</p>
 <span class="n">yp</span> <span class="o">=</span> <span class="n">xp</span>
 
 <span class="n">mesh2D</span> <span class="o">=</span> <span class="n">TensorRectangleMesh</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span> <span class="n">yp</span><span class="p">,</span> <span class="n">quadrilateral</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"mesh2D has </span><span class="si">{</span><span class="n">mesh2D</span><span class="o">.</span><span class="n">num_vertices</span><span class="p">()</span><span class="si">}</span><span class="s2"> vertices and </span><span class="si">{</span><span class="n">mesh2D</span><span class="o">.</span><span class="n">num_cells</span><span class="p">()</span><span class="si">}</span><span class="s2"> edges."</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>mesh2D has 1089 vertices and 1024 edges.
+</pre>
 </div>
 </div>
 </div>
@@ -8727,6 +8760,17 @@ and $f(x,y)=e^{x-y}$.</p>
 <li>Visualisation is limited (just an interface to <code>matplotlib</code>: use of Paraview recommended).</li>
 <li>Nonlinear problems are represented in a natural way, but care is needed with solver options.</li>
 </ol>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5aba9e92">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>The End</strong></p>
 </div>
 </div>
 </div>
