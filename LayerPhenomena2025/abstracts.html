@@ -269,7 +269,33 @@ boundary layer. We now wish to examine how this algorithm can be modified to tre
 		  <h4>
 		    <em>A posteriori</em> error estimation for convection-diffusion equations
 		  </h4>
-		  <p>Come to the talk for more details!</p>
+		  <p>Solutions of singularly perturbed partial differential equations typically
+exhibit sharp boundary and interior layers, as well as corner singularities. To obtain
+reliable numerical approximations of such solutions in an efficient way, one may want
+to use meshes that are adapted to solution singularities using a posteriori error
+estimates. In this talk, we shall discuss residual-type a posteriori error estimates for
+singularly perturbed convection-diffusion equations. The error constants in the
+considered estimates are independent of the diameters of mesh elements and of the
+small perturbation parameter. Some earlier results will be briefly reviewed, with the
+main focus on the recent article [2] and more recent developments. Standard and stabilized finite element approximations are considered on shape-regular meshes for singularly perturbed convection-diffusion equations. Our initial result is that natural maximum-norm residual estimators of type reliably control the error in the maximum norm, assuming suitable estimates of the Green's function hold. On the other hand, residual-type estimators in the energy norm are only
+efficient up to a dual norm of the convective error. A main contribution of is to
+analogously define a suitable dual seminorm of the convective error. Having defined
+such a dual norm, we then define the total error as the originally targeted maximum
+norm of the error plus the dual seminorm of the convective error plus standard data
+oscillation terms. Our a posteriori error estimator is then shown to be equivalent to the total error (up to a logarithmic factor). Numerical experiments illustrate the behavior
+and performance of our estimators in the context of uniform and adaptive mesh
+refinement. In particular, they show that the estimators may vastly overestimate the
+error in the maximum norm alone, but they closely track the total error as predicted by
+our theory. Adaptive refinement based on our error indicators is also shown to do an
+effective job at automatically resolving standard model problems whose solutions
+include strong layers. In the final part of the talk we shall discuss more recent developments related to the
+		    a-posteriori error estimation in Verfuerth's norm.
+		  </p>
+
+		  <p><em>
+		      This is joint work with Alan Demlow and Sebastian Franz.
+		    </em>
+
 		</article>
 	      </div>
 	    </span>
