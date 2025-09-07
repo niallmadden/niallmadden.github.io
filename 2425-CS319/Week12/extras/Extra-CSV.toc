@@ -1,7 +1,0 @@
-\beamer@sectionintoc {1}{Files (recap)}{2}{0}{1}
-\beamer@sectionintoc {2}{CSV files}{5}{0}{2}
-\beamer@sectionintoc {3}{Example 1: Library}{6}{0}{3}
-\beamer@sectionintoc {4}{Example 2: CSV to Matrix}{14}{0}{4}
-\beamer@subsectionintoc {4}{1}{\texttt {main()}}{17}{0}{4}
-\beamer@subsectionintoc {4}{2}{\texttt {ReadMatrixCSV()}}{19}{0}{4}
-\beamer@subsectionintoc {4}{3}{\texttt {WriteMatrixCSV()}}{23}{0}{4}
