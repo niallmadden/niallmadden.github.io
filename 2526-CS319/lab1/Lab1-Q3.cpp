@@ -13,7 +13,7 @@ int main(void)
 {
    std::cout << std::endl <<
      "---------------------------------\n" << 
-     "| CS319  Lab 1, Q3(a),  Jan 2026 |\n" <<
+     "| CS319  Lab 1, Q3  Jan 2026 |\n" <<
      "---------------------------------\n";
    clock_t start;
    float diff, diff_seconds;
