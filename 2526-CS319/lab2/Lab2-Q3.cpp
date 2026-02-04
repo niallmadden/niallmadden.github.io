@@ -1,6 +1,6 @@
 /* FILE  : Lab2-Q3.cpp   
    Author: Niall Madden (Email: Niall.Madden@UniversityOfGalway.ie)
-   Date  : Feb 2025 
+   Date  : Feb 2026 
    What  : Numerical differentiation
 */
 
@@ -16,7 +16,7 @@ int main(void)
 {
    std::cout << std::endl <<
      " ---------------------------------\n" << 
-     "|  CS319  Lab 2, Q3,  Feb 2025    |\n" <<
+     "|  CS319  Lab 2, Q3,  Feb 2026    |\n" <<
      "|  Numerical Differentiation      |\n" <<
      "|  This version by: Niall Madden  |\n" <<
      " ---------------------------------\n";

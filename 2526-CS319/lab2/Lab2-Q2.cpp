@@ -14,7 +14,7 @@ int main(void)
 {
    std::cout << std::endl <<
      "---------------------------------\n" << 
-     "|   CS319  Lab 2, Q1,  Feb 2025   |\n" <<
+     "|   CS319  Lab 2, Q1,  Feb 2026   |\n" <<
      "|       Investigate doubles  \n" <<
      "---------------------------------\n";
 
