@@ -2,7 +2,7 @@
 // Author: Niall Madden
 // Date: Feb 2026
 #include <iostream>
-void Swap(int a, int b);
+void Swap(int &a, int &b);
 
 int main(void )
 {
@@ -24,10 +24,9 @@ int main(void )
 // Arguments: two integers, a and b 
 // return value: void
 // Does: tries to swap that values stored in a and b.
-void Swap(int a, int b)
+void Swap(int &a, int &b)
 {
   int tmp;
-
   tmp=a;
   a=b;
   b=tmp;
