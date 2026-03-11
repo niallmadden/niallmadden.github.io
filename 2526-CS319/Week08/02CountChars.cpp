@@ -13,7 +13,7 @@ int main(void )
 {
   char c;
   std::ifstream InFile;
-  InFile.open("CPlusPlusTerms.txt");
+  InFile.open("CPlusPlusTermsV01.txt");
   std::cout << "Processing the contents of CPlusPlusTerms.txt"
 	    << std::endl;
 
