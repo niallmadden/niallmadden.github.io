@@ -3,7 +3,7 @@
 # Sections:
 #   - Slides: [0-9]*.pdf  (only files that end exactly in .pdf, not .pdf.pdf)
 #   - Annotations: [0-9]*.pdf.pdf
-#   - Tutorials and Labs: MA385-Tutorial-*.pdf / MA385-Lab-*.pdf
+#   - Tutorials and Labs: MA378-*.pdf / MA378-Lab-*.pdf
 # Uses index_head.html for the HTML <head> and beginning of <body>
 
 command -v pdftoppm >/dev/null 2>&1 || { 
@@ -82,7 +82,11 @@ for f in [0-9]*.pdf.pdf; do
 done
 
 tutorials=()
-for f in MA385-*.pdf; do
+for f in MA378-*.pdf; do
+    [ -e "$f" ] || continue
+    tutorials+=("$f")
+done
+for f in MA378_*.pdf; do
     [ -e "$f" ] || continue
     tutorials+=("$f")
 done
