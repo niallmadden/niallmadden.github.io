@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <title>MA140 Index with Thumbnails</title>
+  <style>
+    body { font-family: sans-serif; max-width: 900px; margin: 40px auto; line-height: 1.6; }
+    h1, h2 { text-align: center; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .item { text-align: center; }
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+    a { text-decoration: none; color: #0066cc; }
+    a:hover { text-decoration: underline; }
+    .label { margin-top: 6px; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <h1>MA140 Files</h1>
+  <h2>Slides</h2>
+  <div class="grid">
+    <div class="item"><a href="MA140-W01-1.pdf"><img src="thumbs/MA140-W01-1.png" alt="MA140-W01-1.pdf"><div class="label">Introduction; Functions - 2526-MA140: Week 01, Lecture 1 (L01)</div></a></div>
+    <div class="item"><a href="MA140-W01-2.pdf"><img src="thumbs/MA140-W01-2.png" alt="MA140-W01-2.pdf"><div class="label">More About Functions - 2526-MA140: Week 01, Lecture 2 (L02)</div></a></div>
+    <div class="item"><a href="MA140-W01-3.pdf"><img src="thumbs/MA140-W01-3.png" alt="MA140-W01-3.pdf"><div class="label">Polynomials and Partial Fractions - 2526-MA140: Week 01, Lecture 3 (L03)</div></a></div>
+  </div>
+  <h2>Annotated Slides</h2>
+  <div class="grid">
+    <div class="item"><a href="MA140-W01-1.pdf.pdf"><img src="thumbs/MA140-W01-1.pdf.png" alt="MA140-W01-1.pdf.pdf"><div class="label">MA140-W01-1.pdf.pdf</div></a></div>
+    <div class="item"><a href="MA140-W01-2.pdf.pdf"><img src="thumbs/MA140-W01-2.pdf.png" alt="MA140-W01-2.pdf.pdf"><div class="label">MA140-W01-2.pdf.pdf</div></a></div>
+    <div class="item"><a href="MA140-W01-3.pdf.pdf"><img src="thumbs/MA140-W01-3.pdf.png" alt="MA140-W01-3.pdf.pdf"><div class="label">MA140-W01-3.pdf.pdf</div></a></div>
+  </div>
+</body>
+</html>
