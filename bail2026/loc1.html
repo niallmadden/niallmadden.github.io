@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conference Location – Galway</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+      background: #2c3e50;
+      color: white;
+    }
+    p {
+      max-width: 800px;
+      margin: 1rem auto;
+      font-size: 1.1rem;
+      padding: 0 1rem;
+    }
+
+    .slider {
+      position: relative;
+      max-width: 900px;
+      margin: 2rem auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+    }
+
+    .slides img {
+      width: 100%;
+      flex-shrink: 0;
+      height: auto;
+    }
+
+    .nav {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .nav button {
+      background: rgba(0, 0, 0, 0.5);
+      border: none;
+      color: white;
+      padding: 1rem;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+
+    .caption {
+      text-align: center;
+      font-style: italic;
+      margin-top: 0.5rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Galway</h1>
+  </header>
+
+  <p>
+    The conference will take place in the vibrant city of Galway, located on Ireland’s scenic west coast.
+    Known for its cultural festivals, coastal landscapes, and rich history, Galway is an ideal location for combining academic exchange with memorable experiences.
+  </p>
+
+  <div class="slider" id="slider">
+    <div class="slides" id="slides">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Galway_Skyline_2017.jpg" alt="Galway City">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/University_of_Galway_-_The_Quadrangle.JPG" alt="University Quadrangle">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Library_of_University_of_Galway_2014.jpg" alt="University Library">
+    </div>
+    <div class="nav">
+      <button onclick="prevSlide()">&#10094;</button>
+      <button onclick="nextSlide()">&#10095;</button>
+    </div>
+    <div class="caption" id="caption"></div>
+  </div>
+
+  <script>
+    const slides = document.getElementById("slides");
+    const captions = [
+      "A panoramic view of Galway city.",
+      "The quadrangle at the University of Galway campus.",
+      "The University of Galway Library."
+    ];
+    const captionEl = document.getElementById("caption");
+    let currentIndex = 0;
+
+    function updateSlider() {
+      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+      captionEl.textContent = captions[currentIndex];
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % captions.length;
+      updateSlider();
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + captions.length) % captions.length;
+      updateSlider();
+    }
+
+    // Auto-play every 5 seconds
+    setInterval(nextSlide, 5000);
+    updateSlider();
+  </script>
+</body>
+</html>
