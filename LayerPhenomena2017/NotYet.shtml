@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <!-- ENTER  PAGE TITLE  HERE -->
+    <title>Layer Phenomena 2017</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link rel="stylesheet" href="http://www.maths.nuigalway.ie/style.css" type="text/css"/>
+  </head>
+<body>
+    <!--#set var="incl" value="/includes" -->
+   <!--#include virtual="Layer2017header.shtml" -->
+
+
+<p>
+<font size="+2" color="#881010">
+<b>The 14<sup>th</sup> Annual Workshop on Numerical Methods
+  for Problems with Layer Phenomena</b></font><br />
+<br />
+<font size="+1">NUI Galway</font><br />
+<font size="+1">6-7 April 2017</font>
+
+</p>
+
+
+<h2>Come back later!</h2>
+
+<p>Details will be posted here soon.</p>
+
+
+        <!-- END PAGE CONTENTS -->
+        <!--#include virtual="$incl/footer.shtml" -->
+    </body>
+</html>

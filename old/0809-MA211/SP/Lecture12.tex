@@ -1,0 +1,178 @@
+\documentclass[pdftex, xcolor=pdftex, dvipsnames,handout]{beamer}
+
+\usetheme{MA211}
+\usepackage{thumbpdf}
+\usepackage{wasysym}
+%\usepackage{ucs}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{verbatim}
+
+\usepackage{eurosym}
+\usepackage{euler}
+
+\include{MA211stuff}
+
+\newcommand{\TakeNotes}{\includegraphics[width=2cm]{TakeNote}}
+
+
+
+
+\def\eps{\varepsilon}
+\newcommand {\del}[2]{ {\frac{\partial #1}{\partial #2}}}
+\newcommand {\x}[1]{x^{[#1]}}
+\newcommand {\delx}{ {\frac{\partial}{\partial x}}}
+\newcommand {\delt}{ {\frac{\partial}{\partial t}}}
+\newcommand {\dely}{ {\frac{\partial}{\partial y}}}
+\newcommand {\ith}{{(i)}}
+\renewcommand {\vec}[1]{ {\boldsymbol{#1}}}
+\newcommand {\Oh} {\mathcal O}
+\newcommand {\Err} {\mathcal E}
+%\newcommand {\th} {\mathrm{th}}
+\DeclareMathOperator{\fl}{fl}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\Cond}{Cond} 
+\DeclareMathOperator{\cond}{cond}
+\DeclareMathOperator{\diag}{diag} 
+\DeclareMathOperator{\sym}{sym} 
+\DeclareMathOperator{\Trace}{Trace}
+%\DeclareMathOperator{\D}{d}
+\DeclareMathOperator{\E}{e}
+
+\newcommand {\Rsym}{{ \mathbb{R}^{n \times n}_\mathrm{sym}}}
+
+\parskip .25cm
+
+
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[section]
+\newtheorem{method}{Method}[section]
+
+
+
+\subtitle{MA211}
+\title{Lecture 12: Class Test}
+
+\author{Dr Niall Madden}
+
+\date{\Large Wed 16 October 2008}
+
+
+\begin{document}
+
+
+\frame{
+
+\begin{block}{}
+\begin{center}
+{\large \insertsubtitle}
+
+\vspace{.1cm}
+
+\begin{Large}
+\textbf{\inserttitle}
+\end{Large}
+
+\vspace{.15cm}
+
+% {\footnotesize \insertauthor}
+
+\vspace{.3cm}
+
+{ {\insertdate}}
+\end{center}
+\end{block}
+
+
+\vspace{-0.25cm}
+\begin{center}
+\includegraphics[height=4.5cm]{images/FindX}
+
+\end{center}
+}
+
+
+
+\frame{
+
+\Bf{Q1.} 
+Use
+\eq{\cosh(x) = \frac{1}{2}\big(e^{x} + e^{-x}\big)}
+and
+\eq{\sinh(x) = \frac{1}{2}\big(e^{x} - e^{-x}\big)} 
+to show that
+\[ \cosh^2 x - \sinh^2 x =1.\]
+\dotfill
+
+\Bf{Q2.} Write down the general solution to the following differential
+equations:
+
+~~ (i) \qquad \eqd{25 y'' -  20 y' + 4 y=0}.
+
+
+~~ (ii) \qquad \eqd{y'' + y' - 12 y=0 }
+
+
+
+\dotfill
+
+\Bf{Q3.} Find values of \eq{b} and \eq{c} such that \eq{y(x)=\cosh(2x)}
+is a solution to the differential equation:
+\[y'' + b y' + cy =0.\]
+
+}
+
+\section{Solutions}
+
+\frame{
+
+\begin{block}{Q1}
+Use
+\eq{\cosh(x) = \frac{1}{2}\big(e^{x} + e^{-x}\big)}
+and
+\eq{\sinh(x) = \frac{1}{2}\big(e^{x} - e^{-x}\big)} 
+to show that
+\[ \cosh^2 x - \sinh^2 x =1.\]
+\end{block}
+
+\vspace{5cm}
+
+}
+
+\rblock
+
+\frame{
+\begin{block}{Q2 (i)}
+Write down the general solution to the following differential
+equation: \hspace{2cm} \eqd{25 y'' -  20 y' + 4 y=0}.
+\end{block}
+\vspace{5.2cm}
+}
+
+\gblock
+\frame{
+\begin{block}{Q2 (ii)}
+Write down the general solution to the following differential
+equation: ~~~ ~~ \qquad \eqd{y'' + y' - 12 y=0 }
+\end{block}
+\vspace{4.8cm}
+}
+
+
+\bblock
+\frame{
+\begin{block}{Q3}
+ Find values of \eq{b} and \eq{c} such that \eq{y(x)=\cosh(2x)}
+is a solution to the differential equation:
+\[y'' + b y' + cy =0.\]
+\end{block}
+\vspace{5cm}
+
+}
+\end{document}
+
+
+
+
+
+\end{document}

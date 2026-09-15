@@ -1,0 +1,80 @@
+\documentclass{layers17}
+% \usepackage{hyperref}
+\usepackage{titling}
+\DeclareMathOperator{\Div}{div}
+\usepackage[utf8]{inputenc}
+
+\newcommand{\ConfVenue}{National University of Ireland, Galway}
+\newcommand{\ConfDate}{April 2017}
+\newcommand{\ConfHost}{School of Mathematics, Statistics and Applied Mathematics}
+
+\usepackage{draftwatermark}
+\SetWatermarkText{DRAFT: 23/03/2017}
+\SetWatermarkScale{3}
+
+%\usepackage{hyperref}
+
+
+\AtBeginDocument{\addtocontents{toc}{\protect\thispagestyle{fld}}}
+\begin{document}
+
+%--------------------------------------------------------------------------
+%  TITLE PAGE
+%--------------------------------------------------------------------------
+      \newpage\thispagestyle{empty}
+
+      \vspace*{-2.0cm}
+
+      \begin{center}
+      %\epsfig{file=ULCrestOK.ps}\\[0.3cm]
+      \textsc{\Large \ConfVenue}
+      \end{center}
+
+      \vspace{3.5cm}
+
+      {\Huge\bf
+
+      \noindent
+      Numerical Methods for Problems\\
+      with Layer Phenomena
+
+      }
+
+      \vspace{4cm}
+
+      {\Large\bf
+
+      \noindent
+      Abstracts of the 14th Annual Workshop\\
+
+      \noindent
+      {\large \ConfHost}\\
+
+      \noindent
+      \ConfVenue\\
+
+      \noindent \ConfDate
+
+
+      \noindent{\emph{This workshop is dedicated to our friend and colleague
+          Eugene O'Riordan on the occasion of his 60th birthday}}
+
+      }
+
+%--------------------------------------------------------------------------
+%   \newpage\thispagestyle{empty}~
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+   \newpage\FLD{1}{3}{00}{28}{04}{}
+%--------------------------------------------------------------------------
+%       Speakers
+%--------------------------------------------------------------------------
+
+   \renewcommand{\contentsname}{\sc\LARGE Speakers}
+
+   \tableofcontents
+
+\input{ListOfAbstracts.tex}
+
+\end{document}
+

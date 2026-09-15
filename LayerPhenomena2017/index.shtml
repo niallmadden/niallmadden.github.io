@@ -1,0 +1,298 @@
+<html>
+  <head>
+    <title>Layer Phenomena 2017</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+  </head>
+  
+  <body>
+    <!--#set var="incl" value="/includes" -->
+    <!--#include virtual="Layer2017header.shtml" -->
+    <center>
+      <p>
+	<font size="+2" color="#881010">
+	  <b>The 14<sup>th</sup> Annual Workshop on Numerical Methods
+	    for Problems with Layer Phenomena</b></font><br />
+	<br />
+	<font size="+1">NUI Galway</font><br />
+	<font size="+1">6-7 April 2017</font>
+      </p>
+    </center>
+
+    <p style="text-align:center">
+      <img src="LayerPhenomena_GroupPhoto.jpg"
+	   alt="Layer Phenomena: group photo"
+	   width="90%"  />
+<br/><em>Some of the participants of the Layer Phenomena Workshop,
+  Galway, April 2017</em>
+    </p>
+    
+    <p>
+      This <b>two day workshop</b> will bring together researcher with 
+      interests in problems whose solutions  exhibit layer phenomena, such as
+      <a href="2D1.png">boundary</a> and <a href="images/figure7.png">
+	interior</a> layers in fluid flow, and other applications.
+      The main focus is on the design, analysis  and application of numerical
+      methods for these problems, but contributions on related topics,
+	such as applications and asymptotic methods, are warmly welcomed.</p>
+
+    <p><b>This year, we dedicate the workshop to our friend and colleague
+      <a href="https://sites.google.com/a/dcu.ie/eugene-o-riordan/">Eugene
+      O'Riordan</a> on the occasion of  his 60th birthday</b>.</p>
+
+    <p>
+      <font color="red">UPDATE (05/04/2017):</font>
+      the <a href="Programme.pdf">programme (final)</a> is now  available.<br/>
+      <font color="red">UPDATE (05/04/2017):</font>
+      the <a href="Abstracts2017.pdf">Book of Abstracts</a> is now  available.<br/>
+    </p>
+
+
+      
+    <p>The previous meeting in this series was
+      the <a href="http://math.phys.msu.ru/layer-phenomena-2016">13th
+	Annual Workshop on Numerical Methods for Problems with Layer
+	Phenomena</a>, hosted  by the <a href="http://math.phys.msu.ru/">
+	Department of Mathematics of the Physics Faculty at Moscow State
+	University</a>, in April 2016. </p>
+
+    <h2><a name="Registration">Registration and Abstracts</a></h2>
+    <ul>
+      <li>Deadline for registering and submitting an abstract is  Friday, <b>24 February 2017</b>.</li> 
+      <li>Registration is <b>free</b>. Tea and coffee will be provided
+	during breaks. Lunch, the conference dinner, travel, accommodation,
+	etc., are at the participants' expense.</li>
+      <li>To register your  interested in participating,
+	please <a href="Registration.shtml">complete this form</a>, or 
+	send an email to the organisers
+	(at <a href="mailto:Niall.Madden@NUIGalway.ie">Niall.Madden@NUIGalway.ie</a>)
+	with your name, affiliation, and your intention to give a talk.</li>
+    </ul>
+
+    <h2><a name="Registration">Abstracts and Talks</a></h2>
+    <p>Each speaker is invited to submit an abstract of his/her talk. A
+      collection of (extended) abstracts will be published by the beginning
+      of the workshop.</p>
+    
+    <p>Abstracts should be submitted as LaTeX
+      files, whose length including figures and references should not exceed
+      2 pages. The LaTeX files to prepare your abstract are:
+      <ul>
+	<li>the LaTeX document-class file <a href="layers17.cls">layers17.cls</a>,</li>
+	<li>a sample abstract: <a href="YourName.tex">YourName.tex</a>.</li>
+      </ul>
+      (Right click and choose Save Link As...).</p>
+    <p>Send your completed tex file by email
+      to  <a href="mailto:Niall.Madden@NUIGalway.ie">Niall.Madden@NUIGalway.ie</a>.</p>
+    
+  </li>
+
+  <p>Each contributed talk should not exceed <b>25 minutes</b>
+    (including a short discussion). A computer and  data-projector will
+    be available, as well as a white board and over-head projector.
+  </p>
+
+  <p>
+    <font color="red">The deadline for submitting an abstract is
+      Friday, 24 February 2017.</font>
+  </p>
+  
+
+  <h2><a name="Dinner">Conference Dinner and Excursion</a></h2>
+  <ul>
+    <li>The conference dinner will be held on the evening of Thursday, 6
+      April in <a href="http://vinamara.com/">Vi&ntilde;a Mara</a>, 19
+      Middle St. (centre of Galway, about a 15 minute walk campus).
+      A three course meal, plus service charge, will cost  &euro;26.40.
+      Other options are available. Payment can be made at
+      registration.</li>
+    <li>On Saturday after the meeting (8th of April) there will be an
+      excursion to
+      the <a href="https://en.wikipedia.org/wiki/The_Burren">Burren</a>
+	and
+	<a href="https://en.wikipedia.org/wiki/Cliffs_of_Moher">Cliffs
+      of Moher</a>, with stops including  
+      <a href="https://en.wikipedia.org/wiki/Kinvara">Dungauire
+	Castle</a>,
+      <a href="https://en.wikipedia.org/wiki/Poulnabrone_dolmen">Poulnabrone Dolmen</a> and Blackhead.
+      This will depart at <b>9.30am</b> and return at 15.00.
+      The cost is &euro;20 per participant.</li>      
+  </ul>
+
+  <h2><a name="location">Location and travel</a></h3>
+  <p><b>KEY INFORMATION</b>:</p>
+  <ul>
+    <li>All talks will take place
+      in <a href="http://www.nuigalway.ie/buildings/documents/campus_map_nov2014.pdf">AC201, Arts &
+	Science Concourse</a> (Number 14 on the map), on the campus of NUI Galway, Ireland. </li>
+    <li><a href="https://drive.google.com/open?id=1ff064hg80gvF5R-VjnL-rZGtgZ0&usp=sharing">Google map showing location of
+	lecture room</a>, coach station, and bus station.</li>
+  </ul>
+
+  
+  <p> For most overseas visitors, 
+    <a href="http://www.dublinairport.ie">Dublin Airport</a> is likely to be the most convenient point of entry to Ireland. Efficient and frequent bus services between Dublin Airport and Galway are provided by 
+    <a href="http://www.citylink.ie">Citylink</a> and 
+    <a href="http://www.gobus.ie">GoBus</a>.  The journey to Galway
+    takes about three hours.
+  </p>
+
+  <p><a href="http://www.shannonairport.ie">Shannon Airport</a> is about
+    90km south of Galway. The <a href="www.expressway.ie">Expressway</a>
+    X51 service   takes 70 minutes and runs 5 times daily.</p>
+
+  <p>
+    <a href="http://www.irelandwestairport.ie">Ireland  West (Knock) Airport</a>
+    is about
+    90km north of Galway. There are several scheduled flights to the UK,
+    but connections to Galway by public transport are, essentially,
+    non-existent.</p>
+  
+  <p>Galway is located on the west coast, directly west of Dublin. The
+    workshop venue is at the  
+    <a href="http://www.nuigalway.ie/about-us/contact-us/where-to-find-us.html">university</a>,
+    which is a 10 minute walk from the city centre. There are many guest
+houses, hotels and other accommodation options both in the city centre
+and in the university area. A fairly random selection of these is
+below - many more options for guesthouses in particular can easily be
+found. Guesthouse or B &amp B accommodation tends to be a bit cheaper
+than hotels, hostels are likely to be cheaper again.</p>
+
+
+<ul>
+<li><a href="http://www.ashgrovehousegalway.com/">Ash Grove House</a>  B
+&amp B is 5 minutes walk from the campus and 15 minutes from the city centre.</li>
+<li>
+<a href="http://www.westwoodhousehotel.com">The Westwood Hotel</a> 
+(15 mins walk to university, 30 mins to city)</li>
+<LI>
+<a href="http://galwayhotels.jurysinns.com">Jury's Inn</a> (in city centre, 15 mins walk to university)
+<LI>
+<a href="http://www.harbour.ie">The Harbour Hotel</a> (in city centre, 25 mins walk to university)
+<LI>
+<a href="http://www.corribhaven.net">Corrib Haven B &amp B</a> (10 mins walk to university, 30 to city centre)
+<LI>
+<a href="http://www.adareguesthouse.ie">Adare Guest House</a> (15 mins walk to university, 10 to city centre)
+<LI>
+<a href="http://www.lisnagreebandb.com">Lisnagree B &amp B</a> (10 mins walk to university, 30 to city centre)
+<LI><a href="http://www.collegecrest.com">College Crest B &amp B</a> (5 mins walk to city centre, 30 to university, close to bus and train station)
+<LI><a href="http://www.kinlaygalway.ie">Kinlay Hostel</a> (budget accommodation in city centre, 20 mins walk to university)
+<LI><a href="http://www.sleepzone.ie">Sleepzone</a> (budget accommodation in city centre, 10 mins walk to university)
+</UL>
+
+<p>Galway is a small city but is quite lively, with many of
+  restaurants and pubs,  and a busy music and theatre scene. The city
+  centre and university areas are easily explored on foot. 
+Information for visitors to Galway is available
+  from <a href="http://www.galwaytourism.ie">Galway Tourism</a>.</p>
+
+
+
+<h2>Organisers</h2>
+<ul>
+<li><a href="http://www.maths.nuigalway.ie/~niall">Niall Madden</a>,
+  NUI Galway (main organiser)</li>
+<li>Faiza Alssaedi, NUI Galway</li>
+<li><a href="http://www.staff.ul.ie/natalia/">Natalia Kopteva</a>,
+  University of Limerick</li>
+<li>Qays Shakir, NUI Galway</li>
+</ul>
+
+<h2>Other "Layer Phenomena" workshops in this series</h2>
+<ul>
+  <li><a href="https://www.mas.ucy.ac.cy/xenophon/workshop2024/">
+      20th
+ Annual Workshop on Numerical Methods for Problems with Layer
+      Phenomena</a>, Department of Mathematics and Statistics, University of Cyprus</a>, May 2024.</li>
+  <li><a href="https://www.karlin.mff.cuni.cz/~knobloch/WORKSHOP_NMPLP/">
+      19th
+ Annual Workshop on Numerical Methods for Problems with Layer
+      Phenomena</a>, Prague, Czech Republic</a>, May 2023.</li>
+
+<li><a href="https://www.fernuni-hagen.de/numerik/forschung/workshoplayerphenomena.shtml">
+      18th
+ Annual Workshop on Numerical Methods for Problems with Layer
+      Phenomena</a>, Hagen, Germany</a>, March 2022.</li>
+  <li>17th
+ Annual Workshop on Numerical Methods for Problems with Layer
+    Phenomena, Limerick, Ireland, Nov 2020 (online)
+</li>
+  <li><a href="https://www.imus.us.es/www/#actividad/2219">16th
+ Annual Workshop on Numerical Methods for Problems with Layer
+    Phenomena</a>, Sevilla, Spain</a>, Feb 2019
+</li>
+  <li><a href="https://www.mas.ucy.ac.cy/xenophon/workshop/">15th 
+ Annual Workshop on Numerical Methods for Problems with Layer
+    Phenomena</a>, Larnaca, Cyprus</a>, May 2-18.
+</li>
+  
+<li>
+  <b><a href="https://www.niallmadden.ie/LayerPhenomena2017/">14th
+ Annual Workshop on Numerical Methods for Problems with Layer
+      Phenomena</a>, NUI Galway</a>, April 2017.
+</b>
+</li>
+<li><a href="http://math.phys.msu.ru/layer-phenomena-2016">13th
+ Annual Workshop on Numerical Methods for Problems with Layer
+ Phenomena</a>, Moscow State  University</a>, April 2016. </li>
+<li><a href="http://www.math.tu-dresden.de/layer-phenomena/">
+12th Annual Workshop on Numerical Methods
+for Problems with Layer Phenomena</a> (dedicated to the 65th birthday of
+Hans-Görg Roos), TU Dresden, April 2015</li>
+<li><a href="http://imft.ftn.uns.ac.rs/math/Activities/Workshop2014">
+11th Annual Workshop on Numerical Methods for Problems with Layer
+Phenomena</a>, Novi Sad, March 2014.</li>
+<li><a href="http://www.mas.ucy.ac.cy/~xenophon/workshop/">
+10th Annual Workshop on Numerical Methods for Problems with Layer
+Phenomena</a>, Larnaca, Cyprus, May 2013.</li>
+
+<li>9th workshop - Dublin City University, Dublin (Ireland), 3-4 February 2011
+</li><li>
+8th workshop - University of Limerick, Limerick (Ireland), 21-22 January 2010
+</li><li>
+7th workshop - University of Limerick, Limerick (Ireland), January 2009
+</li><li>
+6th workshop - University of Limerick, Limerick (Ireland), 8-9 February 2007
+</li><li>
+5th workshop - University of Limerick, Limerick (Ireland), 9-10 February 2006
+</li><li>
+4th workshop - University of Limerick, Limerick (Ireland), 10-11 February 2005
+</li><li>
+3rd workshop - University of Limerick, Limerick, (Ireland), 12-13 February 2004
+</li><li>
+2nd workshop - University of Limerick, Limerick, (Ireland), 6-7 February 2003
+</li><li>
+1st workshop - University of Limerick, Limerick, (Ireland), 23-24 January 2002 
+</li></ul>
+
+<h2><a name="support">Funding and support</a></h2>
+<p>There is no registration fee for the workshop. 
+  The organisers are grateful to
+  <ul>
+    <li>the <a href="http://www.maths.tcd.ie/pub/ims/">Irish
+	Mathematical Society</a>,</li>
+    <li>the <a href="http://www.nuigalway.ie/science/school-of-maths/">
+	School of Mathematics, Statistics and Applied Mathematics</a></li>
+  </ul>
+  for their generous financial support.
+</p>      
+    
+<!--
+<h2>Related conferences and workshops</h2>
+<p>Researchers attending this workshop may also be interested in
+  the following meetings.
+<ul>
+<li><a href="http://www.csrc.ac.cn/conference/BAIL2016/homepage.html">
+Boundary and Interior Layers - Computational & Asymptotic Methods</a>.
+  15th to 19th August 2016, Beijing Computational Science Research, China.
+  Center.</li>
+
+<li>2016 AARMS-CRM Workshop on <a href="http://www.math.mun.ca/~smaclachlan/anasc_spde/">
+Numerical Analysis of Singularly Perturbed Differential Equations</a>,
+  July 25 - 29, 2016, Halifax, NS, Canada</li>
+</ul>
+-->
+
+        <!-- END PAGE CONTENTS -->
+        <!--#include virtual="$incl/footer.shtml" -->
+    </body>
+</html>

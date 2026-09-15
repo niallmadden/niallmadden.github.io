@@ -1,0 +1,98 @@
+% Template for post or presentation abstracts submitted to the Laayers
+% 2025 Workshop in Galway
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Send your file by email to Niall.Madden@UniversityOfGalway.ie
+%   and include the word "Layers" somewhere in the subject line
+%       
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Questions: Contact Niall Madden (Niall.Madden@UniversityOfGalway.ie)
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{A sample \LaTeX\ abstract for a talk ts the Layer Phenomena
+  Workshop, 2025}
+\author{Niall Madden} % Presenting author only; do not include
+                      % co=-authors; list those in the abstract.
+\address{University of Wherever} % Affiliation of presenting author
+\email{Madden@whereever.edu} % Email address of presenting author only
+
+\maketitle
+
+% The abstract, ideally no more than one page.
+
+This is a sample abstract for talks and posters
+presented at the \emph{21st Workshop on Numerical Methods for Problems
+  with Layer Phenomena} to be held at University of Galway (Ireland),
+24--25 April 2025.
+
+Please, follow the instructions at
+\url{https://www.niallmadden.ie/LayerPhenomena2025/registration.html} 
+for submitting your abstract. 
+
+Try to keep your file as simple as possible, so that it is easily
+rendered in various formats. Give the file a name that readily
+identifies it with you, for example \texttt{GIShishkin.tex}. 
+
+If you wish to include citations, you can do so like this:
+\cite{My-key-for-Bakhvalov69}. Use a bibitem key that is likely be be unique to
+you (e.g., don't use the default Math Reviews key).
+Any uncited bibliography entries will also
+appear. If you have none, then delete that section.
+
+%% Coauthor details here (optional - delete if not applicable)
+\emph{This is joint work with A.N. Other (Berlin).}
+
+% Funding acknowledgment (optional - delete if not applicable)
+\emph{Supported by the National Mathematics Foundation, Grant XYZ-123.}
+
+\begin{thebibliography}{1}
+
+\bibitem{My-key-for-Bakhvalov69}
+Bakvalov, N.: Towards optimization of methods for solving boundary value
+  problems in the presence of boundary layers.
+\newblock Zh. Vzchisl. Mat. i Mat fiz. \textbf{9}, 841--859 (1969)
+
+\bibitem{my-key-for-ClGr05a}
+Clavero, C., Gracia, J., O'Riordan, E.: {A parameter robust numerical method
+  for a two dimensional reaction-diffusion problem.}
+\newblock Math. Comput. \textbf{74}(252), 1743--1758 (2005).
+\newblock \doi{10.1090/S0025-5718-05-01762-X}
+
+
+\bibitem{Proceedings-example}
+Gracia, J.L., Madden, N., Nhan, T.A.: Applying a patched mesh method to
+  efficiently solve a singularly perturbed reaction-diffusion problem.
+\newblock In: H.G. Bock, H.X. Phu, R.~Rannacher, J.P. Schl{\"o}der (eds.)
+  Modeling, Simulation and Optimization of Complex Processes HPSC 2015, pp.
+  41--53. Springer International Publishing, Cham (2017)
+
+\end{thebibliography}
+
+
+\end{document}
+
+
+% Please leave the next bit alone  
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "Layers2025.tex"
+%%% End:

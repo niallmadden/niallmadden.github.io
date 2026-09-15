@@ -1,0 +1,151 @@
+<: $CHILD_ALBUM_COLS = 4; :>//
+<: $IMAGE_COLS = Option("columns"); :>//
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+    'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title> 
+      Stokes Modelling Week, 2017
+    </title>
+    <: Meta() :>
+  </head>
+  <body bgcolor='black' text='white' link='#D4D4D4' vlink='#D4D4D4' alink='#D4D4D4'>
+#c  #  <body bgcolor='black' text='white' link='lightblue' vlink='lightblue' alink='lightblue'>
+  <table cellspacing='5' width='95%'>
+    <tr>
+      <td align='left'>
+        <:= Parent_Albums(':') :>
+      </td>
+      <td align='right'>
+        <a href=<:=Back():>>Up</a>
+      </td>
+    </tr>
+  </table>
+  <hr />
+
+#c  # Are there more albums below this one?
+<:  if (my $dir = First('dirs')) { _:>
+	<center><font size='+1'><i>More albums</i></font></center>
+
+  <table cellspacing='10' width='95%'>
+    <tr>
+#c    # Loop on all the albums
+<:    while ($dir) { _:>
+        <td width='25%' align='center' valign='top'>
+        <: if (my $img=Image($dir,'thumb')) { _:>
+        
+      
+  <table cellspacing='0' cellpadding='3' bgcolor='gray'>
+  <tr>
+  <td>
+            <:=Get($dir,'href', 'dir' ):><:=$img:></a>
+  </td>
+  </tr>
+  </table>
+          <: } _:>
+
+
+          <font size='-2'>
+            <:= Get($dir,'href','dir').Name($dir)."</a>" :>
+          </font>
+        </td>
+
+#c      # And start a new row every fourth one
+<:      if (!((Get($dir,'num')+1) % $CHILD_ALBUM_COLS) && Next($dir)) { _:>
+          </tr><tr>
+<:      } :>
+
+#c    # End album loop
+<:    $dir = Next($dir); :>
+<:    } :>
+    </tr>
+  </table>
+<hr />
+
+#c  # End if albums
+<:  } :>
+
+#c  # Are there any images?  (There might only be CHILD_ALBUMS!)
+<:  if (my $pic = First('pics')) { _:>
+
+#c  # print the header
+<: if (isHeader()) { _:>
+	<font size='+1'><i>
+        <center>
+        <:pHeader():>
+        </center>
+        </i></font>
+        <br>
+<: } _:>
+
+
+
+  <table cellspacing='15' width='95%'>
+    <tr>
+
+#c    # Loop on the images
+<: while($pic) { _:>
+        <td width='25%' align='center' valign='top'>
+          <: if (my $img=Image($pic,'thumb')) { _:>
+
+
+
+  <table cellspacing='0' cellpadding='3' bgcolor='gray'>
+  <tr>
+  <td>
+            <:=Get($pic,'href','image'):><:=$img:></a>
+  </td>
+  </tr>
+  </table>
+          <: } _:>
+          <: if (my $cap = Caption($pic)) { _:>
+          <font size='-1'>
+            <:= $cap :>
+          </font>
+          <br />
+          <: } _:>
+          <font size='-2'>
+          <:=Get($pic,'href','image'):><:=Name($pic):></a>
+          </font>
+        </td>
+
+<:      if (!((Get($pic,'num')+1) % Option('columns')) && Next($pic)) { _:>
+          </tr><tr>
+<:      } :>
+
+#c    # End while images
+<:      $pic = Next($pic) :>
+<:    } :>
+    </tr>
+  </table>
+
+#c  # End if images
+<hr />
+<:  } :>
+
+<: if (isFooter()) { _:>
+        <center>              
+          <:pFooter():>         
+        </center>
+        <p><hr><p>
+<: } _:>
+
+
+  <table cellspacing='5' width='95%'>
+    <tr>
+      <td align='left'>
+        <:= Parent_Albums(':') :>
+      </td>
+      <td align='right'>
+        <a href=<:=Back():>>Up</a>
+      </td>
+    </tr>
+  </table>
+  <hr />
+
+
+    <font size='-1'>
+      <: Credit() :> on <:=scalar localtime:>
+    </font>
+  </body>
+</html>

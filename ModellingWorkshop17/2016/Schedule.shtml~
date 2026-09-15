@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <!-- ENTER  PAGE TITLE  HERE -->
+    <title>de Brun 6: The 6th de Brun Workshop - Linear
+    Algebra and Matrix Theory</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link rel="stylesheet" href="http://www.maths.nuigalway.ie/style.css" type="text/css"/>
+  </head>
+<body>
+    <!--#set var="incl" value="/includes" -->
+   <!--#include virtual="dB6header.shtml" -->
+
+
+
+<center>
+<p>
+<font size="+1">The 6<sup>th</sup> de Br&uacute;n Workshop<br /></font>
+<font size="+2" color="#881010"><b>Linear Algebra and Matrix
+    Theory:</b> connections, applications and
+    computations</font><br />
+<font size="+0">NUI Galway,</font>
+<font size="+0">03-07 December 2012</font><br /></p>
+
+<p><font size="+2" color="#881010"><b>Lecture Series and
+      Schedule</b></font></p> 
+</center>
+
+
+<h2>Lecturers</h2>
+
+<table align="center"  border="0" cellpadding="5" cellspacing="0" width="90%">
+
+<tbody>
+<tr>
+<td align="center" width="12%"  bgcolor="#FFFFD0"><img src="brualdi.jpg" alt="Richard Brualdi"
+			width="100" /></td> 
+<td  align="left" width="37%"   bgcolor="#FFFFD0">
+<b><a href="http://www.math.wisc.edu/~brualdi/">Richard A. Brualdi</a></b>, <br /> University of Wisconsin, Madison.<br />
+<em><a href="Abstracts.shtml#Brualdi">Topics in Combinatorial Matrix Theory</a></em>
+</td>
+
+<td bgcolor="#FFFFFF" width="1%"> </td>
+
+
+<!-- Peter -->
+<td align="left"  bgcolor="#FFE0E0" width="37%">
+<b><a href="http://www.facstaff.bucknell.edu/pbrooksb/">Peter
+ Brooksbank</a></b>,<br />
+ Bucknell University.<br />
+<em><a href="Abstracts.shtml#Brooksbank">Linear methods in
+  computational algebra</a></em>
+</td>
+<td align="center" width="12%"  bgcolor="#FFE0E0"><img src="PeterBrooksbank.jpg" alt="Peter
+						       Brooksbank" width="100" /></td> 
+</tr>
+
+<tr><td></td> </tr>
+
+<!-- Iain -->
+<tr >
+<td align="center" bgcolor="#E0FFE0">
+<img src="duff.jpg" alt="Iain Duff" width="100" /></td> 
+<td  align="left" bgcolor="#E0FFE0">
+<b><a href="http://www.numerical.rl.ac.uk/people/isd/isd.html">Iain
+    Duff</a></b>, <br />
+Rutherford Appleton Laboratory, Oxfordshire, and CERFACS, Toulouse.<br />
+<em><a href="Abstracts.shtml#Duff">Sparse matrices</a></em>
+</td>
+
+<td></td>
+
+<td align="left" bgcolor="#D0FFFF">
+<b><a href="http://www.mat.uc.pt/~cmf/">Carlos Martins da
+    Fonseca</a></b>,  <br  />Universidade de Coimbra.<br />
+<em><a href="Abstracts.shtml#Fonseca">Recent trends on spectral graph
+    theory</a></em> 
+</td>
+<td align="center" bgcolor="#D0FFFF">
+<img src="fonseca.jpg" alt="Carlos Martins da
+					       Fonseca" width="100" /></td> 
+</tr>
+
+<tr><td></td> </tr>
+
+
+<tr>
+<td align="center" bgcolor="#FFD0FF"><img src="johnson.jpg" alt="Charles Johnson"
+			width="100" /></td> 
+<td  align="left" bgcolor="#FFD0FF">
+<b><a href="http://www.wm.edu/as/mathematics/faculty/directory/johnson_c.php">Charles
+    Johnson</a></b>, College of William &amp; Mary.<br />
+<em><a href="Abstracts.shtml#Johnson">Totally Positive Matrices</a></em>
+</td>
+<td></td>
+
+<td  align="left"
+     bgcolor="#E8E8FF"><b><font size="+1"><a href="TalkTitles.shtml">Contributed
+	talks</a></font></b>
+</td>
+<td align="center" bgcolor="#E8E8FF"><img src="Contrib.jpg" alt="Contributed talks" width="100" /></td> 
+
+
+</tr>
+</tbody>
+</table>
+
+
+
+<h2>Schedule</h2>
+
+<p>Most talks will take place in room <a href="http://www.nuigalway.ie/campus-map/?id=200&amp;go=1">
+IT250</a>, Information Technology Building, on the main
+  campus of NUI Galway. However, the sessions on Wednesday and
+  Thursday afternoon take place next door in IT125.</p>
+
+<p>The <a href="TalkTitles.shtml">titles of contributed talks</a> are
+  now available.</p>
+
+<p>Please also see
+  the <a href="http://www.maths.nuigalway.ie/deBrun6/IrishLA.shtml">schedule
+    for the 1<sup>st</sup> Irish Linear Algebra and Matrix    Theory
+  Meeting</a>.</p>
+
+
+<p><b>Late changes to the programme:</b>
+<ul>
+<li>The talk by Anthony Cronin, scheduled for Wednesday afternoon has
+  been cancelled.
+<li>The talk by Andrii Dmytryshyn will now take place on Wednesday
+  at 3.30 (rather than Friday at 3.00).
+<li>The talk by Alexander Rahm will take place on Friday 
+  at 3.30 (rather than Friday at 3.30).
+<li>The workshop will finish on Friday at 3.30, thirty  minutes than
+  earlier planned.
+</ul>
+
+
+<table align="center" bgcolor="#F0F0FF" border="1" cellpadding="5" cellspacing="0"
+width="90%">
+<tbody>
+<tr align="center">
+<td></td>
+<td colspan="5">6<sup>th</sup> de Br&uacute;n Workshop</td>
+</tr>
+<tr align="center">
+<td></td>
+<td><b>Monday</b><br /> Dec 3<sup>rd</sup></td>
+<td><b>Tuesday</b><br /> Dec 4<sup>th</sup></td>
+<td><b>Wednesday</b><br /> Dec 5<sup>th</sup></td>
+<td><b>Thursday</b><br /> Dec 6<sup>th</sup></td>
+<td><b>Friday</b><br /> Dec 7<sup>th</sup></td>
+</tr>
+<tr align="center">
+<td ><b>9.00</b></td>
+<td rowspan="1" bgcolor="#ffFFFF">Registration and Coffee</td>
+<td ></td>
+<td ></td>
+<td ></td>
+<td ></td>
+</tr>
+
+
+<tr align="center">
+<td ><b>9.30</b></td>
+<td rowspan="2" bgcolor="#D0FFFF">C.M. da Fonseca</td>
+<td rowspan="2" bgcolor="#D0FFFF">C.M. da Fonseca</td>
+<td rowspan="2" bgcolor="#E0FFE0">I. Duff</td>
+<td rowspan="2" bgcolor="#FFD0FF">C. Johnson</td>
+<td rowspan="2" bgcolor="#FFD0FF">C. Johnson</td>
+</tr>
+
+
+<tr align="center">
+<td ><b>10.00</b></td>
+</tr>
+
+
+<tr align="center">
+<td ><b>10.30</b></td>
+<td rowspan="2" bgcolor="#FFE0E0">P. Brooksbank</td>
+<td rowspan="2" bgcolor="#FFE0E0">P. Brooksbank</td>
+<td rowspan="2" bgcolor="#E0FFE0">I. Duff</td>
+<td rowspan="2" bgcolor="#D0FFFF">C.M. da Fonseca</td>
+<td rowspan="2" bgcolor="#D0FFFF">C.M. da Fonseca</td>
+</tr>
+
+<tr align="center">
+<td ><b>11.00</b></td>
+</tr>
+
+<tr align="center">
+<td ><b>11.30</b></td>
+<td colspan="6" bgcolor="#FFFFFF"><em>Tea / Coffee</em></td>
+</tr>
+<tr align="center">
+<td ><b>12.00</b></td>
+<td rowspan="2" bgcolor="#FFD0FF">C. Johnson</td>
+<td rowspan="2" bgcolor="#FFD0FF">C. Johnson</td>
+<td rowspan="2" bgcolor="#FFE0E0">P. Brooksbank</td>
+<td rowspan="2" bgcolor="#FFFFD0">R. Brualdi</td>
+<td rowspan="2" bgcolor="#FFFFD0">R. Brualdi</td>
+</tr>
+
+
+<tr align="center">
+<td ><b>12.30</b></td>
+</tr>
+
+
+<tr align="center">
+<td ><b>1.00</b></td>
+<td colspan="6" rowspan="3" bgcolor="#FFFFFF"><em>Lunch</em></td>
+</tr>
+
+<tr align="center">
+<td ><b>1.30</b></td>
+</tr>
+
+<tr align="center">
+<td ><b>2.00</b></td>
+</tr>
+
+
+<tr align="center">
+<td ><b>2.30</b></td>
+<td rowspan="1" bgcolor="#E8E8FF">R. Levene</td>
+<td rowspan="1" bgcolor="#E8E8FF">A. Bier</td>
+<td rowspan="1" bgcolor="#E8E8FF">C. Arauz</td>
+<td rowspan="1" bgcolor="#E8E8FF">J. Lee</td>
+<td rowspan="1" bgcolor="#E8E8FF">J. Cruickshank</td>
+</tr>
+
+<tr align="center">
+<td ><b>3.00</b></td>
+<td rowspan="1" bgcolor="#E8E8FF">E. Byrne</td>
+<td rowspan="1" bgcolor="#E8E8FF">J. Armario</td>
+<td rowspan="1" bgcolor="#E8E8FF">W. Holubowski</td>
+<td rowspan="1" bgcolor="#E8E8FF">M. Saha</td>
+<td rowspan="1" bgcolor="#E8E8FF">A. Rahm</td>
+</tr>
+
+<tr align="center">
+<td ><b>3.30</b></td>
+<td rowspan="1" bgcolor="#E8E8FF">J. McTigue</td>
+<td rowspan="1" bgcolor="#E8E8FF">T. Klimchuk</td>
+<td rowspan="1" bgcolor="#E8E8FF">A. Dmytryshyn</td>
+<!--<td rowspan="1" bgcolor="#E8E8FF">A. Cronin</td> -->
+<td rowspan="1" bgcolor="#E8E8FF">O. Walch</td>
+<td colspan="1" bgcolor="#FFFFFF">Close</td>
+</tr>
+
+<tr align="center">
+<td ><b>4.00</b></td>
+<td colspan="4" bgcolor="#FFFFFF"><em>Tea / Coffee</em></td>
+<td colspan="1" bgcolor="#FFFFFF"></td>
+</tr>
+<tr align="center">
+<td ><b>4.30</b></td>
+<td rowspan="1" bgcolor="#E8E8FF">L. Taslaman</td>
+<td rowspan="2" bgcolor="#FFFFD0">R. Brualdi</td>
+<td rowspan="2" bgcolor="#E0FFE0">I. Duff</td>
+<td rowspan="1" bgcolor="#E8E8FF">T. Hurley</td>
+<td rowspan="2" bgcolor="#FFFFFF"></td>
+</tr>
+
+<tr align="center">
+<td ><b>5.00</b></td>
+<td rowspan="1" bgcolor="#E8E8FF">R. Egan</td>
+<td rowspan="1" bgcolor="#E8E8FF">I. McLoughlin</td>
+</tr>
+
+<tr>
+<td colspan="7"  bgcolor="#FFFFFF">
+</td>
+</tr>
+
+
+<tr>
+<td colspan="1"  bgcolor="#FFFFFF">
+8.00
+</td>
+<td colspan="2"  bgcolor="#FFFFFF">
+</td>
+<td>Dinner (House Hotel)</td> 
+
+<td colspan="3"  bgcolor="#FFFFFF">
+</td>
+</tr>
+</tbody>
+</table>
+
+
+        <!-- END PAGE CONTENTS -->
+        <!--#include virtual="$incl/footer.shtml" -->
+    </body>
+</html>

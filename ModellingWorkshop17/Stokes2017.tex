@@ -1,0 +1,451 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{relsize}
+\usepackage{bigints}
+\usepackage{setspace}
+\usepackage{color}
+\usepackage{titlesec}
+\usepackage{eurosym}
+
+%\usepackage{timetable}
+%\usepackage{calendar} 
+
+\usepackage{multicol}
+%\usepackage[margin=1in]{geometry}
+\usepackage[margin={2.5cm, 2.5cm, 2.5cm, 2.5cm}]{geometry}
+
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{hyperref}
+%\SetSymbolFont{largesymbols}{normal}{OMX}{iwona}{m}{n}
+
+%\usepackage{helvet}
+%\renewcommand\familydefault{\sfdefault} 
+%\usepackage[T1]{fontenc}
+\evensidemargin 0.4cm
+\oddsidemargin 0.4cm
+\begin{document}
+\renewcommand{\familydefault}{\sfdefault}
+\sffamily
+
+%\titleformat*{\section}{\Large\bfseries\sffamily}
+
+\thispagestyle{empty}
+\onehalfspace
+\vspace*{5pt}
+\pdfinfo{ /Author (Niall Madden) /Title (Stokes Workshop 2017) /Keywords () } 
+\begin{center}
+\includegraphics[height=2cm]{nuig-logo}
+\end{center}
+\vspace{10pt}
+
+\hrulefill
+
+\vspace{10pt}
+
+\centerline{\textbf{\Large 4th Annual}}
+\vspace{10pt}
+
+\centerline{\textbf{\Huge Stokes Modelling Workshop}}
+\vspace{10pt}
+
+%\centerline{\textbf{\Large for Undergraduate Students}}
+
+\hrulefill
+
+\vspace{10pt}
+
+\centerline{\Large National University of Ireland, Galway}
+\vspace{10pt}
+
+\centerline{\large 6 - 9 June 2017}
+\vspace{20pt}
+
+%\centerline{\huge $\mathlarger{\bigoint}$}
+
+\begin{center}
+\centerline{\Large \textbf{Supported by MI-NET, \emph{Mathematics for Industry
+    Network} COST Action}}
+\vspace{10pt}
+ \includegraphics[height=4cm]{MI-Net}
+\end{center}
+
+\vspace{60pt}
+\centerline{\Large Stokes Applied Mathematics Cluster}
+\centerline{\Large School of Mathematics, Statistics and Applied Mathematics}
+\centerline{and}
+\centerline{\Large NUI Galway SIAM Student Chapter}
+\vspace{20pt}
+\begin{center}
+\includegraphics[height=1.5cm]{integral-stokes}
+\hfill
+\includegraphics[height=1.5cm]{SIAM}
+\end{center}
+\vspace{20pt}
+
+\centerline{\textsc{Organising Committee:}}
+\centerline{Michel Destrade, Roberto Galizia, Paul Greaney, Niall Madden, Martin Meere, Robert Mangan}
+\centerline{Petri Piiroinen, Eoghan Staunton, Michael Welby, Giuseppe Zurlo}
+\break
+
+\pagestyle{plain}
+\thispagestyle{plain}
+
+\setcounter{page}{1}
+\section*{Welcome}
+Dear participant,
+
+Welcome to 2017 Stokes Modelling Workshop. This is our 4th annual
+workshop, and the largest to date. The series was originally devised
+as a means of introducing undergraduate students to collaborative
+research and real-world problem solving, usually guided by staff and
+research students from the School of Mathematics, Statistics, and
+Applied Mathematics. These were  largely organised by the student
+members of our SIAM Chapter.
+
+This year, for the first time, we are funded, in part, by 
+MI-NET, the \emph{Mathematics for Industry    Network} COST Action.
+This has allowed us to extend the workshop in a number of ways:
+\begin{itemize}
+\item Involve industry partners who have proposed problems that you
+  will be working on this week;
+\item Bring skilled and experienced mentors to NUI Galway to support
+  teams;
+\item Widen the participation to involve graduate students from near
+  and far.
+\end{itemize}
+Nonetheless, the main core principles of our first three workshops
+remain in place: we welcome undergraduate and graduate participants
+from different disciplines,
+encourage creative thinking, clear communication, and supportive team
+work.
+
+We are delighted to welcome our mentors,  Art, Doireann, John, Luca and
+Tuoi, and look forward to working with them, and learning from them,
+over the coming week.
+
+We are grateful to our industrial partners from IBM Research,
+Medtonic, and MET Eireann for providing problems of industrial and
+societal relevance, and for being present (in person or virtually) to
+present these problems.
+
+Ostensibly, our collective goal will be to optimally pack catheters,
+place rainfall radar equipment, model rivers converging, visualise 3D
+objects using 2D images, and get ketchup out of a bottle.
+More fundamentally, our aims  are to raise awareness of the potential
+of mathematical modelling in industry and society,
+to challenge ourselves to think creatively, and to  apply our
+mathematical skills and knowledge and to real-world problems.
+
+We hope to create a relaxed environment, where everyone can contribute
+their talents and skills, and  work together collaboratively.
+
+We would like to express our gratitude to the School of Mathematics,
+Statistics and Applied mathematics who, through the Stokes Applied
+Mathematics Cluster have provided support for  undergraduate
+participants, to the NUI Galway SIAM Chapter, and, of  course, MI-NET.
+
+Dr Niall Madden (Head of the Stokes Applied Mathematics Cluster)\\
+  \mbox{ \quad }  On behalf of the organising committee.
+
+
+\newpage
+
+{\textbf{\huge Participants}}\\
+
+\begin{small}
+\begin{minipage}[t]{0.45\textwidth}
+\begin{tabular}{l l}
+\textbf{Name}&\textbf{Institution}\\
+  Al Baydli, Daher &	NUI Galway \\
+  Allen, James & University of Surrey \\
+  Alssaedi, Faiza &	NUI Galway \\
+%  Andradei, Evismar &	NUI Galway \\
+  Atan,  	Reduan &	NUI Galway \\
+  Burke, 	Richard &	NUI Galway \\	
+  Cloherty, 	Philip &	NUI Galway \\	
+  Collins,  	Jack &	NUI Galway \\
+                       Colson, 	David &	NUI Galway \\	
+  Conroy Broderick, 	Hannah & NUI Galway \\	
+Cormican,	John &	NUI Galway \\	
+Donnelly,	Cliona &	NUI Galway \\	
+Dubovskaya,	Alina &	University of Limerick \\ 
+Galizia,	Roberto   &	NUI Galway\\	
+Geraghty,	Samuel &	NUI Galway \\	
+Greaney,	Paul &	NUI Galway \\	
+  Hanley, Tracey & NUI Galway\\
+  Hill, Aoife&	NUI Galway \\	
+Hill, R\'ois\'in &	NUI Galway \\	
+Kamperis, Sam &	Oxford Brookes\\
+Mangan, Robert &	NUI Galway\\
+\end{tabular}
+\end{minipage} 
+%
+\begin{minipage}[t]{0.1\textwidth}
+
+~
+
+
+\end{minipage} 
+%
+\begin{minipage}[t]{0.45\textwidth}
+\begin{tabular}{l l}
+\textbf{Name}&\textbf{Institution}\\
+ 	Marshall, Christine &	NUI Galway\\
+Martin, Richard &	NUI Galway\\
+Mary,	Rose &	IT Carlow\\
+  Mayah, Faik &	NUI Galway\\
+Moran,	Claire &	NUI Galway\\
+  Okeke,	Saviour &	IT Carlow\\
+  Onaga,	Tomokatsu & University  of Kyoto \\
+Phoenix, 	Anna &	NUI Galway\\
+Qiu,	Songkai &	NUI Galway\\
+Rawle, 	Noeleen &	NUI Galway\\
+Regan,	Brian &	NUI Galway\\
+Samantray, Suman &	NUI Galway\\
+Sheil,	Ashley &	Maynooth University\\
+Smyth,	David &	NUI Galway\\
+Staunton, Eoghan &	NUI Galway\\
+Suleiman, Issah Nazif  &	Univeristy of Verona\\
+Urbas, Szymon &	NUI Galway\\
+Walsh,	Dylan &	NUI Galway\\
+Walsh,	Shane &	UCD\\
+Wisdom,	Adrian & 	NUI Galway\\
+%&\verb email+\\
+\end{tabular}
+\end{minipage}
+\end{small}
+\vspace{10pt}
+
+
+\vspace{1cm}
+
+
+{\textbf{\huge Trainers}}\\
+
+\begin{minipage}[t]{0.45\textwidth}
+\begin{tabular}{l l}
+\textbf{Name}&\textbf{Institution}\\
+John Donohue & MACSI, University of Limerick\\
+Artur Gower & University of Manchester\\
+Luca Manzari & Stockholm's Royal Institute of Technology\\
+Fergus McAuliffe & iCRAG -- University College Dublin\\
+Doireann O'Kiely & University of Oxford\\
+Thi Ngoc Tuoi Vo & MACSI, University of Limerick
+\end{tabular}
+\end{minipage}
+
+\vspace{1cm}
+
+{\textbf{\huge Industry partners}}\\
+
+\begin{minipage}[t]{0.45\textwidth}
+\begin{tabular}{l l}
+\textbf{Name}&\textbf{Institution}\\
+Colm Clancy, & MET Eireann\\
+  David Clarke & Medtronic\\
+  Jack O'Callaghan & Medtronic\\
+  Seshu Tirupathi  & IBM Research
+\end{tabular}
+\end{minipage}
+
+
+
+\break
+\onehalfspace
+
+%\centerline{\textbf{\huge Schedule}}
+\hspace*{-50pt}\includegraphics[angle=90,width=1.1\textwidth]{Schedule1}
+
+\newpage
+
+
+{\textbf{\huge Practicalities}}\\
+
+
+\begin{description}
+\item [Problem allocation:]
+  Presentations of the modelling problems will take place from 10:00am in
+  AM150. After that, you will have the opportunity to indicate which
+  problems you would like to work on; based on that, we'll allocate
+  everyone to teams. Please make sure you complete your Problem
+  Preference Form and return it to the organisers.
+
+
+\item[Wifi] For Wifi Access, connect to \texttt{NUIGWifi}.\\
+    User ID: \texttt{9876001T}\\
+    Password: \texttt{htbps4729}
+
+  \item[Lunch:] Most participants will have received vouchers valued
+    at \euro 7 which can be redeemed at An Bhialann.
+    
+  \item[Networking Dinner:] There will be a Workshop Dinner for
+    participants on Thursday at 6.45 in The Brasserie, Eglington
+    St. The cost of food (but not drinks) will be covered by 
+    the organisers.
+  
+\end{description}
+
+
+
+%%%\centerline{\textbf{\huge Problem Descriptions}}
+%%%\vspace*{-10pt}
+%%%
+%%%\section{Spread of Infectious Diseases in Human Populations}
+%%%\begin{center}
+%%%{\textit{Skills required:} Differential equations, numerical methods, some computational software (Matlab, Mathematica, R, C, Fortran, etc.)}
+%%%\end{center}
+%%%
+%%%\noindent \textbf{Background.} An \textit{infection} is the invasion of an organism's body tissues by disease-causing agents and the reaction of host tissues to these organisms. An \textit{infectious disease} is the illness resulting from an infection. Infections are typically caused by infectious agents such as viruses, viroids, prions, bacteria, nematodes, arthropods, fungi and other macroparasites. Hosts can fight infections using their immune system. Mammalian hosts react to infections with an innate response, often involving inflammation, followed by an adaptive response. Specific medications used to treat infections include antibiotics, antivirals, antifungals, antiprotozoals, and antihelminthics. Infectious diseases resulted in 9.2 million deaths in 2013 (about 17\% of all deaths) (Source: Wikipedia).
+%%%\vspace{5pt}
+%%%
+%%%\noindent \textbf{Problem.} Consider a population living on an island in which an infectious disease can spread. Build one or more mathematical models that can predict the number of individuals that may be infected or even die due to the disease. There are a number of possible scenarios that you can consider, for instance, the possibility of immunization through vaccination and the cost and benefit of this, different ways (direct contact, drinking water, mosquitoes etc.) in which the disease can spread and how isolated populations may be affected differently than a well-mixed population.
+%%%
+%%%
+%%%One of the most common mathematical models that deals with the spread of infectious diseases is the $SIR$ model, which is framework based on compartments where each compartment represents a sub-group of the population. The model is typically made up of a system of nonlinear ordinary differential equations and normally $S$ stands for the Susceptible group, $I$ stands for the Infected group and $R$ stands for the Recovered group. Since the SIR framework is very flexible it is easy to alter or extend it to encompass specific situations and can thus be used to answer specific questions.  
+%%%
+%%%There is plenty of information about infections diseases and SIR models in the literature. The task for the group working on this problem is to define a set specific problems of varied complexity that can be formulated mathematically and solved analytically and/or numerically.
+%%%
+%%%\begin{figure}[h!]
+%%%\centering
+%%%\includegraphics[width=0.6\textwidth]{Decision.png}
+%%%\caption{Schematic of a decision model for vaccination. Figure from: Feng Fu, Daniel I.~Rosenbloom, Long Wang, Martin A.~Nowak, \textit{Imitation dynamics of vaccination behaviour on social networks}, Proceedings of the Royal Society B 278, pp.~42--49, July 2010. DOI: 10.1098/rspb.2010.1107}
+%%%\end{figure}
+%%%
+%%%\break
+%%%
+%%%\section{Playing with Elasticity}
+%%%\begin{center}
+%%%{\textit{Skills required:} Basic mechanics and elasticity, ordinary and partial differential equations, numerical analysis, equations of vibrating strings and beams.}
+%%%\end{center}
+%%%
+%%%A remarkable guitarist (portrayed below, left), after finishing his musical studies and having reached the hall of fame, decides to engage with yet another hurdle: to study Applied Mathematics. One day, while relaxing after study with a guitar in his hands, he starts wondering about questions that a famous Italian luthier from Cremona, Antonio Stradivari (portrayed below, right), had answered a long time before him with fantastic intuitions: how do the vibrations of a string reach our ears? What is the role of the {\it soundboard} (the holed piece of wood) and of the {\it bridge} (the device that supports the strings, close to our guitar-hero's right hand)? Presumably, the same basic mechanisms hold for all {\it stringed instruments} (piano, violin, guitar, ukulele\dots). 
+%%%
+%%%\bigskip
+%%%
+%%%Unfortunately, Stradivari's secrets were buried with him. For this reason, nowadays (outrageously rich) musicians from all over the world prefer spending amazing amounts of money to get his original instruments than buying new ones (the {\it Lady Blunt} violin from Stradivari was recently sold for $\$$15,984,000). So, as you may imagine, a rational unveiling of Stradivari's secrets may end up being very rewarding\dots 
+%%%
+%%%\begin{figure}[!h]
+%%%\centering
+%%%\includegraphics[height=0.35\textwidth]{Me}
+%%%\includegraphics[height=0.35\textwidth]{Antonio_Stradivari_portrait}
+%%%\end{figure}
+%%%
+%%%\noindent Your tasks in this project are: 
+%%%\vspace*{-5pt}
+%%%\begin{itemize}
+%%%\item[1.] first of all, we need to have a very simple, {\it one-dimensional} model of the string-bridge-soundboard system. The elastic behaviour of all elements, their mass and their damping must be accounted for. This should end up with a system of ODEs that we shall solve analytically (or numerically). Can we associate sounds, together with plots, to understand what happens in each item? 
+%%%\item[2.] the second step is very hard. How are string vibrations {\it actually} transmitted to the soundboard across the bridge? Here we shall turn to a {\it two-dimensional} model. We shall try to understand the interaction between string and beam vibrations, in particular trying to understand what happens in the bridge! This should end up with a system of PDEs, that we may try solving and\dots animating to create a movie!
+%%%\item[3.] after having successfully accomplished with this project, you may start your own violin brand and\dots become rich! 
+%%%\end{itemize}
+%%%\vspace*{-10pt}
+%%%%\begin{figure}[h!]
+%%%%\centering
+%%%%%\includegraphics[width=0.6\textwidth]{Lakes}
+%%%%\caption{Caption}
+%%%%\end{figure}
+%%%%
+%%%%\vspace*{-5pt}
+%%%
+%%%%\begin{table}[!ht]
+%%%%\small
+%%%%%\begin{adjustwidth}{.4in}{.4in}
+%%%%\centering % used for centering table
+%%%%\begin{tabular}{c c c c c c} % centered columns (5 columns)
+%%%%\hline\hline %inserts double horizontal lines
+%%%%%heading
+%%%%\hline % inserts single horizontal line
+%%%%\end{tabular}
+%%%%\caption{Data}
+%%%%\vspace*{-15pt}
+%%%%\end{table}
+%%%
+%%%
+%%%\break
+%%%
+%%%\section{Modelling Fort McMurray}
+%%%\begin{center}
+%%%\textit{Skills required:} Differential equations
+%%%  (probably) and numerical analysis (definitely)
+%%%\end{center}
+%%%
+%%%On 1 May 2016, a \href{https://en.wikipedia.org/wiki/2016_Fort_McMurray_wildfire}{wildfire} broke out about 15 km from Fort McMurray, an oil town in northern Alberta with a population of over 60,000. Within two days, it had grown to engulf part of the town, destroying several thousand buildings, and forcing a mass evacuation.
+%%%\autoref{fig:satellite} shows composite images produced at the NASA
+%%%Earth Observatory demonstrating the development of the fire over one day.
+%%%The fire is still burning.
+%%%
+%%%\begin{figure}[h!]
+%%%\centering
+%%%\includegraphics[width=0.45\textwidth]{SatelliteMay3} ~
+%%%\includegraphics[width=0.45\textwidth]{SatelliteMay4}
+%%%\caption{Satellite images of the Fort McMurray Fire on 3 May (left)
+%%%  and 4 May (right), from \href{http://landsat.gsfc.nasa.gov/}{NASA
+%%%    Landsat project.} Credit:  NASA Earth Observatory}
+%%%\label{fig:satellite}
+%%%\end{figure}
+%%%
+%%%There were numerous contributing factors to the rapid growth of the fire, including the unusually dry winter, and unseasonably high
+%%%temperatures at the time of the outbreak.
+%%%
+%%%Could the spread of the fire have been predicted? Your job is to develop a model of the spread of a wildfire, taking into account factors like wind, air temperature, precipitation, etc. Then this model should be used to simulate (numerically) the spread of the fire, providing a tool that can be used by those who need to plan evacuations, fire-fighting strategies, etc.
+%%%
+%%%The team working on this project will
+%%%\begin{itemize}
+%%%\item devise a simple model for the spread of wildfire;
+%%%\item locate suitable data to parameterize and validate the model;
+%%%\item implement a suitable numerical scheme so the model can be used to generate simulations to obtain predictions;
+%%%\item discuss how the model could be made more realistic and/or applied to realistic settings such as the Fort McMurray fire.
+%%%\end{itemize}
+%%%
+%%%\vspace*{-10pt}
+%%%
+%%%\break
+%%%
+%%%\section{Who's the Bas?}
+%%%\begin{center}
+%%%{\textit{Skills required:} ODEs and PDEs, special functions, taste for numerics}
+%%%\end{center}
+%%%
+%%%I'm working for a French sports company looking to expand its activity to Ireland. 
+%%%From a quick search I found out that the market for hurley sticks is quite large (half a million units or so produced annually), and that there might be some room for improvement in the design.
+%%%It seems all hurls are made from ash, except for one company making synthetic ones.
+%%%The concept of a ``sweet spot" also seems really important, especially now that penalties have to be taken from the 20m line.
+%%%\\[12pt]
+%%%I'd like to find out:
+%%%\begin{itemize}
+%%%\item 
+%%%Can the sweet spot area be related to the modes of vibration of the hurl's plate?
+%%%\item
+%%%Are those vibration modes affected by the addition of a metal plate, or of a resin coat, or of the orientation of the wood grain? 
+%%%\item
+%%%Can a synthetic hurl be designed to take advantage of the knowledge on vibration modes? 
+%%%\end{itemize}
+%%%To answer these questions we can take
+%%%\begin{itemize}
+%%%\item the analytic route: using simplified geometries and special functions to solve the plate equations exactly;
+%%%\item the numerical route: using {\sc abaqus}, {\sc matlab}, {\sc maple} to simulate ball/bas striking events;
+%%%\item a combination of both or more! 
+%%%\end{itemize}
+%%%
+%%%\vspace*{5pt}
+%%%\noindent
+%%%
+%%%
+%%%\vspace*{30pt}
+%%%\begin{figure}[h!]
+%%%\centering
+%%%\includegraphics[height=0.35\textwidth]{hurleys-2.jpg}
+%%%\includegraphics[height=0.35\textwidth]{img_slider_left_2.png}
+%%%\caption{Hurls made of Ash tree vs synthetic hurls}
+%%%\end{figure}
+
+
+\end{document}
+
+
+
+
+
+

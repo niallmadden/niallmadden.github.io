@@ -1,0 +1,139 @@
+\usepackage{calc}               % Simple computations with LaTeX variables
+%\usepackage[hang]{caption2}     % Improved captions
+
+\usepackage{graphicx}           % Standard graphics package
+
+\usepackage{amsmath, amsthm, amssymb}
+
+
+\newcommand{\fquad}{\mbox{\qquad}}
+\newcommand{\bull}{$\bullet$ }
+
+\newcommand {\I} {\mathcal I}
+\newcommand {\calI} {\mathcal I}
+\def\disint{\displaystyle\int}
+
+\DeclareMathOperator{\D}{d}
+\newcommand{\dydx}{\frac{\D y}{\D x}}
+
+%\definecolor{gray}{rgb}{0.69, 0.69, 0.69} \newcommand{\gray}[1]{\textcolor{gray}{#1}}
+\definecolor{dogreen}{rgb}{0.33, 0.42, 0.18} \newcommand{\dogreen}[1]{\textcolor{dogreen}{#1}}
+\definecolor{maroon}{rgb}{.5,0.2,0.2}\newcommand{\maroon}[1]{\textcolor{maroon}{#1}}
+\definecolor{greena}{rgb}{.1,0.581,0.1}\newcommand{\greena}[1]{\textcolor{greena}{#1}}
+
+\definecolor{blue4}{rgb}{0,0,.545}
+\newcommand{\Blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\Red}[1]{\textcolor{red}{#1}}
+\definecolor{pink}{rgb}{1.,0.75,0.8}
+\definecolor{darkred}{rgb}{0.5,0.0,0.0}
+\definecolor{darkgreen}{rgb}{0,0.3,0.3}
+\definecolor{purple}{rgb}{0,0.3,0.3}
+\definecolor{darkblue}{rgb}{0.0, 0.0, .5}
+\definecolor{dpurple}{rgb}{.3,.0,.3}
+\newcommand{\Green}[1]{\textcolor{darkgreen}{#1}}
+\newcommand{\DRed}[1]{\textcolor{darkred}{#1}}
+\newcommand{\DBlue}[1]{\textcolor{darkblue}{#1}}
+\newcommand{\Purple}[1]{\textcolor{dpurple}{#1}}
+\newcommand{\Emph}[1]{\textcolor{darkred}{\textbf{\it #1}}}
+\newcommand{\remph}[1]{\textcolor{darkred}{\textbf{\emph{#1}}}}
+\newcommand{\bemph}[1]{\textcolor{darkblue}{\textbf{\emph{#1}}}}
+\newcommand{\gemph}[1]{\textcolor{darkgreen}{\textbf{\emph{#1}}}}
+\newcommand{\Bf}[1]{\textcolor{darkblue}{\textbf{#1}}}
+\newcommand{\Gf}[1]{\textcolor{darkgreen}{\textbf{#1}}}
+\newcommand{\Rf}[1]{\textcolor{red}{\textbf{#1}}}
+\newcommand{\Rmf}[1]{\textcolor{red}{\mathbf{#1}}}
+
+\newcommand{\Conj}[1]{\overline{#1}}
+
+\newcommand{\code}[1]{\textcolor{darkblue}{\texttt{\textbf{#1}}}}
+\newcommand{\icode}[1]{{\blue\texttt{\textbf{\emph{#1}}}}}
+\newcommand{\gcode}[1]{{\Green{\texttt{\textbf{\emph{#1}}}}}}
+\newcommand{\out}[1]{\texttt{\emph{\textbf{\Green{#1}}}}}
+
+
+
+
+
+\newenvironment{vminipage}%
+{\begin{Sbox}\begin{minipage}\begin{small}\begin{verbatim}}%
+{\end{verbatim}\end{small}\end{minipage}\end{Sbox}\fbox{\TheSbox}}
+
+\newenvironment{nminipage}%
+{\begin{Sbox}\begin{minipage}}%
+{\end{minipage}\end{Sbox}\fbox{\TheSbox}}
+
+
+\let\Arg\relax\DeclareMathOperator{\Arg}{\mathtt{Arg}}
+\let\Arg\relax\DeclareMathOperator{\e}{\mathtt{e}}
+
+\newcommand {\AND} {\wedge}
+\newcommand {\OR} {\vee}
+\newcommand {\NOT} {\neg}
+\newcommand {\IMPLIES} {\rightarrow}
+%\newcommand {\IFF} {\leftrightarrow}
+\renewcommand {\iff} {\Leftrightarrow}
+\newcommand {\NAND} {\uparrow}
+\newcommand {\NOR} {\downarrow}
+\newcommand {\XOR} {\otimes}
+
+\newenvironment{citemize}% Colour items
+{\begin{description}}%
+{\end{description}}
+
+\newcommand {\maroonitem}{\item[\maroon{$\bullet$}]}
+
+\newcommand {\gitem} {\item {\includegraphics[width=.4cm,angle=-10]{img/green-bullet-on-white.ps}}}
+\newcommand {\ritem} {\item {\includegraphics[width=.4cm,angle=-10]{img/red-bullet-on-white.ps}}}
+\newcommand {\yitem} {\item {\includegraphics[width=.4cm,angle=-10]{img/yellow-bullet-on-white.ps}}}
+\newcommand {\bitem} {\item {\includegraphics[width=.4cm,angle=-10]{img/blue-bullet-on-white.ps}}}
+
+\newcommand {\greenitem} {\item {\includegraphics[width=.4cm,angle=-10]{img/green-bullet-on-white.ps}}}
+\newcommand {\reditem} {\item {\includegraphics[width=.4cm,angle=-10]{img/red-bullet-on-white.ps}}}
+\newcommand {\yellowitem} {\item {\includegraphics[width=.4cm,angle=-10]{img/yellow-bullet-on-white.ps}}}
+\newcommand {\blueitem} {\item {\includegraphics[width=.4cm,angle=-10]{img/blue-bullet-on-white.ps}}}
+
+\newcommand {\eq}[1]%
+  {$\DBlue{#1}$}
+\newcommand {\eqd}[1]%
+  {$\displaystyle\DBlue{#1}$}
+%\newcommand{\eq}[1]{\boldmath \DBlue{$#1$}}
+
+
+\newcommand {\csf}{\centerslidesfalse}
+\newcommand {\cst}{\centerslidestrue}
+
+\newcommand {\vecii}[2] {   \big(\begin{smallmatrix} #1 \\ #2 \end{smallmatrix}\big)}
+\newcommand{\atwo}[2]{\left(\!\!\begin{array}{c} #1 \\ #2 \end{array}\!\!\right)}
+
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\protect\mathbb{Z}}  % protect for index.
+\newcommand {\Rs}{ \mathbb{R}}
+\newcommand {\Cs}{ \mathbb{C}}
+\newcommand {\Rnn}{ \mathbb{R}^{n \times n}}
+\newcommand {\Rn}{ \mathbb{R}^{n}}
+
+
+\newcommand{\mblock}{%
+\setbeamercolor*{block title}{bg=maroon,fg=white}
+\setbeamercolor*{block body}{bg=white,fg=maroon}
+}%
+
+\newcommand{\bblock}{%
+\setbeamercolor*{block title}{bg=Steel,fg=white}
+\setbeamercolor*{block body}{bg=Mylightgray,fg=Steel}
+}%
+
+\newcommand{\gblock}{%
+\setbeamercolor*{block title}{bg=Green,fg=white}
+\setbeamercolor*{block body}{bg=Mylightgray,fg=darkgreen}
+}%
+
+
+\newcommand{\rblock}{%
+\setbeamercolor*{block title}{bg=Red,fg=white}
+\setbeamercolor*{block body}{bg=white,fg=Black}
+}%

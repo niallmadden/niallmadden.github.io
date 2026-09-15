@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <!-- ENTER  PAGE TITLE  HERE -->
+    <title>MA211/232 -- Calculus 1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link rel="stylesheet" href="http://www.maths.nuigalway.ie/style.css" type="text/css"/>
+  </head>
+
+<body>
+    <!--#set var="incl" value="/includes" -->
+    <!--#include virtual="$incl/header.shtml" -->
+
+
+<center>
+<table bgcolor="#ffffff" border="10" bordercolor="#930000" width="90%">
+<tr fgcolor="#930000">
+<td>
+<center>
+<font color="#930000" size="+1">
+This is  the <b>archived</b> MA208 web page from <b>2008/2009</b>.<br />
+If you are looking for the page for the current academic year, please
+      see <a href="https://nuigalway.blackboard.com/">nuigalway.blackboard.com</a>,
+      or contact the module's lecturer.
+</center>
+</td>
+</tr>
+</table>
+</center>
+
+<h1 align=center>
+MA211/232 - Calculus 1 (08/09)
+</h1>
+
+<p style="margin-bottom: 0in;" align="center"><a name="Course Information"></a>
+<h2><font color="#000050">Course Information</font></h1>
+<table border="0" cellpadding="6" cellspacing="2">
+	<col>
+	<col>
+	<col>
+	<col>
+	<tbody><tr valign="top">
+		<td align="right"><b>Lecturer:</b></td>
+		<td align="left">Dr Niall Madden <br>Room C213, Aras
+			  de Brun	<br>Phone:&nbsp; (353) (0)91 493803 <br>Email:
+	      <a href="mailto:Niall.Madden@NUIGalway.ie">niall.madden@nuigalway.ie</a>
+	</tr>
+
+	  <tr valign="top">
+	    <td align="right"><b>Lectures:</b>	    </td>
+	    <td align="left">Monday and Wednesday at 11am, Cairnes
+			Lecture Theatre</td>
+	  <tr valign="top">
+	    <td align="right"><b>First Lecture:</b>	    </td>
+	    <td align="left">Monday, Sep 8th, 2008</td>
+	  <tr valign="top">
+	    <td align="right"><b>Tutorials: </b></td>		
+	    <td><em>To be arranged</em></td>
+	</tr>
+	  <tr valign="top">
+		<td align="right"><b>Course Content:</b></td>
+		<td align="left">Methods of integration. Differential
+			  equations.</td>
+	</tr>
+	  <tr valign="top">
+		<td align="right"><b>Assessment:</b></td>
+		<td>Class test, homework and 2 hour written exam at the end of
+			Semester 1</td>
+	</tr>
+	  <tr valign="top">
+		<td align="right"><b>Web site:</b></td>
+		<td>Most online materials will be posted here, and
+		mirrored
+		at <a href="http://blackboard.nuigalway.ie">Blackboard.NUIGalway.ie</a>. Some
+		things (grades, homework solutions, announcements,
+		links, ...) will only be posted to Blackboard.<br />
+		 Copies of <b>Lecture slides</b>  will be available no later than
+	      9.30 on the day of the lecture. <b>Please  print these
+		 and bring them with you to lectures.</b>
+
+	</tr>
+
+</tbody></table> 
+</center>
+
+</ol>
+
+
+
+<hr>
+<h3>Lectures</h3>
+
+<ol>
+<li> <b>Lecture 1</b>: <a href="Lecture01.pdf">Introduction to
+		MA211</a>. (<em><a href="Lecture01-3x2.pdf">3x2 version</a></em>).
+
+<li> <b>Lecture 2</b>: <a href="Lecture02.pdf">Revision: Sets and Functions</a>. (<em><a href="Lecture02-2x2.pdf">2x2 version</a></em>).
+
+<li> <b>Lecture 3</b>: <a href="Lecture03.pdf">Intro to Limits</a>. (<em><a href="Lecture03-2x2.pdf">2x2 version</a></em>).
+
+<li> <b>Lecture 4</b>: <a href="Lecture04.pdf">Limits and Derivatives</a>. (<em><a href="Lecture04-2x2.pdf">2x2 version</a></em>).
+
+<li> <b>Lecture 5</b>: <a href="Lecture05.pdf">Caclulating Derivatives</a>. (<em><a href="Lecture05-2x2.pdf">2x2 version</a></em>).
+		      
+<li> <b>Lecture 6</b>: <a href="Lecture06.pdf">Antiderivatives and
+			    Differential Equations</a>. (<em><a href="Lecture06-2x2.pdf">2x2 version</a></em>).
+<li> <b>Lecture 7</b>: <a href="Lecture07.pdf">Logs and exponentials</a>. </li>
+<li> <b>Lecture 8</b>: <a href="Lecture08.pdf">Hyperbolic functions</a>. </li>
+<li> <b>Lecture 9</b>: <a href="Lecture09.pdf">2nd order    Differential Equations</a>. </li>
+<li> <b>Lecture 10</b>: <a href="Lecture10.pdf">2nd order DEs with   constant coefficients</a>. </li>
+<li> <b>Lecture 11</b>: <a href="Lecture10.pdf">2nd order DEs: <em>D<0</em></a>. </li>
+<li> <b>Lecture 12</b>: <a href="Lecture12.pdf">Class test</a>. </li>
+<li> <b>Lecture 13</b>: <a href="Lecture13.pdf">Nonhomogeneous   DEs </a>. </li>
+<li> <b>Lecture 14</b>: <a href="Lecture14.pdf">Nonhomogeneous   DEs (continued).</a>. </li>
+<li> <b>Lecture 15</b>: <a href="Lecture15.pdf">Nonhomogeneous    2nd-order DEs (final part). Series solutions.</a>. </li>
+<li> <b>Lecture 16</b>: <a href="Lecture15.pdf">Series solutions. Integration</a>. </li>
+<li> <b>Lecture 17</b>: <a href="Lecture17.pdf">Techniques of Integration</a>. </li>
+<li> <b>Lecture 18</b>: <a href="Lecture18.pdf">Integration by parts</a>. </li>
+<li> <b>Lecture 19</b>: <a href="Lecture19.pdf">Improper integrals: Type 1</a>. </li>
+<li> <b>Lecture 20</b>: <a href="Lecture20.pdf">Improper integrals: Type 2</a>. </li>
+<li> <b>Lecture 21</b>: <a href="Lecture21.pdf">1st order differential
+    equations (Part 1)</a>. </li>
+<li> <b>Lecture 22</b>: <a href="Lecture22.pdf">1st order differential
+    equations (Part 2)</a>. </li>
+<li> <b>Lecture 23</b>: <a href="Lecture23.pdf">Integrating factors. Review.</a>. </li>
+		      
+</ol>
+
+
+<hr>
+<h3>Problem Sets</h3>
+
+<ol>
+<li><b><a href="PS1.pdf">Problem Set 1</a></b>. Submit carefully
+		written solutions to Exercises 1.1, 2.4(i), 2.4(iii),
+		4.2(i), 5.1(i), and 5.5(i) no later than <b>11am
+		  06/10/08</b>
+<li><b><a href="PS2.pdf">Problem Set 2</a></b>. Deadline is 15/10/08.
+<li><b><a href="PS3.pdf">Problem Set 3</a></b>. Deadline is 07/11/08.
+<li><b><a href="PS4.pdf">Problem Set 4</a></b>. 
+<li><b><a href="PS5.pdf">Problem Set 5</a></b>.  Deadline is 12/12/08.
+</ol>
+
+<hr>
+
+
+<Hr>
+
+
+  <!-- END PAGE CONTENTS -->
+        <!--#include virtual="$incl/footer.shtml" -->
+    </body>
+</html>

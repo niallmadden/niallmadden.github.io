@@ -1,0 +1,185 @@
+<html>
+  <head>
+    <title>Stokes Modelling Workshop 2017: Reports</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+  </head>
+  
+  <body>
+    <!--#set var="incl" value="/includes" -->
+    <!--#include virtual="$incl/header.shtml" -->
+    <!-- ENTER PAGE CONTENTS BELOW HERE -->
+    
+    <center>
+      <p>
+	<font size="+1" color="#881010"><b>Report on the 4th annual</b>
+	</font><br />
+	<font size="+3" color="#881010"><b>Stokes Modelling
+	    Workshop</b>
+	</font>
+      </p>
+      
+      
+      <p><font size="+1">NUI Galway, 6 - 9 June, 2017
+	</font>
+      </p>
+    </center>
+    
+
+    <div align="center">
+      <a href="https://mi-network.org"
+	 target="_blank"><img height="50px" src="MI-Net.png" alt="MI-NET"/>
+      </a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="http://www.maths.nuigalway.ie/stokes"
+	 target="_blank">
+	<img height="50px" src="Stokes.png" alt="Stokes"/>
+      </a>
+      <!--  <a href="http://www.maths.nuigalway.ie/SIAM-Galway"
+      target="_blank">
+	<img width=190px src="SIAM.png"></a>-->
+    </div>
+
+    <p>The Stokes Modelling week took place at NUI Galway in June
+    2017.</p>
+
+    <p>Where are the best places to put rain-fall radar systems? How
+      do you pack a catheter? Can you create a 3D images from 2D
+      photos?
+      Where are convergent rivers likely to flood? And how do you get ketchup from a bottle? These were the questions posed to teams of students from all over Ireland and the UK, who gathered at NUI Galway for the Stokes Modelling Workshop, hosted by the School of Mathematics, Statistics and Applied Mathematics, 6-9 June.</p>
+
+<p>This was the 4th Modelling Workshop, organised by the Stokes
+  Cluster for Applied Mathematics. For the first time, the event was
+  funded by the "<a href="https://mi-network.org">Mathematics for
+  Industry Network</a> COST Action, and problems were 
+posed by partners in MET Eireann, Medtronic and IBM Research.</p>
+
+    <p>The Workshop had
+    40 <a href="Participants.shtml">registered
+    participants</a> including graduate students (funded by MI-NET)
+    and undergraduate students (funded by the Stokes Cluster).</p>
+      
+    <div align="center">
+      <a href="StokesParticipants2017.jpg" target="_blank">
+	<img width="90%" src="StokesParticipants2017.jpg"
+	     alt="Stokes Modelling"/>
+      </a>
+    </div>
+    <p>
+      Participants were supported in their modelling work by our
+      team of experienced mentors:
+      <a href="http://ulsites.ul.ie/macsi/node/45601">John Donohue</a> (MACSI, University of Limerick);
+      <a href="http://www.maths.manchester.ac.uk/people/staff/profile/?ea=artur.gower">Artur
+      Gower</a> (University of Manchester); 
+      <a href="https://www.kth.se/profile/manzari">Luca
+      Manzari</a> (KTH Royal Institute of Technology,  Stockholm); 
+      <a href="https://www.maths.ox.ac.uk/people/doireann.okiely">Doireann
+	  O'Kiely</a> (University of Oxford); and 
+      <a href="http://ulsites.ul.ie/macsi/tuoi-vo-profile">Thi
+	Ngoc Tuoi Vo</a> (MACSI, University of Limerick).
+      In
+      addition, <a href="https://www.linkedin.com/in/fergusmcauliffe/?ppe=1">
+	Fergus McAuliffe</a> (iCRAG, UCD) will deliver a workshop on
+	science communication.
+    </p>
+
+    <div align="center">
+      <a href="StokesMentors.jpg"> 
+	<img width="50%"
+	     src="Photos/tn/StokesMentors.jpg"
+	     alt="Stokes Mentors"/>
+	</a>
+    </div>
+
+
+
+    <h2><a name="problems">Reports:</a></h2>
+    <p>The workshop participants worked in small groups on problems
+      posed by industry partners.</p>
+    <ol>
+      <li><b>The Meeting of the Rivers</b>
+	<ul>
+	  <li>
+	    Report on "<em><a href="01IBM_problem.pdf">Shallow Water Equations for River Flows</a></em>", proposed by
+	    Seshu Tirupathi, IBM Research, Ireland.
+	  </li>
+	  <li>
+	    Team members: Faiza Alssaedi, Artur Gower (mentor),
+	    R&oacute;is&iacute;n Hill, and Songkai Qiu.
+	  </li>
+	  <li>
+	    <a href="Presentations/01TheMeetingOfRivers.pdf">Presentation</a>
+	    <a href="Presentations/01RiverJunctionReport.pdf">Report</a>. 
+ 	  </li>
+	</ul>
+      </li> 
+      <li><b>Feasibility of creating a mathematical model to
+	determine hoop dimensions</b>
+      <ul>
+	<li>Team members: Aoife Hill, Rose Mary, Noeleen Rawle, Ashley
+	  Shiel, Thi Ngoc Tuoi Vo (mentor), Dylan Walsh.</li>
+      </ul>
+    </li>
+    
+	
+      <li><b>Mapping 3D Objects using a single camera</b>.
+	<ul>
+	  <li>
+	    <a href="03Mapping3D.pdf">Problem outline</a>
+	  </li>
+	  <li>
+	    Team members: Jack Collins, David Colson,
+	    Cliona  Donnelly, Sam Geragthy, Treacy Hanley,
+	    Sam Kamperis, Luca Mansari (mentor), Faik Mayah, Suman
+	    Samantray.
+	  </li>
+	  <li>
+	    <a href="Presentations/03Mapping3d.pdf">Presentation</a>
+	  </li>
+	</ul>
+
+      <li><b>Designing an optimal weather radar network for
+	  Ireland</b>.
+	<ul>
+	  <li><a href="04MET-Eireann.pdf">Problem outline</a>,
+	    presented by Dr Colm Clancy of MET Eireann.</li>
+	  <li>Team members:
+	    James Allen, Philip Cloherty, John Cormican,
+	    Padraic Flood, John Donohue (mentor),
+	    Tomokatsu Onaga,  Brian Regan, David Smyth, Szymon Urbas.
+	  </li>
+	  <li>
+	    <a href="Presentations/04optimal-radar.pdf">Presentation</a>
+	  </li>
+	</ul>
+	
+      <li><b>The role of rheology in everyday fluid flow</b>.
+	<ul>
+	  <li>
+	    <a href="05rheology.pdf">Problem outline</a>, 
+	    proposed by Doireann O'Kiely.</li>
+	  <li>Team members:
+	    Hannah Conroy Broderick, Alina Dubovskaya,
+	    Roberto Galizia, Claire Moran,
+	    Saviour Okeke,
+	    Doireann O'Kiely (mentor),
+	    Shane Walsh, Adrian Wisdom.
+	  </li>
+	  <li>
+	    <a href="Presentations/05pres.pdf">Presentation</a>
+	    </li>
+	</ul>
+      </li>
+      </ol>
+   
+
+    
+    <h2>Photos</h2>
+    <p>Here is
+      an <a href="Photos/">album
+	of photos</a> from the workshop.
+      </p>
+
+    <!-- END PAGE CONTENTS -->
+    <!--#include virtual="$incl/footer.shtml" -->
+  </body>
+</html>

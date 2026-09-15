@@ -1,0 +1,131 @@
+<html>
+<head>   
+<title>Short course on the Numerical Analysis of SPDEs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+<body>
+
+    <h1>Short course on Numerical Analysis of
+    Singularly Perturbed Problems: slides and files</h1>
+
+
+    <p>These slides and files are for a two-day  short course
+    on <b>Numerical Analysis of Singularly Perturbed Differential
+    Equations</b>, taught
+    by <b><a href="http://www.maths.nuigalway.ie/~niall">Niall
+    Madden</a></b> as part of the <a href="http://www.math.mun.ca/~smaclachlan/anasc_spde/">
+2016 AARMS-CRM Workshop on Numerical Analysis of Singularly Perturbed Differential Equations</a>
+      July 25-29, 2016, Halifax, NS, Canada. </p>
+
+    <p>These are <b><em>drafts</em></b> of the slides. If you see plot
+    any errors or typos, please contact <a href="mailto:Niall.Madden@NUIGalway.ie">Niall</a>.
+</p>
+
+<table border="0" cellpadding="6" cellspacing="2" width="90%" align="center">
+  <tbody>
+
+ <tr valign="top" bgcolor="black">
+        <td  colspan="5" align="center"><b><font size="+1"
+        color="white">Slides and files</font></b></td></tr> 
+
+<tr bgcolor="#e0e0ff">
+<td>Section 0. </td>
+<td>Outline of the workshop</td>
+<td><a href="NASPDEs_outline.pdf">Slides</a></td>
+<td></td>
+<td></td>
+</tr> 
+<tr bgcolor="#ffe0e0">
+<td>Section 1. </td>
+<td>Introduction to singularly perturbed problems</td>
+<td><a href="NASPDEs_1_IntroToSPDEs.pdf">Slides</a></td>
+<td><a href="NASPDEs_1_IntroToSPDEs_ho.pdf">Handout</a></td>
+<td></td>
+</tr>
+<tr bgcolor="#ffe0e0">
+<td>Section 2. </td>
+<td> Numerical methods and uniform convergence; 
+        FDMs and their analysis.</td>
+<td><a href="NASPDEs_2_UniConv.pdf">Slides</a></td>
+<td><a href="NASPDEs_2_UniConv_ho.pdf">Handout</a></td>
+<td></td>
+</tr>
+<tr bgcolor="#ffe0e0">
+<td>Section 3. </td>
+<td>Coupled systems</td>
+<td><a href="NASPDEs_3_Systems.pdf">Slides</a></td>
+<td><a href="NASPDEs_3_Systems_ho.pdf">Handout</a></td>
+<td></td>
+</tr>
+<tr bgcolor="#e0ffe0">
+<td>Section 4. </td>
+<td>Lab 1: Singularly perturbed ODEs</td>
+<td colspan="2"><a href="MATLAB_primer.pdf">MATLAB primer</a></td>
+<td>Files: <a href="FiniteDifference.m">FiniteDifference.m</a></td>
+</tr>
+<tr bgcolor="#e0ffe0">
+<td></td>
+<td></td>
+<td colspan="2"><a href="NASPDEs_4_Lab1_ODEs.pdf">Handout</a></td>
+ <td>Files:
+<a href="Make_1D_Fitted_Mesh.m">Make_1D_Fitted_Mesh.m</a>,
+<a href="Solve_1DRD.m">Solve_1DRD.m</a>, 
+<a href="Test_1DRD.m">Test_1DRD.m</a>,
+<a href="u_true.m">u_true.m</a>.
+  </td>
+</tr>
+<tr bgcolor="#e0ffef">
+<td><td>
+<td colspan="2"><b>Solutions</b></td>
+ <td>Files:
+<a href="Make_1D_CD_Mesh.m">Make_1D_CD_Mesh.m</a>,
+<a href="Solve_1DCD.m">Solve_1DCD.m</a>, 
+<a href="Test_1DCD.m">Test_1DCD.m</a>
+
+  </td>
+</tr>
+<tr bgcolor="#ffe0e0">
+<td>Section 5. </td>
+<td>PDEs (i): Time-dependent problems</td>
+<td><a href="NASPDEs_5_TimeDep.pdf">Slides</a></td>
+<td><a href="NASPDEs_3_TimeDep_ho.pdf">Handout</a></td>
+<td></td>
+</tr>
+<tr bgcolor="#ffe0e0">
+<td>Section 6. </td>
+<td>PDEs (ii): elliptic problems in two-dimensions</td>
+<td><a href="NASPDEs_6_PDEs.pdf">Slides</a></td>
+<td><a href="NASPDEs_6_PDEs_ho.pdf">Handout</a></td>
+<td></td>
+</tr>
+<tr bgcolor="#ffe0e0">
+<td>Section 7. </td>
+<td>Finite Element Methods</td>
+<td><a href="NASPDEs_7_FEM.pdf">Slides</a></td>
+<td><a href="NASPDEs_7_FEM_ho.pdf">Handout</a></td>
+<td></td>
+</tr>
+<tr bgcolor="#e0ffe0">
+<td>Section 8. </td>
+<td>Lab 2: Singularly perturbed PDEs</td>
+<td colspan="2"><a href="NASPDEs_8_Lab2_PDEs.pdf">Handout</a></td>
+<td>Files:
+<a href="lab2/Solve_2DRD.m">Solve_2DRD.m</a>, 
+<a href="lab2/Test_2DRD.m">Test_2DRD.m</a>,
+<a href="lab2/Problem_Data.m">Problem_Data.m</a>,
+<a href="lab2/Make_Bakhvalov_Mesh.m">Make_Bakhvalov_Mesh.m</a>.
+</tr>
+</table>
+
+
+        <!-- END PAGE CONTENTS -->
+        <!--#include virtual="$incl/footer.shtml" -->
+    </body>
+</html>

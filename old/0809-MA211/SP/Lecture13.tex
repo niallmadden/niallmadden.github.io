@@ -1,0 +1,452 @@
+% MA211 - Lecture 11
+\documentclass[pdftex, xcolor=pdftex, dvipsnames,handout]{beamer}
+
+\usetheme{MA211}
+\usepackage{thumbpdf}
+\usepackage{wasysym}
+%\usepackage{ucs}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{verbatim}
+
+\usepackage{eurosym}
+\usepackage{euler}
+
+\include{MA211stuff}
+
+\newcommand{\TakeNotes}{\includegraphics[width=2cm]{TakeNote}}
+
+\def\eps{\varepsilon}
+\newcommand {\del}[2]{ {\frac{\partial #1}{\partial #2}}}
+\newcommand {\x}[1]{x^{[#1]}}
+\newcommand {\delx}{ {\frac{\partial}{\partial x}}}
+\newcommand {\delt}{ {\frac{\partial}{\partial t}}}
+\newcommand {\dely}{ {\frac{\partial}{\partial y}}}
+\newcommand {\ith}{{(i)}}
+\renewcommand {\vec}[1]{ {\boldsymbol{#1}}}
+\newcommand {\Oh} {\mathcal O}
+\newcommand {\Err} {\mathcal E}
+%\newcommand {\th} {\mathrm{th}}
+\DeclareMathOperator{\fl}{fl}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\Cond}{Cond} 
+\DeclareMathOperator{\cond}{cond}
+\DeclareMathOperator{\diag}{diag} 
+\DeclareMathOperator{\sym}{sym} 
+\DeclareMathOperator{\Trace}{Trace}
+%\DeclareMathOperator{\D}{d}
+\DeclareMathOperator{\E}{e}
+
+\newcommand {\Rsym}{{ \mathbb{R}^{n \times n}_\mathrm{sym}}}
+
+\newcommand {\st} {\mathrm{st}}
+\newcommand {\nd} {\mathrm{nd}}
+
+
+\parskip .25cm
+
+
+\theoremstyle{definition}
+\newtheorem{exercise}{Exercise}[section]
+\newtheorem{method}{Method}[section]
+
+\newcommand{\Header}[1]{\begin{center}{\Large \Bf{#1}}\end{center}}
+
+\subtitle{MA211}
+\title{Lecture 13: Nonhomogeneous DEs}
+
+\author{Dr Niall Madden}
+
+\date{\Large Monday, $20^\mathrm{th}$ October  2008}
+
+
+\begin{document}
+
+\setcounter{framenumber}{-1}
+\frame{
+
+\begin{block}{}
+\begin{center}
+{\large \insertsubtitle}
+
+\vspace{.1cm}
+
+\begin{large}
+\textbf{\inserttitle}
+\end{large}
+
+\vspace{.15cm}
+
+% {\footnotesize \insertauthor}
+
+\vspace{.3cm}
+
+{ {\insertdate}}
+\end{center}
+\end{block}
+
+
+\vspace{-0.25cm}
+\begin{center}
+%\includegraphics[height=4cm]{images/SHM.jpg}
+
+\end{center}
+}
+
+
+
+
+\frame{
+  \frametitle{This morning's class:}
+\begin{columns}[c]
+\column{0.5\textwidth}
+ \tableofcontents
+\column{0.5\textwidth}
+For further details and examples, look at the section on
+\Emph{Nonhomogeneous Linear Equations}, Section 17.2 of Stewart
+\Emph{Calculus: early transcendentals}.
+
+\end{columns}
+}
+
+
+
+
+
+
+
+\section{Non-homogeneous Problems}
+
+\frame{
+So far this week, we  have looked at differential equations that have
+a zero right-hand side:
+\bblock
+\begin{block}{Homogeneous}
+\[ ay'' + by' + cy = \Rf{0}. \]
+\end{block}
+\pause
+Now we'll look at non-homogeneous problems:
+\vspace{-0.2cm}
+\rblock
+\begin{block}{Non-Homogeneous}
+\[ ay'' + by' + cy = \Rf{f(x)}. \]
+\end{block}
+\pause
+\vspace{-0.3cm}
+The key idea will be to 
+\vspace{-0.3cm}
+\begin{itemize}
+\item First compute the general solution to the complimentary \alert{Homogeneous} problem
+\item Work out what we need to add to  this to get the solution to the
+\alert{Non-homogeneous Problems}
+\end{itemize}
+}
+
+\frame{
+\rblock
+\begin{block}{Non-Homogeneous}
+\[ ay'' + by' + cy = \Rf{f(x)}. \]
+\end{block}
+\pause
+
+The cases we'll consider are 
+\begin{enumerate}[<+->]
+\item \eq{f} is a polynomial.
+\item \eq{f=Me^{Tx}} where \eq{M} and \eq{T} are constant.
+
+\item \eq{f} is a trig function, such as \eq{\sin} and \eq{\cos}
+
+\item Some combination of the above.
+\end{enumerate}
+
+The technique we shall use is sometimes called the \Emph{method of
+  undetermined  coefficients}.
+
+}
+
+\subsection{General Technique}
+
+\frame{
+
+Suppose we want to solve
+\eqd{ ay''(x) + by'(x) + cy(x) = \Rf{f(x)}}.
+
+
+\begin{block}{Step 1}
+Solve the corresponding \Emph{homogeneous} problem:
+\vspace{-0.3cm}
+\[ ah''(x) + bh'(x) + ch(x) = \Rf{0}.\]
+\end{block}
+
+\begin{block}{Step 2}
+Chose a suitable function \eq{u} and substitute it into the DE
+\vspace{-0.3cm}
+\[ au''(x) + bu'(x) + cu(x) = \Rf{f}\]
+%\vspace{-0.5cm}
+to determine its coefficients. This is called a \Emph{particular} solution.
+\end{block}
+\gblock
+\begin{block}{Step 3}
+To get the general solution to the original problem, set
+\vspace{-0.3cm}
+\[ y(x) = h(x) + u(x).\]
+\end{block}
+
+}
+
+\frame{
+
+\begin{block}{Theorem}
+
+If \eq{h} is the general solution to: \\ \eqd{ah''(x) + bh'(x) + ch(x) = 0}\\
+and \eq{u} is a particular solution of \\
+\eqd{u''(x) + bu'(x) + cu(x) = f(x)},\\
+ then  
+\eqd{y(x) = h(x) + u(x)} is the general solution of
+\eqd{ ay''(x) + by'(x) + cy(x) = f(x)}.
+\end{block}
+\vspace{4cm}
+
+
+}
+
+
+
+\subsection{Examples}
+
+
+\section{$f(x)$ is a polynomial}
+\frame{
+
+\rblock
+\begin{block}{$f$ is a polynomial}
+When solving the Non-homogeneous DE\\
+\hspace{2cm} \eq{  ay'' + by' + cy = \Rf{f(x)}}.\\
+where \eq{f} is a polynomial of degree \eq{n}:\\
+\hspace{2cm} \eqd{f(x) = p_0 + p_1x + p_2x^2 + \dots +p_nx^n.}
+\begin{enumerate}[<+->]
+\item Solve the homogeneous DE \eq{ah'' + bh' + ch = \Rf{0}}.
+
+\item Let \eq{u} a polynomial of the same degree as \eq{f}:\\
+\hspace{2cm} \eqd{u(x) = q_0 + q_1x + q_2 x^2 + \cdots + q_n x^n.}
+
+\item Substitute \eq{u} into the DE and solve (in order) for \eq{q_n},
+  \eq{q_{n-1}}, \dots, \eq{q_1}, \eq{q_0}.
+\item The general solution is then \eq{y(x)= h(x) + u(x)}.
+\end{enumerate} 
+
+\end{block}
+}
+
+\frame{
+\begin{example}[$f \equiv 1$]
+Find the general solution to the non-homogeneous problem:
+\[
+y'' + y' - 2y = 1.
+\]
+\end{example}
+
+\vspace{4cm}
+}
+
+
+\frame{
+\begin{example}[$f(x) = x+2$]
+Find the general solution to the non-homogeneous problem:
+\[
+y'' + y' - 2y = x+2.
+\]
+\end{example}
+
+\vspace{4cm}
+}
+\frame{
+\begin{example}[$f(x) = x^3+1$]
+Find the general solution to the non-homogeneous problem:
+\[
+y''  - y = x^3 +1.
+\]
+\end{example}
+
+\vspace{4cm}
+}
+
+\frame{
+\begin{exercise}[Q13.1]
+Find general solutions to the following differential equations:
+\begin{enumerate}
+\item  $y'' + y' - 2y =1$.
+\item $y'' - 6y' + 9y = x$.
+\item $y'' - 2y' = x^2 + 4$.
+\item  $y'' = 4x^3$.
+\end{enumerate}
+\end{exercise}
+
+}
+\section{$f(x)=Me^{Tx}$}
+
+
+\frame{
+If the right-hand side of the DE is an exponential function:
+\rblock
+\begin{block}{\eq{f = Me^{Tx}}}
+When solving the Non-homogeneous DE\\
+\hspace{2cm} \eq{  ay'' + by' + cy = \Rf{f(x)}}.\\
+where \eq{f = Me^{Tx}}:\\
+\begin{enumerate}%[<+->]
+\item Solve the homogeneous DE \eq{ah'' + bh' + ch = \Rf{0}}.
+
+\item Check if term \eq{e^Tx} appears in \eq{h}
+\begin{itemize}
+\item  If it doesn't,  set  \eq{u = Me^{Tx}}. 
+\item If it does,  set  \eq{u = Mxe^{Tx}}, or \eq{u = Mx^2e^{Tx}}.
+\end{itemize}
+(\alert{More about this later})
+
+\item Substitute \eq{u} into the DE, divide by \eq{e^{Tx}} and solve
+  for \eq{M}.
+\item The general solution is then \eq{y(x)= h(x) + u(x)}.
+\end{enumerate} 
+\end{block}
+}
+
+
+\frame{
+\begin{example}[$f(x) = e^{2x} $]
+Find the general solution to the non-homogeneous problem:
+\[
+y''  - y = e^{2x}.
+\]
+\end{example}
+
+\vspace{4cm}
+}
+
+
+\frame{
+\begin{example}[$f=e^{-3x}$]
+Find the general solution to the non-homogeneous problem:
+\[
+y''  - \sqrt{7} y' + 2 y = e^{-3x}.
+\]
+\end{example}
+
+\vspace{4.5cm}
+}
+
+\end{document}
+\frame{
+\begin{example}
+Solve the following DE
+\[
+2 y''  +  y' - y = 3e^{x/2}.
+\]
+\end{example}
+
+\vspace{4.5cm}
+}
+
+\frame{
+\begin{example}
+Solve the following DE
+\[
+ y''  +  2y' + y = 4e^{-x}.
+\]
+\end{example}
+
+\vspace{4.5cm}
+}
+
+
+
+\frame{
+\begin{exercise}[Q13.2]
+Find general solutions to the following non-homogeneous differential equations:
+\begin{enumerate}
+\item $y'' + y' - 2y =e^{-x}$.
+\item $y'' + y' - 2y = 3e^x$.
+\item $y'' + 5y' + 6y = 4e^{-2x}$.
+\item  $-3y'' + 3y' -y = \frac{1}{2}e^{-x/2}$.
+\end{enumerate}
+
+\end{exercise} 
+
+}
+
+\section{$f$ is a trigonometric function}
+
+\frame{
+%If the right-hand side of the DE is a trig function (\eq{\cos} or
+%\eq{\sin}):
+\rblock
+\begin{block}{$f$ is $\sin(Tx)$ or $\cos(Tx)$}
+When solving the Non-homogeneous DE\\
+\hspace{2cm} \eq{  ay'' + by' + cy = \Rf{f(x)}}.\\
+where \eq{f} is \eq{\sin(Tx)} or \eq{\cos(Tx)}:\\
+\begin{enumerate}[<+->]
+\item Solve the homogeneous DE \eq{ah'' + bh' + ch = \Rf{0}}.
+\begin{itemize}
+\item If \eq{f} does \Emph{not} appear as part of \eq{h}, set
+ \eq{u = z_1 \sin(Tx) + z_2\cos(Tx)}, where \eq{z_1} and
+  \eq{z_2} are some numbers.
+\item If \eq{f}  \Emph{does} appear as part of \eq{h}, set
+ \eq{u = z_1 x\sin(Tx) + z_2 x\cos(Tx)}.
+\end{itemize}
+\item Substitute \eq{u} into the DE. Get 2 equations: one for
+  \eq{\sin}  and one for \eq{cos}.
+\item Solve the 2 equations for \eq{z_1} and \eq{z_2}.
+
+\item The general solution is then \eq{y(x)= h(x) + z_1 \sin(x) + z_2 \cos(x)}.
+\end{enumerate} 
+\end{block}
+}
+
+\frame{
+\begin{example}
+Find the general solution to the non-homogeneous problem:
+\[
+4 y''  + 12 y' + 9y = \sin(\frac{x}{2}).
+\]
+
+\end{example}
+
+\vspace{4.5cm}
+}
+
+\frame{
+\begin{example}
+Find the general solution to the non-homogeneous problem:
+\[
+4 y''  + 12 y' + 9y = \sin(\frac{x}{2}).
+\]
+
+\end{example}
+
+\vspace{4.5cm}
+}
+
+
+
+\frame{
+\begin{example}
+Find the general solution to the non-homogeneous problem:
+\[
+y''  + 4 y = \cos(2x).
+\]
+
+\end{example}
+
+\vspace{4.5cm}
+}
+
+\frame{
+\begin{exercise}[Q13.3]
+ Find general solutions to the following differential equations:
+\begin{enumerate}
+\item $y'' - y =\cos(x)$.
+\item $y'' + y' - 2y =5\sin(-2x)$.
+\end{enumerate}
+\end{exercise}
+}
+\end{document}
+

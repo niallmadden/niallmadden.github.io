@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+  <title>Example from a FEM solution to a 2D parambolic problem</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+</head>
+
+<html>
+  <body>
+    <h1>Visualisation of solution</h1>
+    <h2>April 2024</h2>
+    <p>Here we show the numerical solution to
+      $$
+      u_t - \varepsilon^2 \Delta u + r(x,y)u = f(x,y,t)
+      $$
+      where the spacial domain is \( \Omega:=(0,1)^2 \), and the PDE's
+      domain is \( (x,y,t) \in \Omega \times(0,1] \). 
+      Boundary conditions: \( u(\cdot,\cdot,t)|_{\partial
+      \Omega}=0 \),  and initial condition us \( u(x,y,0)\equiv 0\). 
+      For the specific example is described in the Overleaf Project.
+    </p>
+
+    <center>
+      <video width="800" controls loop autoplay>
+	<source src="u2Dnew.ogv" type="video/ogg">
+	<source src="u2Dnew.mp4" type="video/mp4">
+	  Your browser does not support the video tag.
+	</source>
+      </video>
+    </center>
+
+  </body>
+</html>

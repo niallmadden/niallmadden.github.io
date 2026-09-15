@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>2526-MA378 (Numerical Analysis 2)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,
+				   initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Niall Madden,  University of
+    Galway; Numerical Analysis 2"/>
+    <meta name="keywords"
+	  content=
+	  "Introduction to Numerical Analysis, MA378">
+    <meta name="author" content="Niall Madden MA378">
+    <link rel="stylesheet" href="../assets/css/Niall.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+      <style>
+    body {
+      font-family: sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.8em;
+      margin: 30px 0 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .item { text-align: center; }
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+    a { text-decoration: none; color: #0066cc; }
+    a:hover { text-decoration: underline; }
+    .label {
+      margin-top: 6px;
+      font-size: 0.9em;
+      word-break: break-word;
+    }
+    .hero-img { text-align: center; margin-bottom: 1rem; }
+    @media (max-width: 600px) {
+      body { margin: 10px; font-size: 0.95em; }
+      h1 { font-size: 1.4em; }
+    }
+  </style>
+    
+  </head>
+  <body class="is-preload">
+    <nav id="nav">
+      <ul class="container">
+	<li><a href="#top">About this page</a></li>
+	<li><a href="#slides">Lecture slides</a></li>
+	<li><a href="#annotations">Annotated slides</a></li>
+	<li><a href="#sheets">Tutorials and Assignments</a></li>
+	<!-- <li><a href="#assignments">Assignments/Text/Exam</a></li> -->
+	<li><a href="https://www.niallmadden.ie/">About Niall</a></li>	    
+      </ul>
+    </nav>
+    
+    <!-- Home -->
+    <article id="top" class="wrapper style1">
+      <div class="container">      
+      <h1><strong>2526-MA378: Numerical Analysis 2</strong></h1>
+      <p>All notes, scripts, and exercises on this page were prepared
+	by <a href="https://www.niallmadden.ie/">Niall Madden</a> for MA378
+	(Numerical Analysis 2) at University of Galway in the academic year
+	2025/2026.
+      </p>	      
+      </div>
+      <div class="container hero-img">
+	  <img src="AllPics.png"  alt="Some images from MA378" />
+      </span>
+    </article>
+
+
+  <h1 id="slides">Slides</h1>
+  <div class="grid">
+    <div class="item"><a href="0-1-IntroToMA378.pdf"><img src="thumbs/0-1-IntroToMA378.png" alt="0-1-IntroToMA378.pdf"><div class="label">§0.1 Introduction to MA378</div></a></div>
+    <div class="item"><a href="1-1-IntroToInterpolation.pdf"><img src="thumbs/1-1-IntroToInterpolation.png" alt="1-1-IntroToInterpolation.pdf"><div class="label">§1.1 Introduction to Interpolation</div></a></div>
+    <div class="item"><a href="1-2-LagrangeInterpolation.pdf"><img src="thumbs/1-2-LagrangeInterpolation.png" alt="1-2-LagrangeInterpolation.pdf"><div class="label">§1.2 Lagrange Interpolation</div></a></div>
+    <div class="item"><a href="1-3-Error_Estimates.pdf"><img src="thumbs/1-3-Error_Estimates.png" alt="1-3-Error_Estimates.pdf"><div class="label">§1.3 Interpolation Error Estimates</div></a></div>
+    <div class="item"><a href="1-4-Hermite.pdf"><img src="thumbs/1-4-Hermite.png" alt="1-4-Hermite.pdf"><div class="label">§1.4 Hermite Interpolation</div></a></div>
+    <div class="item"><a href="1-5-RungesExample.pdf"><img src="thumbs/1-5-RungesExample.png" alt="1-5-RungesExample.pdf"><div class="label">§1.5 Wrap-up: Convergence & Runge's Example</div></a></div>
+    <div class="item"><a href="2-1-LinearSplines.pdf"><img src="thumbs/2-1-LinearSplines.png" alt="2-1-LinearSplines.pdf"><div class="label">§2.1 Linear Interpolating Splines</div></a></div>
+    <div class="item"><a href="2-2-CubicSplines.pdf"><img src="thumbs/2-2-CubicSplines.png" alt="2-2-CubicSplines.pdf"><div class="label">§2.2 (Natural) Cubic Splines</div></a></div>
+    <div class="item"><a href="2-3-PCHIP.pdf"><img src="thumbs/2-3-PCHIP.png" alt="2-3-PCHIP.pdf"><div class="label">§2.3 The PCHIP Spline</div></a></div>
+    <div class="item"><a href="3-1-Quadrature.pdf"><img src="thumbs/3-1-Quadrature.png" alt="3-1-Quadrature.pdf"><div class="label">§3.1 Introduction to Newton-Cotes Quadrature: The Trapezium Rule</div></a></div>
+    <div class="item"><a href="3-2-SimpsonsRule.pdf"><img src="thumbs/3-2-SimpsonsRule.png" alt="3-2-SimpsonsRule.pdf"><div class="label">§3.2 Simpson's Rule</div></a></div>
+    <div class="item"><a href="3-3-Precision.pdf"><img src="thumbs/3-3-Precision.png" alt="3-3-Precision.pdf"><div class="label">§3.3 Precision and Composition</div></a></div>
+    <div class="item"><a href="3-4-GaussianQuadrature.pdf"><img src="thumbs/3-4-GaussianQuadrature.png" alt="3-4-GaussianQuadrature.pdf"><div class="label">§3.4 Gaussian Quadrature</div></a></div>
+    <div class="item"><a href="3-5-OrthogonalPolynomials.pdf"><img src="thumbs/3-5-OrthogonalPolynomials.png" alt="3-5-OrthogonalPolynomials.pdf"><div class="label">§3.5 Orthogonal Polynomials</div></a></div>
+    <div class="item"><a href="3-6-GaussFromPolys.pdf"><img src="thumbs/3-6-GaussFromPolys.png" alt="3-6-GaussFromPolys.pdf"><div class="label">§3.6 Gaussian Quadrature via Orthogonal Polynomials</div></a></div>
+    <div class="item"><a href="4-1-BVPs.pdf"><img src="thumbs/4-1-BVPs.png" alt="4-1-BVPs.pdf"><div class="label">§4.1 Boundary value problems</div></a></div>
+    <div class="item"><a href="4-2-FEM.pdf"><img src="thumbs/4-2-FEM.png" alt="4-2-FEM.pdf"><div class="label">§4.2 The FEM</div></a></div>
+    <div class="item"><a href="4-3-Analysis.pdf"><img src="thumbs/4-3-Analysis.png" alt="4-3-Analysis.pdf"><div class="label">§4.3 Analysis: Cea's Lemma</div></a></div>
+    <div class="item"><a href="5-Review.pdf"><img src="thumbs/5-Review.png" alt="5-Review.pdf"><div class="label">§5.1 Review (and Exam Preview)</div></a></div>
+  </div>
+  <h1 id="annotations">Annotations</h1>
+  <div class="grid">
+    <div class="item"><a href="0-1-IntroToMA378.pdf.pdf"><img src="thumbs/0-1-IntroToMA378.pdf.png" alt="0-1-IntroToMA378.pdf.pdf"><div class="label">0-1-IntroToMA378.pdf.pdf</div></a></div>
+    <div class="item"><a href="1-1-IntroToInterpolation.pdf.pdf"><img src="thumbs/1-1-IntroToInterpolation.pdf.png" alt="1-1-IntroToInterpolation.pdf.pdf"><div class="label">1-1-IntroToInterpolation.pdf.pdf</div></a></div>
+    <div class="item"><a href="1-2-LagrangeInterpolation.pdf.pdf"><img src="thumbs/1-2-LagrangeInterpolation.pdf.png" alt="1-2-LagrangeInterpolation.pdf.pdf"><div class="label">1-2-LagrangeInterpolation.pdf.pdf</div></a></div>
+    <div class="item"><a href="1-3-Error_Estimates.pdf.pdf"><img src="thumbs/1-3-Error_Estimates.pdf.png" alt="1-3-Error_Estimates.pdf.pdf"><div class="label">1-3-Error_Estimates.pdf.pdf</div></a></div>
+    <div class="item"><a href="1-4-Hermite.pdf.pdf"><img src="thumbs/1-4-Hermite.pdf.png" alt="1-4-Hermite.pdf.pdf"><div class="label">1-4-Hermite.pdf.pdf</div></a></div>
+    <div class="item"><a href="1-5-RungesExample.pdf.pdf"><img src="thumbs/1-5-RungesExample.pdf.png" alt="1-5-RungesExample.pdf.pdf"><div class="label">1-5-RungesExample.pdf.pdf</div></a></div>
+    <div class="item"><a href="2-1-LinearSplines.pdf.pdf"><img src="thumbs/2-1-LinearSplines.pdf.png" alt="2-1-LinearSplines.pdf.pdf"><div class="label">2-1-LinearSplines.pdf.pdf</div></a></div>
+    <div class="item"><a href="2-2-CubicSplines.pdf.pdf"><img src="thumbs/2-2-CubicSplines.pdf.png" alt="2-2-CubicSplines.pdf.pdf"><div class="label">2-2-CubicSplines.pdf.pdf</div></a></div>
+    <div class="item"><a href="2-3-PCHIP.pdf.pdf"><img src="thumbs/2-3-PCHIP.pdf.png" alt="2-3-PCHIP.pdf.pdf"><div class="label">2-3-PCHIP.pdf.pdf</div></a></div>
+    <div class="item"><a href="3-1-Quadrature.pdf.pdf"><img src="thumbs/3-1-Quadrature.pdf.png" alt="3-1-Quadrature.pdf.pdf"><div class="label">3-1-Quadrature.pdf.pdf</div></a></div>
+    <div class="item"><a href="3-2-SimpsonsRule.pdf.pdf"><img src="thumbs/3-2-SimpsonsRule.pdf.png" alt="3-2-SimpsonsRule.pdf.pdf"><div class="label">3-2-SimpsonsRule.pdf.pdf</div></a></div>
+    <div class="item"><a href="3-3-Precision.pdf.pdf"><img src="thumbs/3-3-Precision.pdf.png" alt="3-3-Precision.pdf.pdf"><div class="label">3-3-Precision.pdf.pdf</div></a></div>
+    <div class="item"><a href="3-4-GaussianQuadrature.pdf.pdf"><img src="thumbs/3-4-GaussianQuadrature.pdf.png" alt="3-4-GaussianQuadrature.pdf.pdf"><div class="label">3-4-GaussianQuadrature.pdf.pdf</div></a></div>
+    <div class="item"><a href="3-5-OrthogonalPolynomials.pdf.pdf"><img src="thumbs/3-5-OrthogonalPolynomials.pdf.png" alt="3-5-OrthogonalPolynomials.pdf.pdf"><div class="label">3-5-OrthogonalPolynomials.pdf.pdf</div></a></div>
+    <div class="item"><a href="3-6-GaussFromPolys.pdf.pdf"><img src="thumbs/3-6-GaussFromPolys.pdf.png" alt="3-6-GaussFromPolys.pdf.pdf"><div class="label">3-6-GaussFromPolys.pdf.pdf</div></a></div>
+    <div class="item"><a href="4-1-BVPs.pdf.pdf"><img src="thumbs/4-1-BVPs.pdf.png" alt="4-1-BVPs.pdf.pdf"><div class="label">4-1-BVPs.pdf.pdf</div></a></div>
+    <div class="item"><a href="4-2-FEM.pdf.pdf"><img src="thumbs/4-2-FEM.pdf.png" alt="4-2-FEM.pdf.pdf"><div class="label">4-2-FEM.pdf.pdf</div></a></div>
+    <div class="item"><a href="4-3-Analysis.pdf.pdf"><img src="thumbs/4-3-Analysis.pdf.png" alt="4-3-Analysis.pdf.pdf"><div class="label">4-3-Analysis.pdf.pdf</div></a></div>
+  </div>
+  <h1 id="sheets">Tutorials and Assignments</h1>
+  <div class="grid">
+    <div class="item"><a href="MA378-Assignment-1.pdf"><img src="thumbs/MA378-Assignment-1.png" alt="MA378-Assignment-1.pdf"><div class="label">MA378-Assignment-1.pdf</div></a></div>
+    <div class="item"><a href="MA378-Assignment-1-soln.pdf"><img src="thumbs/MA378-Assignment-1-soln.png" alt="MA378-Assignment-1-soln.pdf"><div class="label">MA378-Assignment-1-soln.pdf</div></a></div>
+    <div class="item"><a href="MA378-Assignment-2.pdf"><img src="thumbs/MA378-Assignment-2.png" alt="MA378-Assignment-2.pdf"><div class="label">MA378-Assignment-2.pdf</div></a></div>
+    <div class="item"><a href="MA378-Assignment-2-soln.pdf"><img src="thumbs/MA378-Assignment-2-soln.png" alt="MA378-Assignment-2-soln.pdf"><div class="label">MA378-Assignment-2-soln.pdf</div></a></div>
+    <div class="item"><a href="MA378-ClassTest-soln.pdf"><img src="thumbs/MA378-ClassTest-soln.png" alt="MA378-ClassTest-soln.pdf"><div class="label">MA378-ClassTest-soln.pdf</div></a></div>
+    <div class="item"><a href="MA378-Tutorial-1.pdf"><img src="thumbs/MA378-Tutorial-1.png" alt="MA378-Tutorial-1.pdf"><div class="label">MA378-Tutorial-1.pdf</div></a></div>
+    <div class="item"><a href="MA378-Tutorial-1-solutions.pdf"><img src="thumbs/MA378-Tutorial-1-solutions.png" alt="MA378-Tutorial-1-solutions.pdf"><div class="label">MA378-Tutorial-1-solutions.pdf</div></a></div>
+    <div class="item"><a href="MA378-Tutorial-2.pdf"><img src="thumbs/MA378-Tutorial-2.png" alt="MA378-Tutorial-2.pdf"><div class="label">MA378-Tutorial-2.pdf</div></a></div>
+    <div class="item"><a href="MA378-Tutorial-2-solutions.pdf"><img src="thumbs/MA378-Tutorial-2-solutions.png" alt="MA378-Tutorial-2-solutions.pdf"><div class="label">MA378-Tutorial-2-solutions.pdf</div></a></div>
+    <div class="item"><a href="MA378-Tutorial-3.pdf"><img src="thumbs/MA378-Tutorial-3.png" alt="MA378-Tutorial-3.pdf"><div class="label">MA378-Tutorial-3.pdf</div></a></div>
+    <div class="item"><a href="MA378-Tutorial-3-solns.pdf"><img src="thumbs/MA378-Tutorial-3-solns.png" alt="MA378-Tutorial-3-solns.pdf"><div class="label">MA378-Tutorial-3-solns.pdf</div></a></div>
+    <div class="item"><a href="MA378-Tutorial-4.pdf"><img src="thumbs/MA378-Tutorial-4.png" alt="MA378-Tutorial-4.pdf"><div class="label">MA378-Tutorial-4.pdf</div></a></div>
+    <div class="item"><a href="MA378-Tutorial-4-solns.pdf"><img src="thumbs/MA378-Tutorial-4-solns.png" alt="MA378-Tutorial-4-solns.pdf"><div class="label">MA378-Tutorial-4-solns.pdf</div></a></div>
+    <div class="item"><a href="MA378-Tutorial-5.pdf"><img src="thumbs/MA378-Tutorial-5.png" alt="MA378-Tutorial-5.pdf"><div class="label">MA378-Tutorial-5.pdf</div></a></div>
+    <div class="item"><a href="MA378-Tutorial-5-solns.pdf"><img src="thumbs/MA378-Tutorial-5-solns.png" alt="MA378-Tutorial-5-solns.pdf"><div class="label">MA378-Tutorial-5-solns.pdf</div></a></div>
+    <div class="item"><a href="MA378_MATLAB_Primer.pdf"><img src="thumbs/MA378_MATLAB_Primer.png" alt="MA378_MATLAB_Primer.pdf"><div class="label">MA378_MATLAB_Primer.pdf</div></a></div>
+  </div>
+</body>
+</html>

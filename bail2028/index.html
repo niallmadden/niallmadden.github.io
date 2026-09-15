@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BAIL 2028 — Galway, Ireland</title>
+  <meta name="description" content="BAIL 2028: International Conference on Boundary and Interior Layers — Galway, Ireland. Postponed from 2026." />
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#16090D" />
+
+  <style>
+    /* ================================
+       Maroon-based palette (minimal swap)
+       ================================ */
+    :root{
+      --bg-1:#16090D;          /* near-black with maroon tint */
+      --bg-2:#210F16;          /* deep oxblood */
+      --bg-3:#3A1620;          /* rich wine */
+
+      --accent:#7B1E3B;        /* maroon (primary accent) */
+      --accent-strong:#A23C58; /* brighter maroon for glow/icons */
+
+      --text:#ffffff;
+      --muted:#D9C9CF;         /* warm gray that pairs with maroon */
+
+      --surface: rgba(22,13,17,0.78);     /* card background */
+      --surface-border: rgba(255,255,255,0.10);
+
+      --chip-bg: rgba(255,255,255,0.07);
+      --chip-border: rgba(255,255,255,0.14);
+
+      --status-bg: rgba(123,30,59,0.14);  /* maroon‑tinted status */
+      --status-border: rgba(162,60,88,0.38);
+
+      --maxw: 1100px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(1200px 800px at 70% 20%, color-mix(in oklab, var(--accent) 25%, transparent), transparent 60%),
+        radial-gradient(900px 700px at 20% 80%, color-mix(in oklab, var(--bg-3) 85%, transparent), transparent 60%),
+        linear-gradient(135deg, var(--bg-1), var(--bg-2));
+      min-height:100%;
+      overflow-x:hidden;
+    }
+
+    /* Dramatic animated glow */
+    .glow{
+      position:fixed;
+      inset:-20%;
+      background:
+        radial-gradient(40% 30% at 20% 30%, color-mix(in oklab, var(--accent) 35%, transparent), transparent 60%),
+        radial-gradient(35% 35% at 80% 70%, color-mix(in oklab, var(--bg-3) 55%, transparent), transparent 60%),
+        conic-gradient(from 180deg at 50% 50%, color-mix(in oklab, var(--accent) 20%, transparent), transparent, color-mix(in oklab, var(--bg-3) 25%, transparent), color-mix(in oklab, var(--accent) 20%, transparent));
+      filter: blur(60px) saturate(115%);
+      animation: drift 22s ease-in-out infinite alternate;
+      z-index:-1;
+    }
+    @keyframes drift{
+      0%{transform:translate3d(0,0,0) scale(1)}
+      50%{transform:translate3d(-2%, 1%, 0) scale(1.05)}
+      100%{transform:translate3d(2%,-1%,0) scale(1.03)}
+    }
+    @media (prefers-reduced-motion: reduce){
+      .glow{animation:none}
+    }
+
+    .wrap{
+      display:grid;
+      place-items:center;
+      min-height:100svh;
+      padding: clamp(16px, 4vw, 48px);
+    }
+
+    .card{
+      width: min(100%, var(--maxw));
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: 20px;
+      box-shadow:
+        0 20px 60px rgba(0,0,0,0.45),
+        inset 0 0 0 1px rgba(255,255,255,0.04);
+      padding: clamp(20px, 6vw, 72px);
+      backdrop-filter: blur(10px) saturate(120%);
+      -webkit-backdrop-filter: blur(10px) saturate(120%);
+      transform: translateY(6px);
+      opacity: 0;
+      animation: rise 900ms cubic-bezier(.2,.85,.25,1) 120ms forwards;
+    }
+    @keyframes rise{
+      to{transform:none; opacity:1;}
+    }
+
+    .kicker{
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      font-weight:800;
+      color: var(--accent);
+      text-shadow: 0 0 10px color-mix(in oklab, var(--accent-strong) 45%, transparent);
+      font-size: clamp(0.78rem, 1.4vw, 0.95rem);
+      margin: 0 0 .75rem 0;
+    }
+
+    h1{
+      margin:0 0 .4rem 0;
+      line-height:1.05;
+      font-weight:900;
+      font-size: clamp(2.3rem, 7.5vw, 5.4rem);
+      letter-spacing: -0.02em;
+      text-wrap: balance;
+      text-shadow: 0 2px 24px rgba(0,0,0,0.35);
+      /* Title in maroon */
+      color:#800000;
+    }
+
+    .location{
+      font-size: clamp(1.05rem, 2.4vw, 1.6rem);
+      color: var(--muted);
+      margin: .25rem 0 1.2rem;
+      opacity:.95;
+    }
+
+    .status{
+      display:inline-flex;
+      align-items:center;
+      gap:.6rem;
+      padding:.7rem 1rem;
+      border-radius: 999px;
+      border:1px solid var(--status-border);
+      background: var(--status-bg);
+      color: var(--text);
+      font-weight: 600;
+      font-size: clamp(.95rem, 2.1vw, 1.05rem);
+      backdrop-filter: blur(6px);
+    }
+    .dot{
+      width:.7rem; height:.7rem; border-radius:999px;
+      background: var(--accent);
+      box-shadow: 0 0 0 .25rem color-mix(in oklab, var(--accent) 25%, transparent),
+                  0 0 12px var(--accent-strong);
+    }
+
+    .footer{
+      margin-top: clamp(1.4rem, 3.4vw, 2.6rem);
+      display:flex; flex-wrap:wrap; gap:.75rem; align-items:center; color: var(--muted);
+      font-size: clamp(.92rem, 1.8vw, 1.02rem);
+    }
+    .pill{
+      display:inline-flex; align-items:center; gap:.5rem;
+      padding:.55rem .85rem; border-radius:999px;
+      background: var(--chip-bg);
+      border:1px solid var(--chip-border);
+      color: var(--muted);
+    }
+
+    /* Ensure long words don’t overflow on tiny screens */
+    .wrap, .card { overflow-wrap: anywhere; }
+
+    /* Light mode refinements */
+    @media (prefers-color-scheme: light){
+      body{ color:#0e0f12; background:
+        radial-gradient(1200px 800px at 70% 20%, color-mix(in oklab, var(--accent) 22%, transparent), transparent 60%),
+        radial-gradient(900px 700px at 20% 80%, color-mix(in oklab, var(--bg-3) 18%, transparent), transparent 60%),
+        linear-gradient(135deg, #f6f8ff, #f1e9ed);
+      }
+      .card{
+        background: rgba(255,255,255,0.9);
+        border-color: rgba(15,23,42,0.08);
+      }
+      .location{ color:#3a3f57; }
+      .pill{ color:#3a3f57; background: rgba(10,20,40,0.035); border-color: rgba(10,20,40,0.08); }
+      .status{
+        background: color-mix(in oklab, var(--accent) 12%, white 88%);
+        border-color: color-mix(in oklab, var(--accent) 38%, white 62%);
+        color:#0f0f12;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div aria-hidden="true" class="glow"></div>
+
+  <main class="wrap">
+    <section class="card" role="region" aria-labelledby="title">
+      <p class="kicker">International Conference on Boundary and Interior Layers</p>
+
+      <h1 id="title">BAIL 2028</h1>
+
+      <p class="location">Galway, Ireland</p>
+
+      <div class="status" aria-live="polite">
+        <span class="dot" aria-hidden="true"></span>
+        <span><strong>Update:</strong> Postponed from 2026</span>
+      </div>
+
+      <div class="footer">
+        <span class="pill" title="Provisional year" aria-label="Year 2028">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 11h5v5H7z"></path><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V5a2 2 0 0 0-2-2zm0 16H5V8h14z"></path></svg>
+          2028
+        </span>
+        <span class="pill" title="Host city" aria-label="Host city Galway">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"></path></svg>
+          Galway
+        </span>
+      </div>
+
+      <!-- Your requested contact line (exact) -->
+      <p style="margin-top:2rem; font-size:1.05rem;">
+        For more information, contact the
+        <a 
+          href="mailto:niall.madden@universityofgalway.ie" 
+          style="color: var(--accent); font-weight:600; text-decoration:underline;">
+          local organisers
+        </a>.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
