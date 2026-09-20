@@ -69,14 +69,14 @@ slides=()
 for f in [0-9]*.pdf; do
     [ -e "$f" ] || continue
     # skip files that actually end in .pdf.pdf
-    if [[ "$f" == *.pdf.pdf ]]; then
+    if [[ "$f" == *.pdf.pdf || "$f" == *_annotated.pdf ]]; then
         continue
     fi
     slides+=("$f")
 done
 
 annotations=()
-for f in [0-9]*.pdf.pdf; do
+for f in [0-9]*.pdf.pdf *_annotated.pdf; do
     [ -e "$f" ] || continue
     annotations+=("$f")
 done
