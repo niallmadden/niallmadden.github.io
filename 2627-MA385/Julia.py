@@ -27,7 +27,7 @@ import matplotlib.pyplot as plt
 # but are slower to run
 
 n = 4    # nth roots of unity
-N = 400  # resolution (N^2 points)
+N = 800  # resolution (N^2 points)
 Max_Iterations = 1000
 x0, x1 = -1.1, 1.1 # corners for domain
 y0, y1 = -1.1, 1.1 # corners for domain
