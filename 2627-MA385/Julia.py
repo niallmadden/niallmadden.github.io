@@ -26,8 +26,8 @@ import matplotlib.pyplot as plt
 # * `N` defines the resolution. Larger values give nicer pictures,
 # but are slower to run
 
-n = 4    # nth roots of unity
-N = 800  # resolution (N^2 points)
+n = 7    # nth roots of unity
+N = 400  # resolution (N^2 points)
 Max_Iterations = 1000
 x0, x1 = -1.1, 1.1 # corners for domain
 y0, y1 = -1.1, 1.1 # corners for domain
