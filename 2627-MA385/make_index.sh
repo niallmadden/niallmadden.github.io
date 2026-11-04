@@ -90,11 +90,15 @@ for f in MA385_*.pdf; do
     [ -e "$f" ] || continue
     tutorials+=("$f")
 done
+for f in *Test*.pdf; do
+    [ -e "$f" ] || continue
+    tutorials+=("$f")
+done
 
 # === Add sections ===
 add_section "Slides" "slides" "${slides[@]}"
 add_section "Annotations" "annotations" "${annotations[@]}"
-add_section "Tutorials and Assignments" "sheets" "${tutorials[@]}"
+add_section "Tutorials,  Assignments, Test" "sheets" "${tutorials[@]}"
 
 # === Footer ===
 cat >> index.html <<'EOF'
