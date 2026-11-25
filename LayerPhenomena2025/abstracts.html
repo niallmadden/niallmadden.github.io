@@ -1,0 +1,1013 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Layer Phenomena 2025: Abstracts</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="shortcut icon" type="image/x-icon"
+          href="https://www.niallmadden.ie/LayerPhenomena2025/favicon.ico" />
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+	<div class="inner">
+	  
+	  <!-- Header -->
+	  <header id="header">
+	    <a href="index.html" class="logo"><strong>Layer
+		Phenomena</strong> 2025</a>
+	  </header>
+	  
+	  <!-- Section -->
+	  <section>
+	    <header class="major">
+	      <h1>Abstracts</h1>
+	      <p>Abstracts will be posted here as they are
+		accepted.</p>
+	    </header>
+
+	    <!-- START AN ABSTRACT -->
+	    <div class="major">
+	      <article id="PDF">
+		Download to <a href="Layers2025.pdf">Book of
+		Abstracts</a> (PDF)
+	      </article>
+	    </div>
+
+	    <hr style="height:2px;background-color:red" />
+	    <p align="center" id="top">Quick links:
+	      [<a href="abstracts.html#demir">Medine Demir</a>] &nbsp;
+	      [<a href="abstracts.html#franz">Sebastian Franz</a>]  &nbsp;
+	      [<a href="abstracts.html#Hegarty">Alan F. Hegarty</a>]   &nbsp;
+	      [<a href="abstracts.html#Kelly">Seán Kelly</a>]   &nbsp;
+	      [<a href="abstracts.html#Kopteva">Natalia Kopteva</a>] &nbsp;
+	      [<a href="abstracts.html#mackenzie">Katherine&nbsp;MacKenzie</a>] &nbsp;
+	      [<a href="abstracts.html#Madden">Niall&nbsp;Madden</a>] &nbsp;
+	      [<a href="abstracts.html#Neofytou">Neofytos&nbsp;Neofytou</a>] &nbsp;
+	      [<a href="abstracts.html#pervolianakis">Christos&nbsp;Pervolianakis</a>] &nbsp;
+	      [<a href="abstracts.html#Poddar">Nanda&nbsp;Poddar</a>] &nbsp;		    
+	      [<a href="abstracts.html#Power">Jenny Power</a>] &nbsp;		    
+	      [<a href="abstracts.html#Trenam">Alex Trenam</a>] &nbsp;		    
+	      [<a href="abstracts.html#Xenophontos">Christos&nbsp;Xenophontos</a>]&nbsp;
+	      [<a href="abstracts.html#Zainelabdeen">Marwa&nbsp;Zainelabdeen</a>]
+	    </p>
+	    
+	    <hr style="height:2px;background-color:red" />
+
+	    <!-- START AN ABSTRACT -->
+	    <div class="major">
+	      <article id="demir">
+		<h3>Medine Demir (WIAS, Berlin)</h3>
+		<h4>An Evolve-Filter-Relax Regularized Reduced Order
+		  Model for Buoyancy-Driven Flows</h4>
+		<p class="ltx_p">The a priori error analysis of
+		  reduced order models (ROMs) for buoyancy-driven flows is
+		  relatively 
+		  scarce. In this study, we take a step in this direction
+		  and conduct numerical analysis of the evolve-filter-relax
+		  ROM (EFR-ROM), which uses spatial filtering to stabilize
+		  ROMs for convection-dominated flows. This study extends
+		  the EFR-ROM model of
+		  <cite>[<a href="#bib.bib1" >1</a>]</cite>
+		  for the Navier-Stokes
+		  equations to the Boussinesq equations with the spectral
+		  element discretization framework. Specifically, we prove
+		  stability, and an a priori error bound for the
+		  EFR-ROM. Our numerical investigation shows that the
+	    theoretical convergence rates are recovered
+		  numerically. In addition, we sh ow that EFR-ROM yields
+		  more accurate solutions and quantity of interest than the
+		  Galerkin-ROM (G-ROM) in two test problems.
+		</p>
+		<p><em>This is joint work with Ping-Hsuan Tsai (VA, USA).</em></p>
+		
+		<h5>References</h5>
+		<ul class="ltx_biblist">
+		  <li>
+		    <span  id="bib.bib1">[1]</span>
+		    <span> Strazzullo, M.,
+		      Girfoglio, M., Ballarin, F., Iliescu, T., Rozza, G.:
+		      Consistency of the full and reduced order models for
+		      evolve-filter-relax regularization of
+		      convection-dominated, marginally-resolved flows, INT
+		      J NUMER MODEL EL, <span class="ltx_text
+						     ltx_font_bold">123</span>(14), 3148–3178 (2022) 
+		    </span>
+		  </li>
+		</ul>
+	      </article>
+	    </div>
+	    
+
+	    <!-- END AN ABSTRACT -->
+	    <p>[<em><a href="#top">back to top</a></em>]</p>
+	    <hr style="height:2px;background-color:red" />
+	    
+	    <!-- START AN ABSTRACT -->
+	    <div class="major">
+	      <article id="franz">
+		<h3>Sebastian Franz (Dresden)</h3>
+		<h4>
+		  On a posteriori estimation in the energy norm for
+		  convection-diffusion problems
+		</h4>
+		<p>
+		  We consider a singularly perturbed convection-diffusion problem
+		  \begin{align*}
+		  Lu=-\varepsilon \Delta u + b\cdot\nabla u + cu = f
+		  \end{align*}
+		  in a domain \( \Omega \subset \mathbb{R}^2 \) with Dirichlet and Neumann boundary conditions. 
+		  A result by Verfürth showed that the classical residual and jump estimators 
+		  \begin{align*}
+		  \eta(T) &= \sqrt{\eta_{Vol}(T)^2+\eta_{jump}(T)^2},\\
+  \eta_{Vol}(T)  &=\alpha_T\|f - Lu_h\|_{L_2(T)},\\
+		  \eta_{jump}(T) &=\sqrt{\beta_T\varepsilon}\|[\!|u_h|\!]\|_{L_2(\partial T)}
+		  \end{align*}
+		  can be used as a posteriori error estimator. However, the associated norm contains a dual norm which is not computable.
+		  
+		  We present a different norm that bounds this estimator, is efficient and computable.
+		  A mesh adaptation algorithm using this estimator can be applied to problems with boundary
+		  and interior layers to solve them and produce reliable results.
+		</p>
+		<p><em>This is joint work with Natalia Kopteva (Limerick).</em></p>
+		
+	      </article>
+	    </div>
+	    <!-- END AN ABSTRACT -->
+
+	    <p>[<em><a href="#top">back to top</a></em>]</p>	    
+	    <hr style="height:2px;background-color:red" />
+
+	    
+	    <!-- START Hegarty ABSTRACT -->
+	    <div class="major">
+	      <article id="Hegarty">
+		<h3>Alan F. Hegarty (University of Limerick)</h3>
+		<h4>
+		  Novel meshes for the solution of a problem with interior parabolic layers
+		</h4>
+		<p>
+		  In <span class="cite">[<a href="#XHOR22">1</a>]</span>
+		  a numerical
+		  algorithm was proposed to solve singularly perturbed convection
+		  diffusion problems on curvilinear domains. Constraints were imposed on the data so that
+		  only regular exponential boundary layers appear in the solution. A domain
+		  decomposition method was used, comprising a rectangular grid outside the boundary
+		  layer and a Shishkin mesh, aligned to the curvature of the outflow boundary, near the
+boundary layer. We now wish to examine how this algorithm can be modified to treat a
+		  problem with interior layers. Numerical results will be presented to test the convergence
+		  of the modified algorithm.
+		</p>
+		
+		<p><em>This is joint work with Eugene O'Riordan
+		    (DCU).</em>
+		</p>
+
+		<h5>References</h5>
+		<ul>
+		  <li>
+		    <span 
+		      class="cmr-8">[1]</span> Hegarty,   A.F.,
+		    O'Riordan,   E.
+		    <em>A   numerical   method   for   singularly   perturbed
+		      convection-diffusion problems posed on smooth
+		      domains.</em> J Sci Comput 92, 84 (2022).
+		  </li>
+		</ul>
+	      </article>
+	    </div>
+	    <p>[<em><a href="#top">back to top</a></em>]</p>	    	    
+	    <hr style="height:2px;background-color:red" />
+		    
+	    <!-- START KELLy ABSTRACT -->
+	    <span>
+	      <div class="major">
+		<article id="Kelly">
+		  <h3>Seán Kelly (Limerick)</h3>
+		  <h4>
+		    Pointwise-in-time error bounds for a
+		    fractional-derivative parabolic problem on
+		    quasi-graded meshes
+		</h4>
+		  <p>
+		    An initial-boundary value, subdiffusion problem
+		    involving a Caputo time derivative of fractional
+		    order \( \alpha \in (0, 1) \) is considered. The
+		    solutions of which typically exhibit a singular
+		    behaviour at initial time. We propose an extension
+		    to the approach, by Kopteva and Meng
+		    <cite>[<a href="#KM" >1</a>]</cite>,		    
+		    used to analyse the error of
+		    L1-type discretizations on both graded and uniform
+		    temporal meshes. We broaden the assumption on the
+		    regularity of the solution to incorporate more
+		    general solution behaviour, such that
+		    \( |\delta^l_t u(\cdot, t)|\lesssim 1 +
+		    t^{\sigma-l} \) for some
+		    \( \sigma \in (0, 1) \cup (1, 2) \) and any
+		    \( l =
+		    0,1,2 \). Under this more general assumption on the
+		    solution, we give sharp pointwise-in-time error
+		    bounds on quasi-graded temporal meshes with
+		    arbitrary degree of grading (including uniform
+		    meshes, also considered by Li, Qin, and Zhang
+		    <cite>[<a href="#LQZ" >2</a>]</cite>.		   
+		    Extensions to the semilinar case
+		    will also be considered. 
+		</p>
+		  <p><em>
+		      This is joint work with Professor Natalia
+		      Kopteva (University of Limerick).
+		    </em>
+		  <br/>
+		    <em>
+		      Supported by the Science Foundation Ireland
+		      under Grant number 18/CRT/6049.
+		    </em>
+		  </p>
+		
+		  <h5>References</h5>
+		  <ul>
+		    <li>
+		      <span  id="KM">[1]</span>
+		      N. Kopteva and X. Meng.
+		      <em>Error Analysis for a fractional-derivative parabolic problem on quasi-graded meshes using barrier functions.</em>
+		    SIAM J. Numer. Anal., 58, (2020)
+		    </li>
+		    <li>
+		      <span  id="LQZ">[2]</span>
+		      D. Li, H. Qin, and J. Zhang.
+		      <em>
+			Sharp pointwise-in-time error estimate of {L}1
+			scheme for nonlinear subdiffusion equations
+		      </em>
+		      J. Comput. Math., 42 (2024)
+		    </li>
+		  </ul>
+
+		</article>
+	      </div>
+	    </span>
+	    <!-- END KELLY ABS -->
+
+
+	    <p>[<em><a href="#top">back to top</a></em>]</p>	    
+	    <hr style="height:2px;background-color:red" />
+
+	    <!-- START Kopteva ABSTRACT -->
+	    <span>
+	      <div class="major">
+		<article id="Kopteva">
+		  <h3>Natalia Kopteva (Limerick)</h3>
+		  <h4>
+		    <em>A posteriori</em> error estimation for convection-diffusion equations
+		  </h4>
+		  <p>Solutions of singularly perturbed partial differential equations typically
+exhibit sharp boundary and interior layers, as well as corner singularities. To obtain
+reliable numerical approximations of such solutions in an efficient way, one may want
+to use meshes that are adapted to solution singularities using a posteriori error
+estimates. In this talk, we shall discuss residual-type a posteriori error estimates for
+singularly perturbed convection-diffusion equations. The error constants in the
+considered estimates are independent of the diameters of mesh elements and of the
+small perturbation parameter. Some earlier results will be briefly reviewed, with the
+main focus on the recent article [2] and more recent developments. Standard and stabilized finite element approximations are considered on shape-regular meshes for singularly perturbed convection-diffusion equations. Our initial result is that natural maximum-norm residual estimators of type reliably control the error in the maximum norm, assuming suitable estimates of the Green's function hold. On the other hand, residual-type estimators in the energy norm are only
+efficient up to a dual norm of the convective error. A main contribution of is to
+analogously define a suitable dual seminorm of the convective error. Having defined
+such a dual norm, we then define the total error as the originally targeted maximum
+norm of the error plus the dual seminorm of the convective error plus standard data
+oscillation terms. Our a posteriori error estimator is then shown to be equivalent to the total error (up to a logarithmic factor). Numerical experiments illustrate the behavior
+and performance of our estimators in the context of uniform and adaptive mesh
+refinement. In particular, they show that the estimators may vastly overestimate the
+error in the maximum norm alone, but they closely track the total error as predicted by
+our theory. Adaptive refinement based on our error indicators is also shown to do an
+effective job at automatically resolving standard model problems whose solutions
+include strong layers. In the final part of the talk we shall discuss more recent developments related to the
+		    a-posteriori error estimation in Verfuerth's norm.
+		  </p>
+
+		  <p><em>
+		      This is joint work with Alan Demlow and Sebastian Franz.
+		    </em>
+
+		</article>
+	      </div>
+	    </span>
+	    <!-- END Kopteva ABS -->
+
+
+	    <p>[<em><a href="#top">back to top</a></em>]</p>	    
+	    <hr style="height:2px;background-color:red" />
+	    
+	    <!-- START AN ABSTRACT -->
+	    <span>
+	      <div class="major">
+		<article id="mackenzie">
+		  <h3>Katherine MacKenzie (University of Strathclyde)</h3>
+		<h4>The Bound Preserving Method applied to the 2D
+		  Induction Heating Problem
+		</h4>
+		  <p>Induction heating is a process widely used in the
+		    metallurgical manufacturing industry to heat
+		conductive materials. Using an alternating current
+		    with a very high frequency, a magnetic field generates
+		    a current in the material, which produces heat due to
+		    the Joule heating process. This current is
+		    concentrated in a very thin layer near the boundary of
+		the material, and as such there is a boundary layer in
+		    the magnetic field. This creates a highly irregular
+		    source term (\( f \in L^1(\Omega) \)) in the heat
+		    equation, and in the time-dependent case, generates a
+		boundary layer in temperature near \( t = 0 \).</p> 
+		  
+		  
+		<p>In this talk, I will describe the application of the Nodally Bound
+		  Preserving Method  (Barrenechea et al., 2024)
+		  to the induction heating equations. This method is
+		  designed to satisfy given bounds on the solution and
+		  guarantees stability for meshes for which standard
+		  methods do not guarantee bound preservation. The
+		  main technical result shows that when imposing
+		  non-physical bounds on the discrete solution, the
+		  method converges to the best approximation in the
+		  infinite-dimensional constrained convex set. As a
+		  result, for the induction heating problem, where the
+		  bounds are not explicit, this leads to a method that
+		  converges without imposing a restriction on the
+		  mesh.
+		</p>
+		<p><em>This is joint work with Gabriel R. Barrenechea.</em></p>
+
+		<p><em>Supported by a University of Strathclyde SEA
+		scholarship with EPSRC and additional support by
+		    Bifrangi UK Ltd.
+		  </em>
+		</p>
+		
+		<h5>References</h5>
+		<ul>
+		  <li><a 
+			id="XBarrenecheaGabrielR2024Anbf"></a><span>Barrenechea, G. R.,
+		      Georgoulis, E. H., Pryer, T., Veeser, A.
+		      <em>A nodally bound-preserving finite element
+			method.</em>
+		      IMA J. Numer. Anal. 44(4)
+		      2198-2219 (2024)
+		    </span>
+		  </li>
+		</ul>
+		</article>
+	    </div>
+	    </span>
+	    <!-- end MacKenzie abstract -->
+
+	
+	    <p>[<em><a href="#top">back to top</a></em>]</p>
+	    <hr style="height:2px;background-color:red" />
+	    
+	    <!-- START AN ABSTRACT -->
+	    <span>
+	      <div class="major">
+		<article id="Madden">
+		  <h3>
+		    Niall Madden (University of Galway)</h3>
+		  <h4>
+		    A tutorial on solving singularly perturbed problems in Firedrake
+		</h4>
+		  <p>
+		    <a href="https://firedrakeproject.org">Firedake</a> is a Python-based system for solving partial differential
+		    equations, by finite element methods. It is built on the FEniCS
+		    <em>Unified Form Language</em>, and the PETSc
+		    toolkit.
+		    </p>
+
+		  <p>
+		    In this hands-on tutorial you'll be introduced to using Firedrake for
+		    solving some singularly perturbed ordinary and partial differential
+		    equations. We've cover constructing layer-adapted meshes,
+		    discretization by high-order methods, and estimation of errors.
+		  </p>
+
+		  <p>
+		    No previous experience of Firedrake is required. It would be useful,
+		    but not essential, to have a reading knowledge of Python.
+		    You will require you own laptop, and should sign up to Google colab:
+		    <a href="https://colab.google">https://colab.google</a>. 
+		  </p>
+		  <p>You can access the presentation at:
+		    <ul>
+		      <li>Jupyter notebook:
+			<a href="https://www.niallmadden.ie/SPPs_Firedrake.ipynb">https://www.niallmadden.ie/SPPs_Firedrake.ipynb</a>
+		      </li>
+		      <li>HTML version:
+			<a href="https://www.niallmadden.ie/SPPs_Firedrake.html">https://www.niallmadden.ie/SPPs_Firedrake.html</a>
+		      </li>
+		    </ul>
+		  </p>
+		  <p><em>This is a joint presentation with Sean Tobin (Galway).</em></p>
+
+		</article>
+	    </div>
+	    </span>
+	    <!-- end Madden abstract -->
+
+	    <p>[<em><a href="#top">back to top</a></em>]</p>	    
+	    <hr style="height:2px;background-color:red" />
+	    
+	    
+	    <!-- START Neo ABSTRACT -->
+	    <span>
+	      <div class="major">
+		<article id="Neofytou">
+		  <h3>
+		    Neofytos Neofytou (University of Cyprus)</h3>
+		  <h4>
+		    $rp$-DG FEM for fourth order singularly perturbed problems with two small parameters
+		  </h4>
+		  <p>
+		    We consider fourth order reaction-diffusion type boundary value problems, with two small parameters
+		    multiplying the fourth and second derivatives,
+		    respectively. We present an \( rp \)  DG-FEM for the approximation
+		    of the solution, on the so-called
+		    <em>Spectral Boundary Layer mesh</em> from
+		    [<a href="#neo.bib1" title=""
+		    class="ltx_ref">1</a>, <a href="#neo.bib3"
+					      title="" class="ltx_ref">3</a>].
+		    We establish
+		    robust exponential convergence, as the degree \(
+		    p \) of the approximating polynomials is increased, and
+		    the error is measured in a DG norm (equivalent to the energy norm). Numerical results are also presented.
+		    The results presented in this talk appear in
+		    [<a href="#neo.bib2" title="" class="ltx_ref">2</a>].</p>
+
+		  <p><em>This is joint  work with C. Xenophontos (University of Cyprus).</em></p>
+
+		  <h5>References</h5>
+
+		  <ul class="ltx_biblist">
+		    <li id="neo.bib1" class="ltx_bibitem">
+		      <span class="ltx_tag ltx_tag_bibitem">[1]</span>
+		      <span class="ltx_bibblock"> J. M. Melenk, C. Xenophontos and L. Oberbroeckling:
+			Robust exponential convergence of hp-FEM for singularly perturbed systems of
+			reaction-diffusion equations with multiple scales, IMA J. Num. Anal.,
+			33, pp. 609–628 (2013).
+		      </span>
+		    </li>
+		    <li id="neo.bib2" class="ltx_bibitem">
+		      <span class="ltx_tag ltx_tag_bibitem">[2]</span>
+		      <span class="ltx_bibblock"> N. Neofytou, <em class="ltx_emph ltx_font_italic">On <math id="bib.bib2.m1" class="ltx_Math" alttext="rp" display="inline"><mrow><mi>r</mi><mo mathvariant="italic">⁢</mo><mi>p</mi></mrow></math> Discontinous Galerkin Finite Element Methods
+			  for singularly perturbed problems with two parameters</em>, Ph.D. Dissertation, in preparation (2024).
+		      </span>
+		    </li>
+      
+		    <li id="bib.bib3" class="ltx_bibitem">
+		      <span class="ltx_tag ltx_tag_bibitem">[3]</span>
+		      <span class="ltx_bibblock"> C. Schwab and
+			M. Suri: The \( p \)-  and \( hp \)-versions of the finite element method for
+			problems with boundary layers, Math. Comp., 65, pp. 1403–1429 (1996).
+		      </span>
+		    </li>
+		  </ul>
+		</article>
+	    </div>
+	    </span>
+	    <!-- end abstract -->
+	    
+	    
+	    <p>[<em><a href="#top">back to top</a></em>]</p>	    
+	    <hr style="height:2px;background-color:red" />
+	    
+	    
+	    <!-- START pervo  ABSTRACT -->
+	    <span>
+	      <div class="major">
+		<article id="pervolianakis">
+		  <h3>
+		    Christos Pervolianakis (Jena)
+		  </h3>
+		  <h4>
+		    A Stabilized Scheme for an Optimal Control Problem Governed by Convection-Diffusion-Reaction Equation
+		  </h4>
+		  <p>
+		    It is well-known that convection-diffusion equations
+		    may exhibit layers, which can render standard finite
+		    element methods inadequate for accurately
+		    approximating the exact solution. These layers can
+		    cause issues such as spurious oscillations,
+		    violating physical properties of the solution. To
+		    address this, nonlinear discretizations have been
+		    developed that preserve the maximum principle of the
+		    solution and accurately capture the position of
+		    these layers.
+		  </p>
+
+		  <p>In this talk, we will consider an optimal control
+		    problem on a bounded domain \( \Omega\subset 
+		    \mathbb{R}^2 \), governed by a time--dependent
+		    convection--diffusion--reaction equation with
+		    pointwise control constraints. Following the
+		    optimize-then-discretize approach, the resulting
+		    optimality conditions yield a coupled system of two
+		    time-dependent convection--diffusion--reaction
+		    equations.
+		  </p>
+
+		  <p>To stabilize the fully-discrete scheme derived from
+		    the optimality conditions, we employ the algebraic
+		    flux correction method. Additionally, we discuss the
+		    well-posedness of the resulting fully-discrete scheme
+		    and present a priori and residual-type a posteriori
+		    error estimates
+		  </p>
+
+		  <h5>References</h5>
+		  <ul>
+		    <li><a 
+			  id="pervolianakis2024"></a><span>
+			C. Pervolianakis.
+			<em>Numerical analysis of a stabilized scheme
+			  for an optimal control problem governed by a
+			  parabolic convection--diffusion equation</em>.  
+			<tt>arXiv</tt> preprint, 2024.
+			Available: <a href="https://arxiv.org/pdf/2412.21070">arxiv.org/pdf/2412.21070</a>
+		      </span>
+		    </li>
+		  </ul>
+		</article>
+	      </div>
+	    </span>
+	    <!-- end  Pervolianakis  abstract -->
+
+	    <p>[<em><a href="#top">back to top</a></em>]</p>	    
+	    <hr style="height:2px;background-color:red" />
+	    
+	    
+	    <!-- START Poddar  ABSTRACT -->
+	    <span>
+	      <div class="major">
+		<article id="Poddar">
+		  <h3>
+		    Nanda Poddar (University of Galway)
+		  </h3>
+		  <h4>
+		    Interplay of Dynamic Boundary Absorption and
+		    Layer-like Phenomena in Reactive Solute Transport:
+		    A Dual Numerical Approach
+		  </h4>
+		  <p>
+		    The role of time and space-dependent boundary absorption in
+		    hydrodynamic solute dispersion
+<span class="cite">[<a 
+href="#XGupta1972">1</a>,&#x00A0;<a 
+href="#XSaha2023">2</a>,&#x00A0;<a 
+href="#XSaha2024">3</a>]</span> 		    
+remains underexplored despite its significance in environmental, biological, and industrial systems. This study investigates how dynamic boundary absorption influences solute transport under oscillatory flow conditions, where rapid spatial and temporal changes can generate steep concentration gradients near reactive boundaries. %, resembling classical layer phenomena.
+		  </p>
+		  
+<p>Through numerical simulation, a dual modeling framework is
+  developed: a deterministic advection-diffusion solver (using a
+  finite difference method) and a stochastic Brownian dynamics
+  simulation, capturing both macroscopic and particle-scale transport
+  behavior. Numerical results show that as boundary reactivity
+  increases, solute concentration near the reactive wall decreases
+  sharply, eventually reaching a steady profile for high absorption
+  values. These effects are strongly time-dependent: longer dispersion
+  times allow significantly more particles to be absorbed in the same
+  boundary condition, revealing a cumulative interaction between flow
+  unsteadiness and boundary reactions.
+</p>
+
+<p>
+  By analyzing the evolution of concentration profiles and dispersion
+  statistics under varying Péclet and Schmidt numbers, oscillation
+  frequencies, and boundary absorption strengths, this study
+  highlights how dynamic boundary interactions induce layer-like
+  features in solute distribution. The comparative strengths of the
+  deterministic and stochastic models offer a comprehensive
+  understanding of reactive solute transport in unsteady systems, with
+  implications for filtration, microfluidics, and environmental flow
+  applications. 
+</p>
+<p>
+  <em>This is joint work with Niall Madden (University of
+    Galway).</em>
+  <br/>
+  <em>
+    Supported by the Irish Research Council (now Research Ireland),
+    Grant GOIPD/2024/226.
+  </em>
+  
+  <h5>References</h5>
+  <ul>
+    <li>
+      <span 
+	class="cmr-8">[1]</span>
+      Gupta,  P.S.,  Gupta,  A.S.:  Effect  of  homogeneous  and
+	heterogeneous  reactions  on  the dispersion of a solute in
+	the laminar flow between two plates. Proc. R. Soc. Lond. A
+      59&#8211;63 (1972)
+    </li>
+    <li>
+      <span 
+	class="cmr-8">[2]</span>
+      Saha, G., Poddar, N., Dhar S., Mazumder B.S., Mondal K.K.:
+	Solute dispersion phenomena in a free and forced convective
+      flow with boundary reactions. Eur. J. Mech. B Fluids
+      100,
+      101&#8211;123 (2023)
+    </li>
+    <li>
+    <span 
+      class="cmr-8">[3]</span>
+    Saha G., Poddar N., Mondal K.K., Wang P.: Evolution of
+      concentration distribution and 
+    removal of a solute in magnetohydrodynamics channel flow: effects
+    of buoyancy-driven force
+    and induced magnetic field. Proc. R. Soc. Lond. A 
+    480, 
+    20240091 (2024)
+    </li>
+  </ul>
+
+		</article>
+	      </div>
+	    </span>
+	    <!-- end  Pervolianakis  abstract -->
+
+	    <p>[<em><a href="#top">back to top</a></em>]</p>	    
+	    <hr style="height:2px;background-color:red" />
+
+	    <!-- START Power  ABSTRACT -->
+	    <span>
+	      <div class="major">
+		<article id="Power">
+		  <h3>
+		    Jenny Power (Bath)
+		  </h3>
+		  <h4>
+		    Adaptive Regularisation for PDE-Constrained Optimal Control
+		  </h4>
+		  <p>
+		    PDE-constrained optimal control problems require
+		    regularisation to ensure well-posedness. This
+		    typically involves a small regularisation
+		    parameter and the resulting optimal control
+		    problem is equivalent to solving a singularly
+		    perturbed PDE.  We propose an adaptive strategy
+		    for regularising PDE-constrained optimal control
+		    problems. This method leverages rigorous a
+		    posteriori error estimates to adaptively vary the
+		    regularisation parameter across the computational
+		    domain. This allows the regularisation to be
+		    varied elementwise, dynamically balancing induced
+		    regularisation and discretisation errors, offering
+		    a robust and efficient method for solving these
+		    problems. We demonstrate the efficacy of our
+		    analysis with several numerical experiments.
+		  </p>
+
+		  <p>
+		    <em>
+		      This is joint work with Tristan Pryer
+		      (University of Bath) and Gabriel R. Barrenechea
+		      (University of Strathclyde).
+		    </em>
+		    <br />
+		    <em>
+		      Supported by the EPSRC grants EP/S023364/1,
+		      EP/X030067/1, EP/W026899/1 and the Leverhulme
+		      Trust Research Project Grant RPG-2021-238.
+		    </em>
+		  </p>
+
+
+		  <h5>References</h5>
+		  <ul>
+		    <li><a 
+			  id="power"></a><span>
+			 Jenny Power and Tristan Pryer.
+			 <em>
+			   daptive Regularisation for PDE-Constrained
+			   Optimal Control.
+			 </em>
+			 arXiv preprint arXiv:2503.11386 (2025).
+		      </span>
+		    </li>
+		  </ul>
+		</article>
+	      </div>
+	    </span>
+	    <!-- end  Power  abstract -->
+
+	    <p>[<em><a href="#top">back to top</a></em>]</p>	    
+	    <hr style="height:2px;background-color:red" />
+	    
+	    <!-- START Trenam ABSTRACT -->
+	    <span>
+	      <div class="major">
+		<article id="Trenam">
+		  <h3>
+		    Alex Trenam (Heriot-Watt University)
+		  </h3>
+		  <h4>
+		    Nodally bound-preserving discontinuous Galerkin methods for charge transport		    
+		  </h4>
+		  <p>
+		    Preserving the positivity of charge density
+		    variables is often critical to ensuring the
+		    well-posedness of models describing the transport
+		    of charged particles. A prototypical example is
+		    the coupled nonlinear
+		    <em>Poisson-Nernst-Planck (PNP)</em>
+		    equations, or
+		    <em>drift-diffusion</em>
+		    equations, which provide a
+		    continuum description for the two-way interaction
+		    between charged particle densities and an
+		    associated electric field. Motivated by the PNP
+		    system, and its extension to fluidic media through
+		    the <em>Navier-Stokes-PNP</em> model, in this talk
+		    I will present recent work
+		    <cite>[<a href="#B25" >2</a>]</cite>
+		    adopting the nodally
+		    bound-preserving method first introduced in
+		    <cite>[<a href="#B24" >1</a>]</cite>
+		    to the context of
+		    discontinuous Galerkin methods for charge
+		    transport.
+		  </p>
+
+		  <p>
+		    <em>
+		      This is joint work with Tristan Pryer
+		      (University of Bath) and Gabriel R. Barrenechea
+		      (University of Strathclyde).
+		    </em>
+		    <br/>
+		    <em>
+		      Supported by the EPSRC grants EP/S023364/1,
+		      EP/X030067/1, EP/W026899/1 and the Leverhulme
+		      Trust Research Project Grant RPG-2021-238.
+		    </em>
+		  </p>
+
+
+		  <h5>References</h5>
+		  <ul>
+		    <li>
+		      <span  id="B24">[1]</span>
+		      Gabriel R. Barrenechea, Emmanuil H. Georgoulis,
+		      Tristan Pryer, Andreas Veeser:
+		      <em>A nodally bound-preserving finite element
+			method.</em>
+		      IMA Journal of Numerical Analysis <b>44(4)</b>,
+		      2198-2219 (2024)
+		    </li>
+		    <li>
+		      <span  id="B25">[2]</span>
+		      Gabriel R. Barrenechea, Tristan Pryer, Alex Trenam: <em>A nodally bound-preserving discontinuous Galerkin method for the drift-diffusion equation.</em>
+		      Accepted for publication in Journal of Computational and Applied Mathematics, preprint available at arXiv:2410.05040.
+		    </li>
+		  </ul>
+		</article>
+	      </div>
+	    </span>
+	    <!-- end  Trenam abstract -->
+
+
+	    <p>[<em><a href="#top">back to top</a></em>]</p>	    
+	    <hr style="height:2px;background-color:red" />
+	    
+
+	    <!-- START Xenophontos ABSTRACT -->
+	    <span>
+	      <div class="major">
+		<article id="Xenophontos">
+		  <h3>
+		    Christos Xenophontos		  
+		    (University of Cyprus)
+		  </h3>
+		  <h4>
+		    On the decomposition of the solution to
+		    reaction-diffusion two-point boundary value problems
+		    with data of finite regularity
+		  </h4>
+		  <p>We consider reaction-diffusion two-point boundary value problems with data of finite regularity, i.e.
+		    \( H^2 \). It is well known that the solution may be decomposed into a smooth part, two boundary layers
+at the endpoints, and a remainder. We provide a proof of the
+		    regularity of each term in the decomposition
+		    that <em class="ltx_emph ltx_font_italic">does not
+		    use the maximum principle</em>, but rather
+		    utilizes <em class="ltx_emph
+		    ltx_font_italic">exponentially weighted</em>
+		    spaces. 
+Even though the end result is known, our method of proof may be
+		    extended to problems for which the maximum
+		    principle does not hold, e.g. fourth order
+		    problems, Reissner-Mindlin plate model, etc. Using
+		    our result, 
+		    we show how the \( h \) version of the Finite
+		    Element Method (with piece-wise linears) on the
+		    exponentially graded (eXp) mesh from 
+		    <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib2" title="" class="ltx_ref">2</a>]</cite>, converges uniformly at the optimal rate.
+		    The results presented in this talk appear in <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib1" title="" class="ltx_ref">1</a>]</cite>.</p>
+
+		  
+
+		  <p><em>This is joint work with Ch. Schwab (ETH, Zürich).</em></p>
+
+		  
+		  <h5>References</h5>
+
+		  <ul class="ltx_biblist">
+      
+		    <li id="bib.bib1" class="ltx_bibitem">
+		      <span class="ltx_tag ltx_tag_bibitem">[1]</span>
+		      <span class="ltx_bibblock">
+			Schwab, Ch. and Xenophontos, C.: Neural Networks for Singular Perturbations II: Finite Regularity, in preparation (2025).
+			
+		      </span>
+		    </li>
+		    
+		    <li id="bib.bib2" class="ltx_bibitem">
+		      <span class="ltx_tag ltx_tag_bibitem">[2]</span>
+		      <span class="ltx_bibblock"> Xenophontos, C.:
+		      Optimal mesh design for the finite element
+		      approximation of reaction-diffusion problems,
+		      Int. J. Numer. Meth. Eng., Vol. 53, No 4,
+			pp. 929–943 (2002).
+		      </span>
+		    </li>
+		    
+		  </ul>
+	      </article>
+	    </div>
+	    </span>
+	    <!-- end Xenophontos abstract -->
+
+
+	    <p>[<em><a href="#top">back to top</a></em>]</p>	    
+	    <hr style="height:2px;background-color:red" />	    
+
+	    <!-- START Marwa Zainelabdeen ABSTRACT -->
+	    <span>
+	    <div class="major">
+	      <article id="Zainelabdeen">
+		<h3>
+		  Marwa Zainelabdeen (WIAS, Berlin)
+		</h3>
+		<h4>
+		  Gradient-robust finite element - finite volume
+		  scheme for the compressible Stokes equations
+		</h4>
+		<p>
+		  We consider a steady compressible Stokes problem on
+		  a domain
+		  \( \Omega \subset \mathbb{R}^d \),
+		  where \( d\in \{2,3\} \), in primitive variables
+		  velocity, pressure and non-constant density (\(
+		  \boldsymbol u, p, \varrho \)). A
+<em>barotropic flow</em> is assumed, where the pressure depends solely
+		  on the density under an exponential <em>equation of state</em>
+		  \( p = c_M \varrho ^\gamma \) for \( \gamma \geq 1
+		  \).  </p>
+
+		<p>
+		  A finite element scheme for the momentum balance, coupled to a finite
+		  volume discretization for the continuity equation
+		  \( \nabla \cdot ( \varrho \boldsymbol u)  = 0 \), was proposed in
+		  <cite>[<a href="#akbas_gradient-robust_2020" >1</a>]</cite>
+		  for a linear equation of state
+		  \( (\gamma =1) \). In this talk, we present an extension of the scheme to
+		  the nonlinear equation of state \( (\gamma > 1) \). The scheme satisfies
+several desired structural properties, namely stability, convergence,
+		  the preservation of non-negativity and mass constraints for the
+		  density, and gradient-robustness. The latter property is related to
+		  the locking phenomenon observed in incompressible flow at high
+		  Reynolds number regimes, which carries over to the compressible
+		  setting. To achieve gradient-robustness, we employed the
+reconstruction operator proposed in
+		  <cite>[<a href="#linke_crime2014" >2</a>]</cite>.
+		  The
+		  structural properties of the scheme were tested using various
+		  numerical benchmark problems.
+		</p>
+		
+		<p>
+		  This is joint work with Volker John and Christian
+		  Merdon (Berlin).
+		</p>
+		
+		<h5>References</h5>
+		<ul>
+		  <li>
+		    <span  id="akbas_gradient-robust_2020">[1]</span>		    
+		    Akbas, M., Gallouët, T., Gassmann, A., Linke, A., Merdon, C.:
+		    <em>A gradient-robust well-balanced scheme for the
+		      compressible isothermal Stokes problem.
+		    </em>
+		    Computer Methods in Applied Mechanics and Engineering <b>74</b>(367), 2024-06-20 (2020).
+		    <a href="https://doi.org/10.1016/j.cma.2020.113069">https://doi.org/10.1016/j.cma.2020.113069</a>
+		  </li>
+		  <li>
+		    <span  id="linke_crime2014">[2]</span>		      
+		    Alexander Linke.:
+		    <em>On the role of the Helmholtz decomposition in
+		      mixed methods for incompressible flows and a new
+		      variational crime</em>.
+		    Computer Methods in Applied Mechanics and Engineering <b>268</b>(782–800), 0045-7825 (2014).
+		    <a href="https://doi.org/10.1016/j.cma.2013.10.011">https://doi.org/10.1016/j.cma.2013.10.011</a>
+		  </li>
+		</ul>
+	      </article>
+	    </div>
+	    </span>
+	    <!-- START Marwa Zainelabdeen  abstract -->
+	    <hr />
+	    
+	  </section>
+	</div>
+	
+      </div>
+
+<!-- START SIDEBAR -->
+<div id="sidebar">
+  <div class="inner">
+    
+    <!-- Menu -->
+    <nav id="menu">
+      <header class="major">
+	<h2>Menu</h2>
+      </header>
+      <ul>
+	<li><a href="index.html">Layer Phenomena 2025: home</a></li>
+	<li>
+	  <span class="opener">Register</span>
+	  <ul>
+	    <li><a href="registration.html">Register your participation</a></li>
+	    <li><a href="registration.html#abstracts">Abstract submission</a></li>
+	  </ul>
+	</li>
+	<li><a href="programme.html">Programme</a></li>
+	<li><a href="abstracts.html">Abstracts</a></li>
+	<li><a href="participants.html">Participants</a></li>
+	<li>
+	  <span class="opener">Location</span>
+	  <ul>
+	    <li><a href="location.html#where">Where</a></li>
+	    <li><a href="location.html#travel">Getting there</a></li>
+	    <li><a href="location.html#stay">Where to stay</a></li>
+	  </ul>
+	</li>
+	<li><a href="previous.html">Previous Workshops</a></li>
+	<li><a href="index.html#org">Organisers  and Support</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Section -->
+    <section>
+      <header class="major">
+	<h2>Get in touch</h2>
+      </header>
+      <p>If you have any queries about the workshop, please contact Niall.
+      </p>
+      <ul class="contact">
+	<li class="icon solid
+		   fa-envelope"><a href="mailto:Niall.Madden@UniversityOfGalway.ie">
+	    Niall.Madden@UniversityOfGalway.ie</a></li>
+	<li class="icon solid fa-link"><a href="https://www.niallmadden.ie/">niallmadden.ie</a></li>
+	<li class="icon solid fa-home">School of Mathematical and Statistical Sciences<br />
+	  University of Galway<br/>
+	  Galway, Ireland. H91 TK33
+	</li>
+	<li class="icon solid fa-phone">(353) 91-493803</li>
+      </ul>
+    </section>
+    
+    <section>
+      <div class="mini-posts">
+	<article>
+	  <a href="https://www.universityofgalway.ie/" class="image">
+	    <img src="images/UoG_logo.png" alt="Uni logo" /></a>
+    </article>
+      </div>
+    </section>
+    
+  </div>
+  <!-- END SIDEBAR -->
+</div>
+<!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+  </body>
+</html>

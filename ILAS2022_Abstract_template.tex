@@ -1,0 +1,83 @@
+% Template for post or presentation abstracts submitted to ILAS 2022
+% 1. Fill in the presenter's information (name, affiliation, email
+% address) and talk information (title of presentation, abstract).
+% 2. Compile to make sure there are no errors.
+% 3. Save the .tex file for your abstract with a distinctive name,
+% ideally "FamilynameGivenname.tex".
+% 4. Upload your .tex file to https://clr.ie/129557
+%       
+% * Please keep your LaTeX commands simple, and avoid the use of
+%    user-defined macros.
+% * Include details of co-authors and funding acknowledgements after the abstract.
+% * Upload only the LaTeX file (with .tex extension).
+% * Questions: Contact Niall Madden (Niall.Madden@NUIGalway.ie)
+
+\documentclass[a4paper]{amsart} 
+\usepackage{amssymb} 
+\usepackage{hyperref}
+\pagestyle{empty}
+\date{} 
+
+%% IGNORE THE NEXT 4 LINES
+\makeatletter % 
+\def\labelenumi{\theenumi.}
+\def\theenumi{\@arabic\c@enumi}
+\makeatother
+%% STOP IGNORING NOW
+
+\begin{document}
+
+\title{A sample \LaTeX\ abstract for a talk or poster at ILAS 2022}
+\author{Niall Madden} %Presenting author only
+\address{University of Wherever} % Affiliation of presenting author
+\email{Madden@whereever.edu} % Email address of presenting author only
+
+\maketitle
+
+% The abstract  ***no more than one page***
+
+This is a sample abstract for talks and posters
+presented at ILAS 2022, to be held
+in Galway (Ireland) in June 2022. 
+
+Please, follow the instructions at \url{http://ilas2022.ie/abstracts/}
+for submitting your abstract. Make sure you upload the \texttt{.tex}
+file, and not any others. 
+
+Try to keep your file as simple as possible, so that it is easily
+rendered in various formats. Give the file a name that readily
+identifies it with you, for example \texttt{OlgaTaussky.tex}. 
+
+If you wish to include citations, you can do so like this:
+\cite{my_key_for_OT49}. Use a bibitem key that is likely be be unique to
+you (e.g., don't use the default Math Reviews key).
+Any uncited bibliography entries will also
+appear. If you have none, then delete that section.
+
+%% Coauthor details here (optional - delete if not applicable)
+% and funding acknowledgment (optional - delete if not applicable)
+\emph{This is joint work with John Todd (Caltech) and Alexander Ostrowski (Basel).
+Supported by the National Mathematics Foundation, Grant XYZ-123.}
+
+\begin{thebibliography}{1}
+\bibitem{my_key_for_OT49}
+Olga Taussky.
+\newblock A recurring theorem on determinants.
+\newblock {\em  Amer. Math. Monthly}  56:672–676,  (1949).
+
+\bibitem{another_unique_key}
+Olga Taussky and John Todd.
+\newblock Cholesky, Toeplitz and the triangular factorization of
+symmetric matrices.
+\newblock {\em  Numer. Algorithms}, 41(2):197--202, 2006.
+\end{thebibliography}
+
+
+\end{document}
+
+
+% Please leave the next bit alone  
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../ILAS-2022"
+%%% End:

@@ -1,0 +1,382 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Stokes Modelling Workshop 2017 - NUI Galway</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+  </head>
+  
+  <body>
+    <center>
+      <p>
+	<font size="+1" color="#881010"><b>4th Annual</b>
+	</font><br />
+	<font size="+3" color="#881010"><b>Stokes Modelling
+	    Workshop</b>
+	</font>
+      </p>
+      
+      
+      <p><font size="+1">NUI Galway
+	</font><br />
+	<font size="+1">6 - 9 June, 2017
+	</font>
+      </p>
+      <p>Contact: <a href="mailto:Niall.Madden@NUIGalway.ie">Niall.Madden@NUIGalway.ie</a>.
+      </p>
+    </center>
+    
+
+    <div align="center">
+      <a href="https://mi-network.org"
+	 target="_blank"><img height="75px" src="MI-Net.png" alt="MI-NET"/>
+      </a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="http://www.maths.nuigalway.ie/stokes"
+	 target="_blank">
+	<img height="75px" src="Stokes.png" alt="Stokes"/>
+      </a>
+      <!--  <a href="http://www.maths.nuigalway.ie/SIAM-Galway"
+      target="_blank">
+	<img width=190px src="SIAM.png"></a>-->
+    </div>
+
+    <p>The Stokes Modelling week took place at NUI Galway in June
+    2017. Please review the <a href="Reports.shtml"> of our
+	participating teams.</p>
+	  
+    <div align="center">
+      <a href="Reports.shtml"
+	 target="_blank"><img width="90%" src="StokesParticipants2017.jpg"
+			      alt="MI-NET"/>
+      </a>
+    </div>
+    <div align="justify">
+      <p><b><font color="purple">UPDATE 24/07/2017:</font></b>
+	<a href="Reports.shtml">A report of the workshop</a> is available. 
+      </p>
+      <p><b><font color="purple">UPDATE 24/07/2017:</font></b>
+	<a href="Photos/">Here are some photos from the event. 
+      </p>
+      <p><b><font color="purple">UPDATE 02/06/2017:</font></b>
+	The Workshop <a href="Stokes2017x.pdf">booklet</a> is now available. 
+      </p>
+      <p><b><font color="purple">UPDATE 01/06/2017:</font></b>
+	A <a href="Schedule1.pdf">draft schedule</a> is now available. 
+      </p>
+      <p><b><font color="purple">UPDATE 31/05/2017:</font></b>
+	A <a href="#problems"><b>fifth</b> problem</a> has been added.
+      </p>
+      <p><b><font color="purple">UPDATE 20/05/2017:</font></b>
+	<a href="#registration">Registration</a> has closed. We have
+	over 40 confirmed <a href="Participants.shtml">participants</a>. 
+      </p>
+      <p><b><font color="purple">UPDATE 12/05/2017:</font></b>
+	Drafts of the <a href="#problems"><b>five</b> workshop problems</a>
+	are now available.
+      </p>
+      <p><b><font color="purple">UPDATE 10/05/2017:</font></b> We have
+	now confirmed <a href="#mentors">our five mentors</a>.
+      </p>
+      <p><b><font color="purple">UPDATE 29/03/2017:</font></b> Call for
+	participants is now open.
+      </p>
+    </div>
+    
+
+    <p>The School of Mathematics, Statistics and Applied Mathematics at
+      NUI Galway is hosting a four-day modelling workshop from
+      June 6th to 9th. Participants will take part in team-based modelling
+      of real-world, industry-driven problems, supported with training and
+      small group   study sessions. Mentoring will be provided by
+      experienced researchers.
+    </p>
+    
+    
+    <p>The workshop is primarily aimed at <b>postgraduate and early career
+      researchers</b> with a background in <b>any</b> area of
+      mathematics, informatics, science and engineering. Funding
+      provided
+      by the <a href="https://mi-network.org">MI-NET</a>, Mathematics for
+      Industry Network, can support participation by up to 10
+      students, as follows.</p>
+    <ul>
+      <li>Refunding the cost on-campus of up to five nights
+	accommodation, to a maximum of &euro;46.50 per night. We
+	recommend you stay at NUI Galway campus accommodation, and
+	that you  book directly with
+	<a href="http://www.campusaccommodation.ie/summer-visitors/">Corrib
+	  Village</a>. You will be reimbursed by MI-NET after the event.
+      </li>
+	<li>Refund of &euro;30 towards  travel expenses within
+	Ireland, also refunded after the event.
+	</li>
+    </ul>
+    
+    
+    <p>Participation by undergraduate students is also very  welcome, with
+      some limited funding provided by the School of Mathematics,
+      Statistics and Applied Mathematics. Specifically,
+      we will provide accommodation 
+      in shared on-campus for up to <b>four</b> nights (some students will
+      share rooms).
+    </p>
+    
+    <p>In addition, lunch and refreshments will be provided for all
+      participants.
+    </p>
+
+    <h2><a name="problems">Problems</a></h2>
+    <p>The workshop participants will work in small groups on problems
+      posed by industry partners. The problems we will study include
+      </p>
+    <ol>
+      <!--<li>Modelling data from heath care insurance, including detection
+	of fraud;</li>-->
+      <li><b>Shallow Water Equations for River Flows</b>, proposed by
+	Seshu Tirupathi, IBM Research, Ireland.
+	[<a href="01IBM_problem.pdf">DETAILS</a>]
+      </li> 
+      <li><b>Mathematical modelling of a protective hoop for catheters</b>,
+	proposed by Medtronic.
+      </li>
+      <li><b>Mapping 3D Objects using a single camera</b>,
+	proposed by Luca Manzari.
+	[<a href="03Mapping3D.pdf">DETAILS</a>]
+      </li>
+      <li><b>Designing an optimal weather radar network for
+	  Ireland</b>, proposed by MET Eireann.
+	[<a href="04MET-Eireann.pdf">DETAILS</a>]
+      </li> 
+      <li><b>The role of rheology in everyday fluid flow</b>
+	proposed by Doireann O'Kiely.
+	[<a href="05rheology.pdf">DETAILS</a>]
+      </li>
+      
+      
+  </ol>
+
+    
+  <p>The workshop will also feature sessions on developing skills in
+    scientific computing, and presentation and communication skills.
+  </p>
+
+    <p><b>The workshop takes place one week before the
+	<a href="http://ulsites.ul.ie/macsi/esgi128">
+	  European Study Group with Industry 128
+	</a> at the University of Limerick</b>. The modelling week
+      will be an excellent preparation for ESGI128.
+    </p>
+    
+    <p>General queries relating to the workshop should be directed
+      to <a href="mailto:Niall.Madden@NUIGalway.ie">Niall.Madden@NUIGalway.ie</a>.
+    </p>
+    
+
+
+    <h2><a name="mentors">Trainers</a></h2>
+    <p>
+      Participants will be supported in their modelling work by our
+      team of experienced mentors:
+      <a href="http://ulsites.ul.ie/macsi/node/45601">John Donohue</a> (MACSI, University of Limerick);
+      <a href="http://www.maths.manchester.ac.uk/people/staff/profile/?ea=artur.gower">Artur
+      Gower</a> (University of Manchester); 
+      <a href="https://www.kth.se/profile/manzari">Luca
+      Manzari</a> (KTH Royal Institute of Technology,  Stockholm); 
+      <a href="https://www.maths.ox.ac.uk/people/doireann.okiely">Doireann
+	  O'Kiely</a> (University of Oxford); and 
+      <a href="http://ulsites.ul.ie/macsi/tuoi-vo-profile">Thi
+	Ngoc Tuoi Vo</a> (MACSI, University of Limerick).
+      In
+      addition, <a href="https://www.linkedin.com/in/fergusmcauliffe/?ppe=1">
+	Fergus McAuliffe</a> (iCRAG, UCD) will deliver a workshop on
+	science communication.
+    </p>
+
+    
+    <table align="center" bgcolor="#F0F0FF" border="2" cellpadding="5" cellspacing="0"
+width="90%">
+      <tbody>
+	<tr valign="top">
+	  <td width="30%">
+	    <p align="center"><b><a href="http://ulsites.ul.ie/macsi/node/45601">Dr John Donohue</a></b></p>
+	    <p style="text-align:center;">
+	      <img src="macsi_john_donohue.png" alt="JD"
+		   height="150"/>
+	    </p>
+	    <p>
+	      <em>
+		<font size="-2">John graduated with a degree in Financial
+		  Mathematics from NUI Galway in 2011, followed by a PhD
+		  in Applied Mathematics. For his doctoral work, he worked
+		  in modelling seasonally migrating populations using
+		  piecewise-smooth dynamical systems. He is now a
+		  postdoctoral researcher with MACSI at the University of
+		  Limerick where he studies nutrient cycling in a
+		  mathematical context.
+		</font>
+	      </em>
+	    </p>
+	  </td>
+	  <td width="30%">
+	    <p align="center">
+	      <a href="http://www.maths.manchester.ac.uk/people/staff/profile/?ea=artur.gower">
+		<b>Dr Artur Gower</b>
+	      </a>
+	    </p>
+	    <p style="text-align:center;">
+	      <img height="150" alt="AG"
+		   src="http://www.maths.nuigalway.ie/~arturgower/Pictures/GardenShirt.jpeg"/>
+	    </p>
+	    <p>
+	      <em>
+		<font size="-2">Artur investigates how waves propagate
+		  in complex solids/fluids.
+		  His PhD in applied mathematics focused on
+		  calculating how
+		  elastic waves travel in soft solids under tension.
+		  He is currently a research associate at the
+		  University of Manchester working on wave propagation
+		  in random media. Artur is also interested in
+		  optimisation methods, supervised machine learning
+		  and working on mathematical problems arising from
+		  industry.  
+		</font>
+	      </em>
+	    </p>
+	    </td>
+	  <td width="30%">
+	    <p align="center">
+	      <b><a href="https://www.kth.se/profile/manzari">
+		  Luca Manzari</a>
+	      </b>
+	    </p>
+	    <p style="text-align:center;">
+	      <img height="150" alt="LM"
+		   src="lucaPic.png"/>
+	    </p>
+	    <p>
+	      <em>
+		<font size="-2">
+Driven by an interest in luthiery and a BSc in Mechanical Engineering,
+Luca moved to Stockholm's Royal Institute of Technology in 2013 to
+pursue a MSc in Engineering Mechanics specializing in sound and
+vibration. He is into experimental modal analysis, acoustic holography
+and voiding expensive equipment warranties. His ongoing PhD project
+deals with the inverse estimation of the dynamic properties of
+anisotropic viscoelastic materials using non-contact measurement
+techniques.
+		</font>
+	      </em>
+	    </p>
+	  </td>
+	  
+	</tr>
+	<tr valign="top">
+	      <td width="30%">
+		<p align="center">
+		  <b>
+		    <a href="https://www.maths.ox.ac.uk/people/doireann.okiely">
+		      Doireann O'Kiely</a>
+		  </b>
+		</p>
+		<p style="text-align:center;">
+		  <img src="https://www.maths.ox.ac.uk/system/files/styles/profile/private/users/photos/Doireann_mugshot.jpg?itok=S3xTffFy"
+		       alt="DOK" height="150"/>
+		</p>
+		<p>
+		  <em>
+		    <font size="-2">
+		      Doireann completed a degree in Theoretical Physics at UCD in 2012, before moving to University of Oxford to study for an MSc in Mathematical Modelling and Scientific Computing followed by a PhD in Mathematics.  For her PhD, Doireann developed mathematical models for glass sheet manufacture.  She is now a postdoctoral researcher at University of Oxford, where she studies wrinkling of thin elastic sheets.
+		    </font>
+		  </em>
+		</p>
+	      </td>
+	      
+	      <td width="30%">
+		<p align="center">
+		  <b>
+		    <a href="http://ulsites.ul.ie/macsi/tuoi-vo-profile">
+		      Dr Thi Ngoc Tuoi Vo</a>
+		  </b>
+		</p>
+		<p style="text-align:center;">
+		  <img src="http://ulsites.ul.ie/macsi/sites/default/files/macsh_tuoi_vo.png"
+		       alt="DOK" height="150"/>
+		</p>
+		<p>
+		  <em>
+		    <font size="-2">Dr Vo graduated with a PhD degree in Applied Mathematics in NUI Galway in 2012. Her PhD focused on  mathematical analysis of some models for drug delivery. She is now a postdoctoral researcher with MACSI at the University of Limerick where she works on modelling problems arising from industry. Her main research interest is on mathematical modelling of drug delivery systems, especially in modelling of drug-eluting stents.
+		    </font>
+		  </em>
+		</p>
+		</td>
+	      
+	      <td width="30%" bgcolor="#F0FFF0">
+		<p align="center">
+		  <b>
+		    <a href="https://www.linkedin.com/in/fergusmcauliffe/?ppe=1">Dr
+		    Fergus McAuliffe</a>
+		  </b>
+		</p>
+		<p style="text-align:center;">
+		  <iframe width="150" height="150" src="https://www.youtube.com/embed/eL4gfoTXuzQ" frameborder="0" allowfullscreen></iframe>
+		</p>
+		<p>
+		  <em>
+		    <font size="-2">
+		      Fergus holds a PhD in Environmental
+		      Science   from UCC.
+		      He is a TV presenter on "The Science Squad", and
+		      "10 Things to Know About...",
+		      and is an occasional contributor to Newstalk's
+		      Futureproof.
+		      He is a previous
+		      winner of FameLab Ireland and Famelab
+		      International, the world's largest science
+		      communication competition.
+		      Fergus has been featured in Vanity Fair, Wired
+		      Magazine and Vogue and, in 2013, he was
+		      shortlisted for the Guardian science writing
+		      prize.  Currently Fergus is Education, Public
+		      Engagement and Communications Manager at iCRAG -
+		      the Irish Centre for Research in Applied
+		      Geosciences, UCD.
+		    </font>
+		  </em>
+		</p>
+		</td>
+		
+	      </tr>
+	    </tbody>
+	  </table>
+      
+
+
+<!--
+    <h2>Registration</h2>
+    <p> <b>Registration is free</b>, but is required.
+      If you are interested in participating,
+      please <a href="https://goo.gl/forms/mjvOf6cbcgxkjwNG3">complete
+	this 	registration
+	form</a>.
+      The deadline for registration is <b>Friday, 19
+      May</b>. Applications will be processed as they are
+      submitted. Funding will be awarded on a first-come basis.
+    </p>
+    -->
+ <h2><a name="registration">Registration</a> (CLOSED)</h2>
+    <p> <b>Registration closed on Friday, 19
+	May</b>. If you have any queries, please contact
+      <a href="mailto:Niall.Madden@NUIGalway.ie">Niall.Madden@NUIGalway.ie</a>
+      </p>
+    
+    <h2>Organising Committee</h2>
+    <p>Michel Destrade, Roberto Galizia,  Paul Greaney, Niall Madden
+      (main organiser),
+      Martin Meere, 
+      Robert Mangan, Petri Piiroinen, Eoghan Staunton, Michael Welby,
+      Giuseppe Zurlo</p>
+
+    <!-- END PAGE CONTENTS -->
+    <!--#include virtual="$incl/footer.shtml" -->
+  </body>
+</html>

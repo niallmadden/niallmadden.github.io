@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <!-- ENTER  PAGE TITLE  HERE -->
+    <title>de Brun Centre Coffee and Cake</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link rel="stylesheet" href="http://www.maths.nuigalway.ie/style.css" type="text/css"/>
+      <link rel="shortcut icon" href="/favicon.ico" />
+  </head>
+  
+<body>
+      
+    <!--#set var="incl" value="/includes" -->
+    <!--#include virtual="$incl/header.shtml" -->
+	    
+    <!-- ENTER PAGE CONTENTS BELOW HERE -->
+
+<center><h1>de Br&uacute;n Centre Coffee and Cake</h1>
+<h2>Schedule for Semester 2, 2019</h2>
+</center>
+
+<table align="center" border="2">
+<tr>
+  <th colspan="3" align="center">Next  meeting(s)</th>
+</tr>
+<tr>
+<td><b>Time and Date</b></td>
+<td><b>Micro-talks</b></td>
+<td><b>Cake</b></td>
+</tr>
+<tr>
+  <td>
+    15.30, Wednesday 13 November
+  </td>
+  <td>
+    Martin K.
+  </td>
+  <td>
+    Graham E.
+  </td>
+</tr>
+
+
+
+<tr>
+  <th colspan="3">Previous meetings </th>
+</tr>
+<tr>
+  <td>
+    11am, Monday 8 April
+  </td>
+  <td>
+    Padraig &Oacute; Cath&aacute;in
+  </td>
+  <td>
+    Qays S.
+  </td>
+</tr>
+
+<tr>
+  <td><b>Day, Date</b></td>
+<td><b>Micro-talks</b></td>
+<td><b>Cake</b></td>
+</tr>
+<tr>
+  <td>
+    11am, Friday 29 March
+  </td>
+  <td>
+    Rachel Q. (Wallpaper Groups and Origami Tessellations)
+  </td>
+  <td>
+    Niall M. (Pear, almond and chocolate tart)
+  </td>
+</tr>
+<tr>
+  <td>
+    11am, Wednesday, 6 March
+  </td>
+  <td>
+    James C. (Graphs on surfaces) and Niall M. (Spectra of tridiagonal
+    matrices).
+  </td>
+  <td>
+    Cian O'B. (Cookies)
+  </td>
+</tr>
+<tr>
+  <td>
+    11am, Wednesday, 20 Feb
+  </td>
+  <td>
+    Cian and Ray.
+  </td>
+  <td>
+    Angela
+  </td>
+
+<tr>
+  <td>
+    11am, Tuesday, 12 Feb
+  </td>
+  <td>
+    John B. (Geometry), and Rachel (Counting Covering Groups).
+  </td>
+  <td>
+    Kirsten (Granola Bars).
+  </td>
+</tr>
+
+
+<tr>
+  <td>
+    11am, Wednesday, 6 Feb
+  </td>
+  <td>
+    Angela (Combinatorics of Rational Generating Function) and
+    Michael T. (Vertex Operator Algebras)
+  </td>
+  <td>
+    Rachel (Cranberry and orange shortbread)
+  </td>
+</tr>
+<tr>
+  <td>
+    2pm, Wednesday, 30 Jan
+  </td>
+  <td>
+    Tobias (Groups and Graphs)  and Emil (Polynomial Algebras and Graphs)
+  </td>
+  <td>
+    ***
+  </td>
+</tr>
+<tr>
+<tr>
+  <td>
+    11am, Wednesday, 23 Jan
+  </td>
+  <td>
+    Ronan (Propelinear codes) and Goetz (Double Burnside rings)
+  </td>
+  <td>
+    Graham (Welsh cakes).
+  </td>
+</tr>
+<tr>
+  <td>
+    3pm, Tuesday, 15 Jan.
+  </td>
+  <td>
+    Graham (Homology and the univerise) and 
+    Niall (A new-ish preconditioning method for large-ish linear systems)
+  </td>
+  <td>
+    Niall (Walnut and raisin cookies).
+  </td>
+</tr>
+</table>
+
+
+<p>
+  All meetings take place in the School of Maths <b>Research Room</b>
+    (AdB-G022),  ground floor of Aras de Brun. <b>Everyone is
+    welcome</b>.
+  The meetings feature (usually) two "micro-talks": short 5-10 minute
+    presentations on some aspect of the current interests of the
+    speaker. These are informal, and should be aimed to provoke
+    conversation. 
+    Cake (or equivalent) will be
+    provided, as will tea (bags) and coffee (pods). Bring your own
+    mug.</p>
+    
+<p>For more information, contact
+    <a href="http://www.maths.nuigalway.ie/~niall/">Niall
+    Madden</a>. In particular tell Niall if you would like to talk at a meeting
+    and/or provide cake.
+</p>
+<p>To receive email notifications of the next meeting, sign up to the
+<a href="https://listserv.heanet.ie/cgi-bin/wa?A0=NUIG-DE-BRUN-CENTRE">
+email list</a>.</p> 
+</p>
+ 
+	<!-- END PAGE CONTENTS -->
+	<!--#include virtual="$incl/footer.shtml" -->
+
+</body>
+</html>

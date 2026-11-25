@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <!-- ENTER  PAGE TITLE  HERE -->
+    <title>Layer Phenomena 2017: Abstracts</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link rel="stylesheet" href="http://www.maths.nuigalway.ie/style.css" type="text/css"/>
+  </head>
+<body>
+    <!--#set var="incl" value="/includes" -->
+   <!--#include virtual="Layer2017header.shtml" -->
+
+
+<p>
+<font size="+2" color="#881010">
+<b>The 14<sup>th</sup> Annual Workshop on Numerical Methods
+  for Problems with Layer Phenomena</b></font><br />
+<br />
+<font size="+1">NUI Galway</font><br />
+<font size="+1">6-7 April 2017</font>
+
+</p>
+
+
+<h2>Book of Abstracts</h2>
+
+      <font color="red">UPDATE (05/04/2017):</font>
+      the <a href="Abstracts2017">Book of Abstracts</a> is now  available.<br/>
+
+<h2>Abstracts</h2>
+
+<p>Each speaker is invited to submit an abstract of his/her talk. A
+collection of (extended) abstracts will be published here by the beginning
+  of the workshop.</p>
+
+<p>Abstracts should be submitted as LaTeX
+files, whose length including figures and references should not exceed
+2 pages. The LaTeX files to prepare your abstract are:
+<ul>
+  <li>the LaTeX document-class file <a href="layers17.cls">layers17.cls</a>,</li>
+  <li>a sample abstract: <a href="YourName.tex">YourName.tex</a>.</li>
+    </ul>
+(Right click and choose Save Link As...).
+</li>
+</p>
+
+  <p>Each contributed talk should not exceed <b>20 minutes</b>
+  (including a short discussion). A computer and  data-projector will
+    be available, as well as a white board and over-head projector.
+</p>
+
+  <p>
+    <font color="red">The deadline for submitting an abstract is Friday, 24 February 2017.</font></p>
+
+
+        <!-- END PAGE CONTENTS -->
+        <!--#include virtual="$incl/footer.shtml" -->
+    </body>
+</html>

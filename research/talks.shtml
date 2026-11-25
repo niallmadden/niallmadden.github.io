@@ -1,0 +1,546 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>Niall Madden's research presentations</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+  </head>
+
+  <body>
+    <!--#set var="incl" value="/includes" -->
+    <!--#include virtual="$incl/header.shtml" -->
+    
+    <h3>Research Presentations since September 2000</h3>
+    
+    <h1>Conferences, Workshops and Seminars</h1>
+    
+    <h2>2019</h2>
+    <ul>
+      <li>[Conference] <a href="http://numericalanalysisconference.org.uk">
+	  28th Biennial Numerical Analysis Conference</a> Strathclyde, 25-28
+	June 2019.
+      <li>[Conference]
+	<a href="http://euclid.mas.ucy.ac.cy/~efef2019/">17th European
+	  Finite Element Fair</a>
+	University of Cyprus, 17-18 May, 2019.
+      </li>
+      <li>[Workshop]
+	<a href="https://www.imus.us.es/en/actividad/2219">
+	  16th Annual Workshop on Numerical Methods for Problems with
+	  Layer Phenomena,  
+	</a> Sevilla, 14-15 February, 2019.
+      </li>
+      
+    </ul>
+
+    <h2>2018</h2>
+    <ul>
+      <li>[Workshop]
+	<a href="https://www.birs.ca/events/2018/5-day-workshops/18w5148">
+	  Adaptive Numerical Methods for Partial Differential Equations with Applications
+	</a>,
+      Banff International Research Station for Mathematical Innovation
+      and Discovery, 17 May - 1 June, 2018. (Participant).
+      </li>
+
+      <li>[Seminar] <a href="https://www.mun.ca/math/events/seminar.php">
+	  Computational and Applied Mathematics Seminar</a>, Memorial
+	  University of Newfoundland. 17 May 2018.
+      </li>
+
+      <li>[Seminar]
+	<a href="https://www.csrc.ac.cn/en/">Bejing Computational
+	  Science Research Centre</a> 15 Janurary, 2018.
+      </li>
+
+
+      
+    </ul>
+
+    <h2>2017</h2>
+    <ul>
+      <li>[Workshop]
+	<a href="https://skumarmath.wordpress.com/gian-17/singular-perturbation-problems/">Short Term Course On
+Theory and Computation of Singularly Perturbed Differential
+	Equations</a>,
+      organised by Department of Mathematics, IIT (BHU), Varanasi
+Supported by MHRD
+      under <a href="http://www.gian.iitkgp.ac.in/ccourses/approvecourses3">GIAN</a>
+      (Global Initiative for Academic Networks).
+	I  delivered the short course,  along with Dr Sunil Kumar 
+	and Prof. L.P. Singh.
+      </li>
+
+      <li>[Workshop]
+	The <a href="https://www.maynoothuniversity.ie/mathematics-and-statistics/3rd-irish-linear-algebra-and-matrix-theory-meeting">3rd
+	  Irish Linear Algebra and Matrix Theory Meeting</a>, Maynooth
+	University Department of Mathematics &amp; Statistics, 8th
+	September (contributed talk).
+      </li>
+
+      <li>[Conference] <a href="http://numericalanalysisconference.org.uk">
+	  27th Biennial Numerical Analysis Conference</a> Strathclyde, 27-30
+  June 2017. With Natalia Kopteva and Torsten Lin&szlig;, I am
+	  organising a mini-symposium on
+	<a href="http://numericalanalysisconference.org.uk/minisymposia">
+	  Advances in the robust solution of singularly perturbed
+	  differential equations</a>.
+      </li>
+
+      <li>[Workshop]
+	<a href="../LayerPhenomena2017">14th
+	  Annual 
+	  Workshop on Numerical Methods for Problems with Layer
+	  Phenomena</a> at NUI Galway, 6-7 April, 2017
+	(main organiser).
+      </li>
+
+      
+    </ul>
+
+<h2>2016</h2>
+<ul>
+<li>[Conference]
+ <a href="https://sites.google.com/site/2016isscc/home">2016 UL SIAM
+ Student Conference</a>, 7 December, University of Limerick 
+(plenary talk).</li>
+
+<li>[Workshop and Short
+  Course] <a href="http://www.math.mun.ca/~smaclachlan/anasc_spde/">2016
+    AARMS-CRM Workshop on Numerical Analysis of Singularly Perturbed
+    Differential Equations</a>. 25-29 July, Halifax, Nova Scotia. </li>
+
+<li>[Seminar] <a href="https://www.fernuni-hagen.de/">
+FernUniversität in Hagen</a>. 23 May, 2016.
+</li>
+<li>[Conference] <a href="http://efef2016.ins.uni-bonn.de/venue.html">
+The 14th European Finite Element Fair</a>,  
+20-21 May, 2016. Universiatät Bonn.</li>
+</ul>
+
+<h2>2015</h2>
+<ul>
+<li>[Seminar] <a href="http://mathsci.ucd.ie/ACMSeminars/">
+Applied and Computational Mathematics Seminars</a>, University College
+  Dublin, 9 December, 2015.
+</li>
+
+
+<li>[Conference] <a href="http://numericalanalysisconference.org.uk">
+26th Biennial Numerical Analysis Conference</a> Strathclyde, 23-26
+  June 2015. With Martin Stynes, I organised a mini-symposium on
+  <a href="http://numericalanalysisconference.org.uk/minisymposia">Singularly perturbed differential equations</a>.
+</li>
+
+<li>[Workshop] <a href="http://www.math.tu-dresden.de/layer-phenomena/">
+12th Annual Workshop on Numerical Methods
+for Problems with Layer Phenomena</a> (dedicated to the 65th birthday
+  of Hans-G&ouml;rg Roos). Thursday, 9th - Friday, 10th April 2015. TU Dresden.</li>
+
+
+<li>[Seminar] <a href="http://www.staff.ul.ie/mitchells/MACSI_seminars.html">
+	     MACSI Seminar Series</a>, Department of Mathematics and
+	     Statistics, University of Limerick, 27 March 2015.
+</li>
+
+</ul>
+
+<h2>2014</h2>
+
+<ul>
+<li>[Conference]
+<i>Sparse grid finite element methods for boundary  layers problems</i>
+<a href="http://maths.nuigalway.ie/ISSEC/">
+Joint Symposium
+Irish Mechanics Society and the 
+Irish Society for Scientific Engineering
+&amp; Computation (ISSEC)</a>.
+8-9 of December, 2014, NUI Galway. 
+</li>
+<li>[Workshop] <i>Linear solvers for a singularly perturbed problem</i>.
+<a href="http://mathsci.ucd.ie/conferences/lamt14/">2nd Irish
+    Linear Algebra and Matrix Theory Meeting</a>, 29 August 2014,
+    School of Mathematical Sciences. (Invited speaker).</li>
+
+<li>[Seminar] <i>Sparse grid finite element methods for a two-dimensional 
+  reaction-diffusion problem</i>, T.U. Dresden.  29 April, 2014.
+
+<li>[Workshop] <em>A first-order system Petrov-Galerkin discretization
+for  solving a  reaction-diffusion
+    problem</em>. <a href="http://imft.ftn.uns.ac.rs/math/Activities/Workshop2014">11<sup>th</sup>
+    Annual Workshop on Numerical Methods for Problems with Layer
+    Phenomena</a>, Novi Sad, 20-21 March, 2014. 
+</li>  
+
+
+<li>[Student conference] <em>An introduction to the numerical solution
+    of singularly 
+    perturbed differential equations</em>. Irish Mathematical Student
+    Association Annual Meeting, NUI Maynooth, 7-9 March,
+    2014. (Invited speaker)
+</li>  
+
+<li>[Conference] <em>Singularly perturbed differential equations are
+    difficult to     solve numerically, except when they are not</em>.
+The <a href="https://sites.google.com/site/siamukie2014/">annual
+    meeting</a> of  <a href="http://people.bath.ac.uk/mamamf/siamukie">
+SIAM UKIE</a>, the UK & Republic of Ireland section
+of <a href="http://siam.org/">SIAM</a>, University College London,
+  9<sup>th</sup> January 2014. (Invited speaker).
+</li>  
+</ul>
+
+
+<hr />
+<h2>2000-2013</h2>
+
+<ul>
+
+<li>[Conference] <em>A boundary layer preconditioner for a singularly perturbed problem</em>.
+<a href="http://numericalanalysisconference.org.uk/">
+25<sup>th</sup> Biennial Numerical Analysis Conference</a>
+Strathclyde, Jun 25<sup>th</sup>-28<sup>th</sup> 2013.
+</li>
+
+
+<li>[Workshop] <em>Robust solution of singularly perturbed problems using multigrid
+methods</em>. 
+<a href="http://www2.ucy.ac.cy/~xenophon/workshop/">10<sup>th</sup>
+    Annual Workshop on Numerical Methods for Problems with Layer
+    Phenomena</a>, Cyprus, May 23<sup>rd</sup>-24<sup>th</sup> 2013.
+</li>
+
+<hr />
+<li>[Seminar] <em>Post-processing of one-dimensional  finite element
+    solutions to convection-diffusion problems</em>, NUI Galway
+    Research Day, April   2012.</li>
+
+
+<li>[Seminar] <em>Optimal time-stepping for tidal simulations</em>, 
+The <a href="http://www.ryaninstitute.ie/talks-n-treats-ryan-institute-seminar-series/">Ryan     Institute Talks n' Treats seminar series</a>, 27 April 2012
+</li>
+
+
+<li>[Conference] <em>A Schwarz-type method for a   coupled system of singularly
+  perturbed problems</em>, 
+<a href="http://math.postech.ac.kr/~bail2012/">BAIL</a>:
+  International Conference on Boundary and Interior Layers--
+Computational and Asymptotic Methods
+POSTECH,  Korea,  February 6th--10th,  2012
+</li>
+
+<hr />
+
+
+<li>[Seminar] <em>Cholesky, Taussky, Todd, Toeplitz and Turing: A story of love,
+       death, wars, and matrix factorisations</em> NUI Galway
+       Mathematics Society, 25 Nov
+       2011. <a href="MathsSocNov11.pdf">slides</a>.
+</li>
+
+<li>[Conference] <em>Linear Solvers for Singularly Perturbed Problems</em>, 
+<a href="http://www.math.tu-dresden.de/wnaspp/">
+Numerical Analysis for Singularly Perturbed Problems</a>
+   (dedicated to the 60th birthday of Martin Stynes). TU Dresden,
+   16--18Nov, 2011.</li>
+
+
+<li>[Seminar] <em>Fast solvers for singularly perturbed problems</em>, 
+Mathematics Seminar, NUI Galway, 20 Oct 2011.</li>
+
+
+<li>[Conference] <em>Improved Numerical Modelling of Dispersion of Pollutants in
+    Tidal
+    Regions</em>, <A href="http://www.iciam2011.com/index.php">ICIAM</a>,
+    (7th International Congress on Industrial and Applied
+    Mathematics), Vancouver, 18--22 July 2011.</li>
+
+<li>[Conference] <em>Numerical Simulation of an Advection Diffusion Problem in
+    Tidal
+    Regions</em>, <a href="http://www.mitacs.ca/events/index.php?option=com_content&view=article&id=191&Itemid=208&lang=en">Numerical
+    Methods for Incompressible Fluid Flow</a>, Applied Mathematics
+    Perspectives, University of British Columbia, Vancouver, 14--16
+    July, 2011.</li>
+
+
+
+<li>[Seminar] <em>Schwarz methods for coupled systems of singularly perturbed
+                        problems</em>, Mathematisches Kolloquium,
+                        Universitat Duisburg-Essen 
+                   24 May 2011,</li>
+
+
+<li>[Seminar] <em>Layer resolving methods for singularly perturbed problems</em>
+Chinese Academy of Sciences Beijing, 22 March 2011.
+
+<li>[Seminar] <em>Numerical Solution of
+Singularly Perturbed Coupled Problems</em>, 
+Department of Mathematics Seminar, University of Auckland, 24 Feb 2011.
+
+<li>[Seminar] <em>The numerical simulation of some ODEs arising in  glycemia
+    models</em>, Auckland Numerical Analysis Workshop, 17 Feb 2011.
+
+<hr />
+
+<li>[Seminar] <em>Robust numerical methods for singularly perturbed
+    problems</em>, IMA Postdoc Seminar, University of Minnesota, 9th Nov 2010</li>
+
+<li>[Workshop] <em>Computational aspects of a two-scale finite element method for
+    singularly perturbed
+    problem</em>, <a href="http://www.ima.umn.edu/2010-2011/W11.1-5.10/">
+Numerical Solutions of Partial Differential Equations: Novel
+    Discretization Techniques</a>,  Institute for Mathematics and Its
+    Applications,  University of Minnesota, 1-5 November, 2010. (Poster
+    presentation)</li>
+
+
+<li>[Workshop] <em>Derivation of DBN Structure from Expert Knowledge in the Form
+    of Systems of
+    ODEs</em>, <a href="http://www.ima.umn.edu/2010-2011/W10.18-22.10/">Computing 
+    with Uncertainty: Mathematical Modeling, Numerical Approximation
+    and Large Scale Optimization of Complex Systems with
+    Uncertainty</a> Institute for Mathematics and Its Applications,
+    University of Minnesota, 18-22 October, 2010. (Poster
+    presentation)</li>
+
+
+<li>[Conference] <em>A computational study of a fluid flow problem featuring an
+     interior layer</em>, <a href="http://www.bail2010.unizar.es">
+Boundary and Interior Layers</a>, Zaragoza,
+     July 2010.</li>
+
+
+<lr />
+
+<li>[Conference] <em>An alternating direction method for a singularly
+     perturbed reaction-diffusion problem</em>, <a href="http://www.mathstat.strath.ac.uk/naconf/">23rd Biennial Conference on Numerical Analysis</a>,
+	University of Strathclyde, 23-26 June 2009.</li>
+
+
+
+<li>[Conference] <em>The numerical solution of a system of singularly perturbed
+reaction-diffusion equations by a domain decomposition technique</em>,
+<a href="http://www.maths.nuigalway.ie/bmc2009/">British Mathematics Colloquium</a>, NUI Galway, 06-09 April 2009</li>
+
+<li>[Workshop] <em>Computational aspects of a two-scale finite element method for
+                reaction-diffusion
+                equations</em>, <a href="http://www.maths.ul.ie/Workshops/workshop09.html">7th
+                Annual Workshop on Numerical Methods for Problems with
+                Layer Phenomena</a>, University of Limerick, 22-23
+                Jan, 2009.</li>
+
+<hr />
+<li>[Conference] <em>Overlapping Schwarz techniques for coupled systems
+          of reaction-diffusion equations</em>, <a href="http://www.bail2008.ul.ie/">BAIL 2008</a>, UL, 28 July-01 Aug 	2008
+
+<hr />
+
+<li>[Seminar] <em>The numerical analysis of systems of singularly perturbed
+	  differential equations</em>, Seminar, NUI Galway, 01 Nov
+	2007</li>
+
+
+<li>[Seminar] <em>The numerical analysis of systems of singularly perturbed
+	  differential equations</em>, Seminar, Dublin City
+	University, 08 March 2007.</li>
+
+<li>[Workshop] <em>On the numerical solution of a system of <em>M</em> singularly
+  perturbed reaction-diffusion equations in two dimension,</em> 
+ <a href="http://www.maths.ul.ie/workshop07.html">6th Annual Workshop
+ on Numerical Methods for Problems with Layer Phenomena</a>, University of Limerick. 08-09 Feb 2007.</li>
+
+
+<hr />
+
+<li>[Conference] <em>A parameter-robust numerical method for a coupled system of two
+	dimensional reaction-diffusion equations.</em> 
+<a href="http://fdm06.uni-ruse.bg/">4th Conference on
+	Finite Difference Methods</a>, Lozenetz, Bulgaria, 26-29
+	August 2006.</li>
+
+<li>[Workshop] <em>On an overlapping Schwarz method for a system of singularly-perturbed reaction-diffusion equations,</em>
+<a href="http://www.maths.ul.ie/Workshops/workshop06.html">
+5th Annual Workshop on Numerical Methods for Problems with Layer
+	Phenomena<a/>, University of Limerick, 9-10 Feb 2006.</li>
+
+<hr />
+
+<li><em> On a parameter-uniform Schwartz  scheme for a system of
+	  singularly-perturbed differential equations.</em>
+<a href="http://www.maths.dundee.ac.uk/naconf/">21st Biennial
+  Conference on Numerical Analysis</a>, University of Dundee, Scotland, UK
+Tuesday 28th June - Friday 1st July, 2005
+
+<hr />
+
+<li>[Conference] <em>What Mathematics should a mathematician know?</em>, 
+<a href="http://maths.ucd.ie/conferences/isume2/index.htm">The Second
+  Irish Symposium for Undergraduate Mathematics Education,</a> UCD,  10-11 December, 2004.</li>
+
+<li>[Conference] <em>On the application of robust numerical methods to
+	  a complete 	  flow wave-current model,</em>
+	  with Martin Stynes and Garth
+	  Thomas, <a href="http://www.incaireland.org/gpage6.html">Boundary
+	  and Interior Layers</a>, Toulouse, 05-09  July 2004.</li>
+
+
+<li>[Seminar] <em>Singularly Perturbed differential equations: applications and
+	  numerical solution</em>, University of Limerick, 19 Oct 2004.</li>
+
+
+<li>[Seminar] <em>Mesh equidistribution for reaction-diffusion problems</em>, 
+	  Numerical Mathematics Seminar, TU Dresden, 11 May 2004.</li>
+
+
+
+<li>[Workshop]<i>On equidistribution for reaction-diffusion problems. 
+Workshop on problems with boundary-layer phenomena</i>, 12-13 Feb 2004.</li>
+  
+
+<li>[Seminar] <em>Coupled systems of differential equations:  Analysis,
+	  Numerical methods and Applications.</em>
+Applied Mathematics Seminar, UCC, Feb 26, 2004.</li>
+
+<hr />
+
+
+<li>[Conference] <i>Uniform convergence of a finite difference scheme for a system
+	  of coupled reaction-diffusion equations</i>, <A href="http://www.maths.dundee.ac.uk/~naconf/">20th Biennial Conference on Numerical Analysis</a>
+              University of Dundee, 24--27 June, 2003.</li>
+
+<hr />
+
+<li>[Seminar] <i>Robust numerical solution of systems of coupled singularly 
+perturbed reaction-diffusion equations</i>, Seminar  University of
+	Limerick, Nov 2002. </li>
+
+
+<li>[Seminar] <i>Accurate solution of systems of singularly perturbed reaction-diffusion 
+equations</i>, Seminar TU Dresden.  April 2002.</li>
+
+
+<li>[Workshop] <i>A fitted mesh for a system of two linear
+singularly perturbed problems</i>,
+INCA Workshop on Numerical Methods for Singularly Perturbed Differential 
+Equations, University of Limerick. Jan 2002.</li>
+
+<hr />
+
+<li>[Seminar] <I>Numerical methods for systems of differential equations</I>, seminar, Dep of Mathematics, NUI Galway. Nov 2000.</li>
+
+</ul>
+
+
+
+
+<!-- 
+
+<li><em>A computational study of a fluid flow problem featuring an
+     interior layer</em>, <a href="http://www.bail2010.unizar.es">
+Boundary and Interior Layers</a>, Zaragoza,
+     July 2010.
+
+
+<li><em>An alternating direction method for a singularly
+     perturbed reaction-diffusion problem</em>, <a href="http://www.mathstat.strath.ac.uk/naconf/">23rd Biennial Conference on Numerical Analysis</a>,
+	University of Strathclyde, 23-26 June 2009.
+
+
+
+<li><em>The numerical solution of a system of singularly perturbed
+reaction-diffusion equations by a domain decomposition technique</em>,
+<a href="http://www.maths.nuigalway.ie/bmc2009/">British Mathematics Colloquium</a>, NUI Galway, 06-09 April 2009
+
+<li><em>Computational aspects of a two-scale finite element method for
+                reaction-diffusion
+                equations</em>, <a href="http://www.maths.ul.ie/Workshops/workshop09.html">7th
+                Annual Workshop on Numerical Methods for Problems with
+                Layer Phenomena</a>, University of Limerick, 22-23 Jan, 2009.
+
+<li><em>Overlapping Schwarz techniques for coupled systems
+          of reaction-diffusion equations</em>, <a href="http://www.bail2008.ul.ie/">BAIL 2008</a>, UL, 28 July-01 Aug 	2008
+
+
+
+<li><em>On the numerical solution of a system of <em>M</em> singularly
+  perturbed reaction-diffusion equations in two dimension,</em> 
+ <a href="http://www.maths.ul.ie/workshop07.html">6th Annual Workshop
+ on Numerical Methods for Problems with Layer Phenomena</a>, University of Limerick. 08-09 Feb 2007.
+
+
+<li><em>A parameter-robust numerical method for a coupled system of two
+	dimensional reaction-diffusion equations.</em> 
+<a href="http://fdm06.uni-ruse.bg/">4th Conference on
+	Finite Difference Methods</a>, Lozenetz, Bulgaria, 26-29 August 2006.
+
+
+<li><em>On an overlapping Schwarz method for a system of singularly-perturbed reaction-diffusion equations,</em>
+<a href="http://www.maths.ul.ie/Workshops/workshop06.html">
+5th Annual Workshop on Numerical Methods for Problems with Layer
+	Phenomena<a/>, University of Limerick, 9-10 Feb 2006.
+
+<li><em> On a parameter-uniform Schwartz  scheme for a system of
+	  singularly-perturbed differential equations.</em>
+<a href="http://www.maths.dundee.ac.uk/naconf/">21st Biennial
+  Conference on Numerical Analysis</a>, University of Dundee, Scotland, UK
+Tuesday 28th June - Friday 1st July, 2005
+
+<li><em>What Mathematics should a mathematician know?</em>, 
+<a href="http://maths.ucd.ie/conferences/isume2/index.htm">The Second
+  Irish Symposium for Undergraduate Mathematics Education,</a> UCD,  10-11 December, 2004.
+
+<li><em>On the application of robust numerical methods to a complete
+	  flow wave-current model,</em>
+	  with Martin Stynes and Garth
+	  Thomas, <a href="http://www.incaireland.org/gpage6.html">Boundary
+	  and Interior Layers</a>, 05-09 Toulouse, July 2004
+
+
+<li><i>On equidistribution for reaction-diffusion problems. 
+Workshop on problems with boundary-layer phenomena</i>, 12-13 Feb 2004.
+  
+
+
+
+<li><i>Uniform convergence of a finite difference scheme for a system
+	  of coupled reaction-diffusion equations</i>, <A href="http://www.maths.dundee.ac.uk/~naconf/">20th Biennial Conference on Numerical Analysis</a>
+              University of Dundee, 24--27 June, 2003.
+
+<li><i>A fitted mesh for a system of two linear
+singularly perturbed problems</i>,
+INCA Workshop on Numerical Methods for Singularly Perturbed Differential 
+Equations, University of Limerick. Jan 2002.
+
+
+-->
+
+
+
+
+<!-- 
+<li><em>Alternating Direction Methods for reaction-diffusion problems.
+</em>, Modelling Forum, Dec 2009 -->
+
+
+
+<!-- <li><em>Sparse Grid Techniques: a cure for the curse of
+    dimensionality?</em>, Modelling Forum, 16 Dec 2008 -->
+
+
+
+<!-- <li><i>Coupled systems of singularly perturbed differential equations
+	  II: Finite Elements</i>, Analysis Seminar, NUI Galway, Feb
+	  2003. -->
+
+<!-- <li><i>Coupled systems of singularly perturbed differential equations
+	  I: Finite Differences</i>, Analysis Seminar, NUI Galway, Feb 2003.-->
+
+
+
+
+
+
+
+        <!--#include virtual="$incl/footer.shtml" -->
+    </body>
+</html>
+

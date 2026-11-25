@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<title>Examples of using glance</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+  <body>
+    <h1>Visualisation of a convection-diffusion problem</h1>
+    <h2>22 Nov 2023</h2>
+    <p>Here we show the solution to
+      \[
+      -\nabla \cdot (\varepsilon \nabla  u + \vec \beta u) +
+      \gamma u = f,
+      \]
+      where $\vec \beta = \begin{pmatrix} \beta_1\\ \beta_2
+      \end{pmatrix}>0$.
+    </p>
+    <script>
+      var app = "https://kitware.github.io/paraview-glance/app";
+      var datadir_old = "https://raw.githubusercontent.com/mbarzegary/datasets-and-scenes/main/";
+      var datadir ="https://www.niallmadden.ie/private/glance/"
+      var file = "cd_exp.vtkjs";
+      document.write("<iframe src='" + app + "?name=" + file + "&url=" +datadir + file + "' id='iframe' width='1100' height='900'></iframe>");
+    </script>
+
+
+    <script>
+      var app = "https://kitware.github.io/paraview-glance/app";
+      var datadir_old = "https://raw.githubusercontent.com/mbarzegary/datasets-and-scenes/main/";
+      var datadir ="https://www.niallmadden.ie/private/glance/"
+      var file = "cd_char.vtkjs";
+      document.write("<iframe src='" + app + "?name=" + file + "&url=" +datadir + file + "' id='iframe' width='1100' height='900'></iframe>");
+    </script>
+  </body>
+</html>
+
+
+  </body>
+</html>

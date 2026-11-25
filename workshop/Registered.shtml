@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <!-- ENTER  PAGE TITLE  HERE -->
+    <title>MACSI 1-Day Graduate Course</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link rel="stylesheet" href="http://www.maths.nuigalway.ie/~niall/style.css" type="text/css"/>
+  </head>
+
+<body>
+    <!--#set var="incl" value="/includes" -->
+    <!--#include virtual="$incl/header.shtml" -->
+
+<center>
+<h3>MACSI One Day Graduate Courses</h1>
+<h2>Numerical Solution to Differential Equations using Matlab</h1>
+<h3>NUI Galway</h2>
+<h4>3rd of April 2007.</h3>
+</center>
+
+<hr>
+
+<h2>Participants:</h2>
+
+<table>
+<tr>
+<td>
+<ol> 
+<li> Hammad Ahmad (UL)
+<li> Nusin Bas (UCC)
+<li> Mihai Basa (NUI Galway)
+<li> Senan Cahil (NUI Galway)
+<li> Muammer Catak (UCC)
+<li> Vincent Cregan (UL)
+<li> Padraic Dooley (NUI Galway)
+<li> Sean Finn (NUI Galway)
+<li> Maria Gonzlez (UL)
+<li> Caroline Hopkins (NUI Galway)
+<li> Sean    Lacey (UL)
+<li> Yupeng  Liu (DIT)
+</ol>
+<td>
+<ol start=13>
+<li> Antje   Luebke (NUI Galway)
+<li> Aidan   Naughton (UCC)
+<li> Ruairi Nestor (NUI Galway)
+<li> Norah Patten (UL)
+<li> Oliver  Power (UL)
+<li> Indie Olbert (NUI Galway)
+<li> Marguerite Robinson (UL)
+<li> Adam Stops (NUI Galway)
+<li> Colin   Torney (UCD)
+<li> Emma White (NUI Maynooth)
+<li> Qi       Wang (DIT)
+<li> Huizhong Wu (DCU)
+<li> George Wyatt (Susquehanna)
+</ol>
+</table>
+
+	  
+    </body>
+</html>

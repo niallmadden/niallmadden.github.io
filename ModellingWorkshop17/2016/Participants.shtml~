@@ -1,0 +1,624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <!-- ENTER  PAGE TITLE  HERE -->
+    <title>Stokes Modelling Workshop 2017: participants</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link rel="stylesheet" href="http://www.maths.nuigalway.ie/style.css" type="text/css"/>
+  </head>
+<body>
+ <!--#set var="incl" value="/includes" -->
+ <!--#include virtual="$incl/header.shtml" -->
+ <!-- ENTER PAGE CONTENTS BELOW HERE -->
+ 
+ <p>
+   <font size="+1" color="#881010"><b>4th Annual</b>
+   </font><br />
+   <font size="+3" color="#881010"><b>Stokes Modelling
+       Workshop</b>
+   </font>
+ </p>
+ 
+ <h2>Registered Participants (last updated 31 May 2017)</h2>
+ 
+ <table border="0">
+   <tr>
+     <th></th>
+     <th>Name (Family, Given)</th>
+     <th>Institution</th>
+     <th>Country</th>
+     <th>U/P/R</th>
+     <th>Funding</th>
+     <th>Confirmed</th>
+   </tr>
+   
+   <tr>
+     <td>1.</td>
+     <td>Al Baydli,  Daher</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td></td>
+     <td align="center">&#10004;</td>
+   </tr>
+
+
+   <tr>
+     <td></td>
+     <td>Allen, James</td>
+     <td>University of Surrey</td>
+     <td align="center"><img src="images/flags/uk.png" border="0"
+			     height="13" width="18" alt="UK"/></td>
+     <td>P</td>
+     <td align="center">MI-NET</td>
+     <td align="center">&#10004;</td>
+   </tr>
+
+   <!--
+   <tr>
+     <td></td>
+     <td>Alokbi, Nisreen</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td></td>
+   </tr>
+   -->
+
+   <tr>
+     <td></td>
+     <td>Alssaedi, Faiza</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td align="center"></td>
+     <td align="center">&#10004;</td>
+   </tr>
+
+
+   <!--
+   <tr>
+     <td>5.</td>
+     <td>Andrade, Evismar </td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+   </tr>
+-->
+      
+   <tr>
+     <td></td>
+     <td>Atan, Reduan</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td align="center"></td>
+     <td align="center">&#10004;</td>
+   </tr>
+   
+   <!--
+       <tr>
+	 <td></td>
+	 <td>Bandi&cacute;, Medina</td>
+	 <td>International Burch University</td>
+	 <td align="center"><img src="images/flags/ba.png" border="0"
+				 height="13" width="18" alt="BA"/></td>
+	 <td>P</td>
+	 <td>MI-NET</td>
+       </tr>
+       -->
+
+
+   <tr>
+     <td>5.</td>
+     <td>Burke, Richard</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td align="center"></td>
+     <td align="center">&#9745;</td>
+   </tr>
+
+   <tr>
+     <td></td>
+     <td>Cloherty, Philip</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td></td>
+     <td align="center">&#10004;</td>
+   </tr>
+
+   <tr>
+     <td></td>
+     <td>Collins, Jack</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>U</td>
+     <td></td>
+     <td align="center">&#10004;</td>
+   </tr>
+   
+   <tr>
+     <td></td>
+     <td>Colson, David</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>U</td>
+     <td align="center">Stokes</td>
+     <td align="center">&#10004;</td>
+   </tr>
+
+   <tr>
+     <td></td>
+     <td>Conroy Broderick, Hannah</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td align="center"></td>
+     <td align="center">&#10004;</td>
+   </tr>
+
+   <tr>
+     <td>10.</td>
+     <td>Cormican, John</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>U</td>
+     <td></td>
+     <td align="center">&#10004;</td>
+   </tr>
+   
+   
+   
+   <tr>
+     <td></td>
+     <td>Donnelly, Cliona</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>U</td>
+     <td></td>
+     <td align="center">&#10004;</td>
+   </tr>
+   
+   
+   <tr>
+     <td></td>
+     <td>Dubovskaya, Alina</td>
+     <td>University of Limerick</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td>MI-NET</td>
+     <td align="center">&#10004;</td>
+   </tr>
+   
+   
+   <tr>
+     <td></td>
+     <td>Galizia, Roberto</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td align="center"></td>
+     <td align="center">&#10004;</td>
+   </tr>
+
+   
+   <tr>
+     <td></td>
+     <td>Geraghty, Samuel</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>U</td>
+     <td align="center"></td>
+     <td align="center">&#10004;</td>
+   </tr>
+   
+   
+
+      
+   <tr>
+     <td>15.</td>
+     <td>Greaney, Paul</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td align="center"></td>
+     <td align="center">&#9745;</td>
+   </tr>
+
+   <tr>
+     <td></td>
+     <td>Hanley, Tracey</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>U</td>
+     <td align="center"></td>
+     <td align="center">&#10004;</td>
+   </tr>
+
+
+   <tr>
+     <td></td>
+     <td>Hill, Aoife</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			    height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td align="center">MI-NET</td>
+     <td align="center">&#10004;</td>
+   </tr>
+   
+   <tr>
+     <td></td>
+     <td>Hill, R&oacute;is&iacute;n</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>U</td>
+     <td align="center">Stokes</td>
+     <td align="center">&#10004;</td>
+   </tr>
+
+   <!--
+   <tr>
+     <td></td>
+     <td>Kleanthous, Antigoni </td>
+     <td>University College London</td>
+     <td align="center"><img src="images/flags/uk.png" border="0"
+			     height="13" width="18" alt="UK"/></td>
+     <td>P</td>
+     <td align="center">MI-NET</td>
+   </tr>
+   -->
+   
+   <!--
+   <tr>
+     <td></td>
+     <td>Iyaniwura, Sarafa Adewale</td>
+     <td>University of British Columbia</td>
+     <td align="center"><img src="images/flags/ca.png" border="0"
+			     height="13" width="18" alt="CA"/></td>
+     <td>P</td>
+     <td align="center">MI-NET</td>
+   </tr>
+   -->
+
+   <!--
+   <tr>
+     <td></td>
+     <td>Iftikhar, Anas</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			    height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td align="center"></td>
+   </tr>
+   -->
+
+   <tr>
+     <td></td>
+     <td>Kamperis, Sam</td>
+     <td>Oxford Brookes University</td>
+     <td align="center"><img src="images/flags/uk.png" border="0"
+			     height="13" width="18" alt="UK"/></td>
+     <td>P</td>
+     <td align="center">MI-NET</td>
+     <td align="center">&#10004;</td>
+   </tr>
+
+   <!--
+   <tr>
+     <td>20.</td>
+     <td>Komalan, Bijith</td>
+     <td>NUI Galway (Insight)
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>R</td>
+     <td align="center"></td>
+     <td align="center">&#9745;</td>
+   </tr>
+     -->
+   
+   <tr>
+     <td>20.</td>
+     <td>Mangan, Robert</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td align="center"></td>
+     <td align="center">&#9745;</td>
+   </tr>
+
+   <tr>
+     <td></td>
+     <td>Marshall, Christine</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td align="center"></td>
+     <td align="center">&#10004;</td>
+   </tr>
+
+   <tr>
+     <td></td>
+     <td>Martin, Richard</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>U</td>
+     <td align="center"></td>
+     <td align="center">&#10004;</td>
+   </tr>
+
+   <!--
+   <tr>
+     <td></td>
+     <td>Moschou, Marianthi</td>
+     <td>University of Manchester</td>
+     <td align="center"><img src="images/flags/uk.png" border="0"
+			     height="13" width="18" alt="UK"/></td>
+     <td>P</td>
+     <td align="center">MI-NET</td>
+   </tr>
+   -->
+
+   <tr>
+     <td></td>
+     <td>Mary, Rose</td>
+     <td>Institute of Technology Carlow</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td align="center">MI-NET</td>
+     <td align="center">&#10004;</td>
+   </tr>
+
+   <tr>
+     <td></td>
+     <td>Mayah, Faik</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td></td>
+     <td align="center"></td>
+   </tr>
+
+
+   <tr>
+     <td>25.</td>
+     <td>Moran, Claire</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>U</td>
+     <td align="center"></td>
+     <td align="center">&#10004;</td>
+   </tr>
+
+   <tr>
+     <td></td>
+     <td>Okeke, Saviour</td>
+     <td>Institute of Technology Carlow</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td align="center">MI-NET</td>
+     <td align="center">&#10004;</td>
+   </tr>
+
+   <tr>
+     <td></td>
+     <td>Onaga, Tomokatsu </td>
+     <td>Kyoto University</td>
+     <td align="center"><img src="images/flags/jp.png" border="0"
+			     height="13" width="18" alt="JP"/></td>
+     <td>P</td>
+     <td align="center">MI-NET</td>
+     <td align="center">&#10004;</td>
+   </tr>
+
+   <tr>
+     <td></td>
+     <td>Phoenix, Anna</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td align="center"></td>
+     <td align="center">&#10004;</td>
+   </tr>
+
+   <tr>
+     <td></td>
+     <td>Qiu, Songkai </td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td align="center"></td>
+     <td align="center">&#10004;</td>
+   </tr>
+
+
+
+   
+
+   <tr>
+     <td>30.</td>
+     <td>Rawle, Noeleen</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>U</td>
+     <td align="center">Stokes</td>
+     <td align="center">&#10004;</td>
+   </tr>
+   
+     <tr>
+     <td></td>
+     <td>Regan, Brian</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>U</td>
+     <td align="center"></td>
+     <td align="center">&#10004;</td>
+   </tr>
+   
+
+     <!--
+   <tr>
+     <td></td>
+     <td>Radovic, Slavisa</td>
+     <td>University of Belgrade</td>
+     <td align="center"><img src="images/flags/rs.png" border="0"
+			     height="13" width="18" alt="RS"/></td>
+     <td>P</td>
+     <td align="center">MI-NET</td>
+   </tr>
+   -->
+
+   <tr>
+     <td></td>
+     <td>Samantray, Suman</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td align="center"></td>
+     <td align="center">&#10004;</td>
+   </tr>
+   
+
+   <tr>
+     <td></td>
+     <td>Sheil, Ashley</td>
+     <td>Maynooth University</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>U</td>
+     <td align="center">Stokes</td>
+     <td align="center">&#10004;</td>
+   </tr>
+   
+
+
+   <!--
+   <tr>
+     <td></td>
+     <td>Simillides, Yiannis</td>
+     <td>University College London</td>
+     <td align="center"><img src="images/flags/uk.png" border="0"
+			     height="13" width="18" alt="UK"/></td>
+     <td>U</td>
+     <td align="center">Stokes</td>
+   </tr>
+   -->
+
+   <tr>
+     <td></td>
+     <td>Smyth, David</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>U</td>
+     <td align="center">Stokes</td>
+     <td align="center">&#10004;</td>
+   </tr>
+   
+   <tr>
+     <td>35.</td>
+     <td>Staunton, Eoghan</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>P</td>
+     <td align="center"></td>
+     <td align="center">&#9745;</td>
+   </tr>
+   
+   <tr>
+     <td></td>
+     <td>Suleiman, Issah Nazif</td>
+     <td>Univeristy of Verona</td>
+     <td align="center"><img src="images/flags/it.png" border="0"
+			     height="13" width="18" alt="IT"/></td>
+     <td>P</td>
+     <td align="center">MI-NET</td>
+   </tr>
+   
+   <tr>
+     <td></td>
+     <td>Urbas, Szymon</td>
+     <td>NUI Galway</td>
+     <td align="center"><img src="images/flags/ie.png" border="0"
+			     height="13" width="18" alt="IE"/></td>
+     <td>U</td>
+     <td align="center">Stokes</td>
+     <td align="center">&#10004;</td>
+   </tr>
+   
+   
+   
+   
+   <tr>
+    <td></td>
+    <td>Walsh, Dylan</td>
+    <td>NUI Galway</td>
+    <td align="center"><img src="images/flags/ie.png" border="0"
+			    height="13" width="18" alt="IE"/></td>
+    <td>P</td>
+    <td></td>
+    <td align="center">&#10004;</td>
+   </tr>
+
+   <tr>
+    <td></td>
+    <td>Walsh, Shane</td>
+    <td>University College Dublin</td>
+    <td align="center"><img src="images/flags/ie.png" border="0"
+			    height="13" width="18" alt="IE"/></td>
+    <td>P</td>
+    <td align="center">MI-NET</td>
+    <td align="center">&#10004;</td>
+   </tr>
+
+   <tr>
+    <td>40.</td>
+    <td>Wisdom, Adrian</td>
+    <td>NUI Galway</td>
+    <td align="center"><img src="images/flags/ie.png" border="0"
+			    height="13" width="18" alt="IE"/></td>
+    <td>U</td>
+    <td align="center">Stokes</td>
+    <td align="center">&#10004;</td>
+   </tr>
+
+ </table>
+
+ 
+
+ <!-- END PAGE CONTENTS -->
+ <!--#include virtual="$incl/footer.shtml" -->
+</body>
+</html>

@@ -1,0 +1,840 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Niall Madden's research page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<!--    <link rel="stylesheet"
+    href="http://www.maths.nuigalway.ie/style.css" type="text/css"/> -->
+  </head>
+
+<body>
+
+<center>
+<table bgcolor="#ffffff" border="1" width="60%">
+<tr bgcolor="#930000" align="center">
+<td><a href="#Details"><font color="#ffffff" size="+1">Research Interests</font></a></td>
+<td><a href="#Pubs"><font color="#ffffff" size="+1">Publications</font></a></td>
+<td><a href="talks.shtml"><font color="#ffffff" size="+1">Presentations</font></a></td>
+<td><a href="#Projects"><font color="#ffffff" size="+1">Projects</font></a></td>
+</tr>
+</table> 
+</center>
+
+<!-- OLD ONE STARTS HERE
+<h2><a name="Interests">Research interests</a></h2>
+<p><font size="-1"><em>Key words: finite difference; finite element; partial
+    differential equations; coupled systems; singularly perturbed
+    problems; boundary and interior layers; numerical linear algebra; ADI;
+    domain decomposition; multigrid methods.</em>
+</font></p>
+<table>
+<tr>
+<td>
+<h3>Numerical Analysis of differential equations</h3>
+<p>I aim to design, analyse and implement robust methods for singularly perturbed
+problems. Solutions to these problems exhibit boundary and interior
+layers - narrow regions where the solution changes rapidly - and are
+known to be difficult to solve numerically. Robust methods should
+yield approximations whose accuracy is independent of the layer width.
+I have a particular interest in methods for coupled systems with
+solutions exhibiting multiple interacting layers of different scales,
+making their numerical resolution quite challenging.</p>
+
+<p>Recent work includes the study of finite difference and finite element
+  methods applied on specially design meshes for linearised convection-diffusion
+  (=advection-diffusion) and reaction-diffusion problems. </p>
+
+<p><font size="-1"><em>See
+      also</em>: <a href="http://www.maths.nuigalway.ie/~niall/IRGSPDE/">The
+      Irish Research Group on Singularly Perturbed Differential
+      Equations</a>.
+</font></p>
+</td>
+<td align="center"><img src="http://www.maths.nuigalway.ie/~niall/Research/images/Anim2.png" width="300pt" />
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td align="center"><img src="http://www.maths.nuigalway.ie/~niall/Research/images/Snake1.jpg" width="200pt" />
+</td>
+<td align="left">
+<h3>Numerical Modelling</h3>
+<p>Differential equations form one of the main languages in which
+  mathematical models and be designed and expressed. Extracting useful
+  information from these models often involves numerical
+  simulation. While there are many excellent classical methods and
+  black-box tools for this, the real world is rather complicated, and
+  so too are the models of it. So one often needs bespoke numerical
+  schemes. This is a fruitful source of interaction between
+  computational mathematicians and applied scientists and engineers.</p>
+
+<p>In  recent times I've worked on the design of suitable methods for
+  problems in wave-current interactions, dispersion of pollutants in
+  coastal regions, and simulations of ICU patients reactions to
+  clinical therapies.</p>
+</td>
+</tr>
+</table>
+OLD ONE ENS HERE
+-->
+
+<h2><a name="Interests">Research interests</a></h2>
+<p><font><em>Finite difference methods; finite element methods; partial
+    differential equations; coupled systems; singularly perturbed
+    problems; boundary and interior layers; numerical linear algebra; ADI;
+    domain decomposition; multigrid methods.</em>
+</font></p>
+
+<center>
+<img src="images/Anim2.png" height="200pt" />
+<img src="images/2DFigure.png" height="200pt" />
+<img src="images/Snake1.jpg" height="200pt" />
+</center>
+
+<h2><a name="Pubs">Publications</a></h2>
+
+<!-- <h3><a name="Submitted">Submitted for publication</a></h3> 
+  </hr> -->
+
+
+<h3>Published Journal Articles and Refereed Conference Proceedings</h3>
+<ol start="1">
+  <li>
+    Scott P. MacLachlan, Niall Madden, Th&aacute;i Anh Nhan.
+    <em>A Boundary-Layer Preconditioner for Singularly Perturbed
+    Convection
+      Diffusion</em>. <a href="https://arxiv.org/abs/2108.13468">arxiv.org/abs/2108.13468</a>
+    SIMAX (to appear), 2022.
+  </li>
+
+  <li>
+    Niall Madden
+    and <a href="https://www.csrc.ac.cn/en/people/faculty/151.html">Martin
+      Stynes</a>.
+    <em>A weighted and balanced FEM for singularly
+      perturbed reaction-diffusion problems.</em>
+    Calcolo 58, 28 (2021). DOI: <a href="https://doi.org/10.1007/s10092-021-00421-w">10.1007/s10092-021-00421-w</a>.
+    Preprint
+    at <a href="https://www.researchgate.net/publication/346039676_A_weighted_and_balanced_FEM_for_singularly_perturbed_reaction-diffusion_problems">
+	  ResearchGate</a>.
+  </li>
+  <li>
+    R&oacute;is&iacute;n Hill and Niall Madden.
+    <em>
+    Generating layer-adapted meshes using mesh partial differential
+    equations.
+    </em>
+    Numer. Math. Theor. Meth. Appl., 14 (2021), pp. 559-588.
+    DOI: <a href="https://doi.org/10.4208/nmtma.OA-2020-0187">10.4208/nmtma.OA-2020-0187</a>. Preprint
+    and  and FEniCS code available
+    from <a href="https://osf.io/dpexh/">osf.io/dpexh/</a>. 
+  </li>
+  <li>
+    Nanda Poddar, Kajal Kumar Mondal and Niall Madden.
+    <em>
+      Layer-adapted meshes for solute dispersion in a steady flow
+      through an annulus with wall absorption: Application to a
+      catheterized artery.
+    </em>
+    Korea-Australia Rheology Journal <b>33</b>, 11-24 (2021).
+    DOI: <a href="https://link.springer.com/article/10.1007/s13367-021-0002-4">
+      10.1007/s13367-021-0002-4</a>.
+  </li>
+
+<li><a href="https://nhananhthai.wordpress.com">
+Th&aacute;i Anh Nhan</a> and 
+Niall Madden. 
+  <em>
+ An analysis of diagonal and incomplete Cholesky
+ preconditioners for singularly perturbed problems
+ on layer-adapted meshes.
+  </em>
+  J. Appl. Math. Comput. <b>65</b>, 245-272
+  (2021). DOI: <a href="https://doi.org/10.1007/s12190-020-01390-z">10.1007/s12190-020-01390-z</a>
+</li>
+
+<li>H. Jahandari, S. MacLachlan, R. Haynes, and N. Madden.
+  <em>
+    <a href="https://link.springer.com/article/10.1007/s10596-020-09944-7">
+      Finite element modelling of geophysical electromagnetic data
+      with goal-oriented <em>hr</em>-adaptivity</a>.
+    Computational Geosciences volume 24, p 1257-1283 (March <b>2020</b>)
+
+  
+<li>
+  J. H. Adler, S. MacLachlan, and N. Madden.
+  <em><a href="https://jadler.math.tufts.edu/publications/files/2020_SPRD_LSSC.pdf">First-order
+      system least squares finite-elements for singularly perturbed
+      reaction-diffusion equations</a>.
+    In Ivan Lirkov and Svetozar Margenov, editors, Large-Scale
+      Scientific
+      Computing, <a href="https://link.springer.com/chapter/10.1007/978-3-030-41032-2_1">Vol
+      11958 of Lecture Notes in Computer Science</a>, pages
+    3-14. Springer, Cham, <b>2020</b>.
+  </li>
+  
+<li>
+    Stephen Russell and Niall Madden.
+    <em><a href="http://www.global-sci.org/intro/article_detail/ijnam/16860.html"> Analysis of a Galerkin finite element method applied to a
+    singularly perturbed reaction-diffusion problem in three
+      dimensions</em>. Int. J. Numer. Anal. Mod., 17 (<b>2020</b>), pp. 297-315.
+    <a href="http://www.global-sci.org/intro/article_detail/ijnam/16860.html">Abstract</a>. 
+  </li>
+
+  <li>
+    Th&aacute;i Anh Nhan,   Scott MacLachlan and
+  Niall Madden 
+    <em>
+      <a href="https://link.springer.com/article/10.1007/s11075-017-0437-3">
+	Boundary layer preconditioners for finite-element
+	discretizations of singularly perturbed reaction-diffusion
+	problems
+      </a>
+    </em>
+    Numerical Algorithms (2018) 79: 281.
+    <a href="https://doi.org/10.1007/s11075-017-0437-3">https://doi.org/10.1007/s11075-017-0437-3</a>
+    <a href="NhMa17.shtml">Abstract</a>.
+  </li>
+<li><a href="http://www.unizar.es/pde/jlgracia/">Jos&eacute; Luis
+    Gracia</a>,  
+  Niall Madden and <a href="https://nhananhthai.wordpress.com">
+    Th&aacute;i Anh Nhan</a>.
+  <em>
+    <a href="https://link.springer.com/chapter/10.1007/978-3-319-67168-0_4">
+      Applying a patched mesh method to
+      efficiently solve a    singularly perturbed reaction-diffusion
+      problem
+    </a>
+  </em>.
+  In: Bock H., Phu H., Rannacher R., Schl&ouml;der
+  J. (eds) Modeling, Simulation and Optimization of Complex
+  Processes HPSC 2015. Springer (2017). 
+  <a href="GrMa15.shtml">Abstract</a></li>
+
+
+
+  <li>
+    Russell, Stephen, and Niall Madden.
+    <em>An introduction to the analysis and implementation of sparse
+    grid finite element methods.</em> Computational Methods in Applied
+    Mathematics 17, no. 2 (2017):
+    299-322. DOI: <a href="https://doi.org/10.1515/cmam-2016-0042">doi.org/10.1515/cmam-2016-0042</a>. Source code is available from 
+    <a href="https://github.com/niallmadden/SparseGrids/">
+      https://github.com/niallmadden/SparseGrids/</a>
+  </li>
+
+<li>
+P. Panaseti, A. Zouvani, N. Madden and 
+<a href="http://www.mas.ucy.ac.cy/~xenophon">C. Xenophontos</a>,
+<i>A</i> C<sup>1</sup><i>-conforming hp Finite Element Method for fourth order singularly perturbed
+boundary value problems</i>, Applied Numerical Mathematics
+Volume 104 (2016), Pages 81-97.
+<a href="http://www.sciencedirect.com/science/article/pii/S0168927416000246">
+        doi:10.1016/j.apnum.2016.02.002</a>.
+</li>
+
+
+<li><href="http://jadler.math.tufts.edu/">James
+    Adler</a>, <a href="http://www.mun.ca/math/people/ppl-faculty/scottm.php">Scott     MacLachlan</a>, and Niall Madden.
+ <i><a href="FOSPeGrevise.pdf">A first-order system Petrov-Galerkin
+     discretization for a reaction-diffusion problem on a fitted
+     mesh</a></i>. IMA J. Numer. Anal. (2016) 36 (3): 1281-1309. 
+doi: <a href="http://imajna.oxfordjournals.org/content/36/3/1281.abstract">
+10.1093/imanum/drv045</a>.
+<a href="AdMa14.shtml">Abstract</a></li>
+
+<li>
+Naresh M. Chadha and Niall Madden,
+<em>
+<a href="http://dx.doi.org/10.1016/j.cam.2015.07.029">
+An optimal time-stepping algorithm for unsteady
+advection-diffusion problems</a>
+</em>,
+Journal  of Computational and Applied Mathematics</a>, 294 (2016), 57-77. 
+<a href="ChMa11b.shtml">Abstract</a>. <a href="http://dx.doi.org/10.1016/j.cam.2015.07.029">doi:10.1016/j.cam.2015.07.029</a>
+</li>
+
+<!--2015 -->
+
+<li>Stephen Russell and Niall Madden.
+ <i>A multiscale sparse grid technique for a
+two-dimensional convection-diffusion problem
+with exponential layers.</i>
+<a href="http://link.springer.com/chapter/10.1007/978-3-319-25727-3_19">Proc. BAIL 2014</a>,
+Vol 108 Lect. Notes Comput. Sci. Eng. Springer (2016), 245-255.
+<a href="RuMa14b.shtml">Abstract</a></li>
+
+
+<li>Th&aacute;i Anh Nhan and Niall Madden.
+ <i><a href="Nhan_Madden_CholeskyRDpreprint.pdf">
+Cholesky factorisation of linear systems coming
+from finite difference approximations of
+singularly perturbed problems</a></i>. 
+<a href="http://link.springer.com/chapter/10.1007/978-3-319-25727-3_16">Proc. BAIL 2014</a>,
+Vol 108 Lect. Notes Comput. Sci. Eng. Springer (2016), 209-220.
+<a href="NhMa14.shtml">Abstract</a></li>
+
+<li>S. Russell and N. Madden. <i><a href="http://link.springer.com/article/10.1007/s10444-014-9395-7">A multiscale sparse grid finite
+  element method for a two-dimensional singularly perturbed
+  reaction-diffusion problem</a></i>. 
+Advances in Computational Mathematics
+Volume 41, Issue 6, pp 987-1014. 2015. 
+DOI: <a href="http://dx.doi.org/10.1007/s10444-014-9395-7">
+10.1007/s10444-014-9395-7</a>.
+</li>
+
+
+<!-- 2014 -->
+
+<!-- 2013 -->
+<li>
+<a href="http://www.math.mun.ca/~smaclachlan">Scott MacLachlan</a>
+and Niall Madden,
+<em>
+<a href="blpcg.pdf">Robust solution of singularly
+  perturbed problems using multigrid methods</a>. </em>
+SIAM J. Sci. Comput. 35-5 (2013), pp. A2225-A2254.
+<a href="http://dx.doi.org/10.1137/120889770">http://dx.doi.org/10.1137/120889770</a>. 
+<a href="http://epubs.siam.org/doi/abs/10.1137/120889770">Abstract</a>
+</li>
+
+
+
+<li>Christos Xenophontos, Markus Melenk, Niall Madden,
+Lisa Oberbroeckling, Pandelitsa Panaseti, and Antri Zouvani. 
+<em><it>hp</it> Finite Element Methods for Fourth Order
+Singularly Perturbed Boundary Value Problems</em>.
+Dimov, Farag&oacute;, Vulkov (Eds.): Proc. NAA
+2012, <a href="http://www.springer.com/computer/lncs?SGWID=0-164-12-989748-0">Springer
+  Lecture Notes in Computer Science</a>, Vol 8236, pp. 532-539, 2013 
+</li>
+
+<li>Catherine G. Enright, Michael G. Madden, and Niall Madden. 
+<em>Bayesian Networks for Mathematical Models: Techniques for
+Automatic Construction and Efficient Inference.</em>
+<a href="http://www.sciencedirect.com/science/article/pii/S0888613X12001740">International
+  Journal of Approximate Reasoning</a>, Vol. 54 (2), 2013, pp 323-342. DOI <a href="
+ http://dx.doi.org/10.1016/j.ijar.2012.10.004">10.1016/j.ijar.2012.10.004</a> 
+[<a href="http://www.zentralblatt-math.org/zbmath/search/?q=an%3A06175673">Zbl 06175673</a>].
+[<a href="http://www.ams.org/mathscinet/search/publdoc.html?pg1=IID&s1=614621&vfpref=html&r=1&mx-pid=3021575">MR3021575]
+</li>
+
+<!-- 2012 -->
+
+<li>
+Niall Madden,
+<em><a href="http://www.maths.tcd.ie/pub/ims/bull69/Madden.pdf">John Todd and the development of modern numerical analysis</a>.</em>
+<a href="http://www.maths.tcd.ie/pub/ims/bull69/index.php">
+Irish Math. Soc. Bulletin</a>, Number 69, Summer 2012, 11-23. 
+<a href="Madd12.shtml">Abstract</a>
+[<a href="http://www.ams.org/mathscinet/search/publdoc.html?pg1=IID&s1=614621&vfpref=html&r=2&mx-pid=3026423">MR3026423</a>].
+</li>
+
+<li>N. Madden
+  and <a href="http://euclid.ucc.ie/pages/staff/stynes/mstynes.htm">M. Stynes</a>. <em>A
+  curious property of oscillatory FEM solutions of one-dimensional
+  convection-diffusion problems</em>. 
+<a href="http://am2012.math.cas.cz/proceedings.html">Applications
+  of Mathematics 2012</a>, Proc. of Conference in Honour of 60th
+  birthday of Michal K&#345;&iacute;&#382;ek,  2--5 May 2012),  
+J. Brandts, J. Chleboun, S. Korotov, K. Segeth, J.
+  &#352;&iacute;stek &amp; T. Vejchodsk&yacute; (Eds.), 
+Czech Academy of Sciences, Prague, 2012, ISBN 978-80-85823-60-8, pp.188--196.
+</li>
+
+
+<!-- 2011 -->
+
+<li>C.G. Enright, M.G. Madden, N. Madden and J.G. Laffey. <em>
+Clinical Time Series Data Analysis Using Mathematical Models and
+DBNs</em>, <a href="http://www.springerlink.com/content/211h6558m63p42q2/">Artificial
+    Intelligence in Medicine</a>, Lecture Notes in Computer Science,
+  2011, Volume 6747/2011,159-168.  </li>
+
+
+<li>
+Naresh M. Chadha and Niall Madden, <em>
+A two-weight scheme for a time-dependent
+advection-diffusion problem.</em>
+In C. Carmelo, J. L. Gracia, and F. J. Lisbona, (eds), BAIL 2010 -
+Boundary and Interior Layers, Computational and Asymptotic Methods,
+<a href="http://www.springerlink.com/content/978-3-642-19665-2">Vol 81 of Lect. Notes Comput. Sci. Eng.</a>, 99--108. Springer, 2011.
+<a href="ChMa11.shtml">Abstract</a>.
+[<a href="http://www.ams.org/mathscinet-getitem?mr=2849732">MR2849732</a>]
+[<a href="http://rian.ie/en/item/view/53301.html">Full text at RIAN.ie</a>]
+</li>
+
+<li>
+Niall Madden and Kajal Kumar Mondal. 
+<em>Improved mathematical and numerical modelling of dispersion of a solute from 
+a continuous source</em>, 
+In C. Carmelo, J. L. Gracia, and F. J. Lisbona, (eds), BAIL 2010 -
+Boundary and Interior Layers, Computational and Asymptotic Methods,
+<a href="http://www.springerlink.com/content/w3205n45vp210772">Vol 81
+  of Lect. Notes Comput. Sci. Eng.</a>, 177--185. Springer, 2011.
+<a href="MaMo11.shtml">Abstract</a>. 
+[<a href="http://www.ams.org/mathscinet-getitem?mr=2849740">MR2849740</a>]
+[<a href="http://rian.ie/en/item/view/53542.html">Full text at RIAN.ie</a>]
+</li>
+
+<!-- 2010 -->
+
+<li><a href="http://www.math.tu-dresden.de/~torsten/">T. Lin&szlig;</a>
+  and N. Madden, 
+  <i><a href="http://www.math.ualberta.ca/ijnam/Volume7.htm">Analysis of an alternating direction method applied to
+  singularly perturbed reaction-diffusion problems</a></i>, International
+  Journal of Numerical Analysis and Modelling, Volume 7, Number 3,
+  p507-519 (2010). 
+[<a href="http://www.ams.org/mathscinet-getitem?mr=2644287">MR2644287</a>]
+[<a href="http://www.zentralblatt-math.org/zbmath/search/?q=an%3A1195.65119">Zbl 1195.65119</a>]
+</li>
+
+<li>C.G. Enright, 
+<a href="www.it.nuigalway.ie/m_madden/">M.G. Madden</a>, S. Russell,
+N. Aleks, G.T. Manley, J. Laffey, B. Harte, A. Mulvey, N. Madden.
+<em>Modelling
+    glycaemia in ICU patients: A dynamic Bayesian network
+    approach</em> BIOSIGNALS 2010 - Proceedings of the 3rd
+    International Conference on Bio-inpsired Systems and Signal
+    Processing, Proceedings 2010, Pages 452-459.</li> 
+
+<!-- 2009 -->
+
+<li><a    href="http://www.math.tu-dresden.de/~torsten/">T. Lin&szlig;</a>
+	    and N. Madden, <em>Layer-adapted
+	      meshes for a system of coupled singularly perturbed
+	      reaction-diffusion
+	      problems</em>. <a href="http://imajna.oxfordjournals.org/">IMA
+	      J Numer Anal</a> 29 (1): 86-108; doi:10.1093/imanum/drm049 (2009).
+</li>
+
+<li>
+M. Stephens and N. Madden <em>A Schwarz technique for a system of 
+  reaction diffusion equations with differing
+		    parameters</em>.  <a
+		href="http://www.bail2008.ul.ie">Proc. BAIL 2008 - Boundary and Interior Layers </a>,
+		  <a
+		    href="http://www.springer.com/math/cse/book/978-3-642-00604-3">Lecture Notes in Computational Science and Engineering, Vol. 69</a>
+Hegarty, A.F.; Kopteva, N.; O' Riordan, E.; Stynes, M. (Eds.). p247-255 (2009)
+[<a href="http://www.zentralblatt-math.org/zbmath/search/?q=an%3A1181.65107">Zbl 1181.65107</a>]
+[<a href="http://www.ams.org/mathscinet-getitem?mr=2581492">MR2581492</a>]
+</li>
+
+
+<li>Fang Liu, Niall Madden, Martin Stynes, and Aihui Zhou, <em>A two-scale
+		  sparse grid method for a singularly perturbed
+		  reaction-diffusion problem in two
+		  dimensions</em>, <a href="http://imajna.oxfordjournals.org/">IMA
+		  J Numer Anal</a> 29 (4): 986-1007,
+		  doi:10.1093/imanum/drn048 (2009)
+[<a href="http://www.ams.org/mathscinet-getitem?mr=2557053">MR2557053</a>]
+</li>
+
+<li>
+M. Stephens and N. Madden, <em>A Parameter-Uniform Schwarz Method for a Coupled
+		System of Reaction Diffusion Equations</em>, <a
+href="http://www.sciencedirect.com/science/issue/5619-2009-997699997-1131076">Journal
+of Computational and Applied Mathematics</a>,  Volume 230, Issue 2, Pages
+360-370 (15 August 2009).
+[<a href="http://www.ams.org/mathscinet-getitem?mr=2532330">MR2532330</a>]
+</li>
+
+
+<!-- 2008 -->
+
+<li>R. Bruce Kellogg, Niall Madden and 
+<a href="http://euclid.ucc.ie/pages/staff/stynes/mstynes.htm">Martin Stynes</a>, <em>A parameter-robust
+			    numerical method for a system of
+			    reaction-diffusion equations in two
+			    dimensions</em>,  Numerical Methods for
+	      Partial Differential Equations, <a
+		href="http://www3.interscience.wiley.com/journal/117350607/issue">Volume
+			    24 (1), pp312--334</a>, 2008. 
+<a
+			    href="http://www.maths.nuigalway.ie/research/Preprints/2006/IRL-GLWY-2006-004.shtml">Abstract</a>. DOI: 10.1002/num.20265 
+</li>
+
+<!-- 2007 -->
+
+<li><a href="http://www.math.tu-dresden.de/~torsten/">T. Lin&szlig;</a>
+ and N. Madden, <em>Parameter uniform approximations for time-dependent
+			    reaction-diffusion problems</em>,
+ Numerical Methods for Partial Differential Equations, <a
+	      href="http://www3.interscience.wiley.com/cgi-bin/jissue/116323733">Volume 23, Issue 6, 1290--1300, 2007</a>. <a href="http://www.maths.nuigalway.ie/research/Preprints/2006/IRL-GLWY-2006-003.shtml">Abstract</a>.</li>
+
+<li>
+<a href="http://www.nuigalway.ie/maths/jn/">J. Newell</a>, 
+D. Higgins, N. Madden, J. Cruickshank, J. Einbeck, K. McMillan, K.,
+R. McDonald, 
+<a href="http://dx.doi.org/10.1080/02640410601128922"><i>Software for Calculating Blood Lactate Endurance Markers</i></a>, Journal of
+		Sports Sciences, <a href="http://www.informaworld.com/smpp/content~content=a779458580~db=all~jumpthttp://www.informaworld.com/smpp/content~content=a779458580~db=all~jumptype=rss">Vol 25, Issue 12, 1403--1409</a>, 2007.
+</li>
+
+
+<li>
+<a href="http://www.nuigalway.ie/maths/jn/">J. Newell</a>, 
+J. Einbeck, N. Madden, K. McMillan, K.,
+<i>Model free endurance markers based on the
+second derivative of blood lactate curves</i>, in
+<em><a href="http://www.statmod.org/workshops_archive_proceedings_2005.htm">Statistical Solutions to Modern  Problems</a></em>, (A.R. Francis,
+			  K.M. Matawie, A. Oshlack, and G.K. Smyth,
+			  eds.), 
+Proceedings of the 20th International Workshop on Statistical
+			  Modelling, Sydney, Australia, 2005,
+		  p357--364. 
+</li>
+
+
+
+<!-- 2005 -->
+
+
+<li><a href="http://www.staff.ul.ie/natalia">N. Kopteva</a>,
+  N. Madden,  and  
+<a href="http://euclid.ucc.ie/pages/staff/stynes/mstynes.htm">M. Stynes</a>, <i>Grid
+  equidistribution for reaction-diffusion problems in one
+  dimension</i>, Numerical Algorithms,
+ <a href="http://dx.doi.org/10.1007/s11075-005-7079-6">Volume 40, No. 3, 305--322, 2005</a>. 
+<a href="KMS04abstract.pdf">[Abstract]</a>,
+</li>
+
+<!-- 2004 -->
+
+<li><a href="http://www.math.tu-dresden.de/~torsten/">T. Lin&szlig;</a>
+and N. Madden,   <i>A finite element analysis of a coupled system of singularly
+       perturbed reaction-diffusion equations</i>.
+  <em><a href="http://www.elseviermathematics.com">Applied Mathematics
+	    and Computation</a></em>, Vol 148 (2004), Issue 3 pp 869-880
+  <a href="LiMa02abs.ps">Abstract</a>. 
+  <a href="http://www.math.tu-dresden.de/~torsten/rd-sys.ps">PS file</a>, 
+  <a
+       href="http://www.math.tu-dresden.de/~torsten/rd-sys.pdf">"Prescreen"
+       PDF</a>. 
+[<a href="http://www.zentralblatt-math.org/zbmath/search/?q=an%3A1042.65065">Zbl
+       1042.65065</a>]
+[<a href="http://www.ams.org/mathscinet-getitem?mr=2024550">MR2024550</a>]
+</li>
+
+<li><a href="http://www.math.tu-dresden.de/~torsten/">T. Lin&szlig;</a>
+  and N. Madden, 
+  <i>Accurate solution of a system of coupled singularly perturbed
+  reaction-diffusion equations</i>, <a href="http://www.springerlink.com/content/8j7jy6609crkg79b/">
+Computing</a>  Vol 73 (2004), No 2, 121-133. 
+  <a href="LiMa02Cabs.shtml">Abstract</a>. DOI: 10.1007/s00607-004-0065-3
+</li>
+
+
+
+<!-- 2003 -->
+
+<li><a href="http://www.math.tu-dresden.de/~torsten/">T. Lin&szlig;</a>
+  and N. Madden, 
+<i>An improved estimate for a numerical method for a system of coupled
+singularly perturbed reaction-diffusion equations</i>, <a
+href="http://www.degruyter.com/view/j/cmam.2003.3.issue-3/cmam-2003-0027/cmam-2003-0027.xml">Computational Methods in Applied
+Mathematics (CMAM)</a>, Vol. 3 (2003), No.3, 417-423.  <a
+href="LiMa02Babs.html">Abstract</a>.
+[<a href="http://www.zentralblatt-math.org/zbmath/search/?q=an%3A1040.65066">Zbl
+  1040.65066</a>]
+[<a href="http://www.ams.org/mathscinet-getitem?mr=2058038">MR2058038</a>]
+</li>
+
+
+<li>N. Madden
+  and <a href="http://euclid.ucc.ie/pages/staff/stynes/mstynes.htm">M. Stynes</a>,   
+<i>A uniformly convergent numerical method for a coupled system of two
+singularly perturbed linear reaction-diffusion problems</i>. 
+<a href="http://imanum.oxfordjournals.org/">IMA Journal of Numerical Analysis</a>, 
+<a href="http://imanum.oxfordjournals.org/content/vol23/issue4/index.dtl">Vol. 23 (2003), No. 4</a>, pp627-644.
+<a href="MaSt02abs.ps">Abstract</a>.
+[<a href="http://www.zentralblatt-math.org/zbmath/search/?q=an%3A1048.65076">Zbl
+  1048.65076</a>]
+[<a href="http://www.ams.org/mathscinet-getitem?mr=2011343">MR2011343</a>]
+</li>
+
+
+
+<!-- Pre 2000 -->
+
+<li>N. Madden <a
+href="http://euclid.ucc.ie/maths/staff/stynes/mstynes.htm">M. Stynes</a>
+and 
+<a href="http://appliedmaths.ucc.ie/staff/thomasg/index.html">G.P. Thomas</a>,
+<i>On the development of complete flow models for wave-current
+interactions</i>, in "Coastal Dynamics 97" (Conference Proceedings of
+the <a href="http://cedb.asce.org/cgi/WWWdisplayrbn.cgi?RBN9780784403211">
+Third Coastal Dynamics Conference held in Plymouth</a>, UK, June
+1997), by Edward B. Thornton, ed. Reston, VA: ASCE, 0-7844-0321-X,
+1998. <a
+href="http://www.maths.nuigalway.ie/~niall/research/plymouth.html">Abstract.</a>
+</li>
+
+
+
+<li>N. Madden and <a
+href="http://euclid.ucc.ie/pages/staff/stynes/mstynes.htm">M. Stynes</a>,
+<i>Efficient generation of oriented meshes for solving
+convection-diffusion
+  problems</i>, Int. J. Numer. Methods  Engrg.  40 (1997), 565-576. <a href="mads95.ps.gz">Gzipped postscript
+file</a>
+</li>
+
+
+<li>N. Madden and  <a
+href="http://euclid.ucc.ie/pages/staff/stynes/mstynes.htm">M. Stynes</a>,
+<i>Linear enhancements of the streamline diffusion method for
+convection-diffusion problems</i>, Computers Math.  Applic. 32 (1996),
+29-42. <a href="mads96.ps">Abstract.</a> 
+<a href="http://dx.doi.org/doi:10.1016/S0898-1221(96)00184-8">doi:10.1016/S0898-1221(96)00184-8</a>.
+[<a href="http://www.zentralblatt-math.org/zbmath/search/?q=an%3A0870.65100">Zbl
+  0870.65100</a>]
+[<a href="http://www.ams.org/mathscinet-getitem?mr=1426204">MR1426204</a>]
+</li>
+ 
+</ol>
+
+<h3><a name="Proceedings">Unrefereed technical reports and 
+conference proceedings</a></h3>
+<ol start="44">
+
+
+<li>
+<a href="http://www.math.mun.ca/~smaclachlan">Scott MacLachlan</a>
+and Niall Madden,
+<em>
+<a href="MultiGrid_RD_TechReport.pdf">Robust solution of singularly
+  perturbed problems using multigrid methods: analysis and results in
+  one and two dimensions.
+</a>. </em>
+Aug 2012.
+<a href="MaMa12a.shtml">Abstract</a>
+</li>
+
+  
+<li>R. Bruce Kellogg, N. Madden, and Martin Stynes, <em>On the numerical
+    solution of a system of <em>M</em>
+    reaction-diffusion equations  two
+    dimensions</em>,  In: I. Farago,
+  P. Vabishchevich, L. Vulkov (eds.), <a href="http://www.ru.acad.bg/fdm06/">Finite Difference Methods: Theory and Applications</a>. Pro. IVth  Int. Conf. FDM: T&amp;A (Lozenetz, Bulgaria, 26-29 August 2006),  Rousse 2007, 252-257.</li>
+
+
+<li><a href="http://www.staff.ul.ie/natalia">N. Kopteva</a>, N. Madden
+  and
+M. Stynes,
+<i>On equidistribution for reaction-diffusion problems, in Numerical
+Methods for Problems with Layer Phenomena</i> (A. R. Ansari, A. F. Hegarty
+&amp; G. I. Shishkin, eds.), Proceedings of the 3rd Annual Workshop,
+Department of Mathematics &amp; Statistics, University of Limerick,
+Ireland, February 2004, 46-51.</li>
+
+<li>N. Madden, 
+M. Stynes, and
+G.P. Thomas,
+<i><a
+href="http://aran.library.nuigalway.ie/xmlui/bitstream/handle/10379/2689/BAIL04_MST_Aran.pdf">On the application of robust numerical methods to a complete-flow 
+wave-current model</a></i>,
+Boundary and Interior Layers (BAIL), Toulouse, July 2004. <a
+href="bail2004.html">Abstract</a>. 
+Also available from <a
+href="http://inca.cs.kent.edu/BAIL2004/Files/Authors/Madden-Stynes.pdf">here</a>,
+<a href="Madden-Stynes-Thomas-2004.pdf">here</a>, 
+and from <a href="http://rian.ie/en/item/view/53302.html">RIAN.ie</a>.
+</li>
+
+
+<li>T. Lin&szlig; and
+  N. Madden, 
+  <i>Uniform convergence of a finite difference scheme for a system of coupled
+  reaction-diffusion equations</i>.
+  <a href="http://dx.doi.org/doi:10.1002/pamm.200310551">
+  <i>Proceedings in Applied Mathematics and Mechanics</i> <b>3</b> (2003) 1,
+  567-568.</a>
+</li>
+
+
+
+</ol>
+
+
+<h3><a name="Theses">Theses (supervised by me)</a></h3>
+<ul>
+  
+  <li>Stephen Russell.
+    <em>
+      Sparse grid methods for singularly
+      perturbed problems
+    </em>
+    Ph.D. thesis, NUI Galway 2016.
+  </li>
+ 
+<li>Nhan Anh Thai. <em>Preconditioning techniques for singularly
+  perturbed differential equations</em>. Ph.D. thesis, NUI Galway 2015.</li>
+
+
+<li>Stephen Russell. 
+<em>Sparse grid methods for the two-dimensional Poisson problem</em>. M.Sc. thesis, NUI Galway 2012.</li>
+
+<li>Nhan Anh Thai. <em>Numerical Solutions of Models for Glucose and
+Insulin Levels in Critically Ill Patients</em>. M.Sc. thesis, NUI Galway 2011.</li>
+<li>Meghan Stephens. <em>Numerical Methods for Singularly Perturbed Differential
+Equations</em>. Ph.D. thesis, NUI Galway 2009.</li>
+
+
+</ul>
+
+
+<h3><a name="Theses">Theses (written by me)</a></h3>
+<ul>
+<li><b>Numerical Methods for the Accurate Solution of Singularly
+Perturbed Convection-Diffusion Problems</b>,  M.Sc., Dept of
+Mathematics, University College Cork, Ireland. 1996. Supervisor: <a
+href="http://euclid.ucc.ie/pages/staff/stynes/mstynes.htm">Prof.  Martin Stynes</a>.</li>
+<li><b>Numerical Methods for Wave-Current interactions</b>, Ph.D., Dept of
+Mathematics, NUI Cork, Ireland, 2000. Supervisor: 
+<a href="http://euclid.ucc.ie/pages/staff/stynes/mstynes.htm">Prof.
+  Martin Stynes</a>.</li>
+
+
+</ul>
+
+
+<h3><a name="Other">Other</a></h3>
+<ul>
+<li>
+ENTCS <a
+href="http://www.sciencedirect.com/science/journal/15710661">Volume
+74</a>. <em>The Second Irish Conference on the Mathematical
+Foundations of Computer Science and Information Technology (MFCSIT
+2002)</em> Galway, Ireland, 18th and 19th of July 2002.  Online
+Publication Date: October 2003 Guest Editors: Sharon Flynn, Ted
+Hurley, Micheal Mac an Airchinnigh, Niall Madden, Michael McGettrick,
+Michel Schellekens and Anthony Seda.</li>
+
+<li>A <a href="talks.shtml">list of research presentations</a> that I've given at conferences,
+  workshops,   seminars, colloquia, etc., since 2000.</li>
+
+</ul>
+
+<h2><a name="Projects">Funded projects: past and present</a></h2>
+<ul>
+  <li>2004-2008: <b>Domain decomposition methods for singularly perturbed
+    problems</b>
+    <ul>
+      <li><em>with</em> Meghan Stephens</li>
+      <li><em>funded by</em> the Irish Research Council for Science,
+	Engineering & Technology (<a href="www.ircset.ie">IRCSET</a>) Embark
+	475-2004. Awarded to Meghan Stephens.</li>
+      <li><em>topics:</em> automatic generation of piecewise uniform meshes;
+	schemes for parameterised problems; Schwarz-based domain
+	decomposition methods for singularly perturbed problems.</li>
+    </ul>
+  </li>
+
+  <li>2008-2012: <b>Efficient computer modelling of the transport and
+      diffusion of   pollutants in advection dominated flows</b>
+    <ul>
+      <li><em>funded  by</em> <a href="http://www.sfi.ie">Science
+	  Foundation Ireland</a> Research Frontiers grant
+	  RFP/CMS/1205. Awarded to Niall Madden (Pi) and Michael
+	Hartnett (Co-PI).
+      <li><em>with</em> <a href="http://www.nuigalway.ie/civileng/staff/mh.html">Michael
+	  Hartnett</a> (NUI
+	Galway <a href="http://www.nuigalway.ie/research/mmc/">
+	  Marine Modelling Centre</a>; Ryan Institute)<br>
+	  Dr Naresh Chadha (Postdoctoral researcher supported by the
+	  grant 2008-2012)
+	  Dr Kajal Kumar Mondol (postdoctoral/visiting researcher
+	  2009-2010, supported by Govt of India BOYSCAST fellowship).</li>
+      <li><em>topics:</em> We are investigating how existing
+	software models can be improved using recent advanced in finite
+	difference methods. In particular we are investigating strategies for
+	the optimal time-stepping, as well as improved numerical modelling.
+      </li>
+      </ul>
+      </li>
+      <li>2008--2012: <b>Handling Nonlinearity and Uncertainty in Drug
+	  Delivery Modelling</b>
+	<ul>  
+	  <li><em>with</em> <a href="http://www2.it.nuigalway.ie/m_madden/">Dr Michael
+	      Madden</a> (Engineering and Informatics, NUI Galway)
+	    and <a href="http://www.maths-physics.nuigalway.ie/users/Piiroinen/">
+	      Dr Petri
+	      T Piiroinen</a> (Applied Mathematics, NUI Galway),
+	    Nhan Anh Thai (MSc student)</li>
+	  <li><em>funded  by</em> <a href="http://www.sfi.ie">Science
+	  Foundation Ireland</a> Research Frontiers grant
+	  SFI RFP/CMS/1254. Awarded to Michael Madden (PI), Niall
+	  Madden (Co-PI) and Petri Piiroinen (Co-PI).</li>
+<li><em>topic:</em> The group is working on developing a system that
+  models individual patients reactions to glucose and insulin
+  infusions. Thai and I work on designing
+  suitable numerical methods for models designed by Petri's team that
+  can be incorporated into DBN software by Michael's group.
+</li>
+</ul>
+</li>
+
+  <li>2011--2014: <b>Mutigrid methods for singularly perturbed
+  problems</b>
+<ul>
+ <li><em>with</em> Nhan Anh Thai, NUI Galway (Ph.D student) and Dr Scott
+ MacLachlan, Tufts University  (collaborator) </li>
+
+    <li><em>funded by</em> the Irish Research Council for Science,
+	Engineering & Technology (<a href="www.ircset.ie">IRCSET</a>)
+	EMBARK Initiative Postgraduate Research Scholarship
+	RS/2011/179. Awarded to Nhan Anh Thai.</li>
+<li><em>topic:</em> In recent years there has been significant
+  interest in the development of numerical schemes for the accurate
+  solutions of singularly perturbed ordinary and partial differential
+  equations. However, there have been relatively few on the accurate
+  solution of resulting linear systems. In this project we aim to
+  design new fast solvers, with particular emphasis on multigrid
+  methods.</li>
+
+</ul>
+</li>
+
+<li>2011--2012: <b>Sparse grid methods for partial differential equations</b>
+<ul>
+ <li><em>with</em> Stephen Russell (M.Sc student) and Prof. Michel
+ Destrade (Applied Mathematics, NUI Galway) </li>
+    <li><em>funded by</em> NUI Galway.
+<li><em>topic:</em> The numerical solution of partial differential
+  equations is computationally expensive: as the dimension of the
+  problem grows linearly, the computational effort required grows
+  exponentially. Stephen and I are studying some recently devised
+  sparse grid methods that may break this "curse of dimensionality".
+</li>
+</ul>
+</li>
+
+<li>2012--2016: <b>Sparse grid methods for singularly perturbed problems</b>
+<ul>
+ <li><em>with</em> Stephen Russell (Ph.D. student)</li>
+    <li><em>funded by</em> NUI Galway.
+<li><em>topic:</em>  Stephen and I are working on designing new sparse
+  grid methods that can be applied the problem of efficiently
+  computing numerical solutions to partial differential equations,
+  whoes solutions feature boundary layers.
+</li>
+</ul>
+</li>
+
+<li>2013--2014: <b>Data assimilation methods for advection-diffusion problems</b>
+<ul>
+ <li><em>with</em> James Peter White (M.Sc student) and Prof. Michael
+ Hartnett  (Civil Engineering, NUI Galway) </li>
+    <li><em>funded by</em> NUI Galway.
+<li><em>topic:</em> We are working on techniques for incorporating
+  spacially and temporal observations into the numerical solutions of
+  problems motivated by oceanography.
+</li>
+
+</ul>
+</li>
+</ul>
+
+    </body>
+</html>
